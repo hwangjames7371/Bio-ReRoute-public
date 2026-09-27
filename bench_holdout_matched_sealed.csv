@@ -1,0 +1,865 @@
+﻿label,stratum,drug,indication,kind,phase,pubmed,nct,ctgov_year,why,detail,matched_to
+TN,A,elamipretide,Primary Mitochondrial Myopathy,,PHASE3,16,NCT03323749,2020,did not meet,"Part1,double blind portion of the trial did not meet the primary end points",
+TP,A,cefuroxime axetil,Acute maxillary sinusitis,승인,NA,21,,,,,elamipretide|Primary Mitochondrial Myopathy
+TN,A,DS102,Hypertriglyceridemia,,PHASE2,1,NCT04365400,2022,lack of efficacy,Trial prematurely terminated on 03 May 2022 due to the results from an interim analysis indicating a lack of efficacy in the study population.,
+TP,A,cefpodoxime proxetil,Acute maxillary sinusitis,승인,NA,5,,,,,DS102|Hypertriglyceridemia
+TN,A,Genvoya 150Mg-150Mg-200Mg-10Mg Tablet,HIV-1-infection,,PHASE3,87,NCT03493568,2020,futilit,The futility analysis on 24-week results estimated that there was only 2% probability of verifying the study hypothesis of a higher proportion pat. with no residual viremia through 48w in arm E/C/F/TAF,
+TP,A,pheniramine,Pruritus,승인,NA,72,,,,,Genvoya 150Mg-150Mg-200Mg-10Mg Tablet|HIV-1-infection
+TN,A,Minocycline,HIV Infections,,PHASE2,92,NCT00361257,2010,futilit,This study was terminated early due to futility.,
+TP,A,prussian blue,Thallium poisoning,승인,NA,83,,,,,Minocycline|HIV Infections
+TN,A,Aticaprant,"Depressive Disorder, Major",,PHASE3,39,NCT06635135,2025,insufficient efficacy,Early study termination due to insufficient efficacy.,
+TP,A,brolucizumab,Exudative age-related macular degeneration,승인,NA,68,,,,,"Aticaprant|Depressive Disorder, Major"
+TN,A,E2007,Parkinson's Disease,,PHASE3,19,NCT00360308,2008,lack of efficacy,Study stopped due to lack of efficacy.,
+TP,A,landiolol,Sinus Tachycardia,승인,NA,42,,,,,E2007|Parkinson's Disease
+TN,A,JNJ-18054478,Asthma,,PHASE2,0,NCT00530166,2008,Lack of efficacy,Lack of efficacy following an interim analysis,
+TP,A,pentoxyverine,"Rhinitis, Vasomotor",승인,NA,0,,,,,JNJ-18054478|Asthma
+TN,A,Ulocuplumab,Solid Tumor,,"PHASE1,PHASE2",2,NCT02472977,2017,lack of efficacy,Trial terminated because of lack of efficacy in the short term acute phase,
+TP,A,amikacin,Non-tuberculous mycobacterial pneumonia,승인,NA,5,,,,,Ulocuplumab|Solid Tumor
+TN,A,Xilonix,Metastatic Colorectal Cancer,,PHASE3,1,NCT01767857,2017,futilit,The study crossed the prospective futility boundary of primary endpoint,
+TP,A,cilastatin,Infection caused by Citrobacter,승인,NA,7,,,,,Xilonix|Metastatic Colorectal Cancer
+TN,A,ZPL389 3mg,Atopic Dermatitis,,PHASE2,0,NCT03517566,2020,Lack of efficacy,Lack of efficacy,
+TP,A,ceftriaxone,Meningitis caused by Klebsiella aerogenes,승인,NA,0,,,,,ZPL389 3mg|Atopic Dermatitis
+TN,B,Isoniazid (INH),HIV Infection,,"PHASE2,PHASE3",2233,NCT00080119,2009,futilit,Data Safety Monitoring Board (DSMB) recommended stopping study due to futility,
+TP,B,triamcinolone,Musculoskeletal Diseases,승인,NA,1826,,,,,Isoniazid (INH)|HIV Infection
+TN,A,iHIVARNA-01,HIV Infections,,PHASE2,1,NCT02888756,2018,did not show,Interim analysis did not show sufficient immunogenicity of IMP compared to placebo,
+TP,A,cefadroxil,Klebsiella cystitis,승인,NA,1,,,,,iHIVARNA-01|HIV Infections
+TN,A,Tazemetostat,Metastatic Prostate Cancer,,"PHASE1,PHASE2",2,NCT04179864,2024,primary endpoint was not met,The study was terminated early as Sponsor decided to discontinue the development of tazemetostat in metastatic castration resistant prostate cancer and the primary endpoint was not met for this study. There were no safety concerns.,
+TP,A,pirbuterol,Bronchitis,승인,NA,6,,,,,Tazemetostat|Metastatic Prostate Cancer
+TN,A,Bifeprunox,Schizophrenia,,PHASE3,36,NCT00704509,2009,inadequate efficacy,Interim analysis showed inadequate efficacy of bifeprunox,
+TP,A,naftidrofuryl,Cerebrovascular Disorders,승인,NA,63,,,,,Bifeprunox|Schizophrenia
+TN,A,Solanezumab,Alzheimer's Disease,,PHASE3,234,NCT01900665,2017,did not meet,Solanezumab did not meet the study's primary endpoint.,
+TP,A,azathioprine,Dermatomyositis,승인,NA,355,,,,,Solanezumab|Alzheimer's Disease
+TN,A,Abatacept,Psoriatic Arthritis,,PHASE2,169,NCT00534313,2011,Lack of efficacy,Lack of efficacy with respect to skin-related lesions in the short-term phase,
+TP,A,ciprofloxacin,Dysentery,승인,NA,379,,,,,Abatacept|Psoriatic Arthritis
+TN,A,BIIB023,Lupus Nephritis,,PHASE2,2,NCT01930890,2016,did not demonstrate,Results from pre-specified criteria in study NCT01499355 (211LE201) did not demonstrate sufficient efficacy to warrant continuation of the study,
+TP,A,fedratinib,Post-polycythemia vera myelofibrosis,승인,NA,7,,,,,BIIB023|Lupus Nephritis
+TN,A,DNIB0600A,Ovarian Cancer,,PHASE2,4,NCT01991210,2016,did not meet,The primary objective of PFS did not meet pre-specified criteria.,
+TP,A,procaine benzylpenicillin,"Syphilis, tertiary",승인,NA,1,,,,,DNIB0600A|Ovarian Cancer
+TN,A,Ramelteon,Bipolar Disorder,,PHASE3,11,NCT01677182,2014,futilit,"Business Decision; Terminated due to futility, with no safety concerns (see below)",
+TP,A,torsemide,Edema,승인,NA,93,,,,,Ramelteon|Bipolar Disorder
+TN,A,JNJ-38518168,Rheumatoid Arthritis,,PHASE2,0,NCT01862224,2014,lack of efficacy,"The study was stopped due to lack of efficacy in a study conducted in a similar population,38518168ARA2002-NCT01679951.",
+TP,A,prednicarbate,Chronic small plaque psoriasis,승인,NA,0,,,,,JNJ-38518168|Rheumatoid Arthritis
+TN,A,IPN60130,Fibrodysplasia Ossificans Progressiva,,PHASE2,1,NCT05039515,2026,did not meet,"Following the planned FALKON Part A primary analysis, the study did not meet its primary endpoint of reducing heterotopic ossification (HO) volume compared with placebo and met predefined futility criteria.",
+TP,A,fusidic acid,Hospital acquired pneumonia,승인,NA,9,,,,,IPN60130|Fibrodysplasia Ossificans Progressiva
+TN,B,Sodium Bicarbonate,Acute Kidney Injury,,PHASE2,500,NCT02046135,2017,futilit,Statistical analysis at interim analysis determined futility in continuing.,
+TP,B,hydrocortisone,"Dermatitis, Atopic",승인,NA,431,,,,,Sodium Bicarbonate|Acute Kidney Injury
+TN,A,Retention of Cerclage,"Fetal Membranes, Premature Rupture",,PHASE4,22,NCT00201656,2014,futilit,This trial was terminated following a futility analysis confirming futility of continuing the study,
+TP,A,isopropamide,Peptic Ulcer,승인,NA,17,,,,,"Retention of Cerclage|Fetal Membranes, Premature Rupture"
+TN,B,carboplatin,Lung Cancer,,PHASE3,6539,NCT00004859,2010,futilit,Trial was stopped early for futility,
+TP,B,adenosine phosphate,Pulmonary Cystic Fibrosis,승인,NA,1930,,,,,carboplatin|Lung Cancer
+TN,B,Insulin glargine injection,Type 2 Diabetes,,PHASE4,547,NCT00366301,2009,futilit,"Interim analyses demonstrated futility. Thus, recruitment curtailed 10/08.",
+TP,B,phenoxymethylpenicillin,Pharyngitis,승인,NA,415,,,,,Insulin glargine injection|Type 2 Diabetes
+TN,A,Sarizotan low dose,Rett Syndrome,,"PHASE2,PHASE3",0,NCT02790034,2020,did not demonstrate,The study did not demonstrate evidence of efficacy on the primary or secondary efficacy variables,
+TP,A,hydrocortisone succinate,Addisonian crisis,승인,NA,0,,,,,Sarizotan low dose|Rett Syndrome
+TN,A,"Immune Globulin Intravenous (Human), 10% Solution",Alzheimer´s Disease,,PHASE3,2,NCT01524887,2013,did not demonstrate,The study was terminated because the first Phase 3 did not demonstrate efficacy on the co-primary endpoints. The known safety profile remained unchanged.,
+TP,A,dextromethorphan,Rhinitis,승인,NA,5,,,,,"Immune Globulin Intravenous (Human), 10% Solution|Alzheimer´s Disease"
+TN,A,Lornoxicam,Alzheimer´s Disease,,PHASE2,1,NCT01117948,2011,Lack of Efficacy,Lack of Efficacy,
+TP,A,eperisone,Spasm,승인,NA,9,,,,,Lornoxicam|Alzheimer´s Disease
+TN,A,Insulin Glargine,Leukemia,,PHASE3,6,NCT00500240,2012,futilit,Terminated early due to futility.,
+TP,A,cefapirin,Escherichia coli septicemia,승인,NA,1,,,,,Insulin Glargine|Leukemia
+TN,A,Evacetrapib,Hypercholesterolemia,,PHASE3,14,NCT02260648,2015,insufficient efficacy,Study termination due to insufficient efficacy.,
+TP,A,cefradine,Group A Streptococcal Infections,승인,NA,39,,,,,Evacetrapib|Hypercholesterolemia
+TN,A,convalescent plasma infusion covid 19,COVID-19,,PHASE3,131,NCT05247307,2021,Lack of efficacy,Lack of efficacy of treatment tested,
+TP,A,rifapentine,"Tuberculosis, Pulmonary",승인,NA,290,,,,,convalescent plasma infusion covid 19|COVID-19
+TN,A,RMC-035,Acute Kidney Injury,,PHASE2,6,NCT05126303,2023,futilit,Enrollment discontinued following DMC recommendation based on futility with regards to primary endpoint,
+TP,A,medrysone,Allergic Conjunctivitis,승인,NA,4,,,,,RMC-035|Acute Kidney Injury
+TN,A,Glucagon,Hypoglycemia Unawareness,,PHASE2,163,NCT03490942,2020,Primary endpoint was not met,Primary endpoint was not met,
+TP,A,carvedilol,Hypertensive disease,승인,NA,926,,,,,Glucagon|Hypoglycemia Unawareness
+TN,A,Motesanib,"Carcinoma, Non-Small-Cell Lung",,PHASE3,20,NCT02629848,2015,did not meet,Sponsor decision to terminate the study because the study did not meet the primary endpoint.,
+TP,A,lesinurad,Hyperuricemia,승인,NA,88,,,,,"Motesanib|Carcinoma, Non-Small-Cell Lung"
+TN,A,Atezolizumab,Triple Negative Breast Cancer,,PHASE3,350,NCT03498716,2023,futilit,The study was terminated by the sponsor following interim analysis as the primary endpoint of iDFS crossed the pre-specified futility boundary of hazard ratio \> 1 in the Intent-to-Treat (ITT) population.,
+TP,A,bleomycin,Malignant tumor of cervix,승인,NA,212,,,,,Atezolizumab|Triple Negative Breast Cancer
+TN,A,Tabalumab Auto-Injector,"Lupus Erythematosus, Systemic",,PHASE3,0,NCT02041091,2015,Lack of efficacy,Lack of efficacy,
+TP,A,cyclizine,Rhinorrhea,승인,NA,0,,,,,"Tabalumab Auto-Injector|Lupus Erythematosus, Systemic"
+TN,A,Chrysalin,Radius Fracture,,PHASE2,2,NCT00131482,2007,did not demonstrate,Treatment with Chrysalin did not demonstrate benefit compared to placebo.,
+TP,A,cefuroxime,Impetigo,승인,NA,4,,,,,Chrysalin|Radius Fracture
+TN,A,BIIB054,Parkinson's Disease,,PHASE2,5,NCT03318523,2021,did not meet,SPARK did not meet it's primary outcome measure for year 1 and failed to meet secondary outcome measures resulting in the development of BIIB054 (cinpanemab) for Parkinson's disease to be discontinued and SPARK study was closed.,
+TP,A,tafamidis,Senile cardiac amyloidosis,승인,NA,6,,,,,BIIB054|Parkinson's Disease
+TN,A,pregabalin/celecoxib,Uterine Fibroids,,PHASE4,0,NCT01555073,2013,did not meet,Subjects did not meet inclusion criteria,
+TP,A,brompheniramine,Dermatographic urticaria,승인,NA,0,,,,,pregabalin/celecoxib|Uterine Fibroids
+TN,A,Pioglitazone,Mild Cognitive Impairment Due to Alzheimer's Disease,,PHASE3,33,NCT01931566,2018,Lack of efficacy,Lack of efficacy of the drug; no safety concern,
+TP,A,oxytetracycline,Lymphogranuloma Venereum,승인,NA,15,,,,,Pioglitazone|Mild Cognitive Impairment Due to Alzheimer's Disease
+TN,A,Balovaptan,Autism Spectrum Disorder,,PHASE3,13,NCT03504917,2020,futilit,A futility analysis assessed that the study is highly unlikely to meet the pre-defined primary objective of the study. No new safety concerns were identified.,
+TP,A,guanidine,Lambert-Eaton Myasthenic Syndrome,승인,NA,24,,,,,Balovaptan|Autism Spectrum Disorder
+TN,A,Vixarelimab,Idiopathic Pulmonary Fibrosis,,PHASE2,0,NCT05785624,2026,futilit,Sponsor decided to discontinue the study after review of clinical data by the iDMC. This decision was based on unblinded evaluation of clinical efficacy which showed a trend towards futility \& was not related to any safety concerns of vixarelimab.,
+TP,A,tirabrutinib hydrochloride,Microglioma,승인,NA,0,,,,,Vixarelimab|Idiopathic Pulmonary Fibrosis
+TN,A,Omarigliptin,Type 2 Diabetes Mellitus,,PHASE3,54,NCT01703208,2017,efficacy concerns,The study was terminated for business reasons and not due to any safety or efficacy concerns related to omarigliptin,
+TP,A,algeldrate,Dyspepsia,승인,NA,34,,,,,Omarigliptin|Type 2 Diabetes Mellitus
+TN,A,Cetrorelix 78 mg + 78 mg,Benign Prostatic Hypertrophy,,PHASE3,0,NCT00449150,2009,did not meet,Trial did not meet primary efficacy endpoint for double blind phase.,
+TP,A,perazine,Enterobiasis,승인,NA,0,,,,,Cetrorelix 78 mg + 78 mg|Benign Prostatic Hypertrophy
+TN,A,bapineuzumab,Alzheimer Disease,,PHASE3,179,NCT00667810,2013,no clinical benefit,"The study was terminated on August 6, 2012, because 2 large Phase 3 studies showed no clinical benefit. This decision was not based on any new safety concerns.",
+TP,A,brentuximab vedotin,Hodgkin Disease,승인,NA,942,,,,,bapineuzumab|Alzheimer Disease
+TN,A,Bortezomib,Follicular Lymphoma,,PHASE2,86,NCT00136591,2010,lack of efficacy,An arm closed due to lack of efficacy,
+TP,A,tavaborole,Onychomycosis due to Trichophyton rubrum,승인,NA,13,,,,,Bortezomib|Follicular Lymphoma
+TN,A,Octaplex,Acute Major Bleeding,,PHASE3,61,NCT04867837,2026,Futilit,Following Interim Analysis IDMEAC concluded:1-No safety concerns 2-Suspend enrolment: Futility based on treatment effect size at interim analysis. Enrollment was suspended on 22DEC25. Study was terminated FEB2026. Final analysis is planned in Q2 2026,
+TP,A,progesterone,Secondary physiologic amenorrhea,승인,NA,21,,,,,Octaplex|Acute Major Bleeding
+TN,A,D-Cycloserine,Fibromyalgia,,PHASE2,1,NCT05395494,2025,Futilit,Futility criteria met on interim analysis,
+TP,A,alclometasone dipropionate,Contact Dermatitis,승인,NA,7,,,,,D-Cycloserine|Fibromyalgia
+TN,B,Dexamethasone 3 mg,Postoperative Nausea and Vomiting,,PHASE2,555,NCT01975727,2017,futilit,Study was halted prematurely for futility after an intermediate analysis,
+TP,B,ciclosporin,Dry Eye Syndromes,승인,NA,629,,,,,Dexamethasone 3 mg|Postoperative Nausea and Vomiting
+TN,A,LX201,Corneal Transplantation,,PHASE3,2,NCT00447642,2010,endpoint was not met,The primary efficacy endpoint was not met,
+TP,A,flavoxate,Suprapubic pain,승인,NA,2,,,,,LX201|Corneal Transplantation
+TN,A,JNJ-38518168 (3 mg),Rheumatoid Arthritis,,PHASE2,0,NCT01679951,2014,lack of efficacy,The decision was made to prematurely discontinue this trial due to lack of efficacy.,
+TP,A,solriamfetol,Excessive daytime sleepiness - normal night sleep,승인,NA,0,,,,,JNJ-38518168 (3 mg)|Rheumatoid Arthritis
+TN,A,TQB2450 injection,Advanced Endometrial Cancer,,PHASE2,0,NCT05481645,2025,efficacy concerns,Per sponsor request. Premature closure was not prompted by any safety or efficacy concerns.,
+TP,A,methylprednisolone acetate,Mycosis Fungoides,승인,NA,0,,,,,TQB2450 injection|Advanced Endometrial Cancer
+TN,A,parsaclisib,Myelofibrosis,,PHASE3,12,NCT04551053,2024,futilit,The study was terminated due to futility.,
+TP,A,thiabendazole,Infection by Trichuris trichiura,승인,NA,79,,,,,parsaclisib|Myelofibrosis
+TN,A,Minocycline (Borymycin),Acute Stroke,,PHASE4,279,NCT00930020,2012,futilit,interim analysis shows futility,
+TP,A,levofloxacin,Pyelonephritis,승인,NA,113,,,,,Minocycline (Borymycin)|Acute Stroke
+TN,A,Point-of-care molecular testing and treatment of influenza,Influenza,,PHASE4,128,NCT04141917,2021,futilit,Operational futility (i.e. near zero circulation of influenza in the community during year 2),
+TP,A,brexpiprazole,Major Depressive Disorder,승인,NA,149,,,,,Point-of-care molecular testing and treatment of influenza|Influenza
+TN,A,Bermekimab,Hidradenitis Suppurativa,,PHASE2,13,NCT04988308,2022,futilit,Study has been prematurely terminated as the Interim Analysis 1 efficacy results met the prespecified futility criteria related to the primary endpoint.,
+TP,A,triamcinolone acetonide,Crohn Disease,승인,NA,14,,,,,Bermekimab|Hidradenitis Suppurativa
+TN,A,CRANIAL ELECTROTHERAPY (Alpha Stim) + SHAM MIDAZOLAM,Anxiety,,PHASE4,0,NCT00928772,2012,Lack of efficacy,Lack of efficacy,
+TP,A,betamethasone benzoate,Psoriasis of scalp,승인,NA,0,,,,,CRANIAL ELECTROTHERAPY (Alpha Stim) + SHAM MIDAZOLAM|Anxiety
+TN,A,Oxycodone,Osteoarthritis,,PHASE2,159,NCT00483977,2007,futilit,Met criteria for study futility at interim analysis,
+TP,A,cefalotin,Bacterial infection due to Klebsiella pneumoniae,승인,NA,115,,,,,Oxycodone|Osteoarthritis
+TN,A,K-645 dose level 1,Acute Migraine,,PHASE2,97,NCT07116499,2025,futilit,Study stopped for futility based on an interim analysis of efficacy.,
+TP,A,nafcillin,Staphylococcal Pneumonia,승인,NA,17,,,,,K-645 dose level 1|Acute Migraine
+TN,A,DP-b99,Acute Ischemic Stroke,,PHASE3,7,NCT00893867,2012,futilit,The result of a pre-planned interim futility analysis,
+TP,A,tazobactam,Sepsis caused by Serratia,승인,NA,5,,,,,DP-b99|Acute Ischemic Stroke
+TN,A,GT005,Dry Age-related Macular Degeneration,,PHASE2,2,NCT04566445,2024,futilit,Terminated for interim analysis demonstrating futility (trial highly unlikely to meet efficacy outcome). The trial is not ending early because of medical problems or concerns.,
+TP,A,doxepin,Lichen Simplex Chronicus,승인,NA,4,,,,,GT005|Dry Age-related Macular Degeneration
+TN,A,enoxaparine 40 mg daily,Alive and Viable Births,,PHASE3,0,NCT00740545,2014,futilit,Stopped for futility,
+TP,A,aprobarbital,Sleeplessness,승인,NA,0,,,,,enoxaparine 40 mg daily|Alive and Viable Births
+TN,A,HIL-214,Gastroenteritis,,"PHASE2,PHASE3",3,NCT05281094,2024,Lack of efficacy,Lack of efficacy,
+TP,A,cyclacillin,Infective otitis media,승인,NA,8,,,,,HIL-214|Gastroenteritis
+TN,A,Plasmin,Vitreoretinal Traction Syndrome,,PHASE2,3,NCT00348439,2007,Lack of Efficacy,Lack of Efficacy,
+TP,A,cycrimine,Parkinson Disease,승인,NA,3,,,,,Plasmin|Vitreoretinal Traction Syndrome
+TN,A,RVT-101 35 mg,Dementia With Lewy Bodies,,"PHASE2,PHASE3",0,NCT02928445,2018,did not meet,Intepirdine did not meet its primary efficacy endpoints in the lead-in study RVT-101-2001.,
+TP,A,trastuzumab,Peritonsillar cellulitis,승인,NA,0,,,,,RVT-101 35 mg|Dementia With Lewy Bodies
+TN,A,Ancrod (Viprinex),Stroke,,PHASE3,68,NCT00141011,2008,Futilit,Futility,
+TP,A,oliceridine,Moderate pain,승인,NA,48,,,,,Ancrod (Viprinex)|Stroke
+TN,A,difelikefalin 2.0 mg tablets,Pruritus,,"PHASE2,PHASE3",0,NCT05978063,2024,did not demonstrate,"In Part A of CR845-310601, oral difelikefalin did not demonstrate a meaningful clinical benefit at any dose compared to placebo. The drug was generally well tolerated with a safety profile similar to prior trials.",
+TP,A,cycloserine,Urinary tract infection caused by Escherichia coli,승인,NA,0,,,,,difelikefalin 2.0 mg tablets|Pruritus
+TN,A,ASM-024,Asthma,,"PHASE1,PHASE2",4,NCT01793298,2014,Lack of efficacy,Lack of efficacy,
+TP,A,betamethasone,Dermatitis Herpetiformis,승인,NA,9,,,,,ASM-024|Asthma
+TN,A,IMR-687,Sickle Cell Disease,,PHASE2,1,NCT04474314,2022,failed to meet,"A recently conducted Interim analysis of IMR-SCD-301 demonstrated that while IMR-687 was generally well-tolerated, it failed to meet its primary efficacy endpoint. So, the sponsor has decided to discontinue this study.",
+TP,A,desloratadine,Common Cold,승인,NA,2,,,,,IMR-687|Sickle Cell Disease
+TN,A,PF-06649751,Parkinson Disease,,PHASE2,3,NCT02847650,2018,lack of efficacy,Study B7601011 was terminated on 29 Jan 2018 due to lack of efficacy in moderate/advanced Parkinson's disease.,
+TP,A,pramocaine,Dry skin,승인,NA,2,,,,,PF-06649751|Parkinson Disease
+TN,A,AB-205,Hodgkin Lymphoma,,PHASE3,0,NCT05181540,2025,lack of efficacy,Interim analysis showed lack of efficacy,
+TP,A,methylhomatropine,Coughing,승인,NA,0,,,,,AB-205|Hodgkin Lymphoma
+TN,A,Tetracosactide (Synacthène®),Post-dural Puncture Headache,,PHASE2,20,NCT02813655,2022,futilit,"Interim analysis and decision of the independent committee, investigators and sponsor (futility) (2023/10/05)",
+TP,A,estradiol,Urethral atrophy,승인,NA,25,,,,,Tetracosactide (Synacthène®)|Post-dural Puncture Headache
+TN,A,Reparixin,Infectious Pneumonia,,PHASE3,2,NCT05254990,2024,futilit,The study was stopped due to futility as per protocol,
+TP,A,fluocinonide,Chronic discoid lupus erythematosus,승인,NA,6,,,,,Reparixin|Infectious Pneumonia
+TN,A,BIIB092,"Supranuclear Palsy, Progressive",,PHASE2,9,NCT03068468,2020,primary endpoint was not met,251PP301(PASSPORT) primary endpoint was not met;Biogen decision to close the study early. There were no safety concerns with the PASSPORT study.,
+TP,A,fluorometholone,Corneal Abrasions,승인,NA,9,,,,,"BIIB092|Supranuclear Palsy, Progressive"
+TN,A,AIN457,Non-infectious Uveitis,,PHASE3,5,NCT01032915,2011,did not show,Results of a planned interim analysis did not show significant effects for any of the 3 AIN dose regimens versus placebo on any primary or secondary endpoint,
+TP,A,ferrous fumarate,Megaloblastic anemia due to folate deficiency,승인,NA,1,,,,,AIN457|Non-infectious Uveitis
+TN,A,MBG453,Myelodysplastic Syndromes,,PHASE2,18,NCT03946670,2024,failed to meet,"In December 2023, Novartis decided to terminate the sabatolimab clinical development program early after Phase II (MDS1) and Phase III (MDS2) studies failed to meet their primary objectives. The termination was not due to safety concerns.",
+TP,A,baclofen,Muscle spasticity of spinal origin,승인,NA,88,,,,,MBG453|Myelodysplastic Syndromes
+TN,A,Vixarelimab,Ulcerative Colitis,,PHASE2,1,NCT06137183,2025,futilit,"Based on a futility analysis, which suggested that the Moonglow study was unlikely to meet its primary endpoint.",
+TP,A,hydrocodone,Rhinitis,승인,NA,1,,,,,Vixarelimab|Ulcerative Colitis
+TN,A,Seneca Valley virus-001,Lung Cancer,,PHASE2,1,NCT01017601,2014,futilit,Interim analysis declared futility.,
+TP,A,promazine,Pruritus,승인,NA,2,,,,,Seneca Valley virus-001|Lung Cancer
+TN,A,Sorafenib + Paclitaxel + Carboplatin,"Carcinoma, Non-Small-Cell Lung",,PHASE3,11,NCT00558636,2008,lack of efficacy,Terminated early when the results from Study NCT00300885 showed an overall lack of efficacy in NSCLC and increased mortality in subjects with squamous subtype.,
+TP,A,cefepime,Group A Streptococcal Infections,승인,NA,86,,,,,"Sorafenib + Paclitaxel + Carboplatin|Carcinoma, Non-Small-Cell Lung"
+TN,B,Amantadine,Patients With Moderate or Severe COVID-19,,PHASE3,128988,NCT04952519,2022,did not show,"The annual analysis did not show the efficacy of the investigational medicinal product in this application, therefore the study was not continued.",
+TP,B,levothyroxine,Hypothyroidism,승인,NA,19772,,,,,Amantadine|Patients With Moderate or Severe COVID-19
+TN,A,LY3454738,Chronic Spontaneous Urticaria,,PHASE2,2,NCT04159701,2021,lack of efficacy,The study was terminated for lack of efficacy after an interim analysis was performed,
+TP,A,clemastine,Nasal congestion (finding),승인,NA,5,,,,,LY3454738|Chronic Spontaneous Urticaria
+TN,A,Triple therapy group,Septic Shock,,"PHASE2,PHASE3",18,NCT03380507,2021,futilit,The research is no longer funded and terminated due to futility,
+TP,A,guaiacol,Rhinitis,승인,NA,11,,,,,Triple therapy group|Septic Shock
+TN,A,Dexmedetomidine,Withdrawal Syndrome,,PHASE2,195,NCT03645603,2020,futilit,futility reasons,
+TP,A,phentermine,Obesity,승인,NA,871,,,,,Dexmedetomidine|Withdrawal Syndrome
+TN,A,Lorcaserin,"Epilepsies, Myoclonic",,PHASE3,7,NCT04572243,2024,efficacy reasons,The study was terminated by Sponsor and the decision was not due to any safety or efficacy reasons.,
+TP,A,trovafloxacin,Bacterial infection due to Klebsiella pneumoniae,승인,NA,7,,,,,"Lorcaserin|Epilepsies, Myoclonic"
+TN,A,Bamlanivimab Etesevimab,COVID-19,,PHASE3,81,NCT05205759,2022,futilit,Stop for futility after the onset of the omicron wave,
+TP,A,bacampicillin,Haemophilus influenzae pneumonia,승인,NA,11,,,,,Bamlanivimab Etesevimab|COVID-19
+TN,A,Extended release niacin/laropiprant,Coronary Artery Disease,,PHASE4,0,NCT01308203,2013,did not meet,Merck has decided to discontinue all studies with extended-release niacin/laropiprant.because the HPS2-THRIVE did not meet its primary endpoint,
+TP,A,methylprednisolone,Chronic small plaque psoriasis,승인,NA,0,,,,,Extended release niacin/laropiprant|Coronary Artery Disease
+TN,A,BUMETANIDE (S95008) for week 0 - 26,Autism Spectrum Disorder (ASD),,PHASE3,0,NCT03715153,2021,did not show,The 6-month efficacy analysis did not show any significant difference between bumetanide versus placebo in the treatment of ASD in the overall studied population. No unexpected safety concerns were identified.,
+TP,A,magnesium salicylate,Bursitis,승인,NA,0,,,,,BUMETANIDE (S95008) for week 0 - 26|Autism Spectrum Disorder (ASD)
+TN,B,Tamoxifen,Breast Neoplasms,,PHASE2,17199,NCT02395627,2019,Insufficient efficacy,Insufficient efficacy in an unselected patient population,
+TP,B,amphotericin B,"Leishmaniasis, Visceral",승인,NA,1468,,,,,Tamoxifen|Breast Neoplasms
+TN,A,TQB3616 capsule,Dedifferentiated Liposarcoma,,PHASE2,0,NCT05496569,2025,efficacy concerns,This study was closed due to business reasons. Closure was not prompted by any safety or efficacy concerns.,
+TP,A,hydrocortisone acetate,Rheumatic Heart Disease,승인,NA,0,,,,,TQB3616 capsule|Dedifferentiated Liposarcoma
+TN,A,MM-111,HER-2 Gene Amplification,,PHASE2,0,NCT01774851,2015,lack of efficacy,DSMB recommendation due to lack of efficacy. There were no safety signals.,
+TP,A,betamethasone acetate,Contact Dermatitis,승인,NA,0,,,,,MM-111|HER-2 Gene Amplification
+TN,A,Cobomarsen,Cutaneous T-Cell Lymphoma/Mycosis Fungoides,,PHASE2,1,NCT03713320,2020,lack of efficacy,"The study was terminated early for business reasons, and not due to concerns regarding safety or lack of efficacy.",
+TP,A,carbinoxamine,Rhinorrhea,승인,NA,2,,,,,Cobomarsen|Cutaneous T-Cell Lymphoma/Mycosis Fungoides
+TN,A,extracranial-intracranial bypass surgery,Stroke,,PHASE3,351,NCT00029146,2010,futilit,Pre-specified futility boundary was reached.,
+TP,A,loratadine,Sneezing,승인,NA,126,,,,,extracranial-intracranial bypass surgery|Stroke
+TN,A,Elafibranor,Nonalcoholic Steatohepatitis (NASH) With Fibrosis,,PHASE3,78,NCT02704403,2020,did not meet,"Study did not meet the predefined primary surrogate efficacy endpoint, no safety issues identified",
+TP,A,pseudoephedrine,Rhinorrhea,승인,NA,34,,,,,Elafibranor|Nonalcoholic Steatohepatitis (NASH) With Fibrosis
+TN,A,Evacetrapib,Hypercholesterolemia,,PHASE3,14,NCT02260635,2015,insufficient efficacy,Study termination due to insufficient efficacy.,
+TP,A,cefotaxime,Klebsiella cystitis,승인,NA,14,,,,,Evacetrapib|Hypercholesterolemia
+TN,A,Letermovir Oral Tablet,HIV Infections,,PHASE2,0,NCT04840199,2023,futilit,Permanently closed to screening and accrual due to futility,
+TP,A,potassium hydrogencarbonate,Dyspepsia,승인,NA,0,,,,,Letermovir Oral Tablet|HIV Infections
+TN,A,LY2510924,Metastatic Clear Cell Renal Cell Carcinoma,,PHASE2,0,NCT01391130,2017,Insufficient Efficacy,Study Terminated due to Insufficient Efficacy,
+TP,A,mepenzolate,Gastric ulcer,승인,NA,0,,,,,LY2510924|Metastatic Clear Cell Renal Cell Carcinoma
+TN,A,AZD5718,Acute Coronary Syndrome,,PHASE2,1,NCT04601467,2024,futilit,The study was terminated early on 14th September 2023 by the main funding company because of financial futility. We were able to enroll 243 of the initial planned 360 participants and randomised 209 participants of the intial planned 286.,
+TP,A,betamethasone valerate,Lichen Simplex Chronicus,승인,NA,7,,,,,AZD5718|Acute Coronary Syndrome
+TN,A,Iferanserin,Internal Hemorrhoids,,PHASE3,1,NCT01355874,2012,primary endpoint was not met,The primary endpoint was not met on the double blind data,
+TP,A,erythromycin ethyl succinate,Meningitis,승인,NA,5,,,,,Iferanserin|Internal Hemorrhoids
+TN,A,BOTOX,Episodic Migraine,,PHASE3,124,NCT05028569,2024,lack of efficacy,The study was terminated early due to lack of efficacy from the primary analysis results.,
+TP,A,ceftazidime,Sepsis due to Staphylococcus aureus,승인,NA,163,,,,,BOTOX|Episodic Migraine
+TN,A,Azithromycin,Preterm Premature Rupture of Membranes (PPROM),,PHASE3,56,NCT03060473,2023,futile,"Patient population that meets study criteria is insufficient to continue project in a reasonable amount of time. To continue is futile in resources, staff time, and effort.",
+TP,A,ceftaroline fosamil,Escherichia coli Infections,승인,NA,49,,,,,Azithromycin|Preterm Premature Rupture of Membranes (PPROM)
+TN,A,edratide,Systemic Lupus Erythematosus,,PHASE2,15,NCT00203151,2007,did not meet,TV-4710/201 did not meet its primary endpoints in patients with SLE,
+TP,A,midostaurin,"Leukemia, Mast-Cell",승인,NA,89,,,,,edratide|Systemic Lupus Erythematosus
+TN,A,Ravulizumab,Amyotrophic Lateral Sclerosis,,PHASE3,5,NCT04248465,2021,lack of efficacy,The IDMC recommended the study be discontinued due to lack of efficacy with ravulizumab.,
+TP,A,metaxalone,Muscle Spasticity,승인,NA,2,,,,,Ravulizumab|Amyotrophic Lateral Sclerosis
+TN,A,Clonidine HCl Mucoadhesive Buccal Tablet,Chemoradiotherapy-Induced Severe Oral Mucositis,,"PHASE2,PHASE3",0,NCT04648020,2023,did not meet,Interim Analysis did not meet the pre-defined threshold for efficacy of a 15% absolute difference in SOM prevention between Validive and placebo.,
+TP,A,erdosteine,Accidental poisoning by lead and its compounds and fumes,승인,NA,0,,,,,Clonidine HCl Mucoadhesive Buccal Tablet|Chemoradiotherapy-Induced Severe Oral Mucositis
+TN,B,Cytarabine,"Leukemia, Myeloid, Acute",,PHASE3,8020,NCT02545283,2020,futilit,The study was stopped for futility based on efficacy results at the interim analysis; no unexpected safety findings were observed.,
+TP,B,amoxicillin,Escherichia coli Infections,승인,NA,1789,,,,,"Cytarabine|Leukemia, Myeloid, Acute"
+TN,A,Tislelizumab,Non-small Cell Lung Cancer,,PHASE3,164,NCT04746924,2026,lack of efficacy,This decision was conducted by the sponsor based on lack of efficacy and not driven by safety concerns.,
+TP,A,udenafil,Erectile dysfunction,승인,NA,117,,,,,Tislelizumab|Non-small Cell Lung Cancer
+TN,A,E7070,Metastatic Breast Cancer,,PHASE2,1,NCT00165880,2007,lack of efficacy,This study was stopped prematurely due to lack of efficacy.,
+TP,A,tinoridine,Pain,승인,NA,1,,,,,E7070|Metastatic Breast Cancer
+TN,A,HZN-825 BID,Diffuse Cutaneous Systemic Sclerosis,,PHASE2,0,NCT04781543,2025,futilit,The study was terminated due to meeting pre-defined criteria for futility.,
+TP,A,phenyltoloxamine,Allergic Conjunctivitis,승인,NA,0,,,,,HZN-825 BID|Diffuse Cutaneous Systemic Sclerosis
+TN,A,Xevinapant (Debio 1143),Squamous Cell Carcinoma of the Head and Neck,,PHASE3,15,NCT04459715,2024,futilit,Study has crossed the pre-defined futility boundary at the Interim Analysis.,
+TP,A,cefamandole,Peritonitis,승인,NA,81,,,,,Xevinapant (Debio 1143)|Squamous Cell Carcinoma of the Head and Neck
+TN,A,MM-302,Breast Cancer,,"PHASE2,PHASE3",12,NCT02213744,2017,futilit,Felt not to show benefit over control per DMC and confirmed via futility analysis,
+TP,A,oxaceprol,Degenerative polyarthritis,승인,NA,15,,,,,MM-302|Breast Cancer
+TN,A,defactinib (VS-6063),Malignant Pleural Mesothelioma,,PHASE2,6,NCT01870609,2016,lack of efficacy,Interim analysis-DSMB stated good safety profile but lack of efficacy,
+TP,A,azatadine,Sneezing,승인,NA,7,,,,,defactinib (VS-6063)|Malignant Pleural Mesothelioma
+TN,A,ZPL389 30mg,Atopic Dermatitis,,PHASE2,0,NCT03948334,2020,lack of efficacy,Core terminated due to lack of efficacy,
+TP,A,bromazine,Nasal congestion (finding),승인,NA,0,,,,,ZPL389 30mg|Atopic Dermatitis
+TN,A,Lanabecestat,Alzheimer's Disease,,PHASE3,26,NCT02972658,2018,futilit,"As the feeder study (AZES) was stopped for futility after an independent assessment, this trial was also stopped.",
+TP,A,protamine sulfate,Heparin overdose,승인,NA,50,,,,,Lanabecestat|Alzheimer's Disease
+TN,A,AZD5718,Chronic Kidney Disease,,PHASE2,2,NCT04492722,2022,lack of efficacy,The Sponsor decided to terminate the study early due to lack of efficacy. There were no safety concerns related to the study.,
+TP,A,mepyramine,Nasal congestion (finding),승인,NA,3,,,,,AZD5718|Chronic Kidney Disease
+TN,A,Semorinemab,Alzheimer's Disease,,PHASE2,39,NCT03289143,2021,did not show,Study was terminated during Open Label Extension period because analyses of placebo-controlled Blinded portion of study did not show any evidence of clinical efficacy or modulation of accumulation of tau PET signal at any of the doses studied.,
+TP,A,fentiazac,Pain,승인,NA,15,,,,,Semorinemab|Alzheimer's Disease
+TN,B,Curcumin,Breast Cancer,,PHASE2,1462,NCT00852332,2017,futilit,The trial was stopped for futility in view of the results of the anticipated analysis,
+TP,B,colchicine,Familial Mediterranean Fever,승인,NA,1883,,,,,Curcumin|Breast Cancer
+TN,B,Prednisone,Prostatic Neoplasms,,PHASE3,1111,NCT00676650,2011,futilit,Study A6181120 was prematurely discontinued due to futility on 27 September 2010. No new or unexpected safety issues were identified.,
+TP,B,nilotinib,Philadelphia chromosome positive chronic myelogenous leukemia,승인,NA,1624,,,,,Prednisone|Prostatic Neoplasms
+TN,A,Ravulizumab,COVID-19 Severe Pneumonia,,PHASE3,10,NCT04369469,2021,futilit,Met futility bar at interim analysis,
+TP,A,mecasermin,Laron Syndrome,승인,NA,13,,,,,Ravulizumab|COVID-19 Severe Pneumonia
+TN,A,EDP1815,Atopic Dermatitis,,PHASE2,1,NCT05439941,2023,did not meet,Parent Study (NCT05121480) did not meet the primary endpoint.,
+TP,A,dyclonine,Skin irritation,승인,NA,1,,,,,EDP1815|Atopic Dermatitis
+TN,A,AZD8931,Neoplasms,,PHASE2,31,NCT01151215,2013,Futilit,Futility,
+TP,A,tolazoline,Cerebrovascular Disorders,승인,NA,10,,,,,AZD8931|Neoplasms
+TN,A,AIN457,Uveitis,,PHASE3,86,NCT01095250,2010,did not meet,Terminated: Study in Behcet's disease with mostly active uveitis did not meet its primary endpoint.,
+TP,A,romiplostim,Aplastic Anemia,승인,NA,78,,,,,AIN457|Uveitis
+TN,A,ZD4054 Zibotentan,Patients With Advanced Ovarian Cancer Sensitive to Platinum-based Chemotherapy,,PHASE2,1,NCT00929162,2011,no benefit,Primary objective of the trial was not met and so there was no benefit in collecting further information,
+TP,A,triflupromazine,Nausea and vomiting,승인,NA,5,,,,,ZD4054 Zibotentan|Patients With Advanced Ovarian Cancer Sensitive to Platinum-based Chemotherapy
+TN,A,OTX-202,"Suicide, Attempted",,"PHASE2,PHASE3",1,NCT05144685,2024,futilit,Data Safety Monitoring Board (DSMB) recommendation per Charter stopping rules. The study surpassed the pre-planned futility boundary.,
+TP,A,methylphenobarbital,Anxiety,승인,NA,3,,,,,"OTX-202|Suicide, Attempted"
+TN,A,Ciprofloxacin,Elevated Prostate Specific Antigen,,PHASE3,19,NCT00840294,2011,futilit,Combination of futility analysis and poor accrual,
+TP,A,carbachol,"Glaucoma, Open-Angle",승인,NA,21,,,,,Ciprofloxacin|Elevated Prostate Specific Antigen
+TN,A,Comparator: Raltegravir 400 mg b.i.d.,HIV,,PHASE3,0,NCT00745823,2011,did not demonstrate,Primary efficacy analysis at Week 48 did not demonstrate non-inferiority of raltegravir 800 mg once daily versus raltegravir 400 mg twice daily,
+TP,A,desoximetasone,Exanthema,승인,NA,0,,,,,Comparator: Raltegravir 400 mg b.i.d.|HIV
+TN,A,citicoline,Traumatic Brain Injury,,PHASE3,66,NCT00545662,2011,futilit,Trial stopped due to futility.,
+TP,A,sertraline,Premenstrual Dysphoric Disorder,승인,NA,66,,,,,citicoline|Traumatic Brain Injury
+TN,A,ERN/LRPT,Dyslipidemia,,PHASE3,17,NCT01414166,2013,did not meet,"In HPS2-THRIVE, MK-0524A did not meet the primary efficacy objective and there was a significant increase in incidence of some types of non-fatal SAEs",
+TP,A,gatifloxacin,Acute bacterial sinusitis,승인,NA,32,,,,,ERN/LRPT|Dyslipidemia
+TN,A,HYLENEX (recombinant human hyaluronidase) and Lactated Ringer's solution,Dehydration,,PHASE4,0,NCT01116102,2010,efficacy concerns,Strategic business decision (not related to safety or efficacy concerns),
+TP,A,sapropterin,"Hyperphenylalaninemia, Non-Phenylketonuric",승인,NA,0,,,,,HYLENEX (recombinant human hyaluronidase) and Lactated Ringer's solution|Dehydration
+TN,A,851B,Papillomavirus Infections,,PHASE2,0,NCT00312286,2008,Lack of efficacy,Lack of efficacy,
+TP,A,benzoin,Disorder of keratinization,승인,NA,0,,,,,851B|Papillomavirus Infections
+TN,A,Patritumab,Head and Neck Neoplasms,,PHASE2,6,NCT02633800,2018,lack of efficacy,Trial was terminated by sponsor due to lack of efficacy.,
+TP,A,scopolamine,Rhinorrhea,승인,NA,6,,,,,Patritumab|Head and Neck Neoplasms
+TN,A,PTG-100,Ulcerative Colitis,,PHASE2,3,NCT02895100,2018,futilit,Data Monitoring Committee discontinued the trial due to futility-based outcome,
+TP,A,oxedrine,Nasal congestion (finding),승인,NA,1,,,,,PTG-100|Ulcerative Colitis
+TN,A,bapineuzumab,Alzheimer Disease,,PHASE3,179,NCT00676143,2012,no clinical benefit,"The study was terminated on August 6, 2012, because 2 large Phase 3 studies showed no clinical benefit. This decision was not based on any new safety concerns.",
+TP,A,ibrutinib,Chronic graft-versus-host disease,승인,NA,112,,,,,bapineuzumab|Alzheimer Disease
+TN,A,"Anecortave Acetate Sterile Suspension, 30 mg/mL",AMD,,PHASE3,0,NCT00333216,2008,Lack of efficacy,Lack of efficacy,
+TP,A,etoposide phosphate,Malignant neoplasm of testis,승인,NA,0,,,,,"Anecortave Acetate Sterile Suspension, 30 mg/mL|AMD"
+TN,A,Camostat,Covid19,,PHASE2,205,NCT04625114,2022,did not show,"Interim analyses did not show evidence that camostat mesylate under the present conditions (300 mg three times daily for five or 10 consecutive days, fasted state) was effective as an antiviral drug against early phase SARS-CoV-2 disease.",
+TP,A,dronedarone,Atrial Fibrillation,승인,NA,556,,,,,Camostat|Covid19
+TN,A,Prucalopride,Constipation,,PHASE3,313,NCT04759833,2023,futilit,"Data Monitoring Committee (DMC) decision; terminated due to futility, with no safety concerns; FDA agreement to terminate the study.",
+TP,A,ropeginterferon alfa-2b,Polycythemia Vera,승인,NA,100,,,,,Prucalopride|Constipation
+TN,A,Recombinant human alkaline phosphatase,Acute Kidney Injury Due to Sepsis,,PHASE3,20,NCT04411472,2022,futilit,The Data Monitoring Committee (DMC) concluded that the pre-specified futility threshold was met and that there was no safety concern.,
+TP,A,caffeine,Sinus headache,승인,NA,11,,,,,Recombinant human alkaline phosphatase|Acute Kidney Injury Due to Sepsis
+TN,A,AL001,Frontotemporal Dementia,,PHASE3,4,NCT04374136,2026,did not meet,"The trial did not meet the clinical co-primary endpoint of slowing FTD-GRN progression, as measured by the Clinical Dementia Rating® plus National Alzheimer's Coordinating Center Frontotemporal Lobar Degeneration Sum of Boxes (CDR® plus NACC FTLD-SB)",
+TP,A,lomefloxacin,Klebsiella cystitis,승인,NA,1,,,,,AL001|Frontotemporal Dementia
+TN,A,GT005,Dry Age-related Macular Degeneration,,PHASE2,2,NCT04437368,2024,futilit,Terminated for interim analysis demonstrating futility (trial highly unlikely to meet efficacy outcome). The trial is not ending early because of medical problems or concerns.,
+TP,A,sulfinpyrazone,Chronic gouty arthritis,승인,NA,8,,,,,GT005|Dry Age-related Macular Degeneration
+TN,A,Sirolimus,Autosomal Dominant Polycystic Kidney Disease (ADPKD),,"PHASE2,PHASE3",93,NCT01223755,2012,efficacy reason,safety and efficacy reason,
+TP,A,tobramycin,Anterior uveitis,승인,NA,25,,,,,Sirolimus|Autosomal Dominant Polycystic Kidney Disease (ADPKD)
+TN,A,Pamrevlumab,Duchenne Muscular Dystrophy,,PHASE3,4,NCT04632940,2023,did not meet,Study did not meet its primary endpoint.,
+TP,A,ferric oxide,Pruritus,승인,NA,3,,,,,Pamrevlumab|Duchenne Muscular Dystrophy
+TN,A,Docetaxel,Non-Small-Cell Lung Adenocarcinoma,,PHASE3,437,NCT01798485,2015,futilit,The study was stopped after the first Interim Analysis due to futility.,
+TP,A,colestipol,Hyperlipidemia,승인,NA,296,,,,,Docetaxel|Non-Small-Cell Lung Adenocarcinoma
+TN,B,carboplatin,Ovarian Cancer,,PHASE3,4842,NCT02718417,2019,futilit,The study was terminated based on the results of a planned interim analysis that showed futility of efficacy.,
+TP,B,ursodiol,Cholelithiasis,승인,NA,1057,,,,,carboplatin|Ovarian Cancer
+TN,A,CIN-103,Irritable Bowel Syndrome With Diarrhea,,PHASE2,0,NCT06153420,2025,lack of efficacy,The study was terminated due to lack of efficacy compared to placebo.,
+TP,A,calcium glucoheptonate,Hyperkalemia,승인,NA,0,,,,,CIN-103|Irritable Bowel Syndrome With Diarrhea
+TN,A,Simtuzumab,Idiopathic Pulmonary Fibrosis,,PHASE2,4,NCT01769196,2016,lack of efficacy,The Study was terminated due to lack of efficacy.,
+TP,A,haloprogin,Tinea cruris,승인,NA,3,,,,,Simtuzumab|Idiopathic Pulmonary Fibrosis
+TN,A,ASN100,"Pneumonia, Ventilator-associated",,PHASE2,0,NCT02940626,2018,futilit,As a result of a pre-planned interim analysis for futility,
+TP,A,nicotinyl alcohol,Meniere Disease,승인,NA,0,,,,,"ASN100|Pneumonia, Ventilator-associated"
+TN,A,PF-05212377 (SAM-760),Alzheimer's Disease,,PHASE2,4,NCT01712074,2015,futilit,"The study was terminated October 23, 2015 as pre-specified, interim analysis futility criteria were met. The termination was not due to safety concerns.",
+TP,A,phenobarbital,Cluster Headache,승인,NA,3,,,,,PF-05212377 (SAM-760)|Alzheimer's Disease
+TN,A,MORAb-003 (farletuzumab),Ovarian Cancer,,PHASE2,44,NCT00738699,2012,did not meet,study did not meet pre-specified criteria for continuation following interim futility analysis,
+TP,A,pralsetinib,Metastatic non-small cell lung cancer,승인,NA,50,,,,,MORAb-003 (farletuzumab)|Ovarian Cancer
+TN,A,Ofatumumab,Non-Hodgkin's Lymphoma,,PHASE3,118,NCT01200589,2016,futilit,The study stopped due to futility.,
+TP,A,terlipressin,Hepatorenal Syndrome,승인,NA,528,,,,,Ofatumumab|Non-Hodgkin's Lymphoma
+TN,A,Avelumab,Diffuse Large B-Cell Lymphoma,,PHASE3,3,NCT02951156,2019,futilit,Study was terminated due to closure of study arms following futility analysis and difficulty in enrolling participants due to evolving treatment landscape,
+TP,A,flumetasone,"Dermatitis, Atopic",승인,NA,8,,,,,Avelumab|Diffuse Large B-Cell Lymphoma
+TN,A,GSK3196165 (Otilimab),"Arthritis, Rheumatoid",,PHASE3,10,NCT03970837,2023,Limited efficacy,Only Asia cohort is early terminated.Limited efficacy demonstrated in the contRAst program does not support a suitable benefit/risk profile for otilimab as a potential treatment for RA. GSK has decided not to progress with regulatory submissions.,
+TP,A,dexibuprofen,Pain,승인,NA,32,,,,,"GSK3196165 (Otilimab)|Arthritis, Rheumatoid"
+TN,A,Muscadine Plus,Adenocarcinoma of the Prostate,,PHASE3,0,NCT03535675,2022,futilit,The study was terminated by DSMB due to futility.,
+TP,A,triamcinolone diacetate,Crohn Disease,승인,NA,0,,,,,Muscadine Plus|Adenocarcinoma of the Prostate
+TN,A,"Cortical lead, 8 electrodes (Model 2976) with Synergy neurostimulator","Pain, Intractable",,PHASE3,0,NCT00122915,2008,efficacy concerns,Based on a consistently low enrolment rate and procedural challenges that were unknown at study start. It was not based on safety or efficacy concerns.,
+TP,A,triamcinolone hexacetonide,Lichen Planus,승인,NA,0,,,,,"Cortical lead, 8 electrodes (Model 2976) with Synergy neurostimulator|Pain, Intractable"
+TN,A,INOpulse®,Pulmonary Fibrosis,,PHASE3,1,NCT03267108,2023,did not meet,"The trial did not meet its primary endpoint, hence was terminated due to futility.",
+TP,A,empagliflozin,"Diabetes Mellitus, Non-Insulin-Dependent",승인,NA,4,,,,,INOpulse®|Pulmonary Fibrosis
+TN,A,Clazakizumab,Antibody-mediated Rejection,,PHASE3,32,NCT03744910,2024,lack of efficacy,Early stop for lack of efficacy/futility (at Interim analysis),
+TP,A,ansuvimab,"Hemorrhagic Fever, Ebola",승인,NA,11,,,,,Clazakizumab|Antibody-mediated Rejection
+TN,A,Pamrevlumab,Idiopathic Pulmonary Fibrosis,,PHASE3,23,NCT03955146,2023,did not meet,Study did not meet its primary endpoint.,
+TP,A,thiopental,Pseudotumor Cerebri,승인,NA,25,,,,,Pamrevlumab|Idiopathic Pulmonary Fibrosis
+TN,A,LAU-7b,COVID-19 Disease,,"PHASE2,PHASE3",0,NCT04417257,2024,futilit,"Phase 2 completed normally, Phase 3 terminated for futility due to lack of aggravation events.",
+TP,A,diflorasone diacetate,Chronic small plaque psoriasis,승인,NA,0,,,,,LAU-7b|COVID-19 Disease
+TN,A,Ibrutinib,"Lymphoma, Non-Hodgkin",,PHASE3,331,NCT02703272,2021,futilit,"IDMC recommended that enrolment be stoped, as the EFS hazard ratio and associated p-value crossed the futility boundary specified in protocol (July 2020).",
+TP,A,biotin,Biotin deficiency disease,승인,NA,187,,,,,"Ibrutinib|Lymphoma, Non-Hodgkin"
+TN,A,parsaclisib,Myelofibrosis,,PHASE3,12,NCT04551066,2024,futilit,The study was terminated due to futility.,
+TP,A,imipenem,Female genital tract infection,승인,NA,39,,,,,parsaclisib|Myelofibrosis
+TN,A,Pamrevlumab,Duchenne Muscular Dystrophy,,PHASE3,4,NCT04371666,2023,did not meet,Study did not meet its primary endpoint.,
+TP,A,butenafine,Tinea Versicolor,승인,NA,6,,,,,Pamrevlumab|Duchenne Muscular Dystrophy
+TN,A,etrasimod,Atopic Dermatitis,,"PHASE2,PHASE3",4,NCT05732454,2024,futilit,"Per the results of the planned interim analysis, the study met futility criteria for efficacy so the trial was terminated. This decision was made for efficacy reasons only and is not due to any safety concerns.",
+TP,A,magnesium citrate,Hypocalcemia,승인,NA,6,,,,,etrasimod|Atopic Dermatitis
+TN,A,CPT-11,Neuroendocrine Carcinoma,,PHASE2,219,NCT03387592,2022,endpoint not met,Efficacy endpoint not met according to first step of Briant-Day design,
+TP,A,histamine,Degenerative polyarthritis,승인,NA,108,,,,,CPT-11|Neuroendocrine Carcinoma
+TN,A,M5049 high dose,Dermatomyositis,,PHASE2,0,NCT05650567,2025,futilit,Based on interim analyses for futility,
+TP,A,clocortolone pivalate,Exanthema,승인,NA,0,,,,,M5049 high dose|Dermatomyositis
+TN,A,Metformin,Melanoma,,PHASE2,168,NCT02190838,2018,inefficac,Preliminary terminated due to inefficacy,
+TP,A,nafarelin,Endometriosis,승인,NA,133,,,,,Metformin|Melanoma
+TN,A,Rifapentine,HIV,,PHASE2,217,NCT04311502,2025,futilit,"Accrual was permanently closed due to futility in the experimental arm on June 22, 2023. Follow-up in the experimental arm was extended to 117 weeks.",
+TP,A,ramucirumab,Gastric Adenocarcinoma,승인,NA,248,,,,,Rifapentine|HIV
+TN,A,Atamestane,Breast Neoplasms,,PHASE3,5,NCT00267553,2006,did not meet,This was a follow-on study to Biomed 777-CLP-029 which did not meet superiority endpoint,
+TP,A,amobarbital,Severe anxiety (panic),승인,NA,2,,,,,Atamestane|Breast Neoplasms
+TN,A,difelikefalin 0.25 mg,Pruritus,,PHASE3,0,NCT05387707,2024,did not demonstrate,"In Part A of the study, oral difelikefalin as adjunct to topical corticosteroids (TCS) did not demonstrate meaningful clinical benefit compared to TCS alone.",
+TP,A,doxylamine,"Rhinitis, Vasomotor",승인,NA,0,,,,,difelikefalin 0.25 mg|Pruritus
+TN,A,0.5 mg Conbercept Intravitreal Injection,Neovascular Age-related Macular Degeneration,,PHASE3,0,NCT03630952,2021,primary endpoint was not met,desired primary endpoint was not met,
+TP,A,methscopolamine,Allergic rhinitis (disorder),승인,NA,0,,,,,0.5 mg Conbercept Intravitreal Injection|Neovascular Age-related Macular Degeneration
+TN,A,Bicifadine,Chronic Peripheral Neuropathy Pain in Diabetics,,PHASE2,0,NCT00597649,2008,did not show,The 001 trial did not show benefit versus placebo,
+TP,A,chlorcyclizine,Allergic Conjunctivitis,승인,NA,0,,,,,Bicifadine|Chronic Peripheral Neuropathy Pain in Diabetics
+TN,A,Guselkumab,Giant Cell Arteritis,,PHASE2,4,NCT04633447,2024,primary endpoint was not met,The study primary endpoint was not met,
+TP,A,econazole,Tinea cruris,승인,NA,6,,,,,Guselkumab|Giant Cell Arteritis
+TN,A,LY2951742,"Osteoarthritis, Knee",,PHASE2,3,NCT02192190,2015,Lack of efficacy,Interim assessment: Lack of efficacy,
+TP,A,norfloxacin,Arthropathy associated with infection,승인,NA,5,,,,,"LY2951742|Osteoarthritis, Knee"
+TN,A,Tocilizumab 20 MG/ML Intravenous Solution [ACTEMRA]_#1,Covid19,,PHASE2,0,NCT04435717,2021,Futilit,Futility,
+TP,A,phenindamine,Allergic Conjunctivitis,승인,NA,0,,,,,Tocilizumab 20 MG/ML Intravenous Solution [ACTEMRA]_#1|Covid19
+TN,A,Empagliflozin (Jardiance®;,Postprandial Hypoglycemia,,PHASE3,272,NCT05036317,2024,lack of efficacy,Early terminated after prespecified interim analysis due to lack of efficacy. No relevant safety signals.,
+TP,A,topotecan,Malignant neoplasm of ovary,승인,NA,722,,,,,Empagliflozin (Jardiance®;|Postprandial Hypoglycemia
+TN,A,Bapineuzumab 0.5 mg/kg,Alzheimer Disease,,PHASE3,0,NCT00996918,2012,no clinical benefit,"The study was terminated on August 6, 2012, because 2 large Phase 3 studies showed no clinical benefit. This decision was not based on any new safety concerns.",
+TP,A,vintafolide,Malignant epithelial tumor of ovary,승인,NA,0,,,,,Bapineuzumab 0.5 mg/kg|Alzheimer Disease
+TN,A,LY3471851,"Colitis, Ulcerative",,PHASE2,0,NCT04677179,2022,futilit,Study terminated due to enrollment futility.,
+TP,A,phenylephrine,Proctitis,승인,NA,0,,,,,"LY3471851|Colitis, Ulcerative"
+TN,A,CNTO 148 (Golimumab),Juvenile Idiopathic Arthritis,,PHASE3,88,NCT01230827,2014,failed to meet,Trial has failed to meet primary - and major secondary endpoints,
+TP,A,Polymyxin B,Infective blepharitis,승인,NA,11,,,,,CNTO 148 (Golimumab)|Juvenile Idiopathic Arthritis
+TN,A,Bivalirudin,Coronary Artery Disease,,PHASE4,230,NCT01464671,2014,futilit,DSMB halted the study early due to futility. There were no safety concerns.,
+TP,A,icosapent ethyl,Hypertriglyceridemia,승인,NA,242,,,,,Bivalirudin|Coronary Artery Disease
+TN,B,Gemcitabine,Bladder Neoplasms,,PHASE3,1635,NCT00191477,2008,futilit,The study was stopped early for futility reasons.,
+TP,B,tacrolimus,"Dermatitis, Atopic",승인,NA,1131,,,,,Gemcitabine|Bladder Neoplasms
+TN,B,PPCI,Acute Myocardial Infarction,,PHASE3,1180,NCT02565147,2016,Futilit,Futility at the interim analysis.,
+TP,B,aprotinin,Hemorrhage,승인,NA,3942,,,,,PPCI|Acute Myocardial Infarction
+TN,A,BG9924,Rheumatoid Arthritis,,PHASE2,0,NCT00458861,2008,failed to meet,Interim analysis of data failed to meet primary endpoint.,
+TP,A,acetarsol,Amebiasis,승인,NA,0,,,,,BG9924|Rheumatoid Arthritis
+TN,B,Gemcitabine,Small Cell Lung Cancer,,PHASE2,3170,NCT02722369,2021,lack of efficacy,"Low recruitment, lack of efficacy and increased adverse events in investigational arm.",
+TP,B,basiliximab,Renal transplant rejection,승인,NA,1058,,,,,Gemcitabine|Small Cell Lung Cancer
+TN,A,Farletuzumab,Ovarian Cancer,,PHASE3,42,NCT00849667,2013,Lack of efficacy,Lack of efficacy,
+TP,A,naproxen,Myalgia,승인,NA,11,,,,,Farletuzumab|Ovarian Cancer
+TN,A,MD-3511356,Actinic Keratoses,,PHASE3,0,NCT01532453,2014,futilit,"For futility reasons and potential ""loss of chance"" for MD 3511356 group",
+TP,A,minocycline,Gonorrhea of rectum,승인,NA,0,,,,,MD-3511356|Actinic Keratoses
+TN,A,diacerein 1% ointment,Epidermolysis Bullosa Simplex,,PHASE2,3,NCT03154333,2018,Futilit,Futility,
+TP,A,fludroxycortide,Chronic discoid lupus erythematosus,승인,NA,7,,,,,diacerein 1% ointment|Epidermolysis Bullosa Simplex
+TN,B,nab-paclitaxel,Metastatic Pancreatic Cancer,,"PHASE1,PHASE2",918,NCT01621243,2016,futilit,The study was terminated after a pre-planned futility analyses showed an insufficient level of efficacy in the study population to warrant continuation.,
+TP,B,malathion,Pediculus capitis infestation,승인,NA,114,,,,,nab-paclitaxel|Metastatic Pancreatic Cancer
+TN,A,ABX464,COVID-19,,"PHASE2,PHASE3",2,NCT04393038,2021,futile,Interim analysis concludes that the study is futile,
+TP,A,levobetaxolol,"Glaucoma, Open-Angle",승인,NA,2,,,,,ABX464|COVID-19
+TN,A,"TQB2618 injection, Penpulimab injection, Paclitaxel, Cisplatin",Advanced Esophageal Squamous Cell Carcinoma,,"PHASE1,PHASE2",0,NCT05834543,2025,efficacy concerns,This study was closed due to business reasons. Closure was not prompted by any safety or efficacy concerns.,
+TP,A,phenylbutanoic acid,Amyotrophic Lateral Sclerosis,승인,NA,0,,,,,"TQB2618 injection, Penpulimab injection, Paclitaxel, Cisplatin|Advanced Esophageal Squamous Cell Carcinoma"
+TN,A,Mycobacterium w.,Hormone Refractory Prostate Cancer,,PHASE2,0,NCT00525408,2013,futilit,Interim Analysis report indicates trial futility,
+TP,A,monoxerutin,Venous Insufficiency,승인,NA,0,,,,,Mycobacterium w.|Hormone Refractory Prostate Cancer
+TN,B,Telbivudine,Chronic Hepatitis B,,PHASE3,692,NCT02058108,2019,futilit,Study terminated on the recommendation of an independent Data Monitoring Committee (DMC) subsequent to an interim efficacy analysis for futility.\],
+TP,B,lovastatin,Familial hypercholesterolemia - heterozygous,승인,NA,166,,,,,Telbivudine|Chronic Hepatitis B
+TN,B,AVIGAN,Covid19,,PHASE3,1106,NCT04529499,2021,futilit,Study met pre-defined criteria for futility at interim analysis,
+TP,B,docetaxel,Malignant Head and Neck Neoplasm,승인,NA,2059,,,,,AVIGAN|Covid19
+TN,A,LX201,Corneal Diseases,,PHASE3,2,NCT00447187,2010,endpoint was not met,The primary efficacy endpoint was not met,
+TP,A,tripelennamine,Sneezing,승인,NA,1,,,,,LX201|Corneal Diseases
+TN,A,Saracatinib,Osteosarcoma,,PHASE2,4,NCT00752206,2017,futilit,The Data Safety Monitoring Board (DSMB) recommended study termination for slow accrual and futility.,
+TP,A,physostigmine,"Glaucoma, Open-Angle",승인,NA,6,,,,,Saracatinib|Osteosarcoma
+TN,A,Tecovirimat Oral Capsule,MPOX,,PHASE3,2,NCT05534984,2025,futilit,DSMB recommendation due to statistical futility,
+TP,A,butobarbital,Sleeplessness,승인,NA,3,,,,,Tecovirimat Oral Capsule|MPOX
+TN,A,AUY922,Advanced Non Small Cell Lung Cancer (NSCLC),,PHASE2,11,NCT01646125,2015,futilit,"An interim analysis was conducted in May-2014. Upon review of the data, the committee recommended study termination due to futility.",
+TP,A,phenytoin,Lennox-Gastaut syndrome,승인,NA,43,,,,,AUY922|Advanced Non Small Cell Lung Cancer (NSCLC)
+TN,A,IMR-687,β Thalassemia,,PHASE2,2,NCT04411082,2022,failed to show,"IMR-BTL-201demonstrated that while IMR-687 was generally well-tolerated, it failed to show any meaningful benefit in transfusion burden or improvement in most disease-related biomarkers. So, the sponsor has decided to discontinue this study",
+TP,A,emedastine,Urticaria,승인,NA,7,,,,,IMR-687|β Thalassemia
+TN,A,BIOSTAT BIOLOGX,Back Pain,,PHASE3,2,NCT01011816,2013,lack of efficacy,Stopped prior to last subject's last extended follow-up visit (78 weeks) due to lack of efficacy at the primary study endpoint (26 weeks),
+TP,A,meclocycline,Trachoma,승인,NA,2,,,,,BIOSTAT BIOLOGX|Back Pain
+TN,A,LY500307,Benign Prostatic Hyperplasia,,PHASE2,2,NCT01097707,2011,insufficient efficacy,Terminated due to insufficient efficacy,
+TP,A,alimemazine,Angioedema,승인,NA,1,,,,,LY500307|Benign Prostatic Hyperplasia
+TN,B,Ivacaftor,Cystic Fibrosis,,PHASE2,2253,NCT00953706,2013,futilit,Following review of results obtained from a pre-specified 6-month analysis of Part B data the study was terminated on the basis of futility.,
+TP,B,mannitol,Edema,승인,NA,1287,,,,,Ivacaftor|Cystic Fibrosis
+TN,A,JNJ-67864238,Crohn Disease,,PHASE2,0,NCT04102111,2021,futilit,"IAC completed review of futility analysis data \& determined that futility criteria were met. As a result, Janssen made decision to stop trial immediately.",
+TP,A,vildagliptin,"Diabetes Mellitus, Non-Insulin-Dependent",승인,NA,0,,,,,JNJ-67864238|Crohn Disease
+TN,A,Tregalizumab,Rheumatoid Arthritis,,PHASE2,4,NCT01999192,2015,Lack of efficacy,Lack of efficacy,
+TP,A,azlocillin,Haemophilus influenzae pneumonia,승인,NA,4,,,,,Tregalizumab|Rheumatoid Arthritis
+TN,A,MOR 106,Atopic Dermatitis,,PHASE2,1,NCT03568071,2020,futilit,MOR106 clinical development in atopic dermatitis was stopped for futility,
+TP,A,dexchlorpheniramine,Allergic Conjunctivitis,승인,NA,2,,,,,MOR 106|Atopic Dermatitis
+TN,A,Lu AF11167 (1-2 mg/day),Schizophrenia,,PHASE2,1,NCT03793712,2020,Lack of efficacy,Lack of efficacy based on interim analysis,
+TP,A,lixisenatide,"Diabetes Mellitus, Non-Insulin-Dependent",승인,NA,1,,,,,Lu AF11167 (1-2 mg/day)|Schizophrenia
+TN,A,Prismocitrate 18,Regional Citrate Anticoagulation (RCA),,PHASE3,7,NCT02860130,2018,efficacy reasons,"Study halted due to low recruitment, unrelated to safety or efficacy reasons",
+TP,A,grepafloxacin,Mycoplasma pneumonia,승인,NA,7,,,,,Prismocitrate 18|Regional Citrate Anticoagulation (RCA)
+TN,A,K-877,Type2 Diabetes,,PHASE3,0,NCT03071692,2022,futilit,The study was stopped for futility based on efficacy results at the interim analysis; no unexpected safety findings were observed.,
+TP,A,loteprednol etabonate,Corneal Perforation,승인,NA,0,,,,,K-877|Type2 Diabetes
+TN,A,LY3053102,Type 2 Diabetes Mellitus,,"PHASE1,PHASE2",0,NCT02020616,2015,Lack of Efficacy,Lack of Efficacy,
+TP,A,primidone,Bipolar disorder in remission,승인,NA,0,,,,,LY3053102|Type 2 Diabetes Mellitus
+TN,A,Ergocalciferols,Obesity,,PHASE4,112,NCT02435771,2017,failed to meet,failed to meet enrollment goals,
+TP,A,denileukin diftitox,"Lymphoma, T-Cell, Cutaneous",승인,NA,138,,,,,Ergocalciferols|Obesity
+TN,A,Ramucirumab,Synovial Sarcoma,,"PHASE1,PHASE2",1,NCT04145700,2023,futilit,Study terminated for meeting protocol specified futility criteria.,
+TP,A,dextromoramide,Severe pain,승인,NA,6,,,,,Ramucirumab|Synovial Sarcoma
+TN,A,Ganciclovir,Acute Respiratory Failure,,PHASE3,37,NCT04706507,2025,futilit,due to increased mortality and futility analyses,
+TP,A,clorazepate,Alcohol withdrawal syndrome,승인,NA,11,,,,,Ganciclovir|Acute Respiratory Failure
+TN,A,192 mg powder of K0706,Dementia With Lewy Bodies,,PHASE2,0,NCT03996460,2024,did not show,Interim analysis was performed for 442 patients who completed Part I of the PROSEEK study-(CLR\_18\_06); it did not show evidence of treatment benefit in patients receiving Vodobatinib.,
+TP,A,carbaldrate,Gastroesophageal reflux disease,승인,NA,0,,,,,192 mg powder of K0706|Dementia With Lewy Bodies
+TN,A,Efavaleukin alfa,Ulcerative Colitis,,PHASE2,0,NCT04987307,2024,futilit,The study was terminated due to meeting a prespecified futility rule and not related to any safety concerns.,
+TP,A,tonzonium,Otitis Externa,승인,NA,0,,,,,Efavaleukin alfa|Ulcerative Colitis
+TN,A,Pentosan polysulfate sodium 100 mg,Interstitial Cystitis,,PHASE4,20,NCT00086684,2011,futile,Interim Analysis showed that study continuation was futile. No safety concerns were raised during the trial.,
+TP,A,lofepramine,Depressive disorder,승인,NA,61,,,,,Pentosan polysulfate sodium 100 mg|Interstitial Cystitis
+TN,A,Atezolizumab,"Carcinoma, Renal Cell",,PHASE3,232,NCT04338269,2025,did not meet,As the study did not meet it's primary endpoint a decision was made to terminate the study.,
+TP,A,meprobamate,Anxiety,승인,NA,294,,,,,"Atezolizumab|Carcinoma, Renal Cell"
+TN,A,Idebenone 150 mg film-coated tablets,Duchenne Muscular Dystrophy (DMD),,PHASE3,0,NCT02814019,2020,futilit,Interim analysis concluded to futility,
+TP,A,choline fenofibrate,"Hyperlipidemia, Familial Combined",승인,NA,0,,,,,Idebenone 150 mg film-coated tablets|Duchenne Muscular Dystrophy (DMD)
+TN,A,Ladarixin,Recent Onset type1 Diabetes,,PHASE2,0,NCT04628481,2025,futilit,The study was stopped due to futility as per protocol,
+TP,A,gemigliptin,"Diabetes Mellitus, Non-Insulin-Dependent",승인,NA,0,,,,,Ladarixin|Recent Onset type1 Diabetes
+TN,A,Edoxaban,Atrial High Rate Episodes,,PHASE3,12,NCT02618577,2022,futilit,following a recommendation from the data safety and monitoring board due to safety concerns and a tendency towards futility.,
+TP,A,voriconazole,Systemic candidiasis,승인,NA,37,,,,,Edoxaban|Atrial High Rate Episodes
+TN,A,Fremanezumab,Episodic Cluster Headache,,PHASE3,20,NCT02945046,2019,futilit,Study was terminated as a result of a pre-specified futility analysis at the interim of 150 participants completing the efficacy analysis of the study.,
+TP,A,calcium citrate,"Osteoporosis, Postmenopausal",승인,NA,58,,,,,Fremanezumab|Episodic Cluster Headache
+TN,A,HepTcell,"Hepatitis B, Chronic",,PHASE2,0,NCT04684914,2024,Did not meet,Did not meet endpoints,
+TP,A,penthienate,Peptic Ulcer,승인,NA,0,,,,,"HepTcell|Hepatitis B, Chronic"
+TN,A,sevoflurane,Myocardial Infarction,,PHASE4,174,NCT02671084,2020,futilit,interim analysis suggests futility,
+TP,A,natamycin,Fungal keratitis,승인,NA,564,,,,,sevoflurane|Myocardial Infarction
+TN,A,Copanlisib (BAY80-6946),"Lymphoma, Non-Hodgkin",,PHASE3,33,NCT02626455,2023,did not meet,Company decided to terminate this study due to study did not meet the primary endpoint.,
+TP,A,rupatadine,Urticaria,승인,NA,60,,,,,"Copanlisib (BAY80-6946)|Lymphoma, Non-Hodgkin"
+TN,A,Danazol,Pulmonary Fibrosis,,PHASE2,14,NCT04638517,2025,futilit,Data Safety Monitoring Board recommended cessation due to futility,
+TP,A,nitrogen,Persistent Fetal Circulation Syndrome,승인,NA,15,,,,,Danazol|Pulmonary Fibrosis
+TN,A,SCY-078,"Candidiasis, Invasive",,PHASE3,51,NCT05178862,2025,efficacy concerns,Termination is not related to safety or efficacy concerns for Ibrexafungerp. GSK's decision is to focus efforts and resources on commercialization of Ibrexafungerp for the already approved VVC and rVVC indications.,
+TP,A,enviomycin,"Tuberculosis, Pulmonary",승인,NA,21,,,,,"SCY-078|Candidiasis, Invasive"
+TN,A,icatibant,ACE Inhibitor-associated Angioedema,,PHASE4,2,NCT01574248,2016,futilit,DSMC recommended discontinuation for futility and feasibility,
+TP,A,betaine,Cystitis,승인,NA,2,,,,,icatibant|ACE Inhibitor-associated Angioedema
+TN,A,birinapant,Myelodysplastic Syndrome (MDS),,PHASE2,0,NCT02147873,2016,lack of efficacy,Study terminated due to lack of efficacy,
+TP,A,valproic acid,Epilepsy characterized by intractable complex partial seizures,승인,NA,9,,,,,birinapant|Myelodysplastic Syndrome (MDS)
+TN,A,Icotinib hydrochloride cream,Mild to Moderate Psoriasis,,PHASE2,1,NCT03222622,2018,failed to meet,The efficacy failed to meet the primary efficacy endpoint,
+TP,A,terfenadine,Common Cold,승인,NA,8,,,,,Icotinib hydrochloride cream|Mild to Moderate Psoriasis
+TN,A,Benralizumab 30 mg,Nasal Polyposis,,PHASE3,31,NCT04157335,2025,did not meet,The study has a double-blind period and an open-label period. The study did not meet its primary endpoints after the primary LSLV and the decision was taken to terminate the study early.,
+TP,A,acrivastine,Hay fever,승인,NA,23,,,,,Benralizumab 30 mg|Nasal Polyposis
+TN,A,Ketamine-Midazolam,Critical Illness,,"PHASE2,PHASE3",0,NCT03407404,2019,Futilit,Futility,
+TP,A,relebactam,Pyelonephritis,승인,NA,9,,,,,Ketamine-Midazolam|Critical Illness
+TN,A,Brensocatib,Hidradenitis Suppurativa,,PHASE2,2,NCT06685835,2026,Lack of Efficacy,Lack of Efficacy,
+TP,A,sulfacetamide,Vulvovaginitis,승인,NA,1,,,,,Brensocatib|Hidradenitis Suppurativa
+TN,A,suprachoroidal CLS-TA,Macular Edema,,PHASE3,15,NCT03203447,2018,did not meet,"The early termination is due to the results obtained from the sister study, SAPPHIRE (CLS1003-301), which did not meet the 8-week primary efficacy endpoint.",
+TP,A,chlorothiazide,Chronic heart failure,승인,NA,66,,,,,suprachoroidal CLS-TA|Macular Edema
+TN,A,ADI PEG20,Soft Tissue Sarcoma,,PHASE3,9,NCT05712694,2026,Lack of Efficacy,"Lack of Efficacy, no safety concern.",
+TP,A,insulin glargine,"Diabetes Mellitus, Non-Insulin-Dependent",승인,NA,2,,,,,ADI PEG20|Soft Tissue Sarcoma
+TN,A,GSK1572932A Antigen-Specific Cancer Immunotherapeutic,"Lung Cancer, Non-Small Cell",,PHASE3,31,NCT00480025,2014,lack of efficacy,The study was terminated following assessment of the lack of efficacy of the study product by the Independent Data monitoring Committee for the study.,
+TP,A,pexidartinib,Fibrous histiocytoma of tendon sheath,승인,NA,52,,,,,"GSK1572932A Antigen-Specific Cancer Immunotherapeutic|Lung Cancer, Non-Small Cell"
+TN,B,Anti-TNF-alpha,Rheumatoid Arthritis,,PHASE2,1141,NCT03001219,2018,lack of efficacy,The trial was prematurely terminated due to a lack of efficacy of the investigational drug.,
+TP,B,capecitabine,Malignant neoplasm of stomach,승인,NA,1036,,,,,Anti-TNF-alpha|Rheumatoid Arthritis
+TN,A,BIIB092,Alzheimer's Disease,,PHASE2,25,NCT03352557,2021,lack of efficacy,The study (NCT03352557) was terminated based on lack of efficacy following the placebo-controlled period readout.,
+TP,A,ciclopirox,Cutaneous Candidiasis,승인,NA,21,,,,,BIIB092|Alzheimer's Disease
+TN,A,BMS-986263,Nonalcoholic Steatohepatitis (NASH),,PHASE2,0,NCT04267393,2024,lack of efficacy,Trial terminated because of lack of efficacy in the short term acute phase.,
+TP,A,estradiol acetate,Atrophic Vaginitis,승인,NA,3,,,,,BMS-986263|Nonalcoholic Steatohepatitis (NASH)
+TN,A,Reldesemtiv,Amyotrophic Lateral Sclerosis,,PHASE3,15,NCT04944784,2023,futilit,The DMC recommended the trial be discontinued due to futility following a planned second interim analysis.,
+TP,A,cromoglicic acid,"Mastocytosis, Systemic",승인,NA,41,,,,,Reldesemtiv|Amyotrophic Lateral Sclerosis
+TN,A,Efavaleukin alfa,Ulcerative Colitis,,PHASE2,0,NCT05672199,2024,futilit,"The parent study 20170104 was terminated due to the study meeting a prespecified futility rule. Consequently, this study was terminated.",
+TP,A,estradiol cypionate,Hot flushes,승인,NA,1,,,,,Efavaleukin alfa|Ulcerative Colitis
+TN,A,Fremanezumab,Cluster Headache,,PHASE3,20,NCT03107052,2019,futilit,The study was terminated after the episodic cluster study was terminated due to a pre specified futility analyses,
+TP,A,ziprasidone,Bipolar disorder in remission,승인,NA,21,,,,,Fremanezumab|Cluster Headache
+TN,A,Tadalafil,"Muscular Dystrophy, Duchenne",,PHASE3,20,NCT01865084,2016,lack of efficacy,The study is being terminated for lack of efficacy,
+TP,A,aminosalicylic acid,Acute tuberculosis,승인,NA,23,,,,,"Tadalafil|Muscular Dystrophy, Duchenne"
+TN,A,FlecIH-103,Paroxysmal Atrial Fibrillation,,PHASE3,1,NCT05039359,2023,Limited efficacy,Limited efficacy upon blinded review,
+TP,A,ticarcillin,Osteomyelitis due to Staphylococcus aureus,승인,NA,8,,,,,FlecIH-103|Paroxysmal Atrial Fibrillation
+TN,A,Fosbretabulin tromethamine,Platinum Resistant Ovarian Cancer,,"PHASE2,PHASE3",0,NCT02641639,2017,lack of efficacy,The study was terminated early due to the lack of efficacy and the study sponsor's decision to no longer continue the study,
+TP,A,gentamicin,Rhinoscleroma,승인,NA,3,,,,,Fosbretabulin tromethamine|Platinum Resistant Ovarian Cancer
+TN,A,povidone-iodine 1.25% ophthalmic solution,Fungal Keratitis,,PHASE3,0,NCT00516399,2010,futile,The DSMC decided it appeared futile to attempt to demonstrate non-inferiority of povidone-iodine to Natamycin.,
+TP,A,hyoscyamine,Sialorrhea,승인,NA,2,,,,,povidone-iodine 1.25% ophthalmic solution|Fungal Keratitis
+TN,A,HMPL-004,Ulcerative Colitis,,PHASE3,8,NCT01882764,2014,Futilit,Futility interim analysis of the Induction Study HMPL-004-03.,
+TP,A,oxcarbazepine,Epilepsy characterized by intractable complex partial seizures,승인,NA,4,,,,,HMPL-004|Ulcerative Colitis
+TN,A,GC4711 +SBRT,SBRT,,"PHASE1,PHASE2",0,NCT04476797,2023,futilit,Development GC4711 was halted after the lead study in pancreatic cancer was stopped early due to meeting the requirements of a futility analysis,
+TP,A,sulbentine,Dermatomycoses,승인,NA,1,,,,,GC4711 +SBRT|SBRT
+TN,A,SPI-1620,Non Small Cell Lung Cancer (NSCLC),,PHASE2,0,NCT01741155,2015,did not meet,The study did not meet efficacy end point and did not enroll patients in the randomized phase.,
+TP,A,uracil mustard,Polycythemia Vera,승인,NA,6,,,,,SPI-1620|Non Small Cell Lung Cancer (NSCLC)
+TN,A,Brimonidine Tartrate,Graft Versus Host Disease,,PHASE3,1,NCT03591874,2020,Primary endpoint was not met,Primary endpoint was not met.,
+TP,A,secobarbital,Status Epilepticus,승인,NA,1,,,,,Brimonidine Tartrate|Graft Versus Host Disease
+TN,A,Combined capsule,Myocardial Infarction,,PHASE3,74,NCT02271178,2016,futilit,The study was stopped after interim analysis due to futility.,
+TP,A,olaparib,Human epidermal growth factor 2 negative carcinoma of breast,승인,NA,47,,,,,Combined capsule|Myocardial Infarction
+TN,B,Imatinib mesylate,"Leukemia, Myeloid, Chronic Phase",,PHASE3,2205,NCT00124748,2010,no improvement,This study was prematurely discontinued because no improvement was observed in the 800mg dose compared to 400mg dose,
+TP,B,olanzapine,Schizophrenia,승인,NA,5437,,,,,"Imatinib mesylate|Leukemia, Myeloid, Chronic Phase"
+TN,A,Mild Induced Hypothermia,Septic Shock,,"PHASE2,PHASE3",15,NCT01455116,2016,Futilit,Futility,
+TP,A,halofantrine,"Malaria, Vivax",승인,NA,58,,,,,Mild Induced Hypothermia|Septic Shock
+TN,A,"CP-690,500 5 mg",Ulcerative Colitis,,PHASE4,0,NCT03281304,2022,efficacy concerns,"The study terminated early due to business reasons, with the study already meeting its primary objective. The decision to terminate the trial was not based on any safety and/or efficacy concerns.",
+TP,A,ethadione,Epilepsy,승인,NA,1,,,,,"CP-690,500 5 mg|Ulcerative Colitis"
+TN,A,Total Face Mask,Respiratory Insufficiency,,PHASE4,64,NCT00243828,2007,futilit,Very low rate of recruitment anticipated futility of pursuing the study,
+TP,A,lindane,Pediculus capitis infestation,승인,NA,51,,,,,Total Face Mask|Respiratory Insufficiency
+TN,A,Imatinib Mesylate,Loiasis,,PHASE2,1,NCT02644525,2021,futilit,Planned interim analysis demonstrated futility of intervention,
+TP,A,enoxacin,Acute gonococcal urethritis,승인,NA,3,,,,,Imatinib Mesylate|Loiasis
+TN,A,LY3361237,Systemic Lupus Erythematosus,,PHASE2,1,NCT05123586,2023,lack of efficacy,Study terminated due to lack of efficacy,
+TP,A,fluorometholone acetate,Allergic Conjunctivitis,승인,NA,3,,,,,LY3361237|Systemic Lupus Erythematosus
+TN,A,Rivaroxaban 15 MG Oral Tablet [Xarelto],Radial Artery Occlusion,,PHASE3,0,NCT03630055,2025,futilit,Assessment for futility,
+TP,A,ofloxacin,Gonorrhea of rectum,승인,NA,2,,,,,Rivaroxaban 15 MG Oral Tablet [Xarelto]|Radial Artery Occlusion
+TN,A,UX007,Glucose Transporter Type 1 Deficiency Syndrome (Glut1 DS),,PHASE3,1,NCT02960217,2019,lack of efficacy,Study was halted prematurely due to lack of efficacy.,
+TP,A,cefonicid,Haemophilus influenzae pneumonia,승인,NA,7,,,,,UX007|Glucose Transporter Type 1 Deficiency Syndrome (Glut1 DS)
+TN,A,Pracinostat,Acute Myeloid Leukemia,,PHASE3,10,NCT03151408,2020,lack of efficacy,The IDMC recommended to stop the study prematurely due to a lack of efficacy.,
+TP,A,dibotermin alfa,Intervertebral Disc Degeneration,승인,NA,47,,,,,Pracinostat|Acute Myeloid Leukemia
+TN,A,Bumetanide Oral Solution,Autism Spectrum Disorder (ASD),,PHASE3,2,NCT03715166,2021,did not show,The 6-month efficacy analysis did not show any significant difference between bumetanide versus placebo in the treatment of ASD in the overall studied population. No unexpected safety concerns were identified.,
+TP,A,levomilnacipran,Major Depressive Disorder,승인,NA,82,,,,,Bumetanide Oral Solution|Autism Spectrum Disorder (ASD)
+TN,B,Metformin,Diabetes,,PHASE3,24924,NCT02932475,2022,futilit,Recommendation by the DSMB that the study be stopped for futility,
+TP,B,lamotrigine,Epilepsy,승인,NA,3623,,,,,Metformin|Diabetes
+TN,B,magnesium,Coronary Artery Disease,,PHASE3,500,NCT00250965,2009,futilit,Terminated by DSMB; futility analysis showing Mg treatment not efficacious,
+TP,B,paroxetine,Hot flushes,승인,NA,106,,,,,magnesium|Coronary Artery Disease
+TN,A,Atezolizumab,"Carcinoma, Transitional Cell",,PHASE3,219,NCT02450331,2022,did not meet,Sponsor decided to terminate the study early because the study did not meet its primary endpoint and because the study had met its goals of providing safety and additional exploratory efficacy information for atezolizumab monotherapy in MIBC.,
+TP,A,enalaprilat,Congestive heart failure,승인,NA,165,,,,,"Atezolizumab|Carcinoma, Transitional Cell"
+TN,A,Azithromycin,Asthma,,PHASE3,351,NCT04669288,2025,futilit,"The AZ-SWED trial was stopped by the National Heart, Lung, and Blood Institute (NHLBI) due to futility",
+TP,A,clomipramine,Obsessive-Compulsive Disorder,승인,NA,890,,,,,Azithromycin|Asthma
+TN,B,Directly Observed Therapy,HIV Infections,,PHASE2,1041,NCT00076804,2008,futilit,DSMB stopped trial for futility,
+TP,B,propranolol,Hemangioma,승인,NA,1776,,,,,Directly Observed Therapy|HIV Infections
+TN,B,naproxen,Osteoarthritis,,PHASE2,653,NCT00418782,2007,lack of efficacy,Results of interim analysis indicate lack of efficacy when compared to placebo.,
+TP,B,beclometasone dipropionate,Allergic rhinitis (disorder),승인,NA,423,,,,,naproxen|Osteoarthritis
+TN,A,secukinumab,Lupus Nephritis,,PHASE3,11,NCT04181762,2023,futilit,Study terminated by sponsor due to futility analysis,
+TP,A,naftifine,Tinea corporis (disorder),승인,NA,88,,,,,secukinumab|Lupus Nephritis
+TN,A,HDIT101 (blinded therapy),Herpes Labialis,,PHASE2,0,NCT04539483,2023,futilit,stopped for futility in interim analysis,
+TP,A,trimethoprim,Bacterial conjunctivitis,승인,NA,69,,,,,HDIT101 (blinded therapy)|Herpes Labialis
+TN,A,INOpulse,COVID-19,,PHASE3,0,NCT04421508,2021,Futilit,Futility,
+TP,A,ephedrine,Nasal congestion (finding),승인,NA,75,,,,,INOpulse|COVID-19
+TN,A,Fentanyl citrate solution sublingual,Copd,,"PHASE2,PHASE3",0,NCT04004117,2026,lack of efficacy,Clinical trial discontinued for reason pertaining to lack of efficacy.,
+TP,A,benzathine benzylpenicillin,Scarlet Fever,승인,NA,15,,,,,Fentanyl citrate solution sublingual|Copd
+TN,A,LEVOCETIRIZINE,Asthma,,PHASE3,85,NCT00160563,2006,did not show,The predecessor study A00309 (NCT00152464) did not show statistical significance in time to onset of asthma between the levocetirizine and placebo groups.,
+TP,A,acetazolamide,Secondary glaucoma,승인,NA,78,,,,,LEVOCETIRIZINE|Asthma
+TN,A,Clofazimine Inhalation Suspension,MAC Lung Disease,,PHASE3,3,NCT06418711,2025,Futilit,Futility,
+TP,A,hydroxychloroquine,"Malaria, Vivax",승인,NA,26,,,,,Clofazimine Inhalation Suspension|MAC Lung Disease
+TN,A,Atamestane,Breast Neoplasms,,PHASE3,5,NCT00097344,2006,did not meet,Identical study Biomed 777-CLP-029 did not meet superiority endpoint,
+TP,A,secukinumab,Non-Radiographic Axial Spondyloarthritis,승인,NA,53,,,,,Atamestane|Breast Neoplasms
+TN,A,Avotermin,Mammaplasty,,PHASE2,0,NCT00432328,,Futilit,"Futility analysis undertaken, determined that study was underpowered.",
+TP,A,valdecoxib,"Postoperative Pain, Acute",승인,NA,22,,,,,Avotermin|Mammaplasty
+TN,A,GS-9131,HIV-1-infection,,PHASE2,1,NCT03472326,2019,did not meet,GS-9131 did not meet the targeted antiviral response,
+TP,A,telotristat ethyl,Diarrhea,승인,NA,43,,,,,GS-9131|HIV-1-infection
+TN,A,selepressin,Septic Shock,,"PHASE2,PHASE3",56,NCT02508649,2018,futilit,Terminated due to futility,
+TP,A,itraconazole,Systemic candidiasis,승인,NA,42,,,,,selepressin|Septic Shock
+TN,A,TEV-48574,Asthma,,PHASE2,0,NCT04545385,2022,futilit,Met pre-specified criteria for futility at interim analysis,
+TP,A,cefprozil,Infective otitis media,승인,NA,48,,,,,TEV-48574|Asthma
+TN,A,abetimus sodium (LJP 394) and,"Lupus Erythematosus, Systemic",,PHASE3,45,NCT00089804,2009,futile,Interim efficacy analysis indicated it would be futile to continue study.,
+TP,A,serine,Acute tuberculosis,승인,NA,31,,,,,"abetimus sodium (LJP 394) and|Lupus Erythematosus, Systemic"
+TN,A,WVE-004,ALS,,"PHASE1,PHASE2",2,NCT04931862,2023,no clinical benefit,"Despite robust, sustained reductions in poly(GP), no clinical benefit was seen at 24 weeks, and reductions in poly(GP) were not associated with stabilization in functional outcomes. Based on these data, Wave decided to stop development of WVE-004.",
+TP,A,cinchocaine,Pruritus,승인,NA,12,,,,,WVE-004|ALS
+TN,A,ITF2357,Crohn's Disease,,"PHASE1,PHASE2",0,NCT00792740,2009,futilit,"As no safety warnings were detected, Interim analysis from the first 40 patients recommends to stop the trial for futility",
+TP,A,ammonium lactate,Pruritus,승인,NA,48,,,,,ITF2357|Crohn's Disease
+TN,A,Caffeine Citrate,Apnea of Prematurity,,PHASE3,155,NCT03340727,2023,Futilit,Futility,
+TP,A,lisinopril,Myocardial Infarction,승인,NA,247,,,,,Caffeine Citrate|Apnea of Prematurity
+TN,A,Avelumab,Squamous Cell Carcinoma of the Head and Neck,,PHASE3,28,NCT02952586,2020,futilit,The trial prematurely terminated as recommended by the E-DMC because the boundary for futility has been crossed.,
+TP,A,phenylpropanolamine,Hay fever,승인,NA,30,,,,,Avelumab|Squamous Cell Carcinoma of the Head and Neck
+TN,A,Atezolizumab,Diffuse Large B Cell Lymphoma,,PHASE2,14,NCT03422523,2021,futilit,Failure to reach pre-specified futility boundary,
+TP,A,docusate sodium,Constipation,승인,NA,89,,,,,Atezolizumab|Diffuse Large B Cell Lymphoma
+TN,A,Hydroxychloroquine,Healthy Participants,,PHASE2,90,NCT02603146,2022,futilit,"Enrollment was closed before reaching the target. In the 1st interim analysis after enrollment closure, the follow up \& treatment of active participants were stopped early due to evidence of futility.",
+TP,A,nizatidine,Gastric ulcer,승인,NA,94,,,,,Hydroxychloroquine|Healthy Participants
+TN,A,Aticaprant,"Depressive Disorder, Major",,PHASE3,39,NCT06514742,2025,insufficient efficacy,Early study termination due to insufficient efficacy.,
+TP,A,neomycin,Infective blepharitis,승인,NA,11,,,,,"Aticaprant|Depressive Disorder, Major"
+TN,A,Darusentan,Hypertension,,PHASE3,79,NCT00389675,2010,did not meet,Study DAR-312 did not meet its primary co-endpoints.,
+TP,A,duvelisib,Chronic Lymphocytic Leukemia,승인,NA,97,,,,,Darusentan|Hypertension
+TN,A,Exebacase,Staphylococcus Aureus Bacteremia,,PHASE3,7,NCT04160468,2022,futilit,The independent DSMB recommended that the study be stopped for futility following interim efficacy analysis.,
+TP,A,bupranolol,Glaucoma,승인,NA,24,,,,,Exebacase|Staphylococcus Aureus Bacteremia
+TN,A,Darusentan,Hypertension,,PHASE3,79,NCT00353574,2010,did not meet,Study DAR-312 did not meet primary co-endpoints,
+TP,A,efgartigimod alfa,Myasthenia Gravis,승인,NA,39,,,,,Darusentan|Hypertension
+TN,A,Convalescent anti-SARS-CoV-2 plasma,COVID,,PHASE3,280,NCT04345289,2021,futilit,DSMB advise due to high probability of futility,
+TP,A,clavulanic acid,"Pneumonia, Bacterial",승인,NA,484,,,,,Convalescent anti-SARS-CoV-2 plasma|COVID
+TN,A,Brodalumab,Asthma,,PHASE2,13,NCT01902290,2015,lack of efficacy,Study terminated early due to lack of efficacy observed following interim analysis in Q2 2015. Study Closed once all sites were closed in eClinical,
+TP,A,sulbactam,Bacterial peritonitis,승인,NA,89,,,,,Brodalumab|Asthma
+TN,A,MK-7622,Alzheimer's Disease,,PHASE2,6,NCT01852110,2016,futilit,Stage 1 interim analysis of efficacy met the criteria for early trial termination (futility). The trial was terminated at Stage 1; did not proceed to Stage 2.,
+TP,A,selenium sulfide,Seborrheic dermatitis,승인,NA,61,,,,,MK-7622|Alzheimer's Disease
+TN,A,Tivantinib,"Non Squamous, Non-small-cell Lung Cancer",,PHASE3,2,NCT01244191,2012,futilit,Sponsor decision due to the protocol-defined stopping boundary for futility was met based on the interim OS data.,
+TP,A,epalrestat,Diabetic Neuropathies,승인,NA,83,,,,,"Tivantinib|Non Squamous, Non-small-cell Lung Cancer"
+TN,A,10 mg TZP-102,Diabetic Gastroparesis,,PHASE2,2,NCT01664637,2013,Insufficient efficacy,Insufficient efficacy in planned interim futility analysis,
+TP,A,benzylpenicillin,"Pneumonia, Necrotizing",승인,NA,71,,,,,10 mg TZP-102|Diabetic Gastroparesis
+TN,A,ARRY-371797 (PF-07265803),Dilated Cardiomyopathy,,PHASE3,6,NCT03439514,2022,futilit,The Sponsor terminated the study due to futility. The decision to stop the study was not based on safety concerns.,
+TP,A,carboprost,Postpartum Hemorrhage,승인,NA,97,,,,,ARRY-371797 (PF-07265803)|Dilated Cardiomyopathy
+TN,B,Vancomycin,INFECTION,,PHASE2,32359,NCT02374853,2019,did not show,the preliminary analysis of study result did not show significant benefit that was anticipate,
+TP,B,somatropin,Growth retardation,승인,NA,1449,,,,,Vancomycin|INFECTION
+TN,A,ESK-001,Uveitis Posterior Non-Infectious,,PHASE2,0,NCT05953688,2024,did not meet,Terminated based on interim efficacy data that did not meet the Sponsor's criteria.,
+TP,A,dexamfetamine,Narcolepsy,승인,NA,87,,,,,ESK-001|Uveitis Posterior Non-Infectious
+TN,A,PBI-0451 (Pomotrelvir),COVID-19,,PHASE2,2,NCT05543707,2023,primary endpoint was not met,Interim analysis concluded primary endpoint was not met,
+TP,A,selpercatinib,metastasis from malignant neoplasm of thyroid,승인,NA,11,,,,,PBI-0451 (Pomotrelvir)|COVID-19
+TN,A,cetuximab,Metastatic Pancreatic Cancer,,PHASE2,111,NCT00326911,2008,lack of efficacy,The planned enrollment was 130 patients and the study was halted prematurely due to lack of efficacy in both arms. Enrolled patients continued treatment.,
+TP,A,vilanterol,Asthma,승인,NA,259,,,,,cetuximab|Metastatic Pancreatic Cancer
+TN,A,BMS-986253,Solid Tumor,,PHASE2,1,NCT04347226,2021,futilit,Interim analysis indicated that futility boundary was reached.,
+TP,A,infliximab,Chronic small plaque psoriasis,승인,NA,16,,,,,BMS-986253|Solid Tumor
+TN,B,Tacrolimus (TAC),Kidney Transplant Failure and Rejection,,PHASE4,1011,NCT00166712,2010,lack of efficacy,Study stopped due to lack of efficacy \& funding.,
+TP,B,fenofibrate,Hyperlipidemia,승인,NA,1087,,,,,Tacrolimus (TAC)|Kidney Transplant Failure and Rejection
+TN,B,Azole,Invasive Aspergillosis,,PHASE3,2222,NCT04876716,2024,futilit,futility,
+TP,B,rivastigmine,Alzheimer's Disease,승인,NA,1798,,,,,Azole|Invasive Aspergillosis
+TN,A,S2G6T-1,Tinea Pedis,,PHASE2,0,NCT02842021,2017,Failed to meet,Failed to meet success criteria,
+TP,A,quazepam,Sleeplessness,승인,NA,59,,,,,S2G6T-1|Tinea Pedis
+TN,A,Peramivir+SOC,Cough,,PHASE3,0,NCT00958776,2013,futilit,This study was terminated for futility,
+TP,A,chlorpromazine,Disruptive Behavior Disorder,승인,NA,21,,,,,Peramivir+SOC|Cough
+TN,A,Shionogi Protease Inhibitor (S-217622),COVID-19,,PHASE3,65,NCT05605093,2025,futilit,DSMB closed due to futility.,
+TP,A,mezlocillin,Pneumonia due to Pseudomonas,승인,NA,44,,,,,Shionogi Protease Inhibitor (S-217622)|COVID-19
+TN,A,COVID-19 convalescent plasma (CCP) plus standard of care (SOC),COVID-19,,PHASE3,20,NCT04516811,2022,No benefit,No benefit seen in 2 published inpatient RCTs (but had limitations). Press release from inpatient Recovery trial with large number of endpoints showed no benefit. CCP collected from survivors of original strain infection had no neutralisation,
+TP,A,butorphanol,Labor Pain,승인,NA,22,,,,,COVID-19 convalescent plasma (CCP) plus standard of care (SOC)|COVID-19
+TN,A,Selexipag,Chronic Thromboembolic Pulmonary Hypertension,,PHASE3,18,NCT03689244,2022,did not demonstrate,"The study did not demonstrate efficacy on the primary endpoint, PVR vs. placebo at wk 20 at a planned interim analysis.",
+TP,A,betamethasone dipropionate,"Dermatitis, Atopic",승인,NA,44,,,,,Selexipag|Chronic Thromboembolic Pulmonary Hypertension
+TN,A,AVP-786,Schizophrenia,,"PHASE2,PHASE3",0,NCT03896945,2023,futilit,"Based on the Interim Analysis outcome and recommendation by the DMC, Otsuka approved termination of the study based on futility.",
+TP,A,sitafloxacin,Urinary tract infection,승인,NA,30,,,,,AVP-786|Schizophrenia
+TN,B,D-Mannose,Urinary Tract Infections,,"PHASE2,PHASE3",523,NCT03395288,2020,futilit,Performed a futility analysis and determined that study objectives could not be met.,
+TP,B,benzydamine,Pain,승인,NA,142,,,,,D-Mannose|Urinary Tract Infections
+TN,A,Carfilzomib 20 mg/m^2,Multiple Myeloma,,PHASE2,82,NCT03871829,2023,futilit,The decision was made to discontinue the 54767414MMY2065 study as the Data Review Committee recommendation was early stop of the study for futility.,
+TP,A,dihydroergotamine,Cluster Headache,승인,NA,61,,,,,Carfilzomib 20 mg/m^2|Multiple Myeloma
+TN,A,Lanabecestat,Alzheimer´s Disease,,"PHASE2,PHASE3",26,NCT02245737,2018,futilit,"An independent assessment concluded the trial was not likely to meet the primary endpoint upon completion and therefore, trial stopped for futility",
+TP,A,tretamine,Malignant neoplasm of ovary,승인,NA,10,,,,,Lanabecestat|Alzheimer´s Disease
+TN,B,Gemcitabine,"Pancreatic Cancer, Adult",,"PHASE1,PHASE2",3291,NCT01834235,2019,futilit,DSMB terminated the trial for futility.,
+TP,B,carmustine,Malignant neoplasm of brain,승인,NA,1222,,,,,"Gemcitabine|Pancreatic Cancer, Adult"
+TN,A,Curcumin,Prostate Cancer Metastatic Castration Resistant,,PHASE2,16,NCT02095717,2018,futilit,The trial was stopped for futility in view of the results of the interim analysis,
+TP,A,levetiracetam,Epilepsy characterized by intractable complex partial seizures,승인,NA,13,,,,,Curcumin|Prostate Cancer Metastatic Castration Resistant
+TN,A,BIIB033 (opicinumab),Multiple Sclerosis,,PHASE2,30,NCT03222973,2021,did not meet,The top-line results from the Part 1 did not meet the pre-specified primary endpoint nor the key secondary endpoints. The decision to discontinue study 215MS202 Part 2 was not based on safety concerns.,
+TP,A,cefditoren pivoxil,Streptococcal tonsillitis,승인,NA,11,,,,,BIIB033 (opicinumab)|Multiple Sclerosis
+TN,A,AIN457,Crohn's Disease,,PHASE2,73,NCT00584740,2010,futilit,The study was terminated prematurely after futility criterion was met at planned interim analysis of 41 patients.,
+TP,A,oxaprozin,Rheumatoid Arthritis,승인,NA,28,,,,,AIN457|Crohn's Disease
+TN,A,Azeliragon,Alzheimer's Disease,,PHASE3,12,NCT02080364,2018,lack of efficacy,Not due to safety but due to a lack of efficacy at the 5 mg azeliragon dose.,
+TP,A,dopamine,Decompensated cardiac failure,승인,NA,99,,,,,Azeliragon|Alzheimer's Disease
+TN,A,Etrasimod,Crohn's Disease,,"PHASE2,PHASE3",31,NCT04173273,2025,lack of efficacy,The study was prematurely discontinued due to a lack of efficacy in sub-study 1,
+TP,A,bitolterol,Asthma,승인,NA,28,,,,,Etrasimod|Crohn's Disease
+TN,A,"MEK162, MEK inhibitor; oral",Low-grade Serous Ovarian Cancer,,PHASE3,2,NCT01849874,2022,futilit,"Per recommendation of the DMC, enrollment into the study was discontinued in April 2016 after the planned interim efficacy analysis showed the hazard ratio for PFS crossed the predefined futility boundary.",
+TP,A,ciprofibrate,"Hyperlipidemia, Familial Combined",승인,NA,11,,,,,"MEK162, MEK inhibitor; oral|Low-grade Serous Ovarian Cancer"
+TN,A,"A-002, varespladib methyl",Acute Coronary Syndrome,,PHASE3,8,NCT01130246,2012,Lack of efficacy,Lack of efficacy,
+TP,A,aztreonam,Sepsis due to Pseudomonas,승인,NA,65,,,,,"A-002, varespladib methyl|Acute Coronary Syndrome"
+TN,A,Roxadustat,"Primary MDS (Very Low, Low or Intermediate IPSS-R With <5% Blasts)",,PHASE3,5,NCT03263091,2023,did not meet,Study did not meet its primary efficacy endpoint.,
+TP,A,glycopyrronium bromide,Hyperhidrosis of axilla,승인,NA,35,,,,,"Roxadustat|Primary MDS (Very Low, Low or Intermediate IPSS-R With <5% Blasts)"
+TN,A,Ivermectin,Cancer,,PHASE2,455,NCT04447235,2022,futilit,futility analysis has demonstrated no difference between arms,
+TP,A,rifaximin,Irritable bowel syndrome with diarrhea,승인,NA,207,,,,,Ivermectin|Cancer
+TN,A,ASP0598,Chronic Tympanic Membrane Perforation,,"PHASE1,PHASE2",0,NCT04305184,2023,Lack of Efficacy,Lack of Efficacy,
+TP,A,vestronidase alfa,Mucopolysaccharidosis VII,승인,NA,18,,,,,ASP0598|Chronic Tympanic Membrane Perforation
+TN,A,Solanezumab,Alzheimer's Disease,,PHASE3,234,NCT01127633,2017,did not meet,Solanezumab did not meet the primary endpoint in study H8A-MC-LZAX.,
+TP,A,flurazepam,Sleeplessness,승인,NA,208,,,,,Solanezumab|Alzheimer's Disease
+TN,A,Cobitolimod 250 mg,Ulcerative Colitis,,PHASE3,2,NCT04985968,2023,futilit,Due to futility,
+TP,A,fluphenazine enanthate,Psychotic Disorders,승인,NA,20,,,,,Cobitolimod 250 mg|Ulcerative Colitis
+TN,A,Clemastine Fumarate,Multiple Sclerosis,,PHASE3,51,NCT05338450,2025,futilit,"In line with the study protocol, due to slow recruitment, a futility analysis has been performed in the first quarter of 2025 by an independent statistician. The result of the analysis was restricted to a ""no-go"".",
+TP,A,hexamidine,Acanthamoeba Keratitis,승인,NA,39,,,,,Clemastine Fumarate|Multiple Sclerosis
+TN,A,PF-02545920,Schizophrenia,,PHASE2,15,NCT01939548,2014,efficacy criteria,A pre-planned interim analysis indicated the trial was unlikely to meet the pre-specified efficacy criteria. The decision was not based on any safety concerns.,
+TP,A,tafasitamab,Diffuse large B-cell lymphoma refractory,승인,NA,85,,,,,PF-02545920|Schizophrenia
+TN,B,Docetaxel,Prostatic Neoplasms,,PHASE3,4405,NCT00514917,2012,efficacy concerns,"Company decision to discontinue the study, not due to any safety or efficacy concerns",
+TP,B,vinblastine,Hodgkin Disease,승인,NA,2569,,,,,Docetaxel|Prostatic Neoplasms
+TN,A,Sabatolimab,Myelodysplastic Syndromes,,PHASE3,17,NCT04266301,2024,failed to meet,"In December 2023, Novartis decided to terminate the sabatolimab clinical development program early after Phase II (MDS1) and Phase III (MDS2) studies failed to meet their primary objectives. The termination was not due to safety concerns.",
+TP,A,opipramol,Depressive disorder,승인,NA,26,,,,,Sabatolimab|Myelodysplastic Syndromes
+TN,A,Amoxicillin 875 mg,"Sinusitis, Acute",,PHASE4,22,NCT03431337,2020,Futilit,Futility found by interim analysis,
+TP,A,chlorambucil,"Lymphoma, Follicular",승인,NA,86,,,,,"Amoxicillin 875 mg|Sinusitis, Acute"
+TN,A,Sotorasib,Non-small Cell Lung Cancer,,PHASE2,342,NCT04933695,2025,Futilit,Futility,
+TP,A,hydroxycarbamide,Hemoglobin SS disease with crisis,승인,NA,295,,,,,Sotorasib|Non-small Cell Lung Cancer
+TN,B,cyclophosphamide,Leukemia,,"PHASE1,PHASE2",9179,NCT00963872,2013,Lack of efficacy,Lack of efficacy after interim analysis,
+TP,B,acyclovir,Herpes zoster disease,승인,NA,1272,,,,,cyclophosphamide|Leukemia
+TN,B,Hydroxychloroquine Sulfate + Azithromycin,SARS-CoV-2,,PHASE2,801,NCT04336332,2020,Ineffective,Ineffectiveness of treatment,
+TP,B,bismuth subsalicylate,Diarrhea,승인,NA,187,,,,,Hydroxychloroquine Sulfate + Azithromycin|SARS-CoV-2
+TN,A,Valbenazine,Tourette Syndrome,,PHASE2,16,NCT03530293,2019,Futilit,Futility,
+TP,A,dalbavancin,Staphylococcal Skin Infections,승인,NA,66,,,,,Valbenazine|Tourette Syndrome
+TN,A,Ompenaclid,Colorectal Cancer,,PHASE2,2,NCT05983367,2025,did not meet,"At the time of the primary analysis, results did not meet the primary endpoint",
+TP,A,cefixime,Acute exacerbation of chronic bronchitis,승인,NA,15,,,,,Ompenaclid|Colorectal Cancer
+TN,A,Olanzapine,Treatment Resistant Depression,,PHASE3,178,NCT01687478,2015,Lack of efficacy,Interim assessment: Lack of efficacy,
+TP,A,quinidine,Malaria,승인,NA,216,,,,,Olanzapine|Treatment Resistant Depression
+TN,B,Mitoxantrone,"Cancer, Prostate",,PHASE2,556,NCT00385827,2008,lack of efficacy,Prematurely stopped after Independent Data Monitoring Committee (IDMC) evaluation for lack of efficacy.,
+TP,B,tramadol,Degenerative polyarthritis,승인,NA,303,,,,,"Mitoxantrone|Cancer, Prostate"
+TN,B,Ursodeoxycholic Acid,Primary Sclerosing Cholangitis,,"PHASE2,PHASE3",773,NCT00059202,2008,futilit,DSMB reviewed interim analysis and terminated the study due to futility.,
+TP,B,clevudine,"Hepatitis B, Chronic",승인,NA,112,,,,,Ursodeoxycholic Acid|Primary Sclerosing Cholangitis
+TN,A,Baclofen 10mg,Pain,,PHASE4,2,NCT03720717,2022,Futilit,Futility analysis at midpoint analysis,
+TP,A,fludarabine phosphate,"Leukemia, Myelocytic, Acute",승인,NA,11,,,,,Baclofen 10mg|Pain
+TN,A,Abagovomab,Ovarian Cancer,,"PHASE2,PHASE3",16,NCT00418574,2011,No benefit,No benefit on primary end point (RFS); no rationale to collect survival data,
+TP,A,hematoporphyrin,Non-Small Cell Lung Carcinoma,승인,NA,29,,,,,Abagovomab|Ovarian Cancer
+TN,A,NP-101,COVID-19,,PHASE2,1,NCT05785390,2025,futilit,The interim analysis results met protocol and SAP predetermined criteria for stopping early due to futility or efficacy.,
+TP,A,omadacycline,"Skin Diseases, Bacterial",승인,NA,59,,,,,NP-101|COVID-19
+TN,B,induced moderate hypothermia,Traumatic Brain Injury,,PHASE3,696,NCT00222742,2012,Futilit,Futility,
+TP,B,nicotinic acid,Hypercholesterolemia,승인,NA,781,,,,,induced moderate hypothermia|Traumatic Brain Injury
+TN,A,RO7239361,Muscular Dystrophy (DMD),,"PHASE1,PHASE2",0,NCT02515669,2020,futilit,A pre-planned futility analysis indicated lack of efficacy in study NCT03039686 and led to discontinuation of both ongoing studies in DMD.,
+TP,A,crizanlizumab,Vaso-occlusive pain episode in sickle cell disease,승인,NA,12,,,,,RO7239361|Muscular Dystrophy (DMD)
+TN,A,Hydrochlorothiazide 50mg Tablet,Pre-Eclampsia,,PHASE3,0,NCT03298802,2025,Futilit,Futility of the study,
+TP,A,glycine,Allergic rhinitis (disorder),승인,NA,55,,,,,Hydrochlorothiazide 50mg Tablet|Pre-Eclampsia
+TN,A,Pegcetacoplan (APL-2),Amyotrophic Lateral Sclerosis,,PHASE2,1,NCT04579666,2023,did not meet,"The study did not meet primary endpoint at Week 52. The study also did not meet key secondary efficacy endpoints. Pegcetacoplan (APL-2) was well tolerated in the study, and the data were consistent with the established safety profile.",
+TP,A,oxymetazoline,Rhinorrhea,승인,NA,10,,,,,Pegcetacoplan (APL-2)|Amyotrophic Lateral Sclerosis
+TN,A,Lanabecestat,Alzheimer's Disease,,PHASE3,26,NCT02783573,2018,futilit,"An independent assessment concluded the trial was not likely to meet the primary endpoint upon completion and therefore, trial stopped for futility.",
+TP,A,quinupristin,Group A Streptococcal Infections,승인,NA,84,,,,,Lanabecestat|Alzheimer's Disease
+TN,A,REGN3500,Atopic Dermatitis,,PHASE2,2,NCT03738423,2020,Lack of efficacy,Lack of efficacy,
+TP,A,dexpanthenol,Dermatologic disorders,승인,NA,98,,,,,REGN3500|Atopic Dermatitis
+TN,A,PF-06649751 low dose (1 mg QD),Parkinson Disease,,PHASE2,0,NCT02687542,2017,insufficient efficacy,Terminated 25Sep17 due to insufficient efficacy. Not due to safety reasons.,
+TP,A,trimipramine,Depressive disorder,승인,NA,90,,,,,PF-06649751 low dose (1 mg QD)|Parkinson Disease
+TN,A,Nitazoxanide,COVID-19,,"PHASE2,PHASE3",146,NCT04523090,2022,futilit,Signal of futility at interim analysis,
+TP,A,floxuridine,Malignant neoplasm of liver,승인,NA,722,,,,,Nitazoxanide|COVID-19
+TN,A,TQC3721 suspension for inhalation,Chronic Obstructive Pulmonary Disease (COPD),,PHASE2,1,NCT05292196,2023,efficacy concerns,Per sponsor request. Closure was not prompted by any safety or efficacy concerns.,
+TP,A,hydroflumethiazide,Edema,승인,NA,18,,,,,TQC3721 suspension for inhalation|Chronic Obstructive Pulmonary Disease (COPD)
+TN,A,interferon gamma-1b,Lung Infection,,PHASE2,4,NCT00043355,2003,Futilit,Futility,
+TP,A,posaconazole,Mycetoma,승인,NA,50,,,,,interferon gamma-1b|Lung Infection
+TN,A,normobaric oxygen therapy,Carbon Monoxide Poisoning,,PHASE3,138,NCT01100515,2000,futilit,this study was suspended for futility,
+TP,A,tadalafil,Prostatic Hypertrophy,승인,NA,361,,,,,normobaric oxygen therapy|Carbon Monoxide Poisoning
+TN,A,AFQ056,Patient Diagnosed With OCD and Resistant to SSRI Treatment,,PHASE2,1,NCT01813019,2014,did not meet,Study was prematurely terminated at the time of the first Interim Analysis (IA) as the study did not meet its primary efficacy objective.,
+TP,A,tolbutamide,"Diabetes Mellitus, Non-Insulin-Dependent",승인,NA,89,,,,,AFQ056|Patient Diagnosed With OCD and Resistant to SSRI Treatment
+TN,A,Bermekimab,"Dermatitis, Atopic",,PHASE2,3,NCT04791319,2022,futilit,Premature Termination due to Interim Analysis (100 patients at Week 16) meeting futility.,
+TP,A,miltefosine,Mucocutaneous leishmaniasis,승인,NA,98,,,,,"Bermekimab|Dermatitis, Atopic"
+TN,A,Posoleucel,Adenovirus Infection,,PHASE3,2,NCT05179057,2024,futile,Study discontinued as DSMB determined it was futile. No safety concerns were noted.,
+TP,A,vidarabine,"Keratitis, Herpetic",승인,NA,87,,,,,Posoleucel|Adenovirus Infection
+TN,A,Ronacaleret,Osteoporosis,,PHASE2,9,NCT00471237,2008,futilit,Terminated for futility by sponsor after a pre-planned interim review of data,
+TP,A,faricimab,Exudative age-related macular degeneration,승인,NA,58,,,,,Ronacaleret|Osteoporosis
+TN,A,Birtamimab,Light Chain (AL) Amyloidosis,,PHASE3,13,NCT04973137,2025,did not meet,The AFFIRM-AL clinical trial did not meet its primary endpoint.,
+TP,A,zileuton,Allergic asthma,승인,NA,41,,,,,Birtamimab|Light Chain (AL) Amyloidosis
+TN,B,Hypothermia,Traumatic Brain Injury,,PHASE3,1054,NCT00178711,2009,Futilit,Futility,
+TP,B,nintedanib,Idiopathic Pulmonary Fibrosis,승인,NA,1339,,,,,Hypothermia|Traumatic Brain Injury
+TN,A,LY2382770,Diabetic Kidney Disease,,PHASE2,0,NCT01113801,2014,Lack of Efficacy,Interim Assessment: Lack of Efficacy,
+TP,A,lorazepam,Lennox-Gastaut syndrome,승인,NA,10,,,,,LY2382770|Diabetic Kidney Disease
+TN,A,simvastatin,"Pulmonary Disease, Chronic Obstructive",,PHASE3,78,NCT01061671,2014,Futilit,Futility,
+TP,A,gefapixant,Chronic refractory cough,승인,NA,67,,,,,"simvastatin|Pulmonary Disease, Chronic Obstructive"
+TN,A,KPI-012,Persistent Corneal Epithelial Defect,,PHASE2,1,NCT05727878,2025,Lack of efficacy,Lack of efficacy,
+TP,A,melphalan,Malignant neoplasm of ovary,승인,NA,508,,,,,KPI-012|Persistent Corneal Epithelial Defect
+TN,A,TRC105 and Axitinib,Renal Cell Carcinoma,,"PHASE1,PHASE2",3,NCT01806064,2019,did not meet,The study did not meet endpoint.,
+TP,A,certolizumab pegol,Ankylosing spondylitis,승인,NA,141,,,,,TRC105 and Axitinib|Renal Cell Carcinoma
+TN,A,25 mg/day AVE5530,Hypercholesterolemia,,PHASE3,181,NCT00729027,2009,insufficient efficacy,AVE5530 in hypercholesterolemia was stopped due to insufficient efficacy,
+TP,A,calcitriol,Renal Osteodystrophy,승인,NA,518,,,,,25 mg/day AVE5530|Hypercholesterolemia
+TN,A,lademirsen (SAR339375),Alport Syndrome,,PHASE2,5,NCT02855268,2022,futilit,The results of the futility analysis led to the study termination. No unexpected safety findings were identified.,
+TP,A,upadacitinib,"Dermatitis, Atopic",승인,NA,596,,,,,lademirsen (SAR339375)|Alport Syndrome
+TN,A,Rapamycin,Autosomal Dominant Polycystic Kidney Disease,,"PHASE2,PHASE3",184,NCT00920309,2010,failed to show,This study was stopped after larger studies published in the NEJM failed to show a benefit in treating ADPKD,
+TP,A,amantadine,Influenza due to Influenza A virus,승인,NA,944,,,,,Rapamycin|Autosomal Dominant Polycystic Kidney Disease
+TN,B,Dupilumab,"Dermatitis, Atopic",,PHASE2,2676,NCT06881251,2026,futilit,Terminated: futility criteria met at interim efficacy analysis.,
+TP,B,fluorouracil,metastasis from malignant neoplasm of colon,승인,NA,1051,,,,,"Dupilumab|Dermatitis, Atopic"
+TN,A,Budesonide + Salmeterol + Azithromycin,Asthma,,PHASE4,3,NCT00471809,2007,futilit,"The CARE Network DSMB recommended to the NHLBI that the MARS trial be terminated, based on a futility analysis with 55 randomized children.",
+TP,A,ergocalciferol,Osteoporosis,승인,NA,257,,,,,Budesonide + Salmeterol + Azithromycin|Asthma
+TN,A,REGN3500,Atopic Dermatitis,,PHASE2,2,NCT03736967,2020,Lack of efficacy,Lack of efficacy,
+TP,A,pentoxifylline,Peripheral Vascular Diseases,승인,NA,359,,,,,REGN3500|Atopic Dermatitis
+TN,A,GSK1605786A,Crohn's Disease,,PHASE3,13,NCT01316939,2013,lack of efficacy,This study was terminated due to the lack of efficacy of GSK1605786A in Crohn's disease based on the results of Study CCX114151.,
+TP,A,dexrabeprazole,Duodenal Ulcer,승인,NA,118,,,,,GSK1605786A|Crohn's Disease
+TN,A,Mepolizumab 100 mg,"Dermatitis, Atopic",,PHASE2,4,NCT03055195,2017,futilit,Study reached pre-determined futility criteria following interim analysis. No safety concerns were noted.,
+TP,A,potassium citrate,Renal tubular acidosis,승인,NA,136,,,,,"Mepolizumab 100 mg|Dermatitis, Atopic"
+TN,B,Standard Treatment,Advanced Renal Cell Carcinoma,,PHASE3,1241,NCT01582672,2018,Lack of efficacy,Lack of efficacy,
+TP,B,riboflavin,Vitamin Deficiency,승인,NA,2016,,,,,Standard Treatment|Advanced Renal Cell Carcinoma
+TN,A,CardioFit® System,Left Ventricular Dysfunction,,PHASE3,2,NCT01303718,2015,Futilit,Futility of Primary Efficacy Endpoint,
+TP,A,meropenem,"Meningitis, Bacterial",승인,NA,419,,,,,CardioFit® System|Left Ventricular Dysfunction
+TN,A,infusion of N-acetylcysteine,Acetaminophen,,PHASE2,211,NCT05517668,2025,Futilit,Futility,
+TP,A,pembrolizumab,Triple Negative Breast Neoplasms,승인,NA,341,,,,,infusion of N-acetylcysteine|Acetaminophen
+TN,A,HSPPC-96,Recurrent Glioblastoma,,PHASE2,3,NCT01814813,2023,futilit,DSMB futility analysis,
+TP,A,goserelin,Hormone receptor positive malignant neoplasm of breast,승인,NA,174,,,,,HSPPC-96|Recurrent Glioblastoma
+TN,A,AL-8309B Ophthalmic Solution,Geographic Atrophy,,PHASE3,1,NCT00890097,2012,ineffective,Treatment ineffective,
+TP,A,riociguat,Pulmonary arterial hypertension,승인,NA,349,,,,,AL-8309B Ophthalmic Solution|Geographic Atrophy
+TN,A,Liquid Alpha1-Proteinase Inhibitor (Human),COVID-19,,PHASE2,3,NCT04547140,2022,Futilit,Study Stopped for Futility,
+TP,A,benzatropine,Extrapyramidal Disorders,승인,NA,183,,,,,Liquid Alpha1-Proteinase Inhibitor (Human)|COVID-19
+TN,A,ACT guided heparinization,Abdominal Aortic Aneurysm,,PHASE4,4,NCT04061798,2024,Futilit,Futility,
+TP,A,micafungin,Septicemia candida,승인,NA,246,,,,,ACT guided heparinization|Abdominal Aortic Aneurysm
+TN,A,Ofatumumab,"Lymphoma, Follicular",,PHASE3,31,NCT01077518,2018,did not meet,The study was terminated early as it did not meet the Primary efficacy objective after primary analysis.,
+TP,A,cyclophosphamide,Primary amyloidosis,승인,NA,198,,,,,"Ofatumumab|Lymphoma, Follicular"
+TN,A,Epalrestat,Pmm2-CDG,,PHASE3,5,NCT04925960,2025,futilit,Due to futility,
+TP,A,vonoprazan,Gastro-esophageal reflux disease with esophagitis,승인,NA,121,,,,,Epalrestat|Pmm2-CDG
+TN,A,Fremanezumab,Fibromyalgia,,PHASE2,2,NCT03965091,2022,futilit,Met pre-specified criteria for futility at interim analysis,
+TP,A,clonidine,Severe pain,승인,NA,287,,,,,Fremanezumab|Fibromyalgia
+TN,A,minocycline,HIV-associated Cognitive Impairment,,"PHASE1,PHASE2",8,NCT00855062,2009,futilit,The Neurologic AIDS Research Consortium Data Safety and Monitoring Board committee recommended to terminate the study early due to futility on 11/6/2009.,
+TP,A,isosorbide mononitrate,Angina Pectoris,승인,NA,277,,,,,minocycline|HIV-associated Cognitive Impairment
+TN,A,BIIB023,Lupus Nephritis,,PHASE2,2,NCT01499355,2015,did not demonstrate,Results from pre-specified criteria did not demonstrate sufficient efficacy to warrant continuation of the study.,
+TP,A,exemestane,Hormone receptor positive malignant neoplasm of breast,승인,NA,566,,,,,BIIB023|Lupus Nephritis
+TN,A,Individualized TB treatment with multiple drugs,"Tuberculosis, Multidrug-Resistant",,PHASE4,377,NCT03237182,2022,futile,WHO 2022 guidelines for DR-TB treatment are set to change. These guidelines recommend the use of an all-oral short course BPAL regimen.Therefore ongoing implementation of the study is considered futile.,
+TP,A,esomeprazole,Gastroesophageal reflux disease,승인,NA,590,,,,,"Individualized TB treatment with multiple drugs|Tuberculosis, Multidrug-Resistant"
+TN,A,Fremanezumab,Chronic Cluster Headache,,PHASE3,20,NCT02964338,2018,Futilit,Futility analysis revealed that the primary endpoint is unlikely to be met. There were no safety concerns observed with fremanezumab treatment in the trial.,
+TP,A,fluticasone furoate,Chronic Obstructive Airway Disease,승인,NA,307,,,,,Fremanezumab|Chronic Cluster Headache
+TN,A,OMS721,IgA Nephropathy,,PHASE3,9,NCT03608033,2024,did not meet,IA did not meet the prespecified primary endpoint.,
+TP,A,hydromorphone,Severe pain,승인,NA,401,,,,,OMS721|IgA Nephropathy
+TN,A,OncoGel (Paclitaxel gel),Esophageal Cancer,,PHASE2,3,NCT00573131,2010,did not show,OncoGel did not show any impact on overall tumor response,
+TP,A,pegaspargase,Acute lymphocytic leukemia,승인,NA,308,,,,,OncoGel (Paclitaxel gel)|Esophageal Cancer
+TN,A,Type AB plasma,Trauma,,PHASE2,111,NCT01838863,2017,Futilit,Futility,
+TP,A,eptacog alfa (activated),Factor VII Deficiency,승인,NA,211,,,,,Type AB plasma|Trauma
+TN,A,Rifampicin,Multiple System Atrophy,,PHASE3,12,NCT01287221,2013,futilit,DSMB recommended stopping the study after an interim analysis of the primary endpoint revealed that futility criteria were met.,
+TP,A,cladribine,Hairy Cell Leukemia,승인,NA,643,,,,,Rifampicin|Multiple System Atrophy
+TN,A,Evacetrapib,Cardiovascular Diseases,,PHASE3,75,NCT01687998,2016,insufficient efficacy,Study termination due to insufficient efficacy.,
+TP,A,teduglutide,Short Bowel Syndrome,승인,NA,303,,,,,Evacetrapib|Cardiovascular Diseases
+TN,A,Suvorexant,Opioid-use Disorder,,PHASE2,16,NCT04262193,2024,Did not meet,Did not meet enrollment goals.,
+TP,A,streptomycin,Brucellosis,승인,NA,537,,,,,Suvorexant|Opioid-use Disorder
+TN,A,continuous positive airway pressure (CPAP),Polycystic Ovary Syndrome,,PHASE4,9,NCT00203996,2008,Did not meet,Did not meet target patient accrual goals,
+TP,A,azelaic acid,Rosacea,승인,NA,207,,,,,continuous positive airway pressure (CPAP)|Polycystic Ovary Syndrome
+TN,A,JNJ-42160443 3 mg,Low Back Pain,,PHASE2,1,NCT00973024,2011,lack of efficacy,"Based on lack of efficacy in PAI2003, sponsor made the decision to discontinue the trial.",
+TP,A,alfuzosin,Prostatic Hypertrophy,승인,NA,395,,,,,JNJ-42160443 3 mg|Low Back Pain
+TN,A,Macitentan,Chronic Thromboembolic Pulmonary Hypertension,,PHASE3,28,NCT04271475,2023,futilit,The Sponsor decided to stop the study for futility based on a recommendation by the IDMC following a pre-planned interim analysis,
+TP,A,luliconazole,Tinea corporis (disorder),승인,NA,107,,,,,Macitentan|Chronic Thromboembolic Pulmonary Hypertension
+TN,A,Ferroquine SSR97193,Plasmodium Falciparum Infection,,PHASE2,46,NCT02497612,2019,futilit,"All treatment arms met the futility criteria for efficacy during the pre-planned interim analysis, therefore the study was stopped.",
+TP,A,metformin,"Diabetes Mellitus, Non-Insulin-Dependent",승인,NA,291,,,,,Ferroquine SSR97193|Plasmodium Falciparum Infection
+TN,A,Tralokinumab,Idiopathic Pulmonary Fibrosis,,PHASE2,4,NCT01629667,2016,lack of efficacy,Early termination of the study due to lack of efficacy.,
+TP,A,leuprorelin,Precocious Puberty,승인,NA,308,,,,,Tralokinumab|Idiopathic Pulmonary Fibrosis
+TN,A,Indomethacin,Post-ERCP Acute Pancreatitis,,PHASE3,168,NCT01774604,2014,Futilit,Futility,
+TP,A,triamterene,Edema,승인,NA,132,,,,,Indomethacin|Post-ERCP Acute Pancreatitis
+TN,A,Progesterone,Traumatic Brain Injury,,PHASE3,358,NCT00822900,2014,futilit,futility: low conditional power to demonstrate benefit of progesterone,
+TP,A,fluoxetine,Panic Disorder,승인,NA,201,,,,,Progesterone|Traumatic Brain Injury
+TN,A,Metoclopramide,Sepsis,,PHASE3,34,NCT00395161,2009,futilit,Terminated for futility on 11/30/09 based on the recommendation of the DSMB,
+TP,A,gabapentin,Restless Legs Syndrome,승인,NA,231,,,,,Metoclopramide|Sepsis
+TN,A,Misoprostol,Hemorrhage; Complicating Delivery,,PHASE4,149,NCT01113229,2014,futilit,reason of halt prematurely: futility of the trial,
+TP,A,cilgavimab,COVID19 (disease),승인,NA,361,,,,,Misoprostol|Hemorrhage; Complicating Delivery
+TN,B,GSK 2132231A,Melanoma,,PHASE3,1146,NCT00796445,2016,lack of efficacy,The study was terminated early following assessment of the two co-primary endpoints showing the lack of efficacy of the study product.,
+TP,B,tofacitinib,Rheumatoid Arthritis,승인,NA,1396,,,,,GSK 2132231A|Melanoma
+TN,A,Ravulizumab,Chronic Kidney Disease,,PHASE3,18,NCT05746559,2026,lack of efficacy,The ALXN1210-CSA-AKI-318 trial was discontinued on 29-Apr-2026 due to lack of efficacy in this overall study universe / patient population.,
+TP,A,vinflunine,"Carcinoma, Transitional Cell",승인,NA,100,,,,,Ravulizumab|Chronic Kidney Disease
+TN,A,Efavaleukin Alfa,Active Systemic Lupus Erythematosus,,PHASE2,1,NCT04680637,2023,futilit,The trial was terminated prematurely as it met pre-defined criteria for futility at IA3.,
+TP,A,agomelatine,Major Depressive Disorder,승인,NA,322,,,,,Efavaleukin Alfa|Active Systemic Lupus Erythematosus
+TN,A,Evobrutinib,Relapsing-remitting Multiple Sclerosis,,PHASE2,13,NCT02975349,2024,did not meet,Results from the EVOLUTION clinical trials showed evobrutinib did not meet its primary endpoint of annualized relapse rate for up to 156 weeks compared to oral teriflunomide in both studies.,
+TP,A,ambrisentan,Pulmonary arterial hypertension,승인,NA,359,,,,,Evobrutinib|Relapsing-remitting Multiple Sclerosis
+TN,A,162mg aspirin dose,Preeclampsia,,PHASE4,3,NCT03735433,2024,futilit,futility,
+TP,A,rimonabant,Obesity,승인,NA,784,,,,,162mg aspirin dose|Preeclampsia
+TN,A,mRNA-1647,Cytomegalovirus Infection,,PHASE3,14,NCT05085366,2025,did not meet,"The Sponsor decided to terminate the study after it did not meet the primary efficacy endpoint at final analysis. The safety profile was consistent with prior studies, and no safety concerns were raised by the Data and Safety Monitoring Board.",
+TP,A,crisaborole,"Dermatitis, Atopic",승인,NA,248,,,,,mRNA-1647|Cytomegalovirus Infection
+TN,A,AIN457,Uveitis,,PHASE3,86,NCT01093846,2011,did not meet,Core Study in Behcet's disease with mostly active uveitis did not meet its primary endpoint,
+TP,A,dextrothyroxine,Hyperlipidemia,승인,NA,122,,,,,AIN457|Uveitis
+TN,A,becatecarin,Biliary Tract Cancer,,PHASE3,2,NCT00090025,2006,Futilit,Futility reasons after Independent Data Monitoring Committee interim analysis,
+TP,A,biperiden,Extrapyramidal Disorders,승인,NA,190,,,,,becatecarin|Biliary Tract Cancer
+TN,A,LNA043,Osteoarthritis,,PHASE2,3,NCT04864392,2025,did not meet,Study early terminated due to lack of effect (did not meet primary/ secondary endpoints). This decision was not linked to safety concerns,
+TP,A,vancomycin,Neonatal pneumonia,승인,NA,285,,,,,LNA043|Osteoarthritis
+TN,A,GSK3640254,HIV Infections,,PHASE2,5,NCT04493216,2023,efficacy concerns,Company decision to stop compound development. The decision is not based on any safety or efficacy concerns. It reflects the company strategy for portfolio progression.,
+TP,A,molnupiravir,COVID19 (disease),승인,NA,994,,,,,GSK3640254|HIV Infections
+TN,A,SYNSORB Pk,Hemolytic Uremic Syndrome,,PHASE3,21,NCT00004465,2001,Lack of efficacy,Lack of efficacy at review by DSMB using pre-specified monitoring criteria,
+TP,A,leflunomide,"Arthritis, Psoriatic",승인,NA,187,,,,,SYNSORB Pk|Hemolytic Uremic Syndrome
+TN,A,CMB305,Sarcoma,,PHASE2,3,NCT02609984,2019,did not meet,This study did not meet the efficacy objective,
+TP,A,indomethacin,Tendinitis,승인,NA,103,,,,,CMB305|Sarcoma
+TN,A,Albuterol Sulfate,"Respiratory Distress Syndrome, Adult",,"PHASE2,PHASE3",121,NCT00434993,2008,futilit,Stopped for futility by DSMB,
+TP,A,molindone,Schizophrenia,승인,NA,102,,,,,"Albuterol Sulfate|Respiratory Distress Syndrome, Adult"
+TN,A,IMGN901,Small Cell Lung Cancer,,"PHASE1,PHASE2",6,NCT01237678,2015,lack of efficacy,Study was stopped early due to lack of efficacy signal and safety concerns,
+TP,A,avibactam,Bacterial urinary infection,승인,NA,209,,,,,IMGN901|Small Cell Lung Cancer
+TN,A,DFP-10917,"Leukemia, Myeloid, Acute",,PHASE3,2,NCT03926624,2026,futilit,The data met the protocol-specified criteria for futility of the investigational treatment.,
+TP,A,pemoline,Attention deficit hyperactivity disorder,승인,NA,175,,,,,"DFP-10917|Leukemia, Myeloid, Acute"
+TN,A,Bifeprunox,Schizophrenia,,PHASE3,36,NCT00658645,2009,inadequate efficacy,Interim analysis showed inadequate efficacy of bifeprunox,
+TP,A,epinephrine,Septic Shock,승인,NA,551,,,,,Bifeprunox|Schizophrenia
+TN,A,Luveltamab tazevibulin,Ovarian Cancer,,"PHASE2,PHASE3",2,NCT05870748,2025,efficacy concerns,"Due to strategic business considerations, Sutro has deprioritized the development of luveltamab tazevibulin, leading to termination of the REFRaME program. This decision is not related to any safety or efficacy concerns associated with luvelta",
+TP,A,eculizumab,Neuromyelitis Optica,승인,NA,276,,,,,Luveltamab tazevibulin|Ovarian Cancer
+TN,A,LY3127804,COVID-19,,PHASE2,1,NCT04342897,2020,futilit,Trial terminated for futility.,
+TP,A,clonazepam,Absence Epilepsy,승인,NA,170,,,,,LY3127804|COVID-19
+TN,B,Capecitabine,Gastric Cancer,,PHASE3,1392,NCT01450696,2015,futilit,futility following planned interim analysis,
+TP,B,spironolactone,Hyperaldosteronism,승인,NA,1065,,,,,Capecitabine|Gastric Cancer
+TN,B,rt-PA alone,Stroke,,PHASE3,841,NCT00359424,2013,futilit,"NINDS/NIH-DSMB recommended halting trial due to futility, no safety concerns.",
+TP,B,esmolol,Atrial Fibrillation,승인,NA,107,,,,,rt-PA alone|Stroke
+TN,A,Ancrod (Viprinex),Stroke,,PHASE3,68,NCT00300196,2008,Futilit,Futility,
+TP,A,diltiazem,Paroxysmal supraventricular tachycardia,승인,NA,253,,,,,Ancrod (Viprinex)|Stroke
+TN,A,WVE-120101,Huntington's Disease,,"PHASE1,PHASE2",4,NCT03225833,2021,Lack of Efficacy,Lack of Efficacy,
+TP,A,hydralazine,Chronic heart failure,승인,NA,337,,,,,WVE-120101|Huntington's Disease
+TN,A,PF-06252616,Duchenne Muscular Dystrophy,,PHASE2,11,NCT02310763,2018,Lack of Efficacy,Termination Date 30AUG2018: Reason for termination: Lack of Efficacy,
+TP,A,eribulin,liposarcoma,승인,NA,116,,,,,PF-06252616|Duchenne Muscular Dystrophy
+TN,B,Haloperidol,Delirium,,PHASE3,898,NCT03628391,2021,futilit,The study was stopped because of futility of being able to reach a one-day difference between treatment groups in the primary outcome of DCFD in the intended sample size.,
+TP,B,larotrectinib,Malignant Neoplasm (Morphology),승인,NA,378,,,,,Haloperidol|Delirium
+TN,A,Ambrisentan,Idiopathic Pulmonary Fibrosis,,PHASE3,22,NCT00768300,2011,Lack of efficacy,Lack of efficacy,
+TP,A,azithromycin,Staphylococcus aureus infection,승인,NA,337,,,,,Ambrisentan|Idiopathic Pulmonary Fibrosis
+TN,A,NUC-1031,Biliary Tract Cancer,,PHASE3,8,NCT04163900,2022,futilit,"A pre-planned futility analysis concluded that NUC-1031 plus cisplatin was unlikely to achieve its primary objective of improving overall survival. Based on the IDMC's recommendation, NuCana has closed the study.",
+TP,A,asenapine,Schizophrenia,승인,NA,270,,,,,NUC-1031|Biliary Tract Cancer
+TN,A,Danirixin 35 mg tablets,"Pulmonary Disease, Chronic Obstructive",,PHASE2,1,NCT03170232,2018,lack of efficacy,Terminated based on lack of efficacy seen in participants taking danirixin in dose ranging study and Sponsor decision to stop development of danirixin for COPD,
+TP,A,apalutamide,Metastasis from malignant tumor of prostate,승인,NA,214,,,,,"Danirixin 35 mg tablets|Pulmonary Disease, Chronic Obstructive"
+TN,A,Supportive Palliative Care,Hematopoietic and Lymphoid Cell Neoplasm,,"PHASE2,PHASE3",136,NCT03870750,2025,futilit,Study terminated due to meeting interim analysis futility endpoint. No difference was found between two treatment arms at interim analysis of primary outcome.,
+TP,A,aripiprazole,Autistic Disorder,승인,NA,105,,,,,Supportive Palliative Care|Hematopoietic and Lymphoid Cell Neoplasm
+TN,A,Enzalutamide,Castration-Resistant Prostate Carcinoma,,"PHASE1,PHASE2",118,NCT02555189,2023,did not demonstrate,"Sponsor-PI decision. An analysis of the primary endpoint concluded that the addition of ribociclib to standard of care enzalutamide did not demonstrate benefit, an all active subjects were removed from the study.",
+TP,A,zoledronic acid,"Osteoporosis, Postmenopausal",승인,NA,600,,,,,Enzalutamide|Castration-Resistant Prostate Carcinoma
+TN,B,Ipilimumab,Metastatic Melanoma,,PHASE3,2258,NCT03445533,2021,Lack of Efficacy,Lack of Efficacy,
+TP,B,nivolumab,Metastatic Renal Cell Cancer,승인,NA,1426,,,,,Ipilimumab|Metastatic Melanoma
+TN,A,Aliskiren,Heart Failure,,PHASE2,195,NCT00881439,2012,Futilit,Futility,
+TP,A,lasmiditan,Migraine Disorders,승인,NA,170,,,,,Aliskiren|Heart Failure
+TN,B,rhuMAB-VEGF,Pancreatic Cancer,,PHASE2,520,NCT00066677,2009,futilit,Stopped accordining to early stopping rule for futility,
+TP,B,pethidine,Labor Pain,승인,NA,334,,,,,rhuMAB-VEGF|Pancreatic Cancer
+TN,A,Hyperbaric oxygen,SARS (Severe Acute Respiratory Syndrome),,"PHASE2,PHASE3",114,NCT04327505,2022,Futilit,"Futility, change of disease due to virus mutations and/or vaccination",
+TP,A,aminoglutethimide,Secondary malignant neoplasm of female breast,승인,NA,169,,,,,Hyperbaric oxygen|SARS (Severe Acute Respiratory Syndrome)
+TN,A,Timing of administration of post partum Oxytocin,Placental Transfusion,,PHASE3,3,NCT02618499,2016,Futilit,Futility suggested by DSMC,
+TP,A,pirenzepine,Peptic Ulcer,승인,NA,398,,,,,Timing of administration of post partum Oxytocin|Placental Transfusion
+TN,B,Aspirin,Venous Thromboembolism,,PHASE4,1495,NCT02396732,2018,futilit,Terminated due to futility and less subjects meeting entry criteria,
+TP,B,liothyronine,Goiter,승인,NA,2904,,,,,Aspirin|Venous Thromboembolism
+TN,A,Interferon gamma-1b,Ovarian Carcinoma,,PHASE3,4,NCT00047632,2006,futilit,futility,
+TP,A,bretylium,Ventricular Fibrillation,승인,NA,209,,,,,Interferon gamma-1b|Ovarian Carcinoma
+TN,A,GSK3640254,HIV Infections,,PHASE2,5,NCT04900038,2023,efficacy concerns,Company decision to stop compound development. The decision was not based on any safety or efficacy concerns. It reflected the company strategy for portfolio progression.,
+TP,A,imatinib,"Mastocytosis, Systemic",승인,NA,193,,,,,GSK3640254|HIV Infections
+TN,A,Luvadaxistat,Schizophrenia,,PHASE2,13,NCT05182476,2024,Failed to meet,Failed to meet the primary endpoint,
+TP,A,tropicamide,Mydriasis,승인,NA,289,,,,,Luvadaxistat|Schizophrenia
+TN,A,Prasugrel,Sickle Cell Disease,,PHASE3,21,NCT01794000,2015,lack of efficacy,The study is being terminated for lack of efficacy.,
+TP,A,rofecoxib,Pain,승인,NA,641,,,,,Prasugrel|Sickle Cell Disease
+TN,A,Pleneva TM BGC20-0134,Relapsing Remitting Multiple Sclerosis,,PHASE2,142,NCT01037907,2011,Lack of efficacy,Lack of efficacy,
+TP,A,sulpiride,Schizophrenia,승인,NA,777,,,,,Pleneva TM BGC20-0134|Relapsing Remitting Multiple Sclerosis
+TN,A,AMG 706,Non-Small Cell Lung Cancer,,PHASE3,5,NCT00460317,2013,did not meet,Amgen discontinued the development of AMG706 because 20050201 did not meet its primary objective.,
+TP,A,tibolone,"Osteoporosis, Postmenopausal",승인,NA,185,,,,,AMG 706|Non-Small Cell Lung Cancer
+TN,A,ATIR101,Acute Myeloid Leukemia,,PHASE3,1,NCT02999854,2021,Insufficient efficacy,"Insufficient efficacy, terminated by Sponsor",
+TP,A,avelumab,Renal Cell Carcinoma,승인,NA,244,,,,,ATIR101|Acute Myeloid Leukemia

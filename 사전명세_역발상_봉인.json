@@ -1,0 +1,53 @@
+{
+ "문서": "사전명세_역발상.md",
+ "작성": "2026-08-12T09:33:21",
+ "sha256": "892762c9a28afa41a8739332e9fbd1564cc2ed7cca8bbd0eca59f71903f1bd8f",
+ "실행_전_증거": {
+  "bioreroute/bench/reversecheck.py": {
+   "sha256": "7ca7590764e5d698b2538ffa2cca8ebc",
+   "최종수정": "2026-08-12 09:32:33"
+  },
+  "bioreroute/agents/reverse.py": {
+   "sha256": "97356988d2681eb0bc22cdf8a3c7a2be",
+   "최종수정": "2026-08-06 12:48:10"
+  },
+  "bioreroute/io/faers.py": {
+   "sha256": "06b7ee35f6ccbca2a8b25c0202ec8056",
+   "최종수정": "2026-08-06 13:37:44"
+  }
+ },
+ "주지표": "F0 PASS 비율 · 역발상 R vs 무작위 승인약 N · 후보단위 2x2 Fisher 정확검정",
+ "고정": {
+  "질환": "bench_tn_pool_v2.csv(동결) condition 빈도 상위5 · 철자정규화 병합 · 동점 알파벳순",
+  "뽑힌_질환": [
+   "COVID-19",
+   "Alzheimer's Disease",
+   "Atopic Dermatitis",
+   "Rheumatoid Arthritis",
+   "Breast Cancer"
+  ],
+  "k": 20,
+  "seed": 812,
+  "온도": 0.0,
+  "자료원": "FAERS 주 · SIDER 는 파일 있으면 병기",
+  "검정": "Fisher(후보단위 n=200)로 판정 · Wilcoxon(질환 5개)은 참고",
+  "미리_계산한_검정력": "질환 5개면 Wilcoxon 최소 p=0.0625 — 원리적으로 p<0.05 불가"
+ },
+ "미리_적은_한계": [
+  "F0 통과는 «좋은 후보»가 아니라 «정보가 있는가»의 최소 검사다. 성능으로 팔지 않는다",
+  "제안서는 SIDER 라 썼고 주 자료원은 FAERS 다(결함 111). 바꿔 놓고 약속을 지켰다 하지 않는다",
+  "깔때기 전체(S1·S2·회의주의자)는 안 태운다 — LLM 300회가 든다",
+  "COVID-19 가 상위에 있다. 우리 HCQ 이력과 겹치지만 동결 파일 규칙대로 뽑았고 빼지 않는다"
+ ],
+ "예측": [
+  "겹침 Jaccard<0.05 이고 그건 아무것도 증명하지 않는다(무작위도 낮다)",
+  "R 의 F0 통과율이 N 보다 높다",
+  "차이는 15%p 를 안 넘는다",
+  "R 절대 통과율 < 40%",
+  "SIDER 후보가 FAERS 보다 적다"
+ ],
+ "결과파일_존재여부": {
+  "reverse_eval.json": false,
+  "역발상결과.md": false
+ }
+}

@@ -1,0 +1,99 @@
+﻿label,stratum,drug,indication,kind,phase,pubmed,nct,ctgov_year,why,detail,matched_to
+TN,B,gabapentin,Pain,효능,Phase 3,4822,NCT01067144,2016,futilit,Trial met futility stopping point,
+TP,B,oxacillin,Staphylococcus aureus infection,승인,NA,3487,,,,,gabapentin|Pain
+TN,A,gabapentin,Malignant neoplasm of breast,효능,Phase 3,105,NCT01067144,2016,futilit,Trial met futility stopping point,
+TP,A,naproxen,Headache Disorders,승인,NA,214,,,,,gabapentin|Malignant neoplasm of breast
+TN,A,ustekinumab,Dermatomyositis,효능,Phase 3,4,NCT03981744,2022,did not meet,The study did not meet the primary endpoint.,
+TP,A,betamethasone,Dermatitis Herpetiformis,승인,NA,9,,,,,ustekinumab|Dermatomyositis
+TN,A,fingolimod,"Multiple Sclerosis, Primary Progressive",효능,Phase 3,123,NCT00731692,2015,did not meet,The extension study was terminated early after the results of the core study showed the study did not meet primary endpoint; confirmed disability progression,
+TP,A,zinc acetate,Zinc deficiency,승인,NA,185,,,,,"fingolimod|Multiple Sclerosis, Primary Progressive"
+TN,A,erlotinib,Glioblastoma Multiforme,안전성,Phase 1/Phase 2,217,NCT01110876,2014,Toxicit,Unanticipated Toxicities,
+TP,A,podophyllotoxin,Condylomata Acuminata,승인,NA,174,,,,,erlotinib|Glioblastoma Multiforme
+TN,A,cetirizine,Migraine Disorders,안전성,Phase 1,0,NCT01981499,2014,safety concern,The trial was prematurely terminated on 01April2014 due to safety concerns.,
+TP,A,gemigliptin,"Diabetes Mellitus, Non-Insulin-Dependent",승인,NA,0,,,,,cetirizine|Migraine Disorders
+TN,A,hydroxycarbamide,Cerebrovascular accident,효능,Phase 3,465,NCT00122980,2010,futilit,The study has been stopped due to safety and futility concerns.,
+TP,A,tretinoin,Hyperkeratosis,승인,NA,382,,,,,hydroxycarbamide|Cerebrovascular accident
+TN,A,pramipexole,Amyotrophic Lateral Sclerosis,효능,Phase 3,25,NCT01622088,2013,did not meet,The Initial Phase 3 Study (NCTO1281189) did not meet its primary efficacy endpoint.,
+TP,A,belotecan,Non-Small Cell Lung Carcinoma,승인,NA,11,,,,,pramipexole|Amyotrophic Lateral Sclerosis
+TN,A,methotrexate,"Leukemia, Myelomonocytic, Chronic",효능,Phase 2,23,NCT01773395,2020,efficacy concerns,Recommendation by the Data and Safety Monitoring Board due to efficacy concerns,
+TP,A,silicon dioxide,Dyspepsia,승인,NA,17,,,,,"methotrexate|Leukemia, Myelomonocytic, Chronic"
+TN,A,doxycycline,Idiopathic Pulmonary Fibrosis,효능,Phase 3,19,NCT02759120,2020,futilit,Terminated for futility after review of first planned interim analysis.,
+TP,A,hydrocortisone succinate,Asthma,승인,NA,45,,,,,doxycycline|Idiopathic Pulmonary Fibrosis
+TN,A,teriparatide,Myelofibrosis,안전성,Phase 2,0,NCT00393380,2009,toxicit,Study stopped because of toxicity concerns.,
+TP,A,betamethasone acetate,Inflammatory Bowel Diseases,승인,NA,0,,,,,teriparatide|Myelofibrosis
+TN,A,cisplatin,Human epidermal growth factor 2 negative carcinoma of breast,효능,Phase 1/Phase 2,40,NCT01918306,2014,lack of efficacy,"company stopped production of study drug due to excessive toxicities, lack of efficacy",
+TP,A,rupatadine,Allergic rhinitis (disorder),승인,NA,77,,,,,cisplatin|Human epidermal growth factor 2 negative carcinoma of breast
+TN,B,hydroxychloroquine,COVID19 (disease),효능,Phase 3,4003,NCT04344444,2021,Lack of efficacy,Lack of efficacy data from other studies,
+TP,B,crizotinib,Non-Small Cell Lung Carcinoma,승인,NA,1673,,,,,hydroxychloroquine|COVID19 (disease)
+TN,A,thalidomide,Rheumatoid Arthritis,효능,Phase 2,124,NCT01285310,2012,lack of efficacy,Study is terminated due to lack of efficacy,
+TP,A,meloxicam,Degenerative polyarthritis,승인,NA,249,,,,,thalidomide|Rheumatoid Arthritis
+TN,B,metformin,Malignant neoplasm of breast,효능,Phase 2,879,NCT02472353,2018,did not meet,did not meet target accrual,
+TP,B,ceftazidime,Sepsis due to Pseudomonas,승인,NA,385,,,,,metformin|Malignant neoplasm of breast
+TN,A,rosiglitazone,Malaria,안전성,Phase 1,12,NCT00811356,2009,safety issue,safety issues (toxicity),
+TP,A,sulfadiazine,Toxoplasmosis associated with acquired immunodeficiency syndrome,승인,NA,24,,,,,rosiglitazone|Malaria
+TN,A,sunitinib,Malignant neoplasm of breast,안전성,Phase 2,313,NCT00824538,2010,toxicit,Closed prematurely due to emerging data on toxicity and competing trials.,
+TP,A,cefamandole,Bacterial sepsis,승인,NA,116,,,,,sunitinib|Malignant neoplasm of breast
+TN,A,erlotinib,Neuroblastoma,안전성,Phase 2,15,NCT00947167,2010,toxicit,Extreme toxicity of Pertuzumab and Erlotinib combination,
+TP,A,zonisamide,Lewy Body Disease,승인,NA,20,,,,,erlotinib|Neuroblastoma
+TN,A,pioglitazone,Asthma,안전성,Phase 2,34,NCT00787644,2013,safety concern,new safety concerns which emerged about pioglitazone during the trial,
+TP,A,benzylpenicillin,Gonococcal joint infection,승인,NA,62,,,,,pioglitazone|Asthma
+TN,B,pioglitazone,Obesity,안전성,Phase 2,885,NCT00787644,2013,safety concern,new safety concerns which emerged about pioglitazone during the trial,
+TP,B,deferiprone,Iron Overload,승인,NA,770,,,,,pioglitazone|Obesity
+TN,A,alprostadil,Pulmonary Hypertension,효능,Phase 2,192,NCT01467076,2012,futilit,The study was halted due to futility concerns based on the unmet benchmarks as specified in the pilot study protocol.,
+TP,A,ribavirin,Respiratory Syncytial Virus Infections,승인,NA,651,,,,,alprostadil|Pulmonary Hypertension
+TN,B,azithromycin,COVID19 (disease),효능,Phase 3,1643,NCT04332107,2021,Futilit,Futility,
+TP,B,somatropin,Pituitary dwarfism,승인,NA,1228,,,,,azithromycin|COVID19 (disease)
+TN,B,bevacizumab,Malignant neoplasm of breast,효능,Phase 3,1490,NCT01200212,2012,no benefit,"A planed interim analysis shows no benefits, but higher adverse event rates for the experimental arm.",
+TP,B,etretinate,Psoriasis,승인,NA,1564,,,,,bevacizumab|Malignant neoplasm of breast
+TN,A,rosuvastatin,Acute Lung Injury,효능,Phase 3,12,NCT00979121,2013,futilit,stopped for futility,
+TP,A,hydrocortisone,Tenosynovitis,승인,NA,45,,,,,rosuvastatin|Acute Lung Injury
+TN,A,simvastatin,Pneumonia,효능,Phase 3,76,NCT01057758,2013,futilit,stopped for futility,
+TP,A,desonide,"Dermatitis, Atopic",승인,NA,45,,,,,simvastatin|Pneumonia
+TN,A,eplerenone,Malignant neoplasm of breast,효능,Phase 2/Phase 3,1,NCT01708798,2016,Futilit,Futility,
+TP,A,fluocinolone acetonide,Exanthema,승인,NA,2,,,,,eplerenone|Malignant neoplasm of breast
+TN,A,lisdexamfetamine,Major Depressive Disorder,효능,Phase 3,25,NCT01436175,2014,failed to demonstrate,SPD489 failed to demonstrate a benefit as adjunctive treatment to antidepressants. Termination was not related to any new safety findings.,
+TP,A,dexlansoprazole,Peptic Ulcer,승인,NA,21,,,,,lisdexamfetamine|Major Depressive Disorder
+TN,A,basiliximab,Ulcerative Colitis,효능,Phase 2,14,NCT01061996,2008,lack of efficacy,lack of efficacy,
+TP,A,grepafloxacin,Acute bacterial bronchitis,승인,NA,13,,,,,basiliximab|Ulcerative Colitis
+TN,A,interferon beta-1a,Crohn Disease,효능,Phase 2,7,NCT00304252,2003,Lack of Efficacy,Lack of Efficacy,
+TP,A,dioxybenzone,Discoloration of skin,승인,NA,1,,,,,interferon beta-1a|Crohn Disease
+TN,A,dasatinib,Polycythemia Vera,효능,Phase 2,16,NCT00538980,2010,lack of efficacy,This study was terminated due to lack of efficacy.,
+TP,A,norfloxacin,Chlamydial urethritis,승인,NA,10,,,,,dasatinib|Polycythemia Vera
+TN,A,perhexiline,Hypertrophic Cardiomyopathy,효능,Phase 3,14,NCT02431221,2017,Lack of efficacy,Lack of efficacy in a preceding study.,
+TP,A,erythromycin,Ophthalmia Neonatorum,승인,NA,91,,,,,perhexiline|Hypertrophic Cardiomyopathy
+TN,A,azacitidine,Multiple Myeloma,효능,Phase 2,108,NCT00412919,2008,Lack of efficacy,Lack of efficacy,
+TP,A,levocabastine,Allergic Conjunctivitis,승인,NA,124,,,,,azacitidine|Multiple Myeloma
+TN,A,rosuvastatin,Malignant neoplasm of breast,효능,Phase 1,36,NCT02483871,2017,did not meet,Enrollment did not meet anticipated goals. Eligibility was a challenge.,
+TP,A,guaiacol,Rhinitis,승인,NA,11,,,,,rosuvastatin|Malignant neoplasm of breast
+TN,A,dasatinib,Malignant neoplasm of breast,효능,Phase 2,187,NCT00780676,2014,futilit,Closed early for futility.,
+TP,A,acetylcarnitine,Senile dementia,승인,NA,101,,,,,dasatinib|Malignant neoplasm of breast
+TN,A,enocitabine,Acute lymphoblastic leukemia - category,안전성,Phase 3,8,NCT00187005,2002,Toxicit,Toxicity,
+TP,A,pyrithione,Coughing,승인,NA,1,,,,,enocitabine|Acute lymphoblastic leukemia - category
+TN,A,warfarin,Idiopathic Pulmonary Fibrosis,안전성,Phase 3,36,NCT00957242,2011,safety concern,Excess of mortality in the treatment group created safety concerns.,
+TP,A,inositol,Hypertriglyceridemia,승인,NA,12,,,,,warfarin|Idiopathic Pulmonary Fibrosis
+TN,A,colecalciferol,Asthma,효능,Phase 2,280,NCT02687815,2019,Futilit,Futility of vitamin D supplementation based on protocol threshold: <30% conditional power to detect pre-specified effect- 16% reduction in severe exacerbations.,
+TP,A,olanzapine,Major Depressive Disorder,승인,NA,343,,,,,colecalciferol|Asthma
+TN,A,dexmedetomidine,Dementia,효능,Phase 2,73,NCT05276830,2022,efficacy concerns,Study was terminated for business reasons; not due to safety or efficacy concerns,
+TP,A,cyproheptadine,Allergic Conjunctivitis,승인,NA,42,,,,,dexmedetomidine|Dementia
+TN,A,sunitinib,Glioblastoma Multiforme,효능,Phase 2,84,NCT00923117,2012,futilit,The study was terminated based on results of an interim analysis for futility.,
+TP,A,cefradine,Tonsillitis,승인,NA,13,,,,,sunitinib|Glioblastoma Multiforme
+TN,A,ketamine,Status Epilepticus,효능,Phase 3,314,NCT02431663,2020,Futilit,Futility,
+TP,A,triamcinolone,Contact Dermatitis,승인,NA,165,,,,,ketamine|Status Epilepticus
+TN,A,methotrexate,Malignant tumor of small intestine,효능,Phase 2,86,NCT00621036,2008,did not meet,MyVax did not meet its primary endpoints,
+TP,A,gatifloxacin,Streptococcal pneumonia,승인,NA,27,,,,,methotrexate|Malignant tumor of small intestine
+TN,A,etofibrate,Cerebrovascular accident,효능,Phase 3,1,NCT00120289,2012,lack of efficacy,AIM-HIGH was stopped on the recommendation of the DSMB because of lack of efficacy of niacin in preventing primary outcome events.,
+TP,A,norethindrone acetate,Secondary physiologic amenorrhea,승인,NA,1,,,,,etofibrate|Cerebrovascular accident
+TN,A,etofibrate,Atherosclerosis,효능,Phase 3,12,NCT00120289,2012,lack of efficacy,AIM-HIGH was stopped on the recommendation of the DSMB because of lack of efficacy of niacin in preventing primary outcome events.,
+TP,A,cefixime,Acute otitis media,승인,NA,86,,,,,etofibrate|Atherosclerosis
+TN,A,etofibrate,Myocardial Infarction,효능,Phase 3,3,NCT00120289,2012,lack of efficacy,AIM-HIGH was stopped on the recommendation of the DSMB because of lack of efficacy of niacin in preventing primary outcome events.,
+TP,A,cefditoren pivoxil,Staphylococcus aureus infection,승인,NA,9,,,,,etofibrate|Myocardial Infarction
+TN,A,etoposide,Multiple Myeloma,효능,Phase 2,437,NCT02128230,2019,Futilit,Low enrollment and Futility as determined by Amgen's Carfilzomib NASCR program.,
+TP,A,ceftriaxone,Bacterial infection due to Klebsiella pneumoniae,승인,NA,681,,,,,etoposide|Multiple Myeloma
+TN,A,rivaroxaban,COVID19 (disease),효능,Phase 2,148,NCT04504032,2021,futilit,"Based on Data Monitoring Committee''s recommendation on 3 February 2021, the study was stopped on 4 February 2021 due to futility.",
+TP,A,fluticasone furoate,Chronic Obstructive Airway Disease,승인,NA,307,,,,,rivaroxaban|COVID19 (disease)
+TN,A,bevacizumab,Myelofibrosis,안전성,Phase 2,2,NCT00667277,2010,unacceptable,lack of response activity in the setting of an unacceptable toxicity profile,
+TP,A,phenyltoloxamine,Allergic rhinitis (disorder),승인,NA,1,,,,,bevacizumab|Myelofibrosis
+TN,B,colecalciferol,Malignant neoplasm of breast,효능,Phase 2,568,NCT01988090,2018,no benefit,An interim analysis demonstrated no benefit of high dose vitamin D when compared to standard dose vitamin D in the reduction or prevention of arthralgia,
+TP,B,tremelimumab,Liver carcinoma,승인,NA,320,,,,,colecalciferol|Malignant neoplasm of breast
+TN,A,nitroprusside,Malignant neoplasm of breast,효능,Phase 1/Phase 2,19,NCT03953326,2020,Futilit,Futility in recruitment,
+TP,A,nafcillin,Infection of bone,승인,NA,57,,,,,nitroprusside|Malignant neoplasm of breast

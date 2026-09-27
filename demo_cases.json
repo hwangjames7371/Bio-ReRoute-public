@@ -1,0 +1,1303 @@
+{
+ "구운 시각": "2026-09-25T15:37:21",
+ "새 LLM 호출": 0,
+ "사례": [
+  {
+   "ok": true,
+   "상태": "정상",
+   "메시지": "",
+   "판정": "기각",
+   "신뢰도": 0,
+   "사유": "결정적 확증시험 음성 3건 · 동급 지지 없음",
+   "근거": [
+    {
+     "방향": "반박",
+     "가중치": 3.0,
+     "출처": "llm",
+     "PMID": "33031652",
+     "설명": "N Engl J Med 2020 RCT(반박)",
+     "인용": "among patients hospitalized with covid-19, those who received hydroxychloroquine did not have a lower incidence of death at 28 days than those who received usual care.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Hospitalized patients with COVID-19",
+      "timing": "Hospital treatment; primary outcome at 28 days"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.9,
+     "출처": "llm",
+     "PMID": "35322077",
+     "설명": "Sci Rep 2022 RCT(반박)",
+     "인용": "the proportion of patients who achieved a clinical scale < 2 did not differ between groups.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Symptomatic patients with mild to moderate COVID-19",
+      "timing": "Treatment during symptomatic COVID-19; outcomes assessed at day 14 or discharge/death"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.86,
+     "출처": "llm",
+     "PMID": "34251506",
+     "설명": "Intensive Care Med 2021 RCT(반박)",
+     "인용": "among critically ill patients with covid-19, lopinavir-ritonavir, hydroxychloroquine, or combination therapy worsened outcomes compared to no antiviral therapy.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Critically ill adults with COVID-19",
+      "timing": "Treatment during critical illness"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.8,
+     "출처": "llm",
+     "PMID": "33264556",
+     "설명": "N Engl J Med 2021 RCT(반박)",
+     "인용": "these remdesivir, hydroxychloroquine, lopinavir, and interferon regimens had little or no effect on hospitalized patients with covid-19, as indicated by overall mortality, initiation of ventilation, and duration of hospital stay.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Hospitalized adults with COVID-19",
+      "timing": "Inpatient treatment; 28-day mortality analysis"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.77,
+     "출처": "llm",
+     "PMID": "33624299",
+     "설명": "Cochrane Database Syst Rev 2021 메타분석(반박)",
+     "인용": "hcq for people infected with covid-19 has little or no effect on the risk of death and probably no effect on progression to mechanical ventilation.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "Adults with COVID-19",
+      "dose": "Dosing schedules varied.",
+      "timing": "Treatment of COVID-19 disease"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.3,
+     "출처": "llm",
+     "PMID": "34865592",
+     "설명": "Expert Rev Anti Infect Ther 2022 관찰연구(반박)",
+     "인용": "this study demonstrated no benefit of hydroxychloroquine prophylaxis and provides quality evidence against its use in covid-19 prevention.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Healthcare workers completing COVID inpatient duty",
+      "timing": "Pre-exposure prophylaxis; RT-PCR testing after duty and quarantine"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.18,
+     "출처": "llm",
+     "PMID": "35192518",
+     "설명": "J Infect Dev Ctries 2022 관찰연구(지지)",
+     "인용": "hydroxychloroquine in addition to standard of care was associated with less intensive care unit admissions, early discharge and greater c-reactive protein reduction.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Hospitalized patients with COVID-19",
+      "timing": "Hydroxychloroquine added to standard care during hospitalization"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.06,
+     "출처": "llm",
+     "PMID": "32373993",
+     "설명": "Eur Rev Med Pharmacol Sci 2020 고찰(지지)",
+     "인용": "the findings support the hypothesis that these drugs have efficacy in the treatment of covid-19.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "COVID-19 patients and malaria-pandemic versus non-pandemic countries"
+     }
+    }
+   ],
+   "게이트": [
+    {
+     "게이트": "입력",
+     "결과": "INPUT",
+     "설명": "사용자가 입력한 가설 — 근거는 게이트가 수집한다"
+    },
+    {
+     "게이트": "전문가가 거절한 목록",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "근거가 실제로 있는가",
+     "결과": "PASS",
+     "설명": "PubMed 4087건"
+    },
+    {
+     "게이트": "논문 읽고 지지·반박 가르기",
+     "결과": "DONE",
+     "설명": "초록 8건 → 지지 1 · 반박 1 · 무관 6 (철회 1 · 인용실패 0)"
+    },
+    {
+     "게이트": "검증 방식 정하기",
+     "결과": "BRANCH",
+     "설명": "간접 → evidence (high)"
+    },
+    {
+     "게이트": "표적 구조 신뢰도",
+     "결과": "SKIP",
+     "설명": "구조 경로 아님 (evidence)"
+    },
+    {
+     "게이트": "약물다움 점검",
+     "결과": "PASS",
+     "설명": "PAINS 없음 · Ro5 위반 0건 · MW 336 · logP 3.8 · HBD 2 · HBA 4"
+    },
+    {
+     "게이트": "반대 근거 더 찾기",
+     "결과": "DONE",
+     "설명": "추가 초록 11건 → 반박 +5 · 지지 +1  (6건 중 신규 6 | 6건 중 신규 5)"
+    },
+    {
+     "게이트": "결정적 반박",
+     "결과": "CHANGED",
+     "설명": "회의주의자 반영 → True · 결정적 확증시험 음성 3건 · 동급 지지 없음"
+    },
+    {
+     "게이트": "논문 전문에서 저자가 적은 한계 읽기",
+     "결과": "DONE",
+     "설명": "3편(한계절1 한계문단2) → 무관2 약화1 · 감쇠 1건 · 못읽음 본문없음1"
+    },
+    {
+     "게이트": "임상시험 등록부 확인",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "종합 판정",
+     "결과": "DONE",
+     "설명": "기각 0"
+    }
+   ],
+   "s1": null,
+   "ttr": {
+    "반박근거_수집_초": 0.01,
+    "게이트별": {
+     "rag": 0.004,
+     "skeptic": 0.005
+    },
+    "전체_초": 2.274,
+    "후보당_초": 2.27,
+    "기각_건수": 1,
+    "warm": 0,
+    "주의": "캐시가 데워져 있으면 짧게 나온다. warm 을 같이 보지 않으면 이 수치는 '빠르다'가 아니라 '이미 받아 뒀다'를 뜻한다."
+   },
+   "모델": {
+    "openai/gpt-5.6-terra @default+seed42(재현 시도·보장 아님)": {
+     "새로": 0,
+     "캐시": 4
+    }
+   },
+   "비용": 0,
+   "예산": {
+    "날짜": "2026-09-25",
+    "쓴 것": 1,
+    "상한": 300,
+    "남은 것": 299,
+    "차단": 0
+   },
+   "시각": "2026-09-25 15:36",
+   "질의": "hydroxychloroquine / COVID-19",
+   "설명": "결정적 반박 RCT가 여럿 — 기각의 교과서"
+  },
+  {
+   "ok": true,
+   "상태": "정상",
+   "메시지": "",
+   "판정": "유망",
+   "신뢰도": 98,
+   "사유": "강한 지지·명백한 반박 없음 · 상한 적용 · 확증 근거 5대1이나 무게비 0.11로 한쪽 우세",
+   "근거": [
+    {
+     "방향": "지지",
+     "가중치": 3.6,
+     "출처": "llm",
+     "PMID": "35908569",
+     "설명": "Lancet 2022 메타분석(지지)",
+     "인용": "in patients hospitalised with covid-19, baricitinib significantly reduced the risk of death but the size of benefit was somewhat smaller than that suggested by previous trials.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "patients admitted to hospital with COVID-19",
+      "dose": "baricitinib 4 mg once daily by mouth for 10 days or until discharge if sooner",
+      "timing": "during hospital admission"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 3.0,
+     "출처": "llm",
+     "PMID": "33306283",
+     "설명": "N Engl J Med 2021 RCT(지지)",
+     "인용": "baricitinib plus remdesivir was superior to remdesivir alone in reducing recovery time and accelerating improvement in clinical status among patients with covid-19, notably among those receiving high-flow oxygen or noninvasive ventilation.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "hospitalized adults with Covid-19",
+      "dose": "baricitinib (≤14 days) plus remdesivir (≤10 days)",
+      "timing": "during hospitalization"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 1.34,
+     "출처": "llm",
+     "PMID": "35459733",
+     "설명": "J Immunother Cancer 2022 메타분석(지지)",
+     "인용": "yet, only baricitinib is recommended in first line for severe covid-19 treatment by the who, as it is the only jaki that has proven efficient to reduce mortality in individual randomized clinical trials (rct), especially the adaptive covid-19 treatment trial (actt-2) and cov-barrier phase 3 trials.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "patients with severe COVID-19",
+      "timing": "first-line treatment for severe COVID-19"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 1.0,
+     "출처": "llm",
+     "PMID": "37977159",
+     "설명": "Lancet Respir Med 2023 RCT(반박)",
+     "인용": "neither baricitinib nor ravulizumab, as administered in this study, was effective in reducing disease severity in patients selected for severe covid-19.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Adults hospitalised with severe COVID-19 at high risk of intensive care unit admission or death",
+      "dose": "baricitinib added to standard of care for up to 14 days",
+      "timing": "Up to day 14 after randomisation"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.72,
+     "출처": "llm",
+     "PMID": "35123660",
+     "설명": "Lancet Respir Med 2022 RCT(지지)",
+     "인용": "treatment with baricitinib significantly reduced 28-day all-cause mortality compared with placebo (20 [39%] of 51 participants died in the baricitinib group vs 29 [58%] of 50 in the placebo group; hazard ratio [hr] 0·54 [95% ci 0·31-0·96]; p=0·030; 46% relative reduction; absolute risk reduction 19%).",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Critically ill hospitalized adults with COVID-19 receiving invasive mechanical ventilation or extracorporeal membrane oxygenation",
+      "dose": "baricitinib 4 mg once daily plus standard of care",
+      "timing": "Up to 14 days; mortality through day 28"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.5,
+     "출처": "llm",
+     "PMID": "35915043",
+     "설명": "Adv Biol Regul 2022 고찰(지지)",
+     "인용": "recovery has shown four drugs to be life-saving - dexamethasone, tocilizumab, baricitinib and casirivimab-imdevimab - and a further six have been shown to be of little or no benefit.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "People hospitalised with COVID-19"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.28,
+     "출처": "llm",
+     "PMID": "36199657",
+     "설명": "Cureus 2022 고찰(지지)",
+     "인용": "baricitinib proves to be a safe and effective treatment for covid-19.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "COVID-19 patients"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.28,
+     "출처": "llm",
+     "PMID": "35746559",
+     "설명": "Vaccines (Basel) 2022 고찰(지지)",
+     "인용": "the anti-inflammatory drug baricitinib (olumiant) has recently been strongly recommended by the who for use in covid-19 patients because it reduces the risk of progressive disease and death.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "COVID-19 patients"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.25,
+     "출처": "llm",
+     "PMID": "36639911",
+     "설명": "J Med Virol 2023 RCT(지지)",
+     "인용": "predefined criteria for selection of the most advantageous arm were met for baricitinib, but not for imatinib.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Hospitalized adults with COVID-19 pneumonia and symptom duration ≤10 days",
+      "dose": "baricitinib 4 mg once daily plus standard care",
+      "timing": "7 days"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.14,
+     "출처": "llm",
+     "PMID": "37076602",
+     "설명": "Nat Rev Drug Discov 2023 고찰(지지)",
+     "인용": "in addition, hospitalized patients with severe or critical covid-19 may benefit from treatment with previously approved immunomodulatory drugs, including glucocorticoids such as dexamethasone, cytokine antagonists such as tocilizumab and janus kinase inhibitors such as baricitinib.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "hospitalized patients with severe or critical COVID-19"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.14,
+     "출처": "llm",
+     "PMID": "33893890",
+     "설명": "Curr Rheumatol Rep 2021 고찰(지지)",
+     "인용": "rcts suggest other agents, such as baricitinib, may improve covid-19 outcomes in certain populations.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "certain populations with COVID-19"
+     }
+    }
+   ],
+   "게이트": [
+    {
+     "게이트": "입력",
+     "결과": "INPUT",
+     "설명": "사용자가 입력한 가설 — 근거는 게이트가 수집한다"
+    },
+    {
+     "게이트": "전문가가 거절한 목록",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "근거가 실제로 있는가",
+     "결과": "PASS",
+     "설명": "PubMed 583건"
+    },
+    {
+     "게이트": "논문 읽고 지지·반박 가르기",
+     "결과": "DONE",
+     "설명": "초록 8건 → 지지 7 · 반박 0 · 무관 1 (철회 0 · 인용실패 0)"
+    },
+    {
+     "게이트": "검증 방식 정하기",
+     "결과": "BRANCH",
+     "설명": "직접·숙주 · JAK1, JAK2 → evidence (high)"
+    },
+    {
+     "게이트": "표적 구조 신뢰도",
+     "결과": "SKIP",
+     "설명": "구조 경로 아님 (evidence)"
+    },
+    {
+     "게이트": "약물다움 점검",
+     "결과": "PASS",
+     "설명": "PAINS 없음 · Ro5 위반 0건 · MW 371 · logP 1.1 · HBD 1 · HBA 6"
+    },
+    {
+     "게이트": "반대 근거 더 찾기",
+     "결과": "DONE",
+     "설명": "추가 초록 9건 → 반박 +1 · 지지 +3  (6건 중 신규 5 | 6건 중 신규 4)"
+    },
+    {
+     "게이트": "논문 전문에서 저자가 적은 한계 읽기",
+     "결과": "DONE",
+     "설명": "3편(한계문단3) → 무관2 약화1 · 감쇠 1건 · 못읽음 절없음2"
+    },
+    {
+     "게이트": "임상시험 등록부 확인",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "종합 판정",
+     "결과": "DONE",
+     "설명": "유망 98"
+    }
+   ],
+   "s1": null,
+   "ttr": {
+    "반박근거_수집_초": 0.02,
+    "게이트별": {
+     "rag": 0.01,
+     "skeptic": 0.009
+    },
+    "전체_초": 1.695,
+    "후보당_초": 1.7,
+    "기각_건수": 0,
+    "warm": 0,
+    "주의": "캐시가 데워져 있으면 짧게 나온다. warm 을 같이 보지 않으면 이 수치는 '빠르다'가 아니라 '이미 받아 뒀다'를 뜻한다."
+   },
+   "모델": {
+    "openai/gpt-5.6-terra @default+seed42(재현 시도·보장 아님)": {
+     "새로": 0,
+     "캐시": 4
+    }
+   },
+   "비용": 0,
+   "예산": {
+    "날짜": "2026-09-25",
+    "쓴 것": 1,
+    "상한": 300,
+    "남은 것": 299,
+    "차단": 0
+   },
+   "시각": "2026-09-25 15:36",
+   "질의": "baricitinib / COVID-19",
+   "설명": "숙주 표적이라 도킹을 건너뛰고 임상 근거로 간다"
+  },
+  {
+   "ok": true,
+   "상태": "정상",
+   "메시지": "",
+   "판정": "기각",
+   "신뢰도": 0,
+   "사유": "결정적 확증시험 음성 2건 · 동급 지지 없음",
+   "근거": [
+    {
+     "방향": "반박",
+     "가중치": 3.0,
+     "출처": "llm",
+     "PMID": "35608580",
+     "설명": "JAMA 2022 RCT(반박)",
+     "인용": "among patients with high-risk operable breast cancer without diabetes, the addition of metformin vs placebo to standard breast cancer treatment did not significantly improve invasive disease-free survival.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "3649 patients with high-risk nonmetastatic breast cancer without diabetes receiving standard therapy",
+      "dose": "850 mg of oral metformin twice a day",
+      "timing": "for 5 years"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.9,
+     "출처": "llm",
+     "PMID": "41348549",
+     "설명": "Cancer 2025 RCT(반박)",
+     "인용": "metformin did not significantly improve pcr when added to standard nact.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Chemotherapy-naïve, nondiabetic women aged 18-65 years with localized, resectable HER2-positive or TNBC",
+      "dose": "850 mg orally twice daily",
+      "timing": "Until surgery during neoadjuvant chemotherapy"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.43,
+     "출처": "llm",
+     "PMID": "27681864",
+     "설명": "Ann Oncol 2016 메타분석(반박)",
+     "인용": "in breast and urothelial cancer, no significant benefits were identified.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Patients with early-stage breast cancer in observational studies",
+      "timing": "Adjuvant metformin use"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.11,
+     "출처": "llm",
+     "PMID": "41163361",
+     "설명": "Cancer Med 2025 관찰연구(반박)",
+     "인용": "statins and metformin demonstrated no significant associations with either survival or adverse events.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Patients with breast cancer from 19 clinical trials",
+      "timing": "Concomitant medication use"
+     }
+    }
+   ],
+   "게이트": [
+    {
+     "게이트": "입력",
+     "결과": "INPUT",
+     "설명": "사용자가 입력한 가설 — 근거는 게이트가 수집한다"
+    },
+    {
+     "게이트": "전문가가 거절한 목록",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "근거가 실제로 있는가",
+     "결과": "PASS",
+     "설명": "PubMed 886건"
+    },
+    {
+     "게이트": "논문 읽고 지지·반박 가르기",
+     "결과": "DONE",
+     "설명": "초록 8건 → 지지 0 · 반박 1 · 무관 7 (철회 1 · 인용실패 0)"
+    },
+    {
+     "게이트": "검증 방식 정하기",
+     "결과": "UNKNOWN",
+     "설명": "불명 → None (low)"
+    },
+    {
+     "게이트": "표적 구조 신뢰도",
+     "결과": "SKIP",
+     "설명": "구조 경로 아님 (미분류)"
+    },
+    {
+     "게이트": "약물다움 점검",
+     "결과": "PASS",
+     "설명": "PAINS 없음 · Ro5 위반 0건 · MW 129 · logP -1.2 · HBD 3 · HBA 1\n                                       ⚠ Ro5는 수동확산 전제 [강] — 구아니딘·아미딘계 강염기 · 극친수성(logP -1.2)이므로 위반 0건이 투과성을 뜻하지 않는다(운반체 의존 가능)"
+    },
+    {
+     "게이트": "반대 근거 더 찾기",
+     "결과": "DONE",
+     "설명": "추가 초록 10건 → 반박 +3 · 지지 +0  (6건 중 신규 5 | 6건 중 신규 5)"
+    },
+    {
+     "게이트": "결정적 반박",
+     "결과": "CHANGED",
+     "설명": "회의주의자 반영 → True · 결정적 확증시험 음성 2건 · 동급 지지 없음"
+    },
+    {
+     "게이트": "논문 전문에서 저자가 적은 한계 읽기",
+     "결과": "DONE",
+     "설명": "2편(한계문단2) → 약화2 · 감쇠 2건 · 못읽음 PMC없음1 본문없음1"
+    },
+    {
+     "게이트": "임상시험 등록부 확인",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "종합 판정",
+     "결과": "DONE",
+     "설명": "기각 0"
+    }
+   ],
+   "s1": null,
+   "ttr": {
+    "반박근거_수집_초": 0.0,
+    "게이트별": {
+     "rag": 0.001,
+     "skeptic": 0.002
+    },
+    "전체_초": 0.889,
+    "후보당_초": 0.89,
+    "기각_건수": 1,
+    "warm": 0,
+    "주의": "캐시가 데워져 있으면 짧게 나온다. warm 을 같이 보지 않으면 이 수치는 '빠르다'가 아니라 '이미 받아 뒀다'를 뜻한다."
+   },
+   "모델": {
+    "openai/gpt-5.6-terra @default+seed42(재현 시도·보장 아님)": {
+     "새로": 0,
+     "캐시": 4
+    }
+   },
+   "비용": 0,
+   "예산": {
+    "날짜": "2026-09-25",
+    "쓴 것": 1,
+    "상한": 300,
+    "남은 것": 299,
+    "차단": 0
+   },
+   "시각": "2026-09-25 15:37",
+   "질의": "metformin / Malignant neoplasm of breast",
+   "설명": "Ro5 통과가 투과성을 뜻하지 않는다 — 시연에서 발견한 구멍"
+  },
+  {
+   "ok": true,
+   "상태": "정상",
+   "메시지": "",
+   "판정": "조건부",
+   "신뢰도": 65,
+   "사유": "확증 설계 양방향·대등(지지 2·반박 1, 무게비 0.70) — 대상군·용량·시점별 결론 필요",
+   "근거": [
+    {
+     "방향": "지지",
+     "가중치": 1.8,
+     "출처": "llm",
+     "PMID": "28522181",
+     "설명": "Lancet Neurol 2017 RCT(지지)",
+     "인용": "the least-squares mean difference between groups was 2·49 (se 0·76, 95% ci 0·99-3·98; p=0·0013) in favour of edaravone.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "patients with early-stage definite or probable ALS meeting restrictive inclusion criteria",
+      "dose": "60 mg intravenous edaravone",
+      "timing": "6 cycles over 24 weeks"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 1.5,
+     "출처": "llm",
+     "PMID": "35006266",
+     "설명": "JAMA Neurol 2022 RCT(반박)",
+     "인용": "disease progression among 116 patients treated for a median of 13.9 months (iqr, 8.9-13.9 months) with edaravone did not differ from 116 patients treated for a median of 11.2 months (iqr, 6.4-20.0 months) with standard therapy (alsfrs-r points/month, -0.91 [95% ci, -0.69 to -1.07] vs -0.85 [95% ci, -0.66 to -0.99]; p = .37).",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "propensity score-matched patients with probable or definite ALS",
+      "dose": "intravenous edaravone; dose not reported",
+      "timing": "median 13.9 months of edaravone treatment"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.4,
+     "출처": "llm",
+     "PMID": "28872907",
+     "설명": "Amyotroph Lateral Scler Frontotemporal Degener 2017 고찰(지지)",
+     "인용": "a second confirmatory phase iii study applying these refinements in patient selection was prospectively designed and successfully documented a statistically significant difference between the edaravone and placebo groups in the alsfrs-r primary endpoint.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "selected patients with ALS meeting refined inclusion criteria",
+      "dose": "not reported",
+      "timing": "24-week double-blind study window"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.34,
+     "출처": "llm",
+     "PMID": "33109706",
+     "설명": "J Neurol Neurosurg Psychiatry 2021 RCT(지지)",
+     "인용": "during double-blind treatment, the percentage of patients who experienced a progression in king's stage was lower for edaravone (42.0%, 95% ci 30.4% to 53.6%) than placebo (55.9%, 95% ci 44.1% to 67.6%).",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Patients with ALS in Edaravone Phase III Study MCI186-19",
+      "timing": "During double-blind treatment"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.28,
+     "출처": "llm",
+     "PMID": "38090405",
+     "설명": "Cureus 2023 고찰(지지)",
+     "인용": "two medications, riluzole and edaravone, have recently been licensed for use in therapy, and they very slightly increase life expectancy.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "ALS patients",
+      "dose": "not reported",
+      "timing": "not reported"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.28,
+     "출처": "llm",
+     "PMID": "33781562",
+     "설명": "Rev Neurol (Paris) 2021 고찰(지지)",
+     "인용": "currently the treatment is limited to two options: riluzole which prolongs survival for a few months and edaravone which is available in only a few countries and also has a small impact on disease progression.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Patients with ALS"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.11,
+     "출처": "llm",
+     "PMID": "42113599",
+     "설명": "JAMA 2026 고찰(지지)",
+     "인용": "riluzole and edaravone are oral medications that slow als progression by up to 2 to 4 months, and tofersen is an intrathecally administered gene therapy for patients with sod1 gene variants.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "people with ALS",
+      "dose": "oral edaravone; dose not reported",
+      "timing": "not reported"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.08,
+     "출처": "llm",
+     "PMID": "30373406",
+     "설명": "Amyotroph Lateral Scler Frontotemporal Degener 2018 기타(반박)",
+     "인용": "edaravone, as presently delivered, may be both ineffective and harmful.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "Patients with ALS in Study 19",
+      "dose": "Long-term daily intravenous infusions"
+     }
+    }
+   ],
+   "게이트": [
+    {
+     "게이트": "입력",
+     "결과": "INPUT",
+     "설명": "사용자가 입력한 가설 — 근거는 게이트가 수집한다"
+    },
+    {
+     "게이트": "전문가가 거절한 목록",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "근거가 실제로 있는가",
+     "결과": "PASS",
+     "설명": "PubMed 347건"
+    },
+    {
+     "게이트": "논문 읽고 지지·반박 가르기",
+     "결과": "DONE",
+     "설명": "초록 8건 → 지지 4 · 반박 1 · 무관 3 (철회 0 · 인용실패 0)"
+    },
+    {
+     "게이트": "검증 방식 정하기",
+     "결과": "BRANCH",
+     "설명": "간접 → evidence (high)"
+    },
+    {
+     "게이트": "표적 구조 신뢰도",
+     "결과": "SKIP",
+     "설명": "구조 경로 아님 (evidence)"
+    },
+    {
+     "게이트": "약물다움 점검",
+     "결과": "PASS",
+     "설명": "PAINS 없음 · Ro5 위반 0건 · MW 174 · logP 1.8 · HBD 0 · HBA 2"
+    },
+    {
+     "게이트": "반대 근거 더 찾기",
+     "결과": "DONE",
+     "설명": "추가 초록 7건 → 반박 +1 · 지지 +2  (6건 중 신규 4 | 6건 중 신규 3)"
+    },
+    {
+     "게이트": "논문 전문에서 저자가 적은 한계 읽기",
+     "결과": "DONE",
+     "설명": "1편(한계문단1) → 약화1 · 감쇠 1건 · 못읽음 PMC없음3 본문없음1 절없음1"
+    },
+    {
+     "게이트": "임상시험 등록부 확인",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "종합 판정",
+     "결과": "DONE",
+     "설명": "조건부 65"
+    }
+   ],
+   "s1": null,
+   "ttr": {
+    "반박근거_수집_초": 0.01,
+    "게이트별": {
+     "rag": 0.004,
+     "skeptic": 0.004
+    },
+    "전체_초": 1.799,
+    "후보당_초": 1.8,
+    "기각_건수": 0,
+    "warm": 0,
+    "주의": "캐시가 데워져 있으면 짧게 나온다. warm 을 같이 보지 않으면 이 수치는 '빠르다'가 아니라 '이미 받아 뒀다'를 뜻한다."
+   },
+   "모델": {
+    "openai/gpt-5.6-terra @default+seed42(재현 시도·보장 아님)": {
+     "새로": 0,
+     "캐시": 4
+    }
+   },
+   "비용": 0,
+   "예산": {
+    "날짜": "2026-09-25",
+    "쓴 것": 1,
+    "상한": 300,
+    "남은 것": 299,
+    "차단": 0
+   },
+   "시각": "2026-09-25 15:37",
+   "질의": "edaravone / Amyotrophic Lateral Sclerosis",
+   "설명": "승인약인데 근거가 갈린다 — 확증 설계가 양방향인 자리"
+  },
+  {
+   "ok": true,
+   "상태": "정상",
+   "메시지": "",
+   "판정": "조건부",
+   "신뢰도": 81,
+   "사유": "확증 설계 양방향·대등(지지 5·반박 4, 무게비 0.57) — 대상군·용량·시점별 결론 필요",
+   "근거": [
+    {
+     "방향": "지지",
+     "가중치": 2.88,
+     "출처": "llm",
+     "PMID": "38148036",
+     "설명": "Rev Med Virol 2024 메타분석(지지)",
+     "인용": "fluvoxamine 100 mg twice a day was associated with reductions in the risk of hospitalisation (risk ratio [rr] 0.75, 95% confidence interval [ci] 0.58-0.97; i 2 = 0%) and reductions in the risk of healthcare utilization (rr 0.68, 95% ci 0.53-0.86; i 2 = 0%).",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "outpatients with COVID-19",
+      "dose": "Fluvoxamine 100 mg twice a day",
+      "timing": "outpatient treatment"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 1.8,
+     "출처": "llm",
+     "PMID": "37393041",
+     "설명": "Int J Infect Dis 2023 RCT(반박)",
+     "인용": "the combined fluvoxamine treatment did not add benefit in preventing deterioration in patients with mild to moderate covid-19 without the immunomodulatory effect observed, although it demonstrated low hospitalization rates, oxygen supplemental, intensive care needed, and zero mortality.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "경증 또는 중등도 COVID-19 환자",
+      "dose": "fluvoxamine 50 mg 하루 2회, 10일; favipiravir 병용",
+      "timing": "경증 또는 중등도 COVID-19 급성기"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 1.2,
+     "출처": "llm",
+     "PMID": "36103313",
+     "설명": "Cochrane Database Syst Rev 2022 메타분석(지지)",
+     "인용": "based on a low-certainty evidence, fluvoxamine may slightly reduce all-cause mortality at day 28, and may reduce the risk of admission to hospital or death in outpatients with mild covid-19.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "outpatients with mild COVID-19",
+      "dose": "100 mg fluvoxamine two or three times daily for a maximum of 15 days",
+      "timing": "at day 28"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.9,
+     "출처": "llm",
+     "PMID": "33180097",
+     "설명": "JAMA 2020 RCT(지지)",
+     "인용": "clinical deterioration occurred in 0 of 80 patients in the fluvoxamine group and in 6 of 72 patients in the placebo group (absolute difference, 8.7% [95% ci, 1.8%-16.4%] from survival analysis; log-rank p = .009).",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "증상 발생 7일 이내이며 비입원 상태인 증상성 COVID-19 성인",
+      "dose": "fluvoxamine 100 mg 하루 3회, 15일",
+      "timing": "경증 COVID-19 급성기, 증상 발생 7일 이내"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.84,
+     "출처": "llm",
+     "PMID": "35385087",
+     "설명": "JAMA Netw Open 2022 메타분석(지지)",
+     "인용": "in this systematic review and meta-analysis of data from 3 trials, under a variety of assumptions, fluvoxamine showed a high probability of being associated with reduced hospitalization in outpatients with covid-19.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "outpatients with COVID-19",
+      "timing": "outpatient management"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.72,
+     "출처": "llm",
+     "PMID": "36070710",
+     "설명": "N Engl J Med 2022 RCT(반박)",
+     "인용": "none of the three medications that were evaluated prevented the occurrence of hypoxemia, an emergency department visit, hospitalization, or death associated with covid-19.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "과체중 또는 비만인 30-85세 비입원 COVID-19 성인",
+      "timing": "진단 후 3일 이내 및 증상 발생 후 7일 이내"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.63,
+     "출처": "llm",
+     "PMID": "41911553",
+     "설명": "Ann Intern Med 2026 RCT(지지)",
+     "인용": "fluvoxamine, but not metformin, may be an effective treatment for reducing fatigue and improving quality of life in patients with long covid.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "확진 SARS-CoV-2 감염 후 90일 이상 피로가 지속된 long COVID 성인",
+      "dose": "fluvoxamine 100 mg 하루 2회, 60일",
+      "timing": "long COVID 피로 지속 후 치료"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.6,
+     "출처": "llm",
+     "PMID": "37622035",
+     "설명": "Open Forum Infect Dis 2023 RCT(반박)",
+     "인용": "this trial did not find fluvoxamine efficacious in preventing clinical deterioration in unvaccinated outpatients with symptomatic covid-19.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "증상성 COVID-19인 고위험 비입원 미국 및 캐나다 환자",
+      "dose": "첫날 50 mg, 이후 100 mg 하루 2회, 15일",
+      "timing": "증상 발생 7일 이내"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.54,
+     "출처": "llm",
+     "PMID": "35384422",
+     "설명": "Infect Chemother 2022 RCT(반박)",
+     "인용": "in this study of adult patients with symptomatic covid-19 who were admitted to the ctc, there was no significant differences in clinical deterioration between patients treated with fluvoxamine and placebo (clinicaltrials.gov identifier: nct04711863).",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "지역치료센터에 입소한 경증-중등도 증상성 COVID-19 성인",
+      "dose": "fluvoxamine 100 mg 하루 2회, 10일",
+      "timing": "무작위배정 전 3일 이내 SARS-CoV-2 PCR 양성"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.3,
+     "출처": "llm",
+     "PMID": "37890224",
+     "설명": "J Infect Public Health 2023 관찰연구(반박)",
+     "인용": "fluvoxamine treatment is failed to demonstrate effectiveness in preventing deterioration in mild to moderate covid-19 and may lead to a higher incidence of pneumonia, hospitalization, and oxygen supplementation, necessitating careful consideration before prescribing the drug for covid-19.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "경증 또는 중등도 COVID-19 환자",
+      "timing": "치료 후 5일까지의 임상 악화 평가"
+     }
+    },
+    {
+     "방향": "반박",
+     "가중치": 0.28,
+     "출처": "llm",
+     "PMID": "38633552",
+     "설명": "Infect Dis Clin Microbiol 2023 고찰(반박)",
+     "인용": "remdesivir oral analogues and ensitrelvir fumarate are promising agents for treating acute covid-19, which are in phase trials now; however, ivermectin, fluvoxamine, and metformin were shown to be ineffective.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "COVID-19 환자 전반"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.14,
+     "출처": "llm",
+     "PMID": "36968793",
+     "설명": "Discov Ment Health 2023 고찰(지지)",
+     "인용": "several clinical studies have demonstrated that the use of fluvoxamine, a selective serotonin reuptake inhibitor with potent sigma-1 receptor agonism, in the early-stage of infection might be associated with the prevention of clinical deterioration in individuals with sars-cov-2 infection, although several reports have shown that a low dose of fluvoxamine may be ineffective.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "individuals with SARS-CoV-2 infection",
+      "dose": "a low dose of fluvoxamine",
+      "timing": "in the early-stage of infection"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.02,
+     "출처": "llm",
+     "PMID": "35409171",
+     "설명": "Int J Mol Sci 2022 고찰(지지)",
+     "인용": "clinical studies produced promising data that encourage the further investigation of fluoxetine and fluvoxamine regarding their use in covid-19.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "COVID-19 patients"
+     }
+    }
+   ],
+   "게이트": [
+    {
+     "게이트": "입력",
+     "결과": "INPUT",
+     "설명": "사용자가 입력한 가설 — 근거는 게이트가 수집한다"
+    },
+    {
+     "게이트": "전문가가 거절한 목록",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "근거가 실제로 있는가",
+     "결과": "PASS",
+     "설명": "PubMed 195건"
+    },
+    {
+     "게이트": "논문 읽고 지지·반박 가르기",
+     "결과": "DONE",
+     "설명": "초록 8건 → 지지 5 · 반박 0 · 무관 3 (철회 0 · 인용실패 0)"
+    },
+    {
+     "게이트": "검증 방식 정하기",
+     "결과": "BRANCH",
+     "설명": "직접·숙주 · SIGMAR1 (sigma-1 receptor) → evidence (medium)"
+    },
+    {
+     "게이트": "표적 구조 신뢰도",
+     "결과": "SKIP",
+     "설명": "구조 경로 아님 (evidence)"
+    },
+    {
+     "게이트": "약물다움 점검",
+     "결과": "PASS",
+     "설명": "PAINS 없음 · Ro5 위반 0건 · MW 318 · logP 3.2 · HBD 1 · HBA 4"
+    },
+    {
+     "게이트": "반대 근거 더 찾기",
+     "결과": "DONE",
+     "설명": "추가 초록 11건 → 반박 +7 · 지지 +2  (6건 중 신규 6 | 6건 중 신규 5)"
+    },
+    {
+     "게이트": "논문 전문에서 저자가 적은 한계 읽기",
+     "결과": "DONE",
+     "설명": "2편(한계문단2) → 약화2 · 감쇠 2건 · 못읽음 PMC없음2 본문없음2"
+    },
+    {
+     "게이트": "임상시험 등록부 확인",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "중복 시험 정리",
+     "결과": "DONE",
+     "설명": "같은 시험 중복 1건 제거(NCT 대조)"
+    },
+    {
+     "게이트": "종합 판정",
+     "결과": "DONE",
+     "설명": "조건부 81"
+    }
+   ],
+   "s1": null,
+   "ttr": {
+    "반박근거_수집_초": 0.01,
+    "게이트별": {
+     "rag": 0.006,
+     "skeptic": 0.006
+    },
+    "전체_초": 1.801,
+    "후보당_초": 1.8,
+    "기각_건수": 0,
+    "warm": 0,
+    "주의": "캐시가 데워져 있으면 짧게 나온다. warm 을 같이 보지 않으면 이 수치는 '빠르다'가 아니라 '이미 받아 뒀다'를 뜻한다."
+   },
+   "모델": {
+    "openai/gpt-5.6-terra @default+seed42(재현 시도·보장 아님)": {
+     "새로": 0,
+     "캐시": 4
+    }
+   },
+   "비용": 0,
+   "예산": {
+    "날짜": "2026-09-25",
+    "쓴 것": 1,
+    "상한": 300,
+    "남은 것": 299,
+    "차단": 0
+   },
+   "시각": "2026-09-25 15:37",
+   "질의": "fluvoxamine / COVID-19",
+   "설명": "제안서는 「보류」를 예상했는데 우리 판정은 다르다 — 왜인지 근거를 보라"
+  },
+  {
+   "ok": true,
+   "상태": "정상",
+   "메시지": "",
+   "판정": "보류",
+   "신뢰도": 53,
+   "사유": "근거가 약함 (지지 2건 w=0.15 · 반박 없음) → 확증 임상 권고",
+   "근거": [
+    {
+     "방향": "지지",
+     "가중치": 0.11,
+     "출처": "llm",
+     "PMID": "9806107",
+     "설명": "Drugs 1998 고찰(지지)",
+     "인용": "rifapentine- and rifampicin-containing regimens produced similar sputum culture conversion rates with low rates of relapse in 2 randomised clinical trials in patients with smear-positive tuberculosis in china.",
+     "검증": "완전일치",
+     "회수": "skeptic",
+     "조건": {
+      "population": "중국의 도말양성 결핵 환자",
+      "dose": "rifampicin 함유 요법; 구체적 용량은 초록에 제시되지 않음",
+      "timing": "치료 및 추적관찰 기간"
+     }
+    },
+    {
+     "방향": "지지",
+     "가중치": 0.03,
+     "출처": "llm",
+     "PMID": "6386610",
+     "설명": "Gerontology 1984 고찰(지지)",
+     "인용": "short-course (9 months) chemotherapy with isoniazid and rifampin is the treatment of choice for elderly patients with uncomplicated pulmonary tuberculosis.",
+     "검증": "완전일치",
+     "회수": "factcheck",
+     "조건": {
+      "population": "elderly patients with uncomplicated pulmonary tuberculosis",
+      "timing": "9 months"
+     }
+    }
+   ],
+   "게이트": [
+    {
+     "게이트": "입력",
+     "결과": "INPUT",
+     "설명": "사용자가 입력한 가설 — 근거는 게이트가 수집한다"
+    },
+    {
+     "게이트": "전문가가 거절한 목록",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "근거가 실제로 있는가",
+     "결과": "PASS",
+     "설명": "PubMed 11714건"
+    },
+    {
+     "게이트": "논문 읽고 지지·반박 가르기",
+     "결과": "DONE",
+     "설명": "초록 8건 → 지지 1 · 반박 0 · 무관 7 (철회 0 · 인용실패 0)"
+    },
+    {
+     "게이트": "검증 방식 정하기",
+     "결과": "BRANCH",
+     "설명": "직접·병원체 · DNA-dependent RNA polymerase beta subunit (rpoB) → structure (high)"
+    },
+    {
+     "게이트": "표적 구조 신뢰도",
+     "결과": "PASS",
+     "설명": "DNA-dependent RNA polym… · 전체 평균 pLDDT 91.1 · 70 미만 5% — **활성부위 주석 없음. 약한 대리물**"
+    },
+    {
+     "게이트": "약물다움 점검",
+     "결과": "ALERT",
+     "설명": "PAINS 경보(hzone_phenol_A(479)) — 근거 어세이 재검토 · MW 823 · logP 4.3 · HBD 6 · HBA 15"
+    },
+    {
+     "게이트": "반대 근거 더 찾기",
+     "결과": "DONE",
+     "설명": "추가 초록 12건 → 반박 +0 · 지지 +1  (6건 중 신규 6 | 6건 중 신규 6)"
+    },
+    {
+     "게이트": "논문 전문에서 저자가 적은 한계 읽기",
+     "결과": "UNKNOWN",
+     "설명": "한계를 못 읽었다 — PMC없음 2. **«한계 없음» 이 아니다**"
+    },
+    {
+     "게이트": "임상시험 등록부 확인",
+     "결과": "SKIP",
+     "설명": "config off"
+    },
+    {
+     "게이트": "종합 판정",
+     "결과": "DONE",
+     "설명": "보류 53"
+    }
+   ],
+   "s1": {
+    "label": "신뢰",
+    "why": "전체 평균 pLDDT 91.1 · 70 미만 5% — **활성부위 주석 없음. 약한 대리물**",
+    "basis": "전체평균",
+    "chain": null,
+    "uniprot": {
+     "accession": "P9WGY9",
+     "name": "DNA-directed RNA polymerase subunit beta",
+     "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+     "sites": [],
+     "chains": [
+      {
+       "name": "DNA-directed RNA polymerase subunit beta",
+       "start": 1,
+       "end": 1178
+      }
+     ],
+     "seq_len": 1178,
+     "error": null,
+     "error_kind": null,
+     "match": "자유텍스트"
+    },
+    "plddt": {
+     "accession": "P9WGY9",
+     "mean": 91.1,
+     "min": 25.7,
+     "frac_low": 0.053,
+     "n_res": 1178,
+     "cif_url": "https://alphafold.ebi.ac.uk/files/AF-P9WGY9-F1-model_v6.cif",
+     "pdb_url": "https://alphafold.ebi.ac.uk/files/AF-P9WGY9-F1-model_v6.pdb",
+     "site_mean": null,
+     "site_min": null,
+     "n_site": 0,
+     "n_site_used": 0,
+     "out_of_range": 0,
+     "version": 6,
+     "start": 1,
+     "end": 1178,
+     "n_frag": 1,
+     "error": null
+    },
+    "cif_url": "https://alphafold.ebi.ac.uk/files/AF-P9WGY9-F1-model_v6.cif",
+    "pdb_n": 92
+   },
+   "ttr": {
+    "반박근거_수집_초": 0.0,
+    "게이트별": {
+     "rag": 0.001,
+     "skeptic": 0.001
+    },
+    "전체_초": 0.808,
+    "후보당_초": 0.81,
+    "기각_건수": 0,
+    "warm": 0,
+    "주의": "캐시가 데워져 있으면 짧게 나온다. warm 을 같이 보지 않으면 이 수치는 '빠르다'가 아니라 '이미 받아 뒀다'를 뜻한다."
+   },
+   "모델": {
+    "openai/gpt-5.6-terra @default+seed42(재현 시도·보장 아님)": {
+     "새로": 0,
+     "캐시": 3
+    }
+   },
+   "비용": 0,
+   "예산": {
+    "날짜": "2026-09-25",
+    "쓴 것": 1,
+    "상한": 300,
+    "남은 것": 299,
+    "차단": 0
+   },
+   "시각": "2026-09-25 15:37",
+   "질의": "rifampin / Tuberculosis",
+   "설명": "구조 경로를 타는 대조군 — 이미 승인된 적응증이라 새 발견이 아니다"
+  }
+ ]
+}

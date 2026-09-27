@@ -1,0 +1,2819 @@
+{
+ "stratum": "A",
+ "n_tp": 42,
+ "n_tn": 42,
+ "rows": [
+  {
+   "drug": "gabapentin",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "naproxen",
+   "indication": "Headache Disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "ustekinumab",
+   "indication": "Dermatomyositis",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone",
+   "indication": "Dermatitis Herpetiformis",
+   "label": "TP"
+  },
+  {
+   "drug": "fingolimod",
+   "indication": "Multiple Sclerosis, Primary Progressive",
+   "label": "TN"
+  },
+  {
+   "drug": "zinc acetate",
+   "indication": "Zinc deficiency",
+   "label": "TP"
+  },
+  {
+   "drug": "erlotinib",
+   "indication": "Glioblastoma Multiforme",
+   "label": "TN"
+  },
+  {
+   "drug": "podophyllotoxin",
+   "indication": "Condylomata Acuminata",
+   "label": "TP"
+  },
+  {
+   "drug": "cetirizine",
+   "indication": "Migraine Disorders",
+   "label": "TN"
+  },
+  {
+   "drug": "gemigliptin",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "hydroxycarbamide",
+   "indication": "Cerebrovascular accident",
+   "label": "TN"
+  },
+  {
+   "drug": "tretinoin",
+   "indication": "Hyperkeratosis",
+   "label": "TP"
+  },
+  {
+   "drug": "pramipexole",
+   "indication": "Amyotrophic Lateral Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "belotecan",
+   "indication": "Non-Small Cell Lung Carcinoma",
+   "label": "TP"
+  },
+  {
+   "drug": "methotrexate",
+   "indication": "Leukemia, Myelomonocytic, Chronic",
+   "label": "TN"
+  },
+  {
+   "drug": "silicon dioxide",
+   "indication": "Dyspepsia",
+   "label": "TP"
+  },
+  {
+   "drug": "doxycycline",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "hydrocortisone succinate",
+   "indication": "Asthma",
+   "label": "TP"
+  },
+  {
+   "drug": "teriparatide",
+   "indication": "Myelofibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone acetate",
+   "indication": "Inflammatory Bowel Diseases",
+   "label": "TP"
+  },
+  {
+   "drug": "cisplatin",
+   "indication": "Human epidermal growth factor 2 negative carcinoma of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "rupatadine",
+   "indication": "Allergic rhinitis (disorder)",
+   "label": "TP"
+  },
+  {
+   "drug": "thalidomide",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "meloxicam",
+   "indication": "Degenerative polyarthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "rosiglitazone",
+   "indication": "Malaria",
+   "label": "TN"
+  },
+  {
+   "drug": "sulfadiazine",
+   "indication": "Toxoplasmosis associated with acquired immunodeficiency syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "sunitinib",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "cefamandole",
+   "indication": "Bacterial sepsis",
+   "label": "TP"
+  },
+  {
+   "drug": "erlotinib",
+   "indication": "Neuroblastoma",
+   "label": "TN"
+  },
+  {
+   "drug": "zonisamide",
+   "indication": "Lewy Body Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "pioglitazone",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "benzylpenicillin",
+   "indication": "Gonococcal joint infection",
+   "label": "TP"
+  },
+  {
+   "drug": "alprostadil",
+   "indication": "Pulmonary Hypertension",
+   "label": "TN"
+  },
+  {
+   "drug": "ribavirin",
+   "indication": "Respiratory Syncytial Virus Infections",
+   "label": "TP"
+  },
+  {
+   "drug": "rosuvastatin",
+   "indication": "Acute Lung Injury",
+   "label": "TN"
+  },
+  {
+   "drug": "hydrocortisone",
+   "indication": "Tenosynovitis",
+   "label": "TP"
+  },
+  {
+   "drug": "simvastatin",
+   "indication": "Pneumonia",
+   "label": "TN"
+  },
+  {
+   "drug": "desonide",
+   "indication": "Dermatitis, Atopic",
+   "label": "TP"
+  },
+  {
+   "drug": "eplerenone",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "fluocinolone acetonide",
+   "indication": "Exanthema",
+   "label": "TP"
+  },
+  {
+   "drug": "lisdexamfetamine",
+   "indication": "Major Depressive Disorder",
+   "label": "TN"
+  },
+  {
+   "drug": "dexlansoprazole",
+   "indication": "Peptic Ulcer",
+   "label": "TP"
+  },
+  {
+   "drug": "basiliximab",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "grepafloxacin",
+   "indication": "Acute bacterial bronchitis",
+   "label": "TP"
+  },
+  {
+   "drug": "interferon beta-1a",
+   "indication": "Crohn Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "dioxybenzone",
+   "indication": "Discoloration of skin",
+   "label": "TP"
+  },
+  {
+   "drug": "dasatinib",
+   "indication": "Polycythemia Vera",
+   "label": "TN"
+  },
+  {
+   "drug": "norfloxacin",
+   "indication": "Chlamydial urethritis",
+   "label": "TP"
+  },
+  {
+   "drug": "perhexiline",
+   "indication": "Hypertrophic Cardiomyopathy",
+   "label": "TN"
+  },
+  {
+   "drug": "erythromycin",
+   "indication": "Ophthalmia Neonatorum",
+   "label": "TP"
+  },
+  {
+   "drug": "azacitidine",
+   "indication": "Multiple Myeloma",
+   "label": "TN"
+  },
+  {
+   "drug": "levocabastine",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "rosuvastatin",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "guaiacol",
+   "indication": "Rhinitis",
+   "label": "TP"
+  },
+  {
+   "drug": "dasatinib",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "acetylcarnitine",
+   "indication": "Senile dementia",
+   "label": "TP"
+  },
+  {
+   "drug": "enocitabine",
+   "indication": "Acute lymphoblastic leukemia - category",
+   "label": "TN"
+  },
+  {
+   "drug": "pyrithione",
+   "indication": "Coughing",
+   "label": "TP"
+  },
+  {
+   "drug": "warfarin",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "inositol",
+   "indication": "Hypertriglyceridemia",
+   "label": "TP"
+  },
+  {
+   "drug": "colecalciferol",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "olanzapine",
+   "indication": "Major Depressive Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "dexmedetomidine",
+   "indication": "Dementia",
+   "label": "TN"
+  },
+  {
+   "drug": "cyproheptadine",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "sunitinib",
+   "indication": "Glioblastoma Multiforme",
+   "label": "TN"
+  },
+  {
+   "drug": "cefradine",
+   "indication": "Tonsillitis",
+   "label": "TP"
+  },
+  {
+   "drug": "ketamine",
+   "indication": "Status Epilepticus",
+   "label": "TN"
+  },
+  {
+   "drug": "triamcinolone",
+   "indication": "Contact Dermatitis",
+   "label": "TP"
+  },
+  {
+   "drug": "methotrexate",
+   "indication": "Malignant tumor of small intestine",
+   "label": "TN"
+  },
+  {
+   "drug": "gatifloxacin",
+   "indication": "Streptococcal pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "etofibrate",
+   "indication": "Cerebrovascular accident",
+   "label": "TN"
+  },
+  {
+   "drug": "norethindrone acetate",
+   "indication": "Secondary physiologic amenorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "etofibrate",
+   "indication": "Atherosclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "cefixime",
+   "indication": "Acute otitis media",
+   "label": "TP"
+  },
+  {
+   "drug": "etofibrate",
+   "indication": "Myocardial Infarction",
+   "label": "TN"
+  },
+  {
+   "drug": "cefditoren pivoxil",
+   "indication": "Staphylococcus aureus infection",
+   "label": "TP"
+  },
+  {
+   "drug": "etoposide",
+   "indication": "Multiple Myeloma",
+   "label": "TN"
+  },
+  {
+   "drug": "ceftriaxone",
+   "indication": "Bacterial infection due to Klebsiella pneumoniae",
+   "label": "TP"
+  },
+  {
+   "drug": "rivaroxaban",
+   "indication": "COVID19 (disease)",
+   "label": "TN"
+  },
+  {
+   "drug": "fluticasone furoate",
+   "indication": "Chronic Obstructive Airway Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "bevacizumab",
+   "indication": "Myelofibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "phenyltoloxamine",
+   "indication": "Allergic rhinitis (disorder)",
+   "label": "TP"
+  },
+  {
+   "drug": "nitroprusside",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "nafcillin",
+   "indication": "Infection of bone",
+   "label": "TP"
+  }
+ ],
+ "results": {
+  "B0": {
+   "scores": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.04999999999999999,
+    0.5,
+    0.04999999999999999,
+    0.5,
+    0.5,
+    0.5,
+    0.2,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.95,
+    0.5,
+    0.5,
+    0.5,
+    0.95,
+    0.5,
+    0.95,
+    0.8,
+    0.95,
+    0.2,
+    0.5,
+    0.5,
+    0.8,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.04999999999999999,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.04999999999999999,
+    0.5,
+    0.5,
+    0.5,
+    0.2,
+    0.5,
+    0.5,
+    0.5,
+    0.8,
+    0.8,
+    0.5,
+    0.95,
+    0.5,
+    0.5,
+    0.2,
+    0.5,
+    0.5,
+    0.5,
+    0.04999999999999999,
+    0.5,
+    0.04999999999999999,
+    0.5,
+    0.5,
+    0.5,
+    0.2,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.95,
+    0.8,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "leak": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "verdicts": [
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "실패",
+    "모름",
+    "실패",
+    "모름",
+    "모름",
+    "모름",
+    "실패",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "성공",
+    "모름",
+    "모름",
+    "모름",
+    "성공",
+    "모름",
+    "성공",
+    "성공",
+    "성공",
+    "실패",
+    "모름",
+    "모름",
+    "성공",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "실패",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "실패",
+    "모름",
+    "모름",
+    "모름",
+    "실패",
+    "모름",
+    "모름",
+    "모름",
+    "성공",
+    "성공",
+    "모름",
+    "성공",
+    "모름",
+    "모름",
+    "실패",
+    "모름",
+    "모름",
+    "모름",
+    "실패",
+    "모름",
+    "실패",
+    "모름",
+    "모름",
+    "모름",
+    "실패",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "모름",
+    "성공",
+    "성공",
+    "모름",
+    "모름",
+    "모름",
+    "모름"
+   ],
+   "conf": [
+    "low",
+    "low",
+    "low",
+    "low",
+    "high",
+    "low",
+    "high",
+    "low",
+    "low",
+    "low",
+    "medium",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "high",
+    "low",
+    "low",
+    "low",
+    "high",
+    "low",
+    "high",
+    "medium",
+    "high",
+    "medium",
+    "low",
+    "low",
+    "medium",
+    "low",
+    "low",
+    "low",
+    "low",
+    "high",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "high",
+    "low",
+    "low",
+    "low",
+    "medium",
+    "low",
+    "low",
+    "low",
+    "medium",
+    "medium",
+    "low",
+    "high",
+    "low",
+    "low",
+    "medium",
+    "low",
+    "low",
+    "low",
+    "high",
+    "low",
+    "high",
+    "low",
+    "low",
+    "low",
+    "medium",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "low",
+    "high",
+    "medium",
+    "low",
+    "low",
+    "low",
+    "low"
+   ]
+  },
+  "B5": {
+   "scores": [
+    0.98,
+    0.98,
+    0.5,
+    0.5,
+    0.5,
+    0.92,
+    0.43,
+    0.96,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.48,
+    0.5,
+    0.56,
+    0.6,
+    0.5,
+    0.5,
+    0.29,
+    0.98,
+    0.53,
+    0.95,
+    0.8,
+    0.59,
+    0.0,
+    0.5,
+    0.51,
+    0.98,
+    0.22,
+    0.52,
+    0.81,
+    0.34,
+    0.35,
+    0.5,
+    0.5,
+    0.98,
+    0.5,
+    0.5,
+    0.17,
+    0.5,
+    0.04,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.55,
+    0.79,
+    0.33,
+    0.59,
+    0.83,
+    0.5,
+    0.61,
+    0.47,
+    0.57,
+    0.51,
+    0.5,
+    0.21,
+    0.65,
+    0.78,
+    0.85,
+    0.57,
+    0.5,
+    0.36,
+    0.5,
+    0.78,
+    0.72,
+    0.5,
+    0.59,
+    0.5,
+    0.5,
+    0.5,
+    0.91,
+    0.5,
+    0.55,
+    0.9,
+    0.7,
+    0.86,
+    0.98,
+    0.51,
+    0.56,
+    0.51,
+    0.51
+   ],
+   "verdicts": [
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "조건부",
+    "보류",
+    "조건부",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "유망",
+    "조건부",
+    "기각",
+    "보류",
+    "조건부",
+    "유망",
+    "보류",
+    "보류",
+    "조건부",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "조건부",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "조건부",
+    "조건부",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류"
+   ],
+   "trail": [
+    {
+     "route": null,
+     "mech": "불명",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "UNKNOWN",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "PTGS1 (COX-1), PTGS2 (COX-2)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "IL12B (IL-12/IL-23 p40 subunit)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "ERROR",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "NR3C1 (glucocorticoid receptor)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "S1PR1, S1PR3, S1PR4, S1PR5",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "간접",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "EGFR",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "TUBB (β-tubulin)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": null,
+     "mech": "불명",
+     "target": "",
+     "skip": [
+      "factcheck"
+     ],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "FLAG",
+      "factcheck": "SKIP",
+      "router": "UNKNOWN",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "DPP4",
+     "skip": [
+      "factcheck"
+     ],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "FLAG",
+      "factcheck": "SKIP",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": null,
+     "mech": "불명",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "UNKNOWN",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "RARA, RARB, RARG",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "dopamine D2 receptor; dopamine D3 receptor",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "DNA topoisomerase I",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "dihydrofolate reductase",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "간접",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "matrix metalloproteinases",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "glucocorticoid receptor",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "parathyroid hormone 1 receptor",
+     "skip": [
+      "factcheck"
+     ],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "FLAG",
+      "factcheck": "SKIP",
+      "router": "BRANCH",
+      "s2": "FLAG",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "glucocorticoid receptor",
+     "skip": [
+      "factcheck"
+     ],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "FLAG",
+      "factcheck": "SKIP",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "간접",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "histamine H1 receptor; platelet-activating factor receptor",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "cereblon",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "cyclooxygenase-2",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "PPARγ (PPARG)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "Dihydropteroate synthase (DHPS)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "VEGFR1/2/3, PDGFRα/β, KIT",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 1,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 8,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "veto": "CHANGED",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "Penicillin-binding proteins (PBPs; peptidoglycan transpeptid",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Epidermal growth factor receptor (EGFR/ERBB1)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": null,
+     "mech": "불명",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "UNKNOWN",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "PPARγ (PPARG)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "Penicillin-binding proteins (PBPs; peptidoglycan transpeptid",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Prostaglandin E receptors (PTGER2, PTGER4)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": null,
+     "mech": "불명",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "UNKNOWN",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "3-hydroxy-3-methylglutaryl-CoA reductase (HMGCR)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Glucocorticoid receptor (NR3C1)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "HMGCR",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "NR3C1",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "NR3C2",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "NR3C1",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "SLC6A3, SLC6A4, SLC6A2, TAAR1",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "ATP4A",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "IL2RA",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "ERROR",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "DNA gyrase, DNA topoisomerase IV",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "IFNAR1, IFNAR2",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "ERROR",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "간접",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "ABL1, SRC family kinases, KIT, PDGFR",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "DNA gyrase, DNA topoisomerase IV",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "CPT1, CPT2",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "세균 50S 리보솜",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "FLAG",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "DNMT1, DNMT3A, DNMT3B",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "HRH1",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "HMGCR",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": null,
+     "mech": "불명",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "UNKNOWN",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "SRC, ABL1, KIT, PDGFRB",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "간접",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "TYMS",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "FLAG",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": null,
+     "mech": "불명",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "UNKNOWN",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "VKORC1",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "간접",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Vitamin D receptor (VDR)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "5-hydroxytryptamine receptor 2A (HTR2A), dopamine receptor D",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Alpha-2A adrenergic receptor (ADRA2A)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Histamine H1 receptor (HRH1)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Vascular endothelial growth factor receptor 2 (KDR), platele",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "Penicillin-binding proteins (PBPs)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "N-methyl-D-aspartate receptor (NMDAR)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Glucocorticoid receptor (NR3C1)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Dihydrofolate reductase (DHFR)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "DNA gyrase (GyrA/GyrB), DNA topoisomerase IV (ParC/ParE)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Peroxisome proliferator-activated receptor alpha (PPARA)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Progesterone receptor (PGR)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "PPARα",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "Penicillin-binding proteins (PBPs)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "PPARα",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "Penicillin-binding proteins (PBPs)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "FLAG",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "DNA topoisomerase II",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "FLAG",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "Penicillin-binding proteins (PBPs)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "FLAG",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Coagulation factor Xa",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Glucocorticoid receptor (NR3C1)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Vascular endothelial growth factor A (VEGF-A)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "ERROR",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "evidence",
+     "mech": "직접·숙주",
+     "target": "Histamine H1 receptor (HRH1)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": null,
+     "mech": "불명",
+     "target": "",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "UNKNOWN",
+      "s2": "ERROR",
+      "skeptic": "NONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    },
+    {
+     "route": "structure",
+     "mech": "직접·병원체",
+     "target": "Penicillin-binding proteins (PBPs)",
+     "skip": [],
+     "skip_off": [
+      "registry"
+     ],
+     "flips": 0,
+     "killed": false,
+     "abstain": false,
+     "n_gates": 7,
+     "outcomes": {
+      "f0": "PASS",
+      "factcheck": "DONE",
+      "router": "BRANCH",
+      "s2": "PASS",
+      "skeptic": "DONE",
+      "registry": "SKIP",
+      "adjudicate": "DONE"
+     }
+    }
+   ]
+  }
+ },
+ "토큰": {
+  "총토큰": 762680,
+  "입력": 506018,
+  "출력": 256662,
+  "계량된_호출": 151,
+  "계량_안된_호출": 0,
+  "캐시적중": 0,
+  "모델": "openai/gpt-5.6-terra",
+  "seed": "42",
+  "프록시": true
+ }
+}

@@ -1,0 +1,5433 @@
+{
+ "stratum": "A",
+ "n_tp": 387,
+ "n_tn": 387,
+ "rows": [
+  {
+   "drug": "elamipretide",
+   "indication": "Primary Mitochondrial Myopathy",
+   "label": "TN"
+  },
+  {
+   "drug": "cefuroxime axetil",
+   "indication": "Acute maxillary sinusitis",
+   "label": "TP"
+  },
+  {
+   "drug": "DS102",
+   "indication": "Hypertriglyceridemia",
+   "label": "TN"
+  },
+  {
+   "drug": "cefpodoxime proxetil",
+   "indication": "Acute maxillary sinusitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Genvoya 150Mg-150Mg-200Mg-10Mg Tablet",
+   "indication": "HIV-1-infection",
+   "label": "TN"
+  },
+  {
+   "drug": "pheniramine",
+   "indication": "Pruritus",
+   "label": "TP"
+  },
+  {
+   "drug": "Minocycline",
+   "indication": "HIV Infections",
+   "label": "TN"
+  },
+  {
+   "drug": "prussian blue",
+   "indication": "Thallium poisoning",
+   "label": "TP"
+  },
+  {
+   "drug": "Aticaprant",
+   "indication": "Depressive Disorder, Major",
+   "label": "TN"
+  },
+  {
+   "drug": "brolucizumab",
+   "indication": "Exudative age-related macular degeneration",
+   "label": "TP"
+  },
+  {
+   "drug": "E2007",
+   "indication": "Parkinson's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "landiolol",
+   "indication": "Sinus Tachycardia",
+   "label": "TP"
+  },
+  {
+   "drug": "JNJ-18054478",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "pentoxyverine",
+   "indication": "Rhinitis, Vasomotor",
+   "label": "TP"
+  },
+  {
+   "drug": "Ulocuplumab",
+   "indication": "Solid Tumor",
+   "label": "TN"
+  },
+  {
+   "drug": "amikacin",
+   "indication": "Non-tuberculous mycobacterial pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "Xilonix",
+   "indication": "Metastatic Colorectal Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "cilastatin",
+   "indication": "Infection caused by Citrobacter",
+   "label": "TP"
+  },
+  {
+   "drug": "ZPL389 3mg",
+   "indication": "Atopic Dermatitis",
+   "label": "TN"
+  },
+  {
+   "drug": "ceftriaxone",
+   "indication": "Meningitis caused by Klebsiella aerogenes",
+   "label": "TP"
+  },
+  {
+   "drug": "iHIVARNA-01",
+   "indication": "HIV Infections",
+   "label": "TN"
+  },
+  {
+   "drug": "cefadroxil",
+   "indication": "Klebsiella cystitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Tazemetostat",
+   "indication": "Metastatic Prostate Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "pirbuterol",
+   "indication": "Bronchitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Bifeprunox",
+   "indication": "Schizophrenia",
+   "label": "TN"
+  },
+  {
+   "drug": "naftidrofuryl",
+   "indication": "Cerebrovascular Disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "Solanezumab",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "azathioprine",
+   "indication": "Dermatomyositis",
+   "label": "TP"
+  },
+  {
+   "drug": "Abatacept",
+   "indication": "Psoriatic Arthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "ciprofloxacin",
+   "indication": "Dysentery",
+   "label": "TP"
+  },
+  {
+   "drug": "BIIB023",
+   "indication": "Lupus Nephritis",
+   "label": "TN"
+  },
+  {
+   "drug": "fedratinib",
+   "indication": "Post-polycythemia vera myelofibrosis",
+   "label": "TP"
+  },
+  {
+   "drug": "DNIB0600A",
+   "indication": "Ovarian Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "procaine benzylpenicillin",
+   "indication": "Syphilis, tertiary",
+   "label": "TP"
+  },
+  {
+   "drug": "Ramelteon",
+   "indication": "Bipolar Disorder",
+   "label": "TN"
+  },
+  {
+   "drug": "torsemide",
+   "indication": "Edema",
+   "label": "TP"
+  },
+  {
+   "drug": "JNJ-38518168",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "prednicarbate",
+   "indication": "Chronic small plaque psoriasis",
+   "label": "TP"
+  },
+  {
+   "drug": "IPN60130",
+   "indication": "Fibrodysplasia Ossificans Progressiva",
+   "label": "TN"
+  },
+  {
+   "drug": "fusidic acid",
+   "indication": "Hospital acquired pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "Retention of Cerclage",
+   "indication": "Fetal Membranes, Premature Rupture",
+   "label": "TN"
+  },
+  {
+   "drug": "isopropamide",
+   "indication": "Peptic Ulcer",
+   "label": "TP"
+  },
+  {
+   "drug": "Sarizotan low dose",
+   "indication": "Rett Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "hydrocortisone succinate",
+   "indication": "Addisonian crisis",
+   "label": "TP"
+  },
+  {
+   "drug": "Immune Globulin Intravenous (Human), 10% Solution",
+   "indication": "Alzheimer´s Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "dextromethorphan",
+   "indication": "Rhinitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Lornoxicam",
+   "indication": "Alzheimer´s Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "eperisone",
+   "indication": "Spasm",
+   "label": "TP"
+  },
+  {
+   "drug": "Insulin Glargine",
+   "indication": "Leukemia",
+   "label": "TN"
+  },
+  {
+   "drug": "cefapirin",
+   "indication": "Escherichia coli septicemia",
+   "label": "TP"
+  },
+  {
+   "drug": "Evacetrapib",
+   "indication": "Hypercholesterolemia",
+   "label": "TN"
+  },
+  {
+   "drug": "cefradine",
+   "indication": "Group A Streptococcal Infections",
+   "label": "TP"
+  },
+  {
+   "drug": "convalescent plasma infusion covid 19",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "rifapentine",
+   "indication": "Tuberculosis, Pulmonary",
+   "label": "TP"
+  },
+  {
+   "drug": "RMC-035",
+   "indication": "Acute Kidney Injury",
+   "label": "TN"
+  },
+  {
+   "drug": "medrysone",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Glucagon",
+   "indication": "Hypoglycemia Unawareness",
+   "label": "TN"
+  },
+  {
+   "drug": "carvedilol",
+   "indication": "Hypertensive disease",
+   "label": "TP"
+  },
+  {
+   "drug": "Motesanib",
+   "indication": "Carcinoma, Non-Small-Cell Lung",
+   "label": "TN"
+  },
+  {
+   "drug": "lesinurad",
+   "indication": "Hyperuricemia",
+   "label": "TP"
+  },
+  {
+   "drug": "Atezolizumab",
+   "indication": "Triple Negative Breast Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "bleomycin",
+   "indication": "Malignant tumor of cervix",
+   "label": "TP"
+  },
+  {
+   "drug": "Tabalumab Auto-Injector",
+   "indication": "Lupus Erythematosus, Systemic",
+   "label": "TN"
+  },
+  {
+   "drug": "cyclizine",
+   "indication": "Rhinorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "Chrysalin",
+   "indication": "Radius Fracture",
+   "label": "TN"
+  },
+  {
+   "drug": "cefuroxime",
+   "indication": "Impetigo",
+   "label": "TP"
+  },
+  {
+   "drug": "BIIB054",
+   "indication": "Parkinson's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "tafamidis",
+   "indication": "Senile cardiac amyloidosis",
+   "label": "TP"
+  },
+  {
+   "drug": "pregabalin/celecoxib",
+   "indication": "Uterine Fibroids",
+   "label": "TN"
+  },
+  {
+   "drug": "brompheniramine",
+   "indication": "Dermatographic urticaria",
+   "label": "TP"
+  },
+  {
+   "drug": "Pioglitazone",
+   "indication": "Mild Cognitive Impairment Due to Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "oxytetracycline",
+   "indication": "Lymphogranuloma Venereum",
+   "label": "TP"
+  },
+  {
+   "drug": "Balovaptan",
+   "indication": "Autism Spectrum Disorder",
+   "label": "TN"
+  },
+  {
+   "drug": "guanidine",
+   "indication": "Lambert-Eaton Myasthenic Syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "Vixarelimab",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "tirabrutinib hydrochloride",
+   "indication": "Microglioma",
+   "label": "TP"
+  },
+  {
+   "drug": "Omarigliptin",
+   "indication": "Type 2 Diabetes Mellitus",
+   "label": "TN"
+  },
+  {
+   "drug": "algeldrate",
+   "indication": "Dyspepsia",
+   "label": "TP"
+  },
+  {
+   "drug": "Cetrorelix 78 mg + 78 mg",
+   "indication": "Benign Prostatic Hypertrophy",
+   "label": "TN"
+  },
+  {
+   "drug": "perazine",
+   "indication": "Enterobiasis",
+   "label": "TP"
+  },
+  {
+   "drug": "bapineuzumab",
+   "indication": "Alzheimer Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "brentuximab vedotin",
+   "indication": "Hodgkin Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "Bortezomib",
+   "indication": "Follicular Lymphoma",
+   "label": "TN"
+  },
+  {
+   "drug": "tavaborole",
+   "indication": "Onychomycosis due to Trichophyton rubrum",
+   "label": "TP"
+  },
+  {
+   "drug": "Octaplex",
+   "indication": "Acute Major Bleeding",
+   "label": "TN"
+  },
+  {
+   "drug": "progesterone",
+   "indication": "Secondary physiologic amenorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "D-Cycloserine",
+   "indication": "Fibromyalgia",
+   "label": "TN"
+  },
+  {
+   "drug": "alclometasone dipropionate",
+   "indication": "Contact Dermatitis",
+   "label": "TP"
+  },
+  {
+   "drug": "LX201",
+   "indication": "Corneal Transplantation",
+   "label": "TN"
+  },
+  {
+   "drug": "flavoxate",
+   "indication": "Suprapubic pain",
+   "label": "TP"
+  },
+  {
+   "drug": "JNJ-38518168 (3 mg)",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "solriamfetol",
+   "indication": "Excessive daytime sleepiness - normal night sleep",
+   "label": "TP"
+  },
+  {
+   "drug": "TQB2450 injection",
+   "indication": "Advanced Endometrial Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "methylprednisolone acetate",
+   "indication": "Mycosis Fungoides",
+   "label": "TP"
+  },
+  {
+   "drug": "parsaclisib",
+   "indication": "Myelofibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "thiabendazole",
+   "indication": "Infection by Trichuris trichiura",
+   "label": "TP"
+  },
+  {
+   "drug": "Minocycline (Borymycin)",
+   "indication": "Acute Stroke",
+   "label": "TN"
+  },
+  {
+   "drug": "levofloxacin",
+   "indication": "Pyelonephritis",
+   "label": "TP"
+  },
+  {
+   "drug": "Point-of-care molecular testing and treatment of influenza",
+   "indication": "Influenza",
+   "label": "TN"
+  },
+  {
+   "drug": "brexpiprazole",
+   "indication": "Major Depressive Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Bermekimab",
+   "indication": "Hidradenitis Suppurativa",
+   "label": "TN"
+  },
+  {
+   "drug": "triamcinolone acetonide",
+   "indication": "Crohn Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "CRANIAL ELECTROTHERAPY (Alpha Stim) + SHAM MIDAZOLAM",
+   "indication": "Anxiety",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone benzoate",
+   "indication": "Psoriasis of scalp",
+   "label": "TP"
+  },
+  {
+   "drug": "Oxycodone",
+   "indication": "Osteoarthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "cefalotin",
+   "indication": "Bacterial infection due to Klebsiella pneumoniae",
+   "label": "TP"
+  },
+  {
+   "drug": "K-645 dose level 1",
+   "indication": "Acute Migraine",
+   "label": "TN"
+  },
+  {
+   "drug": "nafcillin",
+   "indication": "Staphylococcal Pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "DP-b99",
+   "indication": "Acute Ischemic Stroke",
+   "label": "TN"
+  },
+  {
+   "drug": "tazobactam",
+   "indication": "Sepsis caused by Serratia",
+   "label": "TP"
+  },
+  {
+   "drug": "GT005",
+   "indication": "Dry Age-related Macular Degeneration",
+   "label": "TN"
+  },
+  {
+   "drug": "doxepin",
+   "indication": "Lichen Simplex Chronicus",
+   "label": "TP"
+  },
+  {
+   "drug": "enoxaparine 40 mg daily",
+   "indication": "Alive and Viable Births",
+   "label": "TN"
+  },
+  {
+   "drug": "aprobarbital",
+   "indication": "Sleeplessness",
+   "label": "TP"
+  },
+  {
+   "drug": "HIL-214",
+   "indication": "Gastroenteritis",
+   "label": "TN"
+  },
+  {
+   "drug": "cyclacillin",
+   "indication": "Infective otitis media",
+   "label": "TP"
+  },
+  {
+   "drug": "Plasmin",
+   "indication": "Vitreoretinal Traction Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "cycrimine",
+   "indication": "Parkinson Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "RVT-101 35 mg",
+   "indication": "Dementia With Lewy Bodies",
+   "label": "TN"
+  },
+  {
+   "drug": "trastuzumab",
+   "indication": "Peritonsillar cellulitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Ancrod (Viprinex)",
+   "indication": "Stroke",
+   "label": "TN"
+  },
+  {
+   "drug": "oliceridine",
+   "indication": "Moderate pain",
+   "label": "TP"
+  },
+  {
+   "drug": "difelikefalin 2.0 mg tablets",
+   "indication": "Pruritus",
+   "label": "TN"
+  },
+  {
+   "drug": "cycloserine",
+   "indication": "Urinary tract infection caused by Escherichia coli",
+   "label": "TP"
+  },
+  {
+   "drug": "ASM-024",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone",
+   "indication": "Dermatitis Herpetiformis",
+   "label": "TP"
+  },
+  {
+   "drug": "IMR-687",
+   "indication": "Sickle Cell Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "desloratadine",
+   "indication": "Common Cold",
+   "label": "TP"
+  },
+  {
+   "drug": "PF-06649751",
+   "indication": "Parkinson Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "pramocaine",
+   "indication": "Dry skin",
+   "label": "TP"
+  },
+  {
+   "drug": "AB-205",
+   "indication": "Hodgkin Lymphoma",
+   "label": "TN"
+  },
+  {
+   "drug": "methylhomatropine",
+   "indication": "Coughing",
+   "label": "TP"
+  },
+  {
+   "drug": "Tetracosactide (Synacthène®)",
+   "indication": "Post-dural Puncture Headache",
+   "label": "TN"
+  },
+  {
+   "drug": "estradiol",
+   "indication": "Urethral atrophy",
+   "label": "TP"
+  },
+  {
+   "drug": "Reparixin",
+   "indication": "Infectious Pneumonia",
+   "label": "TN"
+  },
+  {
+   "drug": "fluocinonide",
+   "indication": "Chronic discoid lupus erythematosus",
+   "label": "TP"
+  },
+  {
+   "drug": "BIIB092",
+   "indication": "Supranuclear Palsy, Progressive",
+   "label": "TN"
+  },
+  {
+   "drug": "fluorometholone",
+   "indication": "Corneal Abrasions",
+   "label": "TP"
+  },
+  {
+   "drug": "AIN457",
+   "indication": "Non-infectious Uveitis",
+   "label": "TN"
+  },
+  {
+   "drug": "ferrous fumarate",
+   "indication": "Megaloblastic anemia due to folate deficiency",
+   "label": "TP"
+  },
+  {
+   "drug": "MBG453",
+   "indication": "Myelodysplastic Syndromes",
+   "label": "TN"
+  },
+  {
+   "drug": "baclofen",
+   "indication": "Muscle spasticity of spinal origin",
+   "label": "TP"
+  },
+  {
+   "drug": "Vixarelimab",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "hydrocodone",
+   "indication": "Rhinitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Seneca Valley virus-001",
+   "indication": "Lung Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "promazine",
+   "indication": "Pruritus",
+   "label": "TP"
+  },
+  {
+   "drug": "Sorafenib + Paclitaxel + Carboplatin",
+   "indication": "Carcinoma, Non-Small-Cell Lung",
+   "label": "TN"
+  },
+  {
+   "drug": "cefepime",
+   "indication": "Group A Streptococcal Infections",
+   "label": "TP"
+  },
+  {
+   "drug": "LY3454738",
+   "indication": "Chronic Spontaneous Urticaria",
+   "label": "TN"
+  },
+  {
+   "drug": "clemastine",
+   "indication": "Nasal congestion (finding)",
+   "label": "TP"
+  },
+  {
+   "drug": "Triple therapy group",
+   "indication": "Septic Shock",
+   "label": "TN"
+  },
+  {
+   "drug": "guaiacol",
+   "indication": "Rhinitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Dexmedetomidine",
+   "indication": "Withdrawal Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "phentermine",
+   "indication": "Obesity",
+   "label": "TP"
+  },
+  {
+   "drug": "Lorcaserin",
+   "indication": "Epilepsies, Myoclonic",
+   "label": "TN"
+  },
+  {
+   "drug": "trovafloxacin",
+   "indication": "Bacterial infection due to Klebsiella pneumoniae",
+   "label": "TP"
+  },
+  {
+   "drug": "Bamlanivimab Etesevimab",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "bacampicillin",
+   "indication": "Haemophilus influenzae pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "Extended release niacin/laropiprant",
+   "indication": "Coronary Artery Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "methylprednisolone",
+   "indication": "Chronic small plaque psoriasis",
+   "label": "TP"
+  },
+  {
+   "drug": "BUMETANIDE (S95008) for week 0 - 26",
+   "indication": "Autism Spectrum Disorder (ASD)",
+   "label": "TN"
+  },
+  {
+   "drug": "magnesium salicylate",
+   "indication": "Bursitis",
+   "label": "TP"
+  },
+  {
+   "drug": "TQB3616 capsule",
+   "indication": "Dedifferentiated Liposarcoma",
+   "label": "TN"
+  },
+  {
+   "drug": "hydrocortisone acetate",
+   "indication": "Rheumatic Heart Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "MM-111",
+   "indication": "HER-2 Gene Amplification",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone acetate",
+   "indication": "Contact Dermatitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Cobomarsen",
+   "indication": "Cutaneous T-Cell Lymphoma/Mycosis Fungoides",
+   "label": "TN"
+  },
+  {
+   "drug": "carbinoxamine",
+   "indication": "Rhinorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "extracranial-intracranial bypass surgery",
+   "indication": "Stroke",
+   "label": "TN"
+  },
+  {
+   "drug": "loratadine",
+   "indication": "Sneezing",
+   "label": "TP"
+  },
+  {
+   "drug": "Elafibranor",
+   "indication": "Nonalcoholic Steatohepatitis (NASH) With Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "pseudoephedrine",
+   "indication": "Rhinorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "Evacetrapib",
+   "indication": "Hypercholesterolemia",
+   "label": "TN"
+  },
+  {
+   "drug": "cefotaxime",
+   "indication": "Klebsiella cystitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Letermovir Oral Tablet",
+   "indication": "HIV Infections",
+   "label": "TN"
+  },
+  {
+   "drug": "potassium hydrogencarbonate",
+   "indication": "Dyspepsia",
+   "label": "TP"
+  },
+  {
+   "drug": "LY2510924",
+   "indication": "Metastatic Clear Cell Renal Cell Carcinoma",
+   "label": "TN"
+  },
+  {
+   "drug": "mepenzolate",
+   "indication": "Gastric ulcer",
+   "label": "TP"
+  },
+  {
+   "drug": "AZD5718",
+   "indication": "Acute Coronary Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone valerate",
+   "indication": "Lichen Simplex Chronicus",
+   "label": "TP"
+  },
+  {
+   "drug": "Iferanserin",
+   "indication": "Internal Hemorrhoids",
+   "label": "TN"
+  },
+  {
+   "drug": "erythromycin ethyl succinate",
+   "indication": "Meningitis",
+   "label": "TP"
+  },
+  {
+   "drug": "BOTOX",
+   "indication": "Episodic Migraine",
+   "label": "TN"
+  },
+  {
+   "drug": "ceftazidime",
+   "indication": "Sepsis due to Staphylococcus aureus",
+   "label": "TP"
+  },
+  {
+   "drug": "Azithromycin",
+   "indication": "Preterm Premature Rupture of Membranes (PPROM)",
+   "label": "TN"
+  },
+  {
+   "drug": "ceftaroline fosamil",
+   "indication": "Escherichia coli Infections",
+   "label": "TP"
+  },
+  {
+   "drug": "edratide",
+   "indication": "Systemic Lupus Erythematosus",
+   "label": "TN"
+  },
+  {
+   "drug": "midostaurin",
+   "indication": "Leukemia, Mast-Cell",
+   "label": "TP"
+  },
+  {
+   "drug": "Ravulizumab",
+   "indication": "Amyotrophic Lateral Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "metaxalone",
+   "indication": "Muscle Spasticity",
+   "label": "TP"
+  },
+  {
+   "drug": "Clonidine HCl Mucoadhesive Buccal Tablet",
+   "indication": "Chemoradiotherapy-Induced Severe Oral Mucositis",
+   "label": "TN"
+  },
+  {
+   "drug": "erdosteine",
+   "indication": "Accidental poisoning by lead and its compounds and fumes",
+   "label": "TP"
+  },
+  {
+   "drug": "Tislelizumab",
+   "indication": "Non-small Cell Lung Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "udenafil",
+   "indication": "Erectile dysfunction",
+   "label": "TP"
+  },
+  {
+   "drug": "E7070",
+   "indication": "Metastatic Breast Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "tinoridine",
+   "indication": "Pain",
+   "label": "TP"
+  },
+  {
+   "drug": "HZN-825 BID",
+   "indication": "Diffuse Cutaneous Systemic Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "phenyltoloxamine",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Xevinapant (Debio 1143)",
+   "indication": "Squamous Cell Carcinoma of the Head and Neck",
+   "label": "TN"
+  },
+  {
+   "drug": "cefamandole",
+   "indication": "Peritonitis",
+   "label": "TP"
+  },
+  {
+   "drug": "MM-302",
+   "indication": "Breast Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "oxaceprol",
+   "indication": "Degenerative polyarthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "defactinib (VS-6063)",
+   "indication": "Malignant Pleural Mesothelioma",
+   "label": "TN"
+  },
+  {
+   "drug": "azatadine",
+   "indication": "Sneezing",
+   "label": "TP"
+  },
+  {
+   "drug": "ZPL389 30mg",
+   "indication": "Atopic Dermatitis",
+   "label": "TN"
+  },
+  {
+   "drug": "bromazine",
+   "indication": "Nasal congestion (finding)",
+   "label": "TP"
+  },
+  {
+   "drug": "Lanabecestat",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "protamine sulfate",
+   "indication": "Heparin overdose",
+   "label": "TP"
+  },
+  {
+   "drug": "AZD5718",
+   "indication": "Chronic Kidney Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "mepyramine",
+   "indication": "Nasal congestion (finding)",
+   "label": "TP"
+  },
+  {
+   "drug": "Semorinemab",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "fentiazac",
+   "indication": "Pain",
+   "label": "TP"
+  },
+  {
+   "drug": "Ravulizumab",
+   "indication": "COVID-19 Severe Pneumonia",
+   "label": "TN"
+  },
+  {
+   "drug": "mecasermin",
+   "indication": "Laron Syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "EDP1815",
+   "indication": "Atopic Dermatitis",
+   "label": "TN"
+  },
+  {
+   "drug": "dyclonine",
+   "indication": "Skin irritation",
+   "label": "TP"
+  },
+  {
+   "drug": "AZD8931",
+   "indication": "Neoplasms",
+   "label": "TN"
+  },
+  {
+   "drug": "tolazoline",
+   "indication": "Cerebrovascular Disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "AIN457",
+   "indication": "Uveitis",
+   "label": "TN"
+  },
+  {
+   "drug": "romiplostim",
+   "indication": "Aplastic Anemia",
+   "label": "TP"
+  },
+  {
+   "drug": "ZD4054 Zibotentan",
+   "indication": "Patients With Advanced Ovarian Cancer Sensitive to Platinum-based Chemotherapy",
+   "label": "TN"
+  },
+  {
+   "drug": "triflupromazine",
+   "indication": "Nausea and vomiting",
+   "label": "TP"
+  },
+  {
+   "drug": "OTX-202",
+   "indication": "Suicide, Attempted",
+   "label": "TN"
+  },
+  {
+   "drug": "methylphenobarbital",
+   "indication": "Anxiety",
+   "label": "TP"
+  },
+  {
+   "drug": "Ciprofloxacin",
+   "indication": "Elevated Prostate Specific Antigen",
+   "label": "TN"
+  },
+  {
+   "drug": "carbachol",
+   "indication": "Glaucoma, Open-Angle",
+   "label": "TP"
+  },
+  {
+   "drug": "Comparator: Raltegravir 400 mg b.i.d.",
+   "indication": "HIV",
+   "label": "TN"
+  },
+  {
+   "drug": "desoximetasone",
+   "indication": "Exanthema",
+   "label": "TP"
+  },
+  {
+   "drug": "citicoline",
+   "indication": "Traumatic Brain Injury",
+   "label": "TN"
+  },
+  {
+   "drug": "sertraline",
+   "indication": "Premenstrual Dysphoric Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "ERN/LRPT",
+   "indication": "Dyslipidemia",
+   "label": "TN"
+  },
+  {
+   "drug": "gatifloxacin",
+   "indication": "Acute bacterial sinusitis",
+   "label": "TP"
+  },
+  {
+   "drug": "HYLENEX (recombinant human hyaluronidase) and Lactated Ringer's solution",
+   "indication": "Dehydration",
+   "label": "TN"
+  },
+  {
+   "drug": "sapropterin",
+   "indication": "Hyperphenylalaninemia, Non-Phenylketonuric",
+   "label": "TP"
+  },
+  {
+   "drug": "851B",
+   "indication": "Papillomavirus Infections",
+   "label": "TN"
+  },
+  {
+   "drug": "benzoin",
+   "indication": "Disorder of keratinization",
+   "label": "TP"
+  },
+  {
+   "drug": "Patritumab",
+   "indication": "Head and Neck Neoplasms",
+   "label": "TN"
+  },
+  {
+   "drug": "scopolamine",
+   "indication": "Rhinorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "PTG-100",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "oxedrine",
+   "indication": "Nasal congestion (finding)",
+   "label": "TP"
+  },
+  {
+   "drug": "bapineuzumab",
+   "indication": "Alzheimer Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "ibrutinib",
+   "indication": "Chronic graft-versus-host disease",
+   "label": "TP"
+  },
+  {
+   "drug": "Anecortave Acetate Sterile Suspension, 30 mg/mL",
+   "indication": "AMD",
+   "label": "TN"
+  },
+  {
+   "drug": "etoposide phosphate",
+   "indication": "Malignant neoplasm of testis",
+   "label": "TP"
+  },
+  {
+   "drug": "Camostat",
+   "indication": "Covid19",
+   "label": "TN"
+  },
+  {
+   "drug": "dronedarone",
+   "indication": "Atrial Fibrillation",
+   "label": "TP"
+  },
+  {
+   "drug": "Prucalopride",
+   "indication": "Constipation",
+   "label": "TN"
+  },
+  {
+   "drug": "ropeginterferon alfa-2b",
+   "indication": "Polycythemia Vera",
+   "label": "TP"
+  },
+  {
+   "drug": "Recombinant human alkaline phosphatase",
+   "indication": "Acute Kidney Injury Due to Sepsis",
+   "label": "TN"
+  },
+  {
+   "drug": "caffeine",
+   "indication": "Sinus headache",
+   "label": "TP"
+  },
+  {
+   "drug": "AL001",
+   "indication": "Frontotemporal Dementia",
+   "label": "TN"
+  },
+  {
+   "drug": "lomefloxacin",
+   "indication": "Klebsiella cystitis",
+   "label": "TP"
+  },
+  {
+   "drug": "GT005",
+   "indication": "Dry Age-related Macular Degeneration",
+   "label": "TN"
+  },
+  {
+   "drug": "sulfinpyrazone",
+   "indication": "Chronic gouty arthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "Sirolimus",
+   "indication": "Autosomal Dominant Polycystic Kidney Disease (ADPKD)",
+   "label": "TN"
+  },
+  {
+   "drug": "tobramycin",
+   "indication": "Anterior uveitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Pamrevlumab",
+   "indication": "Duchenne Muscular Dystrophy",
+   "label": "TN"
+  },
+  {
+   "drug": "ferric oxide",
+   "indication": "Pruritus",
+   "label": "TP"
+  },
+  {
+   "drug": "Docetaxel",
+   "indication": "Non-Small-Cell Lung Adenocarcinoma",
+   "label": "TN"
+  },
+  {
+   "drug": "colestipol",
+   "indication": "Hyperlipidemia",
+   "label": "TP"
+  },
+  {
+   "drug": "CIN-103",
+   "indication": "Irritable Bowel Syndrome With Diarrhea",
+   "label": "TN"
+  },
+  {
+   "drug": "calcium glucoheptonate",
+   "indication": "Hyperkalemia",
+   "label": "TP"
+  },
+  {
+   "drug": "Simtuzumab",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "haloprogin",
+   "indication": "Tinea cruris",
+   "label": "TP"
+  },
+  {
+   "drug": "ASN100",
+   "indication": "Pneumonia, Ventilator-associated",
+   "label": "TN"
+  },
+  {
+   "drug": "nicotinyl alcohol",
+   "indication": "Meniere Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "PF-05212377 (SAM-760)",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "phenobarbital",
+   "indication": "Cluster Headache",
+   "label": "TP"
+  },
+  {
+   "drug": "MORAb-003 (farletuzumab)",
+   "indication": "Ovarian Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "pralsetinib",
+   "indication": "Metastatic non-small cell lung cancer",
+   "label": "TP"
+  },
+  {
+   "drug": "Ofatumumab",
+   "indication": "Non-Hodgkin's Lymphoma",
+   "label": "TN"
+  },
+  {
+   "drug": "terlipressin",
+   "indication": "Hepatorenal Syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "Avelumab",
+   "indication": "Diffuse Large B-Cell Lymphoma",
+   "label": "TN"
+  },
+  {
+   "drug": "flumetasone",
+   "indication": "Dermatitis, Atopic",
+   "label": "TP"
+  },
+  {
+   "drug": "GSK3196165 (Otilimab)",
+   "indication": "Arthritis, Rheumatoid",
+   "label": "TN"
+  },
+  {
+   "drug": "dexibuprofen",
+   "indication": "Pain",
+   "label": "TP"
+  },
+  {
+   "drug": "Muscadine Plus",
+   "indication": "Adenocarcinoma of the Prostate",
+   "label": "TN"
+  },
+  {
+   "drug": "triamcinolone diacetate",
+   "indication": "Crohn Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "Cortical lead, 8 electrodes (Model 2976) with Synergy neurostimulator",
+   "indication": "Pain, Intractable",
+   "label": "TN"
+  },
+  {
+   "drug": "triamcinolone hexacetonide",
+   "indication": "Lichen Planus",
+   "label": "TP"
+  },
+  {
+   "drug": "INOpulse®",
+   "indication": "Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "empagliflozin",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "Clazakizumab",
+   "indication": "Antibody-mediated Rejection",
+   "label": "TN"
+  },
+  {
+   "drug": "ansuvimab",
+   "indication": "Hemorrhagic Fever, Ebola",
+   "label": "TP"
+  },
+  {
+   "drug": "Pamrevlumab",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "thiopental",
+   "indication": "Pseudotumor Cerebri",
+   "label": "TP"
+  },
+  {
+   "drug": "LAU-7b",
+   "indication": "COVID-19 Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "diflorasone diacetate",
+   "indication": "Chronic small plaque psoriasis",
+   "label": "TP"
+  },
+  {
+   "drug": "Ibrutinib",
+   "indication": "Lymphoma, Non-Hodgkin",
+   "label": "TN"
+  },
+  {
+   "drug": "biotin",
+   "indication": "Biotin deficiency disease",
+   "label": "TP"
+  },
+  {
+   "drug": "parsaclisib",
+   "indication": "Myelofibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "imipenem",
+   "indication": "Female genital tract infection",
+   "label": "TP"
+  },
+  {
+   "drug": "Pamrevlumab",
+   "indication": "Duchenne Muscular Dystrophy",
+   "label": "TN"
+  },
+  {
+   "drug": "butenafine",
+   "indication": "Tinea Versicolor",
+   "label": "TP"
+  },
+  {
+   "drug": "etrasimod",
+   "indication": "Atopic Dermatitis",
+   "label": "TN"
+  },
+  {
+   "drug": "magnesium citrate",
+   "indication": "Hypocalcemia",
+   "label": "TP"
+  },
+  {
+   "drug": "CPT-11",
+   "indication": "Neuroendocrine Carcinoma",
+   "label": "TN"
+  },
+  {
+   "drug": "histamine",
+   "indication": "Degenerative polyarthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "M5049 high dose",
+   "indication": "Dermatomyositis",
+   "label": "TN"
+  },
+  {
+   "drug": "clocortolone pivalate",
+   "indication": "Exanthema",
+   "label": "TP"
+  },
+  {
+   "drug": "Metformin",
+   "indication": "Melanoma",
+   "label": "TN"
+  },
+  {
+   "drug": "nafarelin",
+   "indication": "Endometriosis",
+   "label": "TP"
+  },
+  {
+   "drug": "Rifapentine",
+   "indication": "HIV",
+   "label": "TN"
+  },
+  {
+   "drug": "ramucirumab",
+   "indication": "Gastric Adenocarcinoma",
+   "label": "TP"
+  },
+  {
+   "drug": "Atamestane",
+   "indication": "Breast Neoplasms",
+   "label": "TN"
+  },
+  {
+   "drug": "amobarbital",
+   "indication": "Severe anxiety (panic)",
+   "label": "TP"
+  },
+  {
+   "drug": "difelikefalin 0.25 mg",
+   "indication": "Pruritus",
+   "label": "TN"
+  },
+  {
+   "drug": "doxylamine",
+   "indication": "Rhinitis, Vasomotor",
+   "label": "TP"
+  },
+  {
+   "drug": "0.5 mg Conbercept Intravitreal Injection",
+   "indication": "Neovascular Age-related Macular Degeneration",
+   "label": "TN"
+  },
+  {
+   "drug": "methscopolamine",
+   "indication": "Allergic rhinitis (disorder)",
+   "label": "TP"
+  },
+  {
+   "drug": "Bicifadine",
+   "indication": "Chronic Peripheral Neuropathy Pain in Diabetics",
+   "label": "TN"
+  },
+  {
+   "drug": "chlorcyclizine",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Guselkumab",
+   "indication": "Giant Cell Arteritis",
+   "label": "TN"
+  },
+  {
+   "drug": "econazole",
+   "indication": "Tinea cruris",
+   "label": "TP"
+  },
+  {
+   "drug": "LY2951742",
+   "indication": "Osteoarthritis, Knee",
+   "label": "TN"
+  },
+  {
+   "drug": "norfloxacin",
+   "indication": "Arthropathy associated with infection",
+   "label": "TP"
+  },
+  {
+   "drug": "Tocilizumab 20 MG/ML Intravenous Solution [ACTEMRA]_#1",
+   "indication": "Covid19",
+   "label": "TN"
+  },
+  {
+   "drug": "phenindamine",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Empagliflozin (Jardiance®;",
+   "indication": "Postprandial Hypoglycemia",
+   "label": "TN"
+  },
+  {
+   "drug": "topotecan",
+   "indication": "Malignant neoplasm of ovary",
+   "label": "TP"
+  },
+  {
+   "drug": "Bapineuzumab 0.5 mg/kg",
+   "indication": "Alzheimer Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "vintafolide",
+   "indication": "Malignant epithelial tumor of ovary",
+   "label": "TP"
+  },
+  {
+   "drug": "LY3471851",
+   "indication": "Colitis, Ulcerative",
+   "label": "TN"
+  },
+  {
+   "drug": "phenylephrine",
+   "indication": "Proctitis",
+   "label": "TP"
+  },
+  {
+   "drug": "CNTO 148 (Golimumab)",
+   "indication": "Juvenile Idiopathic Arthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "Polymyxin B",
+   "indication": "Infective blepharitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Bivalirudin",
+   "indication": "Coronary Artery Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "icosapent ethyl",
+   "indication": "Hypertriglyceridemia",
+   "label": "TP"
+  },
+  {
+   "drug": "BG9924",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "acetarsol",
+   "indication": "Amebiasis",
+   "label": "TP"
+  },
+  {
+   "drug": "Farletuzumab",
+   "indication": "Ovarian Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "naproxen",
+   "indication": "Myalgia",
+   "label": "TP"
+  },
+  {
+   "drug": "MD-3511356",
+   "indication": "Actinic Keratoses",
+   "label": "TN"
+  },
+  {
+   "drug": "minocycline",
+   "indication": "Gonorrhea of rectum",
+   "label": "TP"
+  },
+  {
+   "drug": "diacerein 1% ointment",
+   "indication": "Epidermolysis Bullosa Simplex",
+   "label": "TN"
+  },
+  {
+   "drug": "fludroxycortide",
+   "indication": "Chronic discoid lupus erythematosus",
+   "label": "TP"
+  },
+  {
+   "drug": "ABX464",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "levobetaxolol",
+   "indication": "Glaucoma, Open-Angle",
+   "label": "TP"
+  },
+  {
+   "drug": "TQB2618 injection, Penpulimab injection, Paclitaxel, Cisplatin",
+   "indication": "Advanced Esophageal Squamous Cell Carcinoma",
+   "label": "TN"
+  },
+  {
+   "drug": "phenylbutanoic acid",
+   "indication": "Amyotrophic Lateral Sclerosis",
+   "label": "TP"
+  },
+  {
+   "drug": "Mycobacterium w.",
+   "indication": "Hormone Refractory Prostate Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "monoxerutin",
+   "indication": "Venous Insufficiency",
+   "label": "TP"
+  },
+  {
+   "drug": "LX201",
+   "indication": "Corneal Diseases",
+   "label": "TN"
+  },
+  {
+   "drug": "tripelennamine",
+   "indication": "Sneezing",
+   "label": "TP"
+  },
+  {
+   "drug": "Saracatinib",
+   "indication": "Osteosarcoma",
+   "label": "TN"
+  },
+  {
+   "drug": "physostigmine",
+   "indication": "Glaucoma, Open-Angle",
+   "label": "TP"
+  },
+  {
+   "drug": "Tecovirimat Oral Capsule",
+   "indication": "MPOX",
+   "label": "TN"
+  },
+  {
+   "drug": "butobarbital",
+   "indication": "Sleeplessness",
+   "label": "TP"
+  },
+  {
+   "drug": "AUY922",
+   "indication": "Advanced Non Small Cell Lung Cancer (NSCLC)",
+   "label": "TN"
+  },
+  {
+   "drug": "phenytoin",
+   "indication": "Lennox-Gastaut syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "IMR-687",
+   "indication": "β Thalassemia",
+   "label": "TN"
+  },
+  {
+   "drug": "emedastine",
+   "indication": "Urticaria",
+   "label": "TP"
+  },
+  {
+   "drug": "BIOSTAT BIOLOGX",
+   "indication": "Back Pain",
+   "label": "TN"
+  },
+  {
+   "drug": "meclocycline",
+   "indication": "Trachoma",
+   "label": "TP"
+  },
+  {
+   "drug": "LY500307",
+   "indication": "Benign Prostatic Hyperplasia",
+   "label": "TN"
+  },
+  {
+   "drug": "alimemazine",
+   "indication": "Angioedema",
+   "label": "TP"
+  },
+  {
+   "drug": "JNJ-67864238",
+   "indication": "Crohn Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "vildagliptin",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "Tregalizumab",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "azlocillin",
+   "indication": "Haemophilus influenzae pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "MOR 106",
+   "indication": "Atopic Dermatitis",
+   "label": "TN"
+  },
+  {
+   "drug": "dexchlorpheniramine",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Lu AF11167 (1-2 mg/day)",
+   "indication": "Schizophrenia",
+   "label": "TN"
+  },
+  {
+   "drug": "lixisenatide",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "Prismocitrate 18",
+   "indication": "Regional Citrate Anticoagulation (RCA)",
+   "label": "TN"
+  },
+  {
+   "drug": "grepafloxacin",
+   "indication": "Mycoplasma pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "K-877",
+   "indication": "Type2 Diabetes",
+   "label": "TN"
+  },
+  {
+   "drug": "loteprednol etabonate",
+   "indication": "Corneal Perforation",
+   "label": "TP"
+  },
+  {
+   "drug": "LY3053102",
+   "indication": "Type 2 Diabetes Mellitus",
+   "label": "TN"
+  },
+  {
+   "drug": "primidone",
+   "indication": "Bipolar disorder in remission",
+   "label": "TP"
+  },
+  {
+   "drug": "Ergocalciferols",
+   "indication": "Obesity",
+   "label": "TN"
+  },
+  {
+   "drug": "denileukin diftitox",
+   "indication": "Lymphoma, T-Cell, Cutaneous",
+   "label": "TP"
+  },
+  {
+   "drug": "Ramucirumab",
+   "indication": "Synovial Sarcoma",
+   "label": "TN"
+  },
+  {
+   "drug": "dextromoramide",
+   "indication": "Severe pain",
+   "label": "TP"
+  },
+  {
+   "drug": "Ganciclovir",
+   "indication": "Acute Respiratory Failure",
+   "label": "TN"
+  },
+  {
+   "drug": "clorazepate",
+   "indication": "Alcohol withdrawal syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "192 mg powder of K0706",
+   "indication": "Dementia With Lewy Bodies",
+   "label": "TN"
+  },
+  {
+   "drug": "carbaldrate",
+   "indication": "Gastroesophageal reflux disease",
+   "label": "TP"
+  },
+  {
+   "drug": "Efavaleukin alfa",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "tonzonium",
+   "indication": "Otitis Externa",
+   "label": "TP"
+  },
+  {
+   "drug": "Pentosan polysulfate sodium 100 mg",
+   "indication": "Interstitial Cystitis",
+   "label": "TN"
+  },
+  {
+   "drug": "lofepramine",
+   "indication": "Depressive disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Atezolizumab",
+   "indication": "Carcinoma, Renal Cell",
+   "label": "TN"
+  },
+  {
+   "drug": "meprobamate",
+   "indication": "Anxiety",
+   "label": "TP"
+  },
+  {
+   "drug": "Idebenone 150 mg film-coated tablets",
+   "indication": "Duchenne Muscular Dystrophy (DMD)",
+   "label": "TN"
+  },
+  {
+   "drug": "choline fenofibrate",
+   "indication": "Hyperlipidemia, Familial Combined",
+   "label": "TP"
+  },
+  {
+   "drug": "Ladarixin",
+   "indication": "Recent Onset type1 Diabetes",
+   "label": "TN"
+  },
+  {
+   "drug": "gemigliptin",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "Edoxaban",
+   "indication": "Atrial High Rate Episodes",
+   "label": "TN"
+  },
+  {
+   "drug": "voriconazole",
+   "indication": "Systemic candidiasis",
+   "label": "TP"
+  },
+  {
+   "drug": "Fremanezumab",
+   "indication": "Episodic Cluster Headache",
+   "label": "TN"
+  },
+  {
+   "drug": "calcium citrate",
+   "indication": "Osteoporosis, Postmenopausal",
+   "label": "TP"
+  },
+  {
+   "drug": "HepTcell",
+   "indication": "Hepatitis B, Chronic",
+   "label": "TN"
+  },
+  {
+   "drug": "penthienate",
+   "indication": "Peptic Ulcer",
+   "label": "TP"
+  },
+  {
+   "drug": "sevoflurane",
+   "indication": "Myocardial Infarction",
+   "label": "TN"
+  },
+  {
+   "drug": "natamycin",
+   "indication": "Fungal keratitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Copanlisib (BAY80-6946)",
+   "indication": "Lymphoma, Non-Hodgkin",
+   "label": "TN"
+  },
+  {
+   "drug": "rupatadine",
+   "indication": "Urticaria",
+   "label": "TP"
+  },
+  {
+   "drug": "Danazol",
+   "indication": "Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "nitrogen",
+   "indication": "Persistent Fetal Circulation Syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "SCY-078",
+   "indication": "Candidiasis, Invasive",
+   "label": "TN"
+  },
+  {
+   "drug": "enviomycin",
+   "indication": "Tuberculosis, Pulmonary",
+   "label": "TP"
+  },
+  {
+   "drug": "icatibant",
+   "indication": "ACE Inhibitor-associated Angioedema",
+   "label": "TN"
+  },
+  {
+   "drug": "betaine",
+   "indication": "Cystitis",
+   "label": "TP"
+  },
+  {
+   "drug": "birinapant",
+   "indication": "Myelodysplastic Syndrome (MDS)",
+   "label": "TN"
+  },
+  {
+   "drug": "valproic acid",
+   "indication": "Epilepsy characterized by intractable complex partial seizures",
+   "label": "TP"
+  },
+  {
+   "drug": "Icotinib hydrochloride cream",
+   "indication": "Mild to Moderate Psoriasis",
+   "label": "TN"
+  },
+  {
+   "drug": "terfenadine",
+   "indication": "Common Cold",
+   "label": "TP"
+  },
+  {
+   "drug": "Benralizumab 30 mg",
+   "indication": "Nasal Polyposis",
+   "label": "TN"
+  },
+  {
+   "drug": "acrivastine",
+   "indication": "Hay fever",
+   "label": "TP"
+  },
+  {
+   "drug": "Ketamine-Midazolam",
+   "indication": "Critical Illness",
+   "label": "TN"
+  },
+  {
+   "drug": "relebactam",
+   "indication": "Pyelonephritis",
+   "label": "TP"
+  },
+  {
+   "drug": "Brensocatib",
+   "indication": "Hidradenitis Suppurativa",
+   "label": "TN"
+  },
+  {
+   "drug": "sulfacetamide",
+   "indication": "Vulvovaginitis",
+   "label": "TP"
+  },
+  {
+   "drug": "suprachoroidal CLS-TA",
+   "indication": "Macular Edema",
+   "label": "TN"
+  },
+  {
+   "drug": "chlorothiazide",
+   "indication": "Chronic heart failure",
+   "label": "TP"
+  },
+  {
+   "drug": "ADI PEG20",
+   "indication": "Soft Tissue Sarcoma",
+   "label": "TN"
+  },
+  {
+   "drug": "insulin glargine",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "GSK1572932A Antigen-Specific Cancer Immunotherapeutic",
+   "indication": "Lung Cancer, Non-Small Cell",
+   "label": "TN"
+  },
+  {
+   "drug": "pexidartinib",
+   "indication": "Fibrous histiocytoma of tendon sheath",
+   "label": "TP"
+  },
+  {
+   "drug": "BIIB092",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "ciclopirox",
+   "indication": "Cutaneous Candidiasis",
+   "label": "TP"
+  },
+  {
+   "drug": "BMS-986263",
+   "indication": "Nonalcoholic Steatohepatitis (NASH)",
+   "label": "TN"
+  },
+  {
+   "drug": "estradiol acetate",
+   "indication": "Atrophic Vaginitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Reldesemtiv",
+   "indication": "Amyotrophic Lateral Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "cromoglicic acid",
+   "indication": "Mastocytosis, Systemic",
+   "label": "TP"
+  },
+  {
+   "drug": "Efavaleukin alfa",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "estradiol cypionate",
+   "indication": "Hot flushes",
+   "label": "TP"
+  },
+  {
+   "drug": "Fremanezumab",
+   "indication": "Cluster Headache",
+   "label": "TN"
+  },
+  {
+   "drug": "ziprasidone",
+   "indication": "Bipolar disorder in remission",
+   "label": "TP"
+  },
+  {
+   "drug": "Tadalafil",
+   "indication": "Muscular Dystrophy, Duchenne",
+   "label": "TN"
+  },
+  {
+   "drug": "aminosalicylic acid",
+   "indication": "Acute tuberculosis",
+   "label": "TP"
+  },
+  {
+   "drug": "FlecIH-103",
+   "indication": "Paroxysmal Atrial Fibrillation",
+   "label": "TN"
+  },
+  {
+   "drug": "ticarcillin",
+   "indication": "Osteomyelitis due to Staphylococcus aureus",
+   "label": "TP"
+  },
+  {
+   "drug": "Fosbretabulin tromethamine",
+   "indication": "Platinum Resistant Ovarian Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "gentamicin",
+   "indication": "Rhinoscleroma",
+   "label": "TP"
+  },
+  {
+   "drug": "povidone-iodine 1.25% ophthalmic solution",
+   "indication": "Fungal Keratitis",
+   "label": "TN"
+  },
+  {
+   "drug": "hyoscyamine",
+   "indication": "Sialorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "HMPL-004",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "oxcarbazepine",
+   "indication": "Epilepsy characterized by intractable complex partial seizures",
+   "label": "TP"
+  },
+  {
+   "drug": "GC4711 +SBRT",
+   "indication": "SBRT",
+   "label": "TN"
+  },
+  {
+   "drug": "sulbentine",
+   "indication": "Dermatomycoses",
+   "label": "TP"
+  },
+  {
+   "drug": "SPI-1620",
+   "indication": "Non Small Cell Lung Cancer (NSCLC)",
+   "label": "TN"
+  },
+  {
+   "drug": "uracil mustard",
+   "indication": "Polycythemia Vera",
+   "label": "TP"
+  },
+  {
+   "drug": "Brimonidine Tartrate",
+   "indication": "Graft Versus Host Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "secobarbital",
+   "indication": "Status Epilepticus",
+   "label": "TP"
+  },
+  {
+   "drug": "Combined capsule",
+   "indication": "Myocardial Infarction",
+   "label": "TN"
+  },
+  {
+   "drug": "olaparib",
+   "indication": "Human epidermal growth factor 2 negative carcinoma of breast",
+   "label": "TP"
+  },
+  {
+   "drug": "Mild Induced Hypothermia",
+   "indication": "Septic Shock",
+   "label": "TN"
+  },
+  {
+   "drug": "halofantrine",
+   "indication": "Malaria, Vivax",
+   "label": "TP"
+  },
+  {
+   "drug": "CP-690,500 5 mg",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "ethadione",
+   "indication": "Epilepsy",
+   "label": "TP"
+  },
+  {
+   "drug": "Total Face Mask",
+   "indication": "Respiratory Insufficiency",
+   "label": "TN"
+  },
+  {
+   "drug": "lindane",
+   "indication": "Pediculus capitis infestation",
+   "label": "TP"
+  },
+  {
+   "drug": "Imatinib Mesylate",
+   "indication": "Loiasis",
+   "label": "TN"
+  },
+  {
+   "drug": "enoxacin",
+   "indication": "Acute gonococcal urethritis",
+   "label": "TP"
+  },
+  {
+   "drug": "LY3361237",
+   "indication": "Systemic Lupus Erythematosus",
+   "label": "TN"
+  },
+  {
+   "drug": "fluorometholone acetate",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Rivaroxaban 15 MG Oral Tablet [Xarelto]",
+   "indication": "Radial Artery Occlusion",
+   "label": "TN"
+  },
+  {
+   "drug": "ofloxacin",
+   "indication": "Gonorrhea of rectum",
+   "label": "TP"
+  },
+  {
+   "drug": "UX007",
+   "indication": "Glucose Transporter Type 1 Deficiency Syndrome (Glut1 DS)",
+   "label": "TN"
+  },
+  {
+   "drug": "cefonicid",
+   "indication": "Haemophilus influenzae pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "Pracinostat",
+   "indication": "Acute Myeloid Leukemia",
+   "label": "TN"
+  },
+  {
+   "drug": "dibotermin alfa",
+   "indication": "Intervertebral Disc Degeneration",
+   "label": "TP"
+  },
+  {
+   "drug": "Bumetanide Oral Solution",
+   "indication": "Autism Spectrum Disorder (ASD)",
+   "label": "TN"
+  },
+  {
+   "drug": "levomilnacipran",
+   "indication": "Major Depressive Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Atezolizumab",
+   "indication": "Carcinoma, Transitional Cell",
+   "label": "TN"
+  },
+  {
+   "drug": "enalaprilat",
+   "indication": "Congestive heart failure",
+   "label": "TP"
+  },
+  {
+   "drug": "Azithromycin",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "clomipramine",
+   "indication": "Obsessive-Compulsive Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "secukinumab",
+   "indication": "Lupus Nephritis",
+   "label": "TN"
+  },
+  {
+   "drug": "naftifine",
+   "indication": "Tinea corporis (disorder)",
+   "label": "TP"
+  },
+  {
+   "drug": "HDIT101 (blinded therapy)",
+   "indication": "Herpes Labialis",
+   "label": "TN"
+  },
+  {
+   "drug": "trimethoprim",
+   "indication": "Bacterial conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "INOpulse",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "ephedrine",
+   "indication": "Nasal congestion (finding)",
+   "label": "TP"
+  },
+  {
+   "drug": "Fentanyl citrate solution sublingual",
+   "indication": "Copd",
+   "label": "TN"
+  },
+  {
+   "drug": "benzathine benzylpenicillin",
+   "indication": "Scarlet Fever",
+   "label": "TP"
+  },
+  {
+   "drug": "LEVOCETIRIZINE",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "acetazolamide",
+   "indication": "Secondary glaucoma",
+   "label": "TP"
+  },
+  {
+   "drug": "Clofazimine Inhalation Suspension",
+   "indication": "MAC Lung Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "hydroxychloroquine",
+   "indication": "Malaria, Vivax",
+   "label": "TP"
+  },
+  {
+   "drug": "Atamestane",
+   "indication": "Breast Neoplasms",
+   "label": "TN"
+  },
+  {
+   "drug": "secukinumab",
+   "indication": "Non-Radiographic Axial Spondyloarthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "Avotermin",
+   "indication": "Mammaplasty",
+   "label": "TN"
+  },
+  {
+   "drug": "valdecoxib",
+   "indication": "Postoperative Pain, Acute",
+   "label": "TP"
+  },
+  {
+   "drug": "GS-9131",
+   "indication": "HIV-1-infection",
+   "label": "TN"
+  },
+  {
+   "drug": "telotristat ethyl",
+   "indication": "Diarrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "selepressin",
+   "indication": "Septic Shock",
+   "label": "TN"
+  },
+  {
+   "drug": "itraconazole",
+   "indication": "Systemic candidiasis",
+   "label": "TP"
+  },
+  {
+   "drug": "TEV-48574",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "cefprozil",
+   "indication": "Infective otitis media",
+   "label": "TP"
+  },
+  {
+   "drug": "abetimus sodium (LJP 394) and",
+   "indication": "Lupus Erythematosus, Systemic",
+   "label": "TN"
+  },
+  {
+   "drug": "serine",
+   "indication": "Acute tuberculosis",
+   "label": "TP"
+  },
+  {
+   "drug": "WVE-004",
+   "indication": "ALS",
+   "label": "TN"
+  },
+  {
+   "drug": "cinchocaine",
+   "indication": "Pruritus",
+   "label": "TP"
+  },
+  {
+   "drug": "ITF2357",
+   "indication": "Crohn's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "ammonium lactate",
+   "indication": "Pruritus",
+   "label": "TP"
+  },
+  {
+   "drug": "Caffeine Citrate",
+   "indication": "Apnea of Prematurity",
+   "label": "TN"
+  },
+  {
+   "drug": "lisinopril",
+   "indication": "Myocardial Infarction",
+   "label": "TP"
+  },
+  {
+   "drug": "Avelumab",
+   "indication": "Squamous Cell Carcinoma of the Head and Neck",
+   "label": "TN"
+  },
+  {
+   "drug": "phenylpropanolamine",
+   "indication": "Hay fever",
+   "label": "TP"
+  },
+  {
+   "drug": "Atezolizumab",
+   "indication": "Diffuse Large B Cell Lymphoma",
+   "label": "TN"
+  },
+  {
+   "drug": "docusate sodium",
+   "indication": "Constipation",
+   "label": "TP"
+  },
+  {
+   "drug": "Hydroxychloroquine",
+   "indication": "Healthy Participants",
+   "label": "TN"
+  },
+  {
+   "drug": "nizatidine",
+   "indication": "Gastric ulcer",
+   "label": "TP"
+  },
+  {
+   "drug": "Aticaprant",
+   "indication": "Depressive Disorder, Major",
+   "label": "TN"
+  },
+  {
+   "drug": "neomycin",
+   "indication": "Infective blepharitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Darusentan",
+   "indication": "Hypertension",
+   "label": "TN"
+  },
+  {
+   "drug": "duvelisib",
+   "indication": "Chronic Lymphocytic Leukemia",
+   "label": "TP"
+  },
+  {
+   "drug": "Exebacase",
+   "indication": "Staphylococcus Aureus Bacteremia",
+   "label": "TN"
+  },
+  {
+   "drug": "bupranolol",
+   "indication": "Glaucoma",
+   "label": "TP"
+  },
+  {
+   "drug": "Darusentan",
+   "indication": "Hypertension",
+   "label": "TN"
+  },
+  {
+   "drug": "efgartigimod alfa",
+   "indication": "Myasthenia Gravis",
+   "label": "TP"
+  },
+  {
+   "drug": "Convalescent anti-SARS-CoV-2 plasma",
+   "indication": "COVID",
+   "label": "TN"
+  },
+  {
+   "drug": "clavulanic acid",
+   "indication": "Pneumonia, Bacterial",
+   "label": "TP"
+  },
+  {
+   "drug": "Brodalumab",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "sulbactam",
+   "indication": "Bacterial peritonitis",
+   "label": "TP"
+  },
+  {
+   "drug": "MK-7622",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "selenium sulfide",
+   "indication": "Seborrheic dermatitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Tivantinib",
+   "indication": "Non Squamous, Non-small-cell Lung Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "epalrestat",
+   "indication": "Diabetic Neuropathies",
+   "label": "TP"
+  },
+  {
+   "drug": "10 mg TZP-102",
+   "indication": "Diabetic Gastroparesis",
+   "label": "TN"
+  },
+  {
+   "drug": "benzylpenicillin",
+   "indication": "Pneumonia, Necrotizing",
+   "label": "TP"
+  },
+  {
+   "drug": "ARRY-371797 (PF-07265803)",
+   "indication": "Dilated Cardiomyopathy",
+   "label": "TN"
+  },
+  {
+   "drug": "carboprost",
+   "indication": "Postpartum Hemorrhage",
+   "label": "TP"
+  },
+  {
+   "drug": "ESK-001",
+   "indication": "Uveitis Posterior Non-Infectious",
+   "label": "TN"
+  },
+  {
+   "drug": "dexamfetamine",
+   "indication": "Narcolepsy",
+   "label": "TP"
+  },
+  {
+   "drug": "PBI-0451 (Pomotrelvir)",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "selpercatinib",
+   "indication": "metastasis from malignant neoplasm of thyroid",
+   "label": "TP"
+  },
+  {
+   "drug": "cetuximab",
+   "indication": "Metastatic Pancreatic Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "vilanterol",
+   "indication": "Asthma",
+   "label": "TP"
+  },
+  {
+   "drug": "BMS-986253",
+   "indication": "Solid Tumor",
+   "label": "TN"
+  },
+  {
+   "drug": "infliximab",
+   "indication": "Chronic small plaque psoriasis",
+   "label": "TP"
+  },
+  {
+   "drug": "S2G6T-1",
+   "indication": "Tinea Pedis",
+   "label": "TN"
+  },
+  {
+   "drug": "quazepam",
+   "indication": "Sleeplessness",
+   "label": "TP"
+  },
+  {
+   "drug": "Peramivir+SOC",
+   "indication": "Cough",
+   "label": "TN"
+  },
+  {
+   "drug": "chlorpromazine",
+   "indication": "Disruptive Behavior Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Shionogi Protease Inhibitor (S-217622)",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "mezlocillin",
+   "indication": "Pneumonia due to Pseudomonas",
+   "label": "TP"
+  },
+  {
+   "drug": "COVID-19 convalescent plasma (CCP) plus standard of care (SOC)",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "butorphanol",
+   "indication": "Labor Pain",
+   "label": "TP"
+  },
+  {
+   "drug": "Selexipag",
+   "indication": "Chronic Thromboembolic Pulmonary Hypertension",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone dipropionate",
+   "indication": "Dermatitis, Atopic",
+   "label": "TP"
+  },
+  {
+   "drug": "AVP-786",
+   "indication": "Schizophrenia",
+   "label": "TN"
+  },
+  {
+   "drug": "sitafloxacin",
+   "indication": "Urinary tract infection",
+   "label": "TP"
+  },
+  {
+   "drug": "Carfilzomib 20 mg/m^2",
+   "indication": "Multiple Myeloma",
+   "label": "TN"
+  },
+  {
+   "drug": "dihydroergotamine",
+   "indication": "Cluster Headache",
+   "label": "TP"
+  },
+  {
+   "drug": "Lanabecestat",
+   "indication": "Alzheimer´s Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "tretamine",
+   "indication": "Malignant neoplasm of ovary",
+   "label": "TP"
+  },
+  {
+   "drug": "Curcumin",
+   "indication": "Prostate Cancer Metastatic Castration Resistant",
+   "label": "TN"
+  },
+  {
+   "drug": "levetiracetam",
+   "indication": "Epilepsy characterized by intractable complex partial seizures",
+   "label": "TP"
+  },
+  {
+   "drug": "BIIB033 (opicinumab)",
+   "indication": "Multiple Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "cefditoren pivoxil",
+   "indication": "Streptococcal tonsillitis",
+   "label": "TP"
+  },
+  {
+   "drug": "AIN457",
+   "indication": "Crohn's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "oxaprozin",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "Azeliragon",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "dopamine",
+   "indication": "Decompensated cardiac failure",
+   "label": "TP"
+  },
+  {
+   "drug": "Etrasimod",
+   "indication": "Crohn's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "bitolterol",
+   "indication": "Asthma",
+   "label": "TP"
+  },
+  {
+   "drug": "MEK162, MEK inhibitor; oral",
+   "indication": "Low-grade Serous Ovarian Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "ciprofibrate",
+   "indication": "Hyperlipidemia, Familial Combined",
+   "label": "TP"
+  },
+  {
+   "drug": "A-002, varespladib methyl",
+   "indication": "Acute Coronary Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "aztreonam",
+   "indication": "Sepsis due to Pseudomonas",
+   "label": "TP"
+  },
+  {
+   "drug": "Roxadustat",
+   "indication": "Primary MDS (Very Low, Low or Intermediate IPSS-R With <5% Blasts)",
+   "label": "TN"
+  },
+  {
+   "drug": "glycopyrronium bromide",
+   "indication": "Hyperhidrosis of axilla",
+   "label": "TP"
+  },
+  {
+   "drug": "Ivermectin",
+   "indication": "Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "rifaximin",
+   "indication": "Irritable bowel syndrome with diarrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "ASP0598",
+   "indication": "Chronic Tympanic Membrane Perforation",
+   "label": "TN"
+  },
+  {
+   "drug": "vestronidase alfa",
+   "indication": "Mucopolysaccharidosis VII",
+   "label": "TP"
+  },
+  {
+   "drug": "Solanezumab",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "flurazepam",
+   "indication": "Sleeplessness",
+   "label": "TP"
+  },
+  {
+   "drug": "Cobitolimod 250 mg",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "fluphenazine enanthate",
+   "indication": "Psychotic Disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "Clemastine Fumarate",
+   "indication": "Multiple Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "hexamidine",
+   "indication": "Acanthamoeba Keratitis",
+   "label": "TP"
+  },
+  {
+   "drug": "PF-02545920",
+   "indication": "Schizophrenia",
+   "label": "TN"
+  },
+  {
+   "drug": "tafasitamab",
+   "indication": "Diffuse large B-cell lymphoma refractory",
+   "label": "TP"
+  },
+  {
+   "drug": "Sabatolimab",
+   "indication": "Myelodysplastic Syndromes",
+   "label": "TN"
+  },
+  {
+   "drug": "opipramol",
+   "indication": "Depressive disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Amoxicillin 875 mg",
+   "indication": "Sinusitis, Acute",
+   "label": "TN"
+  },
+  {
+   "drug": "chlorambucil",
+   "indication": "Lymphoma, Follicular",
+   "label": "TP"
+  },
+  {
+   "drug": "Sotorasib",
+   "indication": "Non-small Cell Lung Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "hydroxycarbamide",
+   "indication": "Hemoglobin SS disease with crisis",
+   "label": "TP"
+  },
+  {
+   "drug": "Valbenazine",
+   "indication": "Tourette Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "dalbavancin",
+   "indication": "Staphylococcal Skin Infections",
+   "label": "TP"
+  },
+  {
+   "drug": "Ompenaclid",
+   "indication": "Colorectal Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "cefixime",
+   "indication": "Acute exacerbation of chronic bronchitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Olanzapine",
+   "indication": "Treatment Resistant Depression",
+   "label": "TN"
+  },
+  {
+   "drug": "quinidine",
+   "indication": "Malaria",
+   "label": "TP"
+  },
+  {
+   "drug": "Baclofen 10mg",
+   "indication": "Pain",
+   "label": "TN"
+  },
+  {
+   "drug": "fludarabine phosphate",
+   "indication": "Leukemia, Myelocytic, Acute",
+   "label": "TP"
+  },
+  {
+   "drug": "Abagovomab",
+   "indication": "Ovarian Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "hematoporphyrin",
+   "indication": "Non-Small Cell Lung Carcinoma",
+   "label": "TP"
+  },
+  {
+   "drug": "NP-101",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "omadacycline",
+   "indication": "Skin Diseases, Bacterial",
+   "label": "TP"
+  },
+  {
+   "drug": "RO7239361",
+   "indication": "Muscular Dystrophy (DMD)",
+   "label": "TN"
+  },
+  {
+   "drug": "crizanlizumab",
+   "indication": "Vaso-occlusive pain episode in sickle cell disease",
+   "label": "TP"
+  },
+  {
+   "drug": "Hydrochlorothiazide 50mg Tablet",
+   "indication": "Pre-Eclampsia",
+   "label": "TN"
+  },
+  {
+   "drug": "glycine",
+   "indication": "Allergic rhinitis (disorder)",
+   "label": "TP"
+  },
+  {
+   "drug": "Pegcetacoplan (APL-2)",
+   "indication": "Amyotrophic Lateral Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "oxymetazoline",
+   "indication": "Rhinorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "Lanabecestat",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "quinupristin",
+   "indication": "Group A Streptococcal Infections",
+   "label": "TP"
+  },
+  {
+   "drug": "REGN3500",
+   "indication": "Atopic Dermatitis",
+   "label": "TN"
+  },
+  {
+   "drug": "dexpanthenol",
+   "indication": "Dermatologic disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "PF-06649751 low dose (1 mg QD)",
+   "indication": "Parkinson Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "trimipramine",
+   "indication": "Depressive disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Nitazoxanide",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "floxuridine",
+   "indication": "Malignant neoplasm of liver",
+   "label": "TP"
+  },
+  {
+   "drug": "TQC3721 suspension for inhalation",
+   "indication": "Chronic Obstructive Pulmonary Disease (COPD)",
+   "label": "TN"
+  },
+  {
+   "drug": "hydroflumethiazide",
+   "indication": "Edema",
+   "label": "TP"
+  },
+  {
+   "drug": "interferon gamma-1b",
+   "indication": "Lung Infection",
+   "label": "TN"
+  },
+  {
+   "drug": "posaconazole",
+   "indication": "Mycetoma",
+   "label": "TP"
+  },
+  {
+   "drug": "normobaric oxygen therapy",
+   "indication": "Carbon Monoxide Poisoning",
+   "label": "TN"
+  },
+  {
+   "drug": "tadalafil",
+   "indication": "Prostatic Hypertrophy",
+   "label": "TP"
+  },
+  {
+   "drug": "AFQ056",
+   "indication": "Patient Diagnosed With OCD and Resistant to SSRI Treatment",
+   "label": "TN"
+  },
+  {
+   "drug": "tolbutamide",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "Bermekimab",
+   "indication": "Dermatitis, Atopic",
+   "label": "TN"
+  },
+  {
+   "drug": "miltefosine",
+   "indication": "Mucocutaneous leishmaniasis",
+   "label": "TP"
+  },
+  {
+   "drug": "Posoleucel",
+   "indication": "Adenovirus Infection",
+   "label": "TN"
+  },
+  {
+   "drug": "vidarabine",
+   "indication": "Keratitis, Herpetic",
+   "label": "TP"
+  },
+  {
+   "drug": "Ronacaleret",
+   "indication": "Osteoporosis",
+   "label": "TN"
+  },
+  {
+   "drug": "faricimab",
+   "indication": "Exudative age-related macular degeneration",
+   "label": "TP"
+  },
+  {
+   "drug": "Birtamimab",
+   "indication": "Light Chain (AL) Amyloidosis",
+   "label": "TN"
+  },
+  {
+   "drug": "zileuton",
+   "indication": "Allergic asthma",
+   "label": "TP"
+  },
+  {
+   "drug": "LY2382770",
+   "indication": "Diabetic Kidney Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "lorazepam",
+   "indication": "Lennox-Gastaut syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "simvastatin",
+   "indication": "Pulmonary Disease, Chronic Obstructive",
+   "label": "TN"
+  },
+  {
+   "drug": "gefapixant",
+   "indication": "Chronic refractory cough",
+   "label": "TP"
+  },
+  {
+   "drug": "KPI-012",
+   "indication": "Persistent Corneal Epithelial Defect",
+   "label": "TN"
+  },
+  {
+   "drug": "melphalan",
+   "indication": "Malignant neoplasm of ovary",
+   "label": "TP"
+  },
+  {
+   "drug": "TRC105 and Axitinib",
+   "indication": "Renal Cell Carcinoma",
+   "label": "TN"
+  },
+  {
+   "drug": "certolizumab pegol",
+   "indication": "Ankylosing spondylitis",
+   "label": "TP"
+  },
+  {
+   "drug": "25 mg/day AVE5530",
+   "indication": "Hypercholesterolemia",
+   "label": "TN"
+  },
+  {
+   "drug": "calcitriol",
+   "indication": "Renal Osteodystrophy",
+   "label": "TP"
+  },
+  {
+   "drug": "lademirsen (SAR339375)",
+   "indication": "Alport Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "upadacitinib",
+   "indication": "Dermatitis, Atopic",
+   "label": "TP"
+  },
+  {
+   "drug": "Rapamycin",
+   "indication": "Autosomal Dominant Polycystic Kidney Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "amantadine",
+   "indication": "Influenza due to Influenza A virus",
+   "label": "TP"
+  },
+  {
+   "drug": "Budesonide + Salmeterol + Azithromycin",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "ergocalciferol",
+   "indication": "Osteoporosis",
+   "label": "TP"
+  },
+  {
+   "drug": "REGN3500",
+   "indication": "Atopic Dermatitis",
+   "label": "TN"
+  },
+  {
+   "drug": "pentoxifylline",
+   "indication": "Peripheral Vascular Diseases",
+   "label": "TP"
+  },
+  {
+   "drug": "GSK1605786A",
+   "indication": "Crohn's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "dexrabeprazole",
+   "indication": "Duodenal Ulcer",
+   "label": "TP"
+  },
+  {
+   "drug": "Mepolizumab 100 mg",
+   "indication": "Dermatitis, Atopic",
+   "label": "TN"
+  },
+  {
+   "drug": "potassium citrate",
+   "indication": "Renal tubular acidosis",
+   "label": "TP"
+  },
+  {
+   "drug": "CardioFit® System",
+   "indication": "Left Ventricular Dysfunction",
+   "label": "TN"
+  },
+  {
+   "drug": "meropenem",
+   "indication": "Meningitis, Bacterial",
+   "label": "TP"
+  },
+  {
+   "drug": "infusion of N-acetylcysteine",
+   "indication": "Acetaminophen",
+   "label": "TN"
+  },
+  {
+   "drug": "pembrolizumab",
+   "indication": "Triple Negative Breast Neoplasms",
+   "label": "TP"
+  },
+  {
+   "drug": "HSPPC-96",
+   "indication": "Recurrent Glioblastoma",
+   "label": "TN"
+  },
+  {
+   "drug": "goserelin",
+   "indication": "Hormone receptor positive malignant neoplasm of breast",
+   "label": "TP"
+  },
+  {
+   "drug": "AL-8309B Ophthalmic Solution",
+   "indication": "Geographic Atrophy",
+   "label": "TN"
+  },
+  {
+   "drug": "riociguat",
+   "indication": "Pulmonary arterial hypertension",
+   "label": "TP"
+  },
+  {
+   "drug": "Liquid Alpha1-Proteinase Inhibitor (Human)",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "benzatropine",
+   "indication": "Extrapyramidal Disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "ACT guided heparinization",
+   "indication": "Abdominal Aortic Aneurysm",
+   "label": "TN"
+  },
+  {
+   "drug": "micafungin",
+   "indication": "Septicemia candida",
+   "label": "TP"
+  },
+  {
+   "drug": "Ofatumumab",
+   "indication": "Lymphoma, Follicular",
+   "label": "TN"
+  },
+  {
+   "drug": "cyclophosphamide",
+   "indication": "Primary amyloidosis",
+   "label": "TP"
+  },
+  {
+   "drug": "Epalrestat",
+   "indication": "Pmm2-CDG",
+   "label": "TN"
+  },
+  {
+   "drug": "vonoprazan",
+   "indication": "Gastro-esophageal reflux disease with esophagitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Fremanezumab",
+   "indication": "Fibromyalgia",
+   "label": "TN"
+  },
+  {
+   "drug": "clonidine",
+   "indication": "Severe pain",
+   "label": "TP"
+  },
+  {
+   "drug": "minocycline",
+   "indication": "HIV-associated Cognitive Impairment",
+   "label": "TN"
+  },
+  {
+   "drug": "isosorbide mononitrate",
+   "indication": "Angina Pectoris",
+   "label": "TP"
+  },
+  {
+   "drug": "BIIB023",
+   "indication": "Lupus Nephritis",
+   "label": "TN"
+  },
+  {
+   "drug": "exemestane",
+   "indication": "Hormone receptor positive malignant neoplasm of breast",
+   "label": "TP"
+  },
+  {
+   "drug": "Individualized TB treatment with multiple drugs",
+   "indication": "Tuberculosis, Multidrug-Resistant",
+   "label": "TN"
+  },
+  {
+   "drug": "esomeprazole",
+   "indication": "Gastroesophageal reflux disease",
+   "label": "TP"
+  },
+  {
+   "drug": "Fremanezumab",
+   "indication": "Chronic Cluster Headache",
+   "label": "TN"
+  },
+  {
+   "drug": "fluticasone furoate",
+   "indication": "Chronic Obstructive Airway Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "OMS721",
+   "indication": "IgA Nephropathy",
+   "label": "TN"
+  },
+  {
+   "drug": "hydromorphone",
+   "indication": "Severe pain",
+   "label": "TP"
+  },
+  {
+   "drug": "OncoGel (Paclitaxel gel)",
+   "indication": "Esophageal Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "pegaspargase",
+   "indication": "Acute lymphocytic leukemia",
+   "label": "TP"
+  },
+  {
+   "drug": "Type AB plasma",
+   "indication": "Trauma",
+   "label": "TN"
+  },
+  {
+   "drug": "eptacog alfa (activated)",
+   "indication": "Factor VII Deficiency",
+   "label": "TP"
+  },
+  {
+   "drug": "Rifampicin",
+   "indication": "Multiple System Atrophy",
+   "label": "TN"
+  },
+  {
+   "drug": "cladribine",
+   "indication": "Hairy Cell Leukemia",
+   "label": "TP"
+  },
+  {
+   "drug": "Evacetrapib",
+   "indication": "Cardiovascular Diseases",
+   "label": "TN"
+  },
+  {
+   "drug": "teduglutide",
+   "indication": "Short Bowel Syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "Suvorexant",
+   "indication": "Opioid-use Disorder",
+   "label": "TN"
+  },
+  {
+   "drug": "streptomycin",
+   "indication": "Brucellosis",
+   "label": "TP"
+  },
+  {
+   "drug": "continuous positive airway pressure (CPAP)",
+   "indication": "Polycystic Ovary Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "azelaic acid",
+   "indication": "Rosacea",
+   "label": "TP"
+  },
+  {
+   "drug": "JNJ-42160443 3 mg",
+   "indication": "Low Back Pain",
+   "label": "TN"
+  },
+  {
+   "drug": "alfuzosin",
+   "indication": "Prostatic Hypertrophy",
+   "label": "TP"
+  },
+  {
+   "drug": "Macitentan",
+   "indication": "Chronic Thromboembolic Pulmonary Hypertension",
+   "label": "TN"
+  },
+  {
+   "drug": "luliconazole",
+   "indication": "Tinea corporis (disorder)",
+   "label": "TP"
+  },
+  {
+   "drug": "Ferroquine SSR97193",
+   "indication": "Plasmodium Falciparum Infection",
+   "label": "TN"
+  },
+  {
+   "drug": "metformin",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "Tralokinumab",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "leuprorelin",
+   "indication": "Precocious Puberty",
+   "label": "TP"
+  },
+  {
+   "drug": "Indomethacin",
+   "indication": "Post-ERCP Acute Pancreatitis",
+   "label": "TN"
+  },
+  {
+   "drug": "triamterene",
+   "indication": "Edema",
+   "label": "TP"
+  },
+  {
+   "drug": "Progesterone",
+   "indication": "Traumatic Brain Injury",
+   "label": "TN"
+  },
+  {
+   "drug": "fluoxetine",
+   "indication": "Panic Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Metoclopramide",
+   "indication": "Sepsis",
+   "label": "TN"
+  },
+  {
+   "drug": "gabapentin",
+   "indication": "Restless Legs Syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "Misoprostol",
+   "indication": "Hemorrhage; Complicating Delivery",
+   "label": "TN"
+  },
+  {
+   "drug": "cilgavimab",
+   "indication": "COVID19 (disease)",
+   "label": "TP"
+  },
+  {
+   "drug": "Ravulizumab",
+   "indication": "Chronic Kidney Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "vinflunine",
+   "indication": "Carcinoma, Transitional Cell",
+   "label": "TP"
+  },
+  {
+   "drug": "Efavaleukin Alfa",
+   "indication": "Active Systemic Lupus Erythematosus",
+   "label": "TN"
+  },
+  {
+   "drug": "agomelatine",
+   "indication": "Major Depressive Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Evobrutinib",
+   "indication": "Relapsing-remitting Multiple Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "ambrisentan",
+   "indication": "Pulmonary arterial hypertension",
+   "label": "TP"
+  },
+  {
+   "drug": "162mg aspirin dose",
+   "indication": "Preeclampsia",
+   "label": "TN"
+  },
+  {
+   "drug": "rimonabant",
+   "indication": "Obesity",
+   "label": "TP"
+  },
+  {
+   "drug": "mRNA-1647",
+   "indication": "Cytomegalovirus Infection",
+   "label": "TN"
+  },
+  {
+   "drug": "crisaborole",
+   "indication": "Dermatitis, Atopic",
+   "label": "TP"
+  },
+  {
+   "drug": "AIN457",
+   "indication": "Uveitis",
+   "label": "TN"
+  },
+  {
+   "drug": "dextrothyroxine",
+   "indication": "Hyperlipidemia",
+   "label": "TP"
+  },
+  {
+   "drug": "becatecarin",
+   "indication": "Biliary Tract Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "biperiden",
+   "indication": "Extrapyramidal Disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "LNA043",
+   "indication": "Osteoarthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "vancomycin",
+   "indication": "Neonatal pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "GSK3640254",
+   "indication": "HIV Infections",
+   "label": "TN"
+  },
+  {
+   "drug": "molnupiravir",
+   "indication": "COVID19 (disease)",
+   "label": "TP"
+  },
+  {
+   "drug": "SYNSORB Pk",
+   "indication": "Hemolytic Uremic Syndrome",
+   "label": "TN"
+  },
+  {
+   "drug": "leflunomide",
+   "indication": "Arthritis, Psoriatic",
+   "label": "TP"
+  },
+  {
+   "drug": "CMB305",
+   "indication": "Sarcoma",
+   "label": "TN"
+  },
+  {
+   "drug": "indomethacin",
+   "indication": "Tendinitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Albuterol Sulfate",
+   "indication": "Respiratory Distress Syndrome, Adult",
+   "label": "TN"
+  },
+  {
+   "drug": "molindone",
+   "indication": "Schizophrenia",
+   "label": "TP"
+  },
+  {
+   "drug": "IMGN901",
+   "indication": "Small Cell Lung Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "avibactam",
+   "indication": "Bacterial urinary infection",
+   "label": "TP"
+  },
+  {
+   "drug": "DFP-10917",
+   "indication": "Leukemia, Myeloid, Acute",
+   "label": "TN"
+  },
+  {
+   "drug": "pemoline",
+   "indication": "Attention deficit hyperactivity disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Bifeprunox",
+   "indication": "Schizophrenia",
+   "label": "TN"
+  },
+  {
+   "drug": "epinephrine",
+   "indication": "Septic Shock",
+   "label": "TP"
+  },
+  {
+   "drug": "Luveltamab tazevibulin",
+   "indication": "Ovarian Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "eculizumab",
+   "indication": "Neuromyelitis Optica",
+   "label": "TP"
+  },
+  {
+   "drug": "LY3127804",
+   "indication": "COVID-19",
+   "label": "TN"
+  },
+  {
+   "drug": "clonazepam",
+   "indication": "Absence Epilepsy",
+   "label": "TP"
+  },
+  {
+   "drug": "Ancrod (Viprinex)",
+   "indication": "Stroke",
+   "label": "TN"
+  },
+  {
+   "drug": "diltiazem",
+   "indication": "Paroxysmal supraventricular tachycardia",
+   "label": "TP"
+  },
+  {
+   "drug": "WVE-120101",
+   "indication": "Huntington's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "hydralazine",
+   "indication": "Chronic heart failure",
+   "label": "TP"
+  },
+  {
+   "drug": "PF-06252616",
+   "indication": "Duchenne Muscular Dystrophy",
+   "label": "TN"
+  },
+  {
+   "drug": "eribulin",
+   "indication": "liposarcoma",
+   "label": "TP"
+  },
+  {
+   "drug": "Ambrisentan",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "azithromycin",
+   "indication": "Staphylococcus aureus infection",
+   "label": "TP"
+  },
+  {
+   "drug": "NUC-1031",
+   "indication": "Biliary Tract Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "asenapine",
+   "indication": "Schizophrenia",
+   "label": "TP"
+  },
+  {
+   "drug": "Danirixin 35 mg tablets",
+   "indication": "Pulmonary Disease, Chronic Obstructive",
+   "label": "TN"
+  },
+  {
+   "drug": "apalutamide",
+   "indication": "Metastasis from malignant tumor of prostate",
+   "label": "TP"
+  },
+  {
+   "drug": "Supportive Palliative Care",
+   "indication": "Hematopoietic and Lymphoid Cell Neoplasm",
+   "label": "TN"
+  },
+  {
+   "drug": "aripiprazole",
+   "indication": "Autistic Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "Enzalutamide",
+   "indication": "Castration-Resistant Prostate Carcinoma",
+   "label": "TN"
+  },
+  {
+   "drug": "zoledronic acid",
+   "indication": "Osteoporosis, Postmenopausal",
+   "label": "TP"
+  },
+  {
+   "drug": "Aliskiren",
+   "indication": "Heart Failure",
+   "label": "TN"
+  },
+  {
+   "drug": "lasmiditan",
+   "indication": "Migraine Disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "Hyperbaric oxygen",
+   "indication": "SARS (Severe Acute Respiratory Syndrome)",
+   "label": "TN"
+  },
+  {
+   "drug": "aminoglutethimide",
+   "indication": "Secondary malignant neoplasm of female breast",
+   "label": "TP"
+  },
+  {
+   "drug": "Timing of administration of post partum Oxytocin",
+   "indication": "Placental Transfusion",
+   "label": "TN"
+  },
+  {
+   "drug": "pirenzepine",
+   "indication": "Peptic Ulcer",
+   "label": "TP"
+  },
+  {
+   "drug": "Interferon gamma-1b",
+   "indication": "Ovarian Carcinoma",
+   "label": "TN"
+  },
+  {
+   "drug": "bretylium",
+   "indication": "Ventricular Fibrillation",
+   "label": "TP"
+  },
+  {
+   "drug": "GSK3640254",
+   "indication": "HIV Infections",
+   "label": "TN"
+  },
+  {
+   "drug": "imatinib",
+   "indication": "Mastocytosis, Systemic",
+   "label": "TP"
+  },
+  {
+   "drug": "Luvadaxistat",
+   "indication": "Schizophrenia",
+   "label": "TN"
+  },
+  {
+   "drug": "tropicamide",
+   "indication": "Mydriasis",
+   "label": "TP"
+  },
+  {
+   "drug": "Prasugrel",
+   "indication": "Sickle Cell Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "rofecoxib",
+   "indication": "Pain",
+   "label": "TP"
+  },
+  {
+   "drug": "Pleneva TM BGC20-0134",
+   "indication": "Relapsing Remitting Multiple Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "sulpiride",
+   "indication": "Schizophrenia",
+   "label": "TP"
+  },
+  {
+   "drug": "AMG 706",
+   "indication": "Non-Small Cell Lung Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "tibolone",
+   "indication": "Osteoporosis, Postmenopausal",
+   "label": "TP"
+  },
+  {
+   "drug": "ATIR101",
+   "indication": "Acute Myeloid Leukemia",
+   "label": "TN"
+  },
+  {
+   "drug": "avelumab",
+   "indication": "Renal Cell Carcinoma",
+   "label": "TP"
+  }
+ ],
+ "results": {
+  "B5": {
+   "scores": [
+    0.82,
+    0.98,
+    0.5,
+    0.97,
+    0.53,
+    0.71,
+    0.5,
+    0.87,
+    0.83,
+    0.97,
+    0.5,
+    0.93,
+    0.0,
+    0.5,
+    0.5,
+    0.55,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.92,
+    0.17,
+    0.13,
+    0.6,
+    0.51,
+    0.97,
+    0.5,
+    0.95,
+    0.0,
+    0.5,
+    0.81,
+    0.92,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.39,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.86,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.38,
+    0.98,
+    0.0,
+    0.5,
+    0.5,
+    0.98,
+    0.05,
+    0.89,
+    0.78,
+    0.1,
+    0.0,
+    0.5,
+    0.51,
+    0.55,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.95,
+    0.5,
+    0.72,
+    0.58,
+    0.5,
+    0.5,
+    0.97,
+    0.5,
+    0.5,
+    0.5,
+    0.68,
+    0.98,
+    0.73,
+    0.59,
+    0.57,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.87,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.39,
+    0.94,
+    0.96,
+    0.98,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.96,
+    0.51,
+    0.5,
+    0.5,
+    0.65,
+    0.5,
+    0.5,
+    0.92,
+    0.5,
+    0.5,
+    0.5,
+    0.97,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.57,
+    0.98,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.52,
+    0.5,
+    0.0,
+    0.67,
+    0.0,
+    0.5,
+    0.7,
+    0.86,
+    0.5,
+    0.78,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.98,
+    0.5,
+    0.5,
+    0.56,
+    0.5,
+    0.5,
+    0.5,
+    0.0,
+    0.79,
+    0.5,
+    0.75,
+    0.92,
+    0.73,
+    0.54,
+    0.54,
+    0.97,
+    0.5,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.67,
+    0.28,
+    0.98,
+    0.71,
+    0.86,
+    0.5,
+    0.59,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.39,
+    0.49,
+    0.95,
+    0.54,
+    0.5,
+    0.59,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.98,
+    0.98,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.88,
+    0.62,
+    0.5,
+    0.96,
+    0.5,
+    0.96,
+    0.0,
+    0.5,
+    0.5,
+    0.64,
+    0.5,
+    0.5,
+    0.5,
+    0.91,
+    0.5,
+    0.61,
+    0.5,
+    0.53,
+    0.5,
+    0.5,
+    0.5,
+    0.91,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.54,
+    0.67,
+    0.0,
+    0.5,
+    0.7,
+    0.98,
+    0.98,
+    0.72,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.81,
+    0.59,
+    0.0,
+    0.5,
+    0.5,
+    0.76,
+    0.98,
+    0.98,
+    0.05,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.51,
+    0.2,
+    0.5,
+    0.5,
+    0.5,
+    0.93,
+    0.98,
+    0.0,
+    0.5,
+    0.5,
+    0.14,
+    0.5,
+    0.5,
+    0.0,
+    0.4,
+    0.53,
+    0.98,
+    0.68,
+    0.98,
+    0.5,
+    0.5,
+    0.66,
+    0.94,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.97,
+    0.71,
+    0.59,
+    0.96,
+    0.64,
+    0.5,
+    0.5,
+    0.86,
+    0.5,
+    0.5,
+    0.67,
+    0.5,
+    0.67,
+    0.65,
+    0.5,
+    0.51,
+    0.5,
+    0.0,
+    0.5,
+    0.45,
+    0.98,
+    0.92,
+    0.91,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.71,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.14,
+    0.63,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.74,
+    0.89,
+    0.98,
+    0.0,
+    0.5,
+    0.56,
+    0.86,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.87,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.67,
+    0.5,
+    0.47,
+    0.5,
+    0.97,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.0,
+    0.58,
+    0.5,
+    0.74,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.98,
+    0.5,
+    0.14,
+    0.52,
+    0.56,
+    0.0,
+    0.0,
+    0.5,
+    0.0,
+    0.93,
+    0.89,
+    0.43,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.6,
+    0.5,
+    0.94,
+    0.0,
+    0.5,
+    0.51,
+    0.98,
+    0.98,
+    0.98,
+    0.47,
+    0.5,
+    0.66,
+    0.5,
+    0.51,
+    0.51,
+    0.5,
+    0.49,
+    0.5,
+    0.11,
+    0.98,
+    0.98,
+    0.5,
+    0.83,
+    0.5,
+    0.5,
+    0.5,
+    0.56,
+    0.56,
+    0.6,
+    0.5,
+    0.5,
+    0.5,
+    0.89,
+    0.5,
+    0.5,
+    0.78,
+    0.67,
+    0.5,
+    0.5,
+    0.47,
+    0.71,
+    0.71,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.5,
+    0.0,
+    0.5,
+    0.81,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.67,
+    0.5,
+    0.5,
+    0.5,
+    0.98,
+    0.56,
+    0.91,
+    0.5,
+    0.5,
+    0.51,
+    0.59,
+    0.5,
+    0.89,
+    0.0,
+    0.81,
+    0.5,
+    0.56,
+    0.5,
+    0.66,
+    0.64,
+    0.68,
+    0.5,
+    0.92,
+    0.95,
+    0.85,
+    0.87,
+    0.98,
+    0.51,
+    0.98,
+    0.5,
+    0.89,
+    0.0,
+    0.97,
+    0.5,
+    0.5,
+    0.81,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.93,
+    0.5,
+    0.98,
+    0.5,
+    0.98,
+    0.72,
+    0.53,
+    0.0,
+    0.98,
+    0.65,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.64,
+    0.98,
+    0.93,
+    0.5,
+    0.87,
+    0.5,
+    0.0,
+    0.9,
+    0.98,
+    0.83,
+    0.69,
+    0.98,
+    0.98,
+    0.5,
+    0.91,
+    0.98,
+    0.98,
+    0.56,
+    0.35,
+    0.14,
+    0.5,
+    0.0,
+    0.91,
+    0.59,
+    0.93,
+    0.55,
+    0.52,
+    0.52,
+    0.53,
+    0.5,
+    0.76,
+    0.0,
+    0.51,
+    0.5,
+    0.98,
+    0.5,
+    0.98,
+    0.0,
+    0.97,
+    0.0,
+    0.5,
+    0.84,
+    0.5,
+    0.28,
+    0.96,
+    0.73,
+    0.96,
+    0.5,
+    0.97,
+    0.98,
+    0.52,
+    0.5,
+    0.5,
+    0.64,
+    0.51,
+    0.5,
+    0.92,
+    0.5,
+    0.96,
+    0.5,
+    0.5,
+    0.5,
+    0.98,
+    0.51,
+    0.85,
+    0.5,
+    0.5,
+    0.64,
+    0.98,
+    0.48,
+    0.98,
+    0.0,
+    0.95,
+    0.13,
+    0.98,
+    0.86,
+    0.5,
+    0.81,
+    0.52,
+    0.5,
+    0.83,
+    0.5,
+    0.56,
+    0.81,
+    0.5,
+    0.98,
+    0.98,
+    0.5,
+    0.92,
+    0.5,
+    0.92,
+    0.98,
+    0.55,
+    0.5,
+    0.7,
+    0.5,
+    0.58,
+    0.5,
+    0.98,
+    0.0,
+    0.76,
+    0.5,
+    0.5,
+    0.5,
+    0.83,
+    0.5,
+    0.5,
+    0.0,
+    0.82,
+    0.0,
+    0.93,
+    0.5,
+    0.95,
+    0.0,
+    0.5,
+    0.5,
+    0.54,
+    0.2,
+    0.98,
+    0.5,
+    0.94,
+    0.5,
+    0.98,
+    0.5,
+    0.98,
+    0.0,
+    0.98,
+    0.5,
+    0.69,
+    0.0,
+    0.5,
+    0.65,
+    0.98,
+    0.0,
+    0.08,
+    0.5,
+    0.98,
+    0.5,
+    0.91,
+    0.5,
+    0.98,
+    0.56,
+    0.98,
+    0.0,
+    0.18,
+    0.0,
+    0.94,
+    0.5,
+    0.87,
+    0.5,
+    0.49,
+    0.57,
+    0.98,
+    0.6,
+    0.98,
+    0.5,
+    0.91,
+    0.0,
+    0.98,
+    0.5,
+    0.67,
+    0.5,
+    0.35,
+    0.85,
+    0.5,
+    0.54,
+    0.98,
+    0.5,
+    0.94,
+    0.5,
+    0.96,
+    0.5,
+    0.98,
+    0.5,
+    0.98,
+    0.5,
+    0.98,
+    0.5,
+    0.64,
+    0.6,
+    0.74,
+    0.5,
+    0.96,
+    0.51,
+    0.98,
+    0.5,
+    0.87,
+    0.6,
+    0.98,
+    0.5,
+    0.98,
+    0.0,
+    0.98,
+    0.95,
+    0.54,
+    0.95,
+    0.98,
+    0.5,
+    0.98,
+    0.98,
+    0.63,
+    0.91,
+    0.98,
+    0.5,
+    0.95,
+    0.82,
+    0.98,
+    0.5,
+    0.85,
+    0.0,
+    0.98,
+    0.62,
+    0.98,
+    0.5,
+    0.98,
+    0.5,
+    0.97,
+    0.56,
+    0.76,
+    0.5,
+    0.9,
+    0.5,
+    0.5,
+    0.5,
+    0.95,
+    0.5,
+    0.98,
+    0.5,
+    0.86,
+    0.61,
+    0.81,
+    0.51,
+    0.98,
+    0.71,
+    0.96,
+    0.92,
+    0.71,
+    0.5,
+    0.98,
+    0.0,
+    0.6,
+    0.57,
+    0.96,
+    0.5,
+    0.54,
+    0.5,
+    0.98,
+    0.5,
+    0.59,
+    0.56,
+    0.98,
+    0.0,
+    0.98,
+    0.57,
+    0.98,
+    0.97,
+    0.98,
+    0.51,
+    0.98,
+    0.81,
+    0.91,
+    0.5,
+    0.88,
+    0.5,
+    0.89,
+    0.5,
+    0.28,
+    0.65,
+    0.58,
+    0.5,
+    0.97,
+    0.5,
+    0.94,
+    0.5,
+    0.98,
+    0.5,
+    0.98
+   ],
+   "verdicts": [
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "조건부",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "유망",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "조건부",
+    "기각",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "조건부",
+    "유망",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "조건부",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "조건부",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "기각",
+    "기각",
+    "보류",
+    "기각",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "유망",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "유망",
+    "조건부",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "기각",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "기각",
+    "기각",
+    "보류",
+    "기각",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "기각",
+    "보류",
+    "유망",
+    "보류",
+    "기각",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "기각",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "유망",
+    "기각",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "기각",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "보류",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "기각",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "기각",
+    "기각",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "조건부",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "조건부",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "조건부",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "보류",
+    "조건부",
+    "유망",
+    "보류",
+    "조건부",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "보류",
+    "유망",
+    "유망",
+    "유망",
+    "조건부",
+    "유망",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "기각",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "유망"
+   ]
+  }
+ }
+}

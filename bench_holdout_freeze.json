@@ -1,0 +1,91 @@
+{
+  "frozen_at": "2026-08-05T00:09:04",
+  "rule": "sha256(norm(drug))[:8] % 1000 < 300 → dev, 그 외 sealed",
+  "dev_frac": 0.3,
+  "min_enrollment": 20,
+  "source": {
+    "file": "bench_tn_pool_v2.csv",
+    "sha256": "9af2b23456bd835b44f07c5f8168d283ad7ca0c06b8c4d6cea37323ca543a2fe",
+    "rows": 666
+  },
+  "counts": {
+    "dev": 217,
+    "sealed": 449,
+    "drugs_dev": 190,
+    "drugs_sealed": 397
+  },
+  "files": {
+    "bench_holdout_dev.csv": {
+      "sha256": "eb8821ed5c02bcc72719c6458535f524393df9693b3dd79b9e44d73766d8f16f",
+      "rows": 217
+    },
+    "bench_holdout_sealed.csv": {
+      "sha256": "3734dea287a82f9284fb62ea08be5102d15ebeb41bbf7d147f1782c275b2c905",
+      "rows": 449
+    }
+  },
+  "rule_probe": {
+    "elamipretide": 938,
+    "DS102": 739,
+    "Bucillamine": 280,
+    "Genvoya 150Mg-150Mg-200Mg-10Mg Tablet": 873,
+    "Minocycline": 325,
+    "Benralizumab": 161,
+    "Extended-release niacin/laropiprant (ERN/LRPT)": 258,
+    "Magnesium sulfate": 202,
+    "Aticaprant": 978,
+    "E2007": 553,
+    "MVA-NP+M1": 73,
+    "JNJ-18054478": 996,
+    "Ulocuplumab": 740,
+    "Xilonix": 587,
+    "ZPL389 3mg": 439,
+    "Isoniazid (INH)": 464,
+    "C19-IG 20%": 286,
+    "iHIVARNA-01": 588,
+    "Pimodivir 600 mg": 216,
+    "Tazemetostat": 330,
+    "Bifeprunox": 473,
+    "Solanezumab": 462,
+    "Abatacept": 999,
+    "BIIB023": 333,
+    "DNIB0600A": 369,
+    "Ramelteon": 743,
+    "JNJ-38518168": 785,
+    "IPN60130": 457,
+    "Sodium Bicarbonate": 679,
+    "Retention of Cerclage": 469,
+    "carboplatin": 844,
+    "Recifercept": 177,
+    "Insulin glargine injection": 534,
+    "Sarizotan low dose": 664,
+    "Immune Globulin Intravenous (Human), 10% Solution": 551,
+    "Lornoxicam": 548,
+    "Insulin Glargine": 673,
+    "Evacetrapib": 636,
+    "Testosterone gel": 163,
+    "convalescent plasma infusion covid 19": 366
+  },
+  "excluded_by_nct": 21,
+  "note": "소속은 파일이 아니라 규칙이 정한다. 뒤에서 행을 걸러내도 각 행의 partition 은 bucket(drug) 로 언제든 재현된다.",
+  "supersedes": {
+    "frozen_at": "2026-08-04T23:49:59",
+    "reason": "NCT 대조로 기존 튜닝 자료와 동일한 시험 21건 발견 — 측정 전이므로 규칙 유지한 채 오염만 제거",
+    "counts": {
+      "dev": 224,
+      "sealed": 463,
+      "drugs_dev": 197,
+      "drugs_sealed": 407
+    },
+    "files": {
+      "bench_holdout_dev.csv": {
+        "sha256": "22d6965013c33f683ce93b73a6daf477365fdd5203fd5de2a5fe413a8b107259",
+        "rows": 224
+      },
+      "bench_holdout_sealed.csv": {
+        "sha256": "6a8d2c32cec10a544996bc4f9cf6bbd1e77602e46e4870242f2700378c628b8b",
+        "rows": 463
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "문서": "사전명세_도킹표적선정.md",
+ "작성": "2026-08-13T20:10:50",
+ "sha256": "aff5c888d5467cbb5484e5d940149202b5e8f6610cfa7058b9447e1110654079",
+ "실행_전_증거": {
+  "bioreroute/bench/dockcheck.py": {
+   "sha256": "c303ac85ad250f306ec838055ffa4b14",
+   "최종수정": "2026-08-13 20:09:30"
+  },
+  "bioreroute/io/structure.py": {
+   "sha256": "6e0f08b7f22a3fbbd1b6db76298ea70e",
+   "최종수정": "2026-08-13 17:32:45"
+  },
+  "routercheck.json": {
+   "sha256": "a1449802aa280a3d3be435be829f9869",
+   "최종수정": "2026-08-11 09:10:09"
+  }
+ },
+ "주지표": "routercheck 의 docking_advised=True 8건 전부에 dock_verdict 적용 · 「진행」이 나온 것 중 행 순서 첫 번째를 채택 · 0건이면 선택지 ①로",
+ "고정": {
+  "후보": "routercheck.json 행 순서 그대로 8건 · 추리지 않는다",
+  "규칙": "① 종 일치 ② apo ≥1 ③ 우리 분자가 붙은 구조 중 핵산 없는 것 ≥1 — 셋 다",
+  "max_fetch": 150,
+  "모르면": "거부",
+  "동점 처리": "행 순서 첫 번째. 해상도·건수로 재정렬하지 않는다"
+ },
+ "미리_적은_예측": {
+  "거부 예상": 7,
+  "진행 예상": [
+   "rifampin"
+  ],
+  "근거": "전구약물 4(remdesivir·sofosbuvir·acyclovir·oseltamivir) · 공유결합 1(nirmatrelvir) · 자리가 핵산 의존 2(ciprofloxacin·raltegravir)"
+ },
+ "미리_적은_한계": [
+  "8건은 LLM 라우터 출력이다 — 발견이 아니라 분류다",
+  "max_fetch=150 은 자르는 지점이고, 놓치는 방향은 「거부」다",
+  "site_formed_apo 는 대리물이다 — 「핵산 없음」이 「자리 형성」을 뜻하지는 않는다",
+  "도킹 점수는 결합력 예측이 아니다 — 명백한 입체 충돌 수준으로만 읽는다"
+ ],
+ "결과파일_존재여부": {
+  "dockscan.json": false
+ }
+}

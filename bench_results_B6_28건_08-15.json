@@ -1,0 +1,273 @@
+{
+ "stratum": "A",
+ "n_tp": 14,
+ "n_tn": 14,
+ "rows": [
+  {
+   "drug": "Copanlisib",
+   "indication": "Lymphoma, Non-Hodgkin",
+   "label": "TN"
+  },
+  {
+   "drug": "Ibalizumab",
+   "indication": "HIV Infections",
+   "label": "TP"
+  },
+  {
+   "drug": "losartan",
+   "indication": "Covid19",
+   "label": "TN"
+  },
+  {
+   "drug": "Meloxicam",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "metformin",
+   "indication": "Melanoma",
+   "label": "TN"
+  },
+  {
+   "drug": "filgotinib",
+   "indication": "Ulcerative Colitis",
+   "label": "TP"
+  },
+  {
+   "drug": "Pioglitazone",
+   "indication": "Alzheimer's Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "pacritinib",
+   "indication": "Myelofibrosis",
+   "label": "TP"
+  },
+  {
+   "drug": "pioglitazone",
+   "indication": "Alzheimer Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "Ozanimod",
+   "indication": "Multiple Sclerosis",
+   "label": "TP"
+  },
+  {
+   "drug": "camostat",
+   "indication": "Covid19",
+   "label": "TN"
+  },
+  {
+   "drug": "Deflazacort",
+   "indication": "Duchenne Muscular Dystrophy",
+   "label": "TP"
+  },
+  {
+   "drug": "Chloroquine",
+   "indication": "HIV Infections",
+   "label": "TN"
+  },
+  {
+   "drug": "Filgotinib",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "minocycline",
+   "indication": "Stroke",
+   "label": "TN"
+  },
+  {
+   "drug": "lomitapide",
+   "indication": "Hypercholesterolemia",
+   "label": "TP"
+  },
+  {
+   "drug": "azithromycin",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "edaravone",
+   "indication": "Amyotrophic Lateral Sclerosis",
+   "label": "TP"
+  },
+  {
+   "drug": "metformin",
+   "indication": "Breast Neoplasms",
+   "label": "TN"
+  },
+  {
+   "drug": "Cladribine",
+   "indication": "Multiple Sclerosis",
+   "label": "TP"
+  },
+  {
+   "drug": "ibrutinib",
+   "indication": "Lymphoma, Non-Hodgkin",
+   "label": "TN"
+  },
+  {
+   "drug": "Hydralazine",
+   "indication": "Heart Failure",
+   "label": "TP"
+  },
+  {
+   "drug": "baclofen",
+   "indication": "Pain",
+   "label": "TN"
+  },
+  {
+   "drug": "tacrolimus",
+   "indication": "Atopic Dermatitis",
+   "label": "TP"
+  },
+  {
+   "drug": "metformin",
+   "indication": "Breast Cancer",
+   "label": "TN"
+  },
+  {
+   "drug": "belimumab",
+   "indication": "Systemic Lupus Erythematosus",
+   "label": "TP"
+  },
+  {
+   "drug": "apixaban",
+   "indication": "Stroke",
+   "label": "TN"
+  },
+  {
+   "drug": "hydroxychloroquine",
+   "indication": "Systemic Lupus Erythematosus",
+   "label": "TP"
+  }
+ ],
+ "results": {
+  "B5": {
+   "scores": [
+    0.98,
+    0.92,
+    0.0,
+    0.98,
+    0.29,
+    0.98,
+    0.97,
+    0.98,
+    0.92,
+    0.98,
+    0.0,
+    0.98,
+    0.16,
+    0.98,
+    0.97,
+    0.74,
+    0.92,
+    0.28,
+    0.38,
+    0.98,
+    0.97,
+    0.57,
+    0.78,
+    0.98,
+    0.29,
+    0.98,
+    0.98,
+    0.98
+   ],
+   "verdicts": [
+    "유망",
+    "유망",
+    "기각",
+    "유망",
+    "기각",
+    "유망",
+    "유망",
+    "유망",
+    "유망",
+    "유망",
+    "기각",
+    "유망",
+    "기각",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "조건부",
+    "기각",
+    "유망",
+    "유망",
+    "조건부",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "유망",
+    "유망"
+   ]
+  },
+  "B6": {
+   "scores": [
+    0.98,
+    0.93,
+    0.0,
+    0.98,
+    0.29,
+    0.98,
+    0.97,
+    0.98,
+    0.92,
+    0.98,
+    0.0,
+    0.98,
+    0.0,
+    0.98,
+    0.97,
+    0.74,
+    0.92,
+    0.28,
+    0.38,
+    0.98,
+    0.97,
+    0.57,
+    0.78,
+    0.98,
+    0.29,
+    0.98,
+    0.98,
+    0.98
+   ],
+   "verdicts": [
+    "유망",
+    "유망",
+    "기각",
+    "유망",
+    "기각",
+    "유망",
+    "유망",
+    "유망",
+    "유망",
+    "유망",
+    "기각",
+    "유망",
+    "기각",
+    "유망",
+    "유망",
+    "보류",
+    "유망",
+    "조건부",
+    "기각",
+    "유망",
+    "유망",
+    "조건부",
+    "보류",
+    "유망",
+    "기각",
+    "유망",
+    "유망",
+    "유망"
+   ]
+  }
+ }
+}

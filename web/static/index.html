@@ -1,0 +1,319 @@
+<!doctype html>
+<!-- ⚠ **`<html>`·`<head>`·`<body>` 를 명시한다** (08-24 · 결함 317)
+     앞판은 이것들을 생략했다. 브라우저는 암묵적으로 만들어 주니
+     **로컬에서는 아무 문제가 없었다.**
+
+     그런데 **HF Spaces 는 정적 페이지에 자기 스크립트를 주입한다** —
+     `window.huggingface={variables:{…}}`. 주입 자리를 문자열로 찾는데
+     `<head>`·`<body>` 가 없으니 **엉뚱한 곳에 넣었고**, 그게 스크립트로
+     파싱되지 못해 **`<span class="brand-txt">` 안의 글자 85자**가 됐다.
+     승우가 «사이드바 맨 위에 이상한 글자» 라고 본 것이 그것이다.
+
+     ⚠ **`web_fetch` 로는 안 보였다** — 스크립트·텍스트를 걸러내기 때문이다.
+       그래서 내가 세 번 «정상» 이라고 말했다. **브라우저로 봐야 보였다.**
+       `CLAUDE.md §5` — 검증 환경이 실행 환경과 다르면 그 검증은 거짓말이다.
+
+     덤 — `lang="ko"` 를 붙이면 **브라우저 자동 번역 팝업**이 안 뜬다
+     (결함 「브라우저가 한국어를 번역했다」와 같은 자리다). -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bio-ReRoute</title>
+<!-- ⚠ 경로를 **상대**로 둔다. 정적 호스팅에서 하위 경로에 올라가면
+     `/static/…` 은 사이트 최상위를 가리켜 아무것도 안 온다. -->
+<link rel="stylesheet" href="static/app.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.0.4/3Dmol-min.js"></script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     구조 (08-20 재설계 · 승우: «사이드바 · 시연과 서비스를 구분»)
+
+     **두 사람이 다른 질문을 한다.**
+
+       연구자   «이 약이 이 병에 될까?»      → 답을 원한다
+       심사위원 «이 시스템을 믿어도 되나?»   → 근거를 원한다
+
+     앞판은 탭 다섯이 한 줄에 늘어서 있었다. 다섯이 같은 크기로 서면
+     **다섯이 다 똑같이 중요하다**는 뜻이고, 그건 **아무것도 중요하지
+     않다**는 뜻이다(`화면진단_0818 §①`).
+
+     그래서 **맨 위에서 한 번 가른다.** 모드를 고르면 사이드바 항목이
+     통째로 바뀐다 — 두 개의 다른 제품처럼 보인다.
+     ══════════════════════════════════════════════════════════ -->
+
+<button class="drawer-btn" id="drawer-btn" aria-label="메뉴">☰</button>
+<div class="scrim" id="scrim"></div>
+
+<aside class="side" id="side">
+  <div class="side-top">
+    <!-- **접었다 뺄 수 있게** (08-20 승우). 넓은 화면에서 결과 칸이
+         좁다는 지적이 정확했다 — 사이드바가 244px 을 늘 물고 있었다.
+
+         08-24 · 승우: «접는 칸이 BR 칸이랑 완벽히 일치해서, 마우스를
+         가져다 놓으면 사이드바 이동 기호로 나오고 떼면 BR 만 나오게».
+         **맞는 지적이다** — 접으면 28px 로고와 24px 버튼이 좁은 칸에
+         나란히 서서 «둘 중 뭘 눌러야 하나» 가 된다. 그래서 **로고 자체를
+         버튼으로** 만든다. 평상시 BR · 올리면 화살표 · 누르면 접힌다.
+         아이콘 글자는 **CSS `content`** 가 넣는다 — `app.js` 가
+         `textContent` 로 갈아치우면 자식이 날아가기 때문이다. -->
+    <button class="collapse" id="collapse" aria-label="메뉴 접기"
+            aria-expanded="true" title="메뉴 접기 / 펴기">
+      <span class="mark" aria-hidden="true">BR</span>
+      <span class="mark-ic" aria-hidden="true"></span>
+    </button>
+    <a class="brand" href="#/verify/drug">
+      <span class="brand-txt"><b>Bio-ReRoute</b><i>반증 우선 약물 재창출</i></span>
+    </a>
+  </div>
+
+  <div class="mode" id="mode" role="tablist"></div>
+
+  <nav class="menu" id="menu"></nav>
+
+  <!-- 면책은 **머리줄 한 곳**에만 둔다 (08-24 · 승우: «사이드바에도 있는데
+       머리줄에 꼭 넣어야 해?»)
+       맞는 지적이라 **중복을 없애되 남기는 쪽을 머리줄로** 골랐다 —
+         · 접었을 때   머리줄 ✅ / 사이드바 ❌(`hide-collapsed`)
+         · 자리        머리줄 = 화면 **최상단** / 사이드바 = 최하단 왼쪽 구석
+         · 스크린샷    머리줄은 `sticky` 라 거의 항상 들어간다
+       `심사기준대조.md §⑤` 가 적은 말이 *«화면 최상단 + 판정 문자열에도 —
+       스크린샷으로 떨어지지 않게»* 다. **문서와 맞는 자리가 머리줄이다.**
+       그리고 같은 말을 두 번 하는 것은 결함 295 에서 막 고친 것이다. -->
+</aside>
+
+<main class="main">
+  <!-- ⚠ **면책은 머리줄에 둔다** (08-24 · 결함)
+       앞판(Gradio)은 «화면 최상단 + 판정 문자열에도» 였고, 그 목적이
+       *«스크린샷으로 떨어져 나가지 않게»* 였다(`심사기준대조.md §⑤`).
+       이주하면서 **그 목적이 깨졌다** —
+         · 한 줄 면책은 `/api/boot` 이 계속 내려보내는데 **그리는 코드가 없었다**
+         · 남은 표시(사이드바 발치)는 `hide-collapsed` 라 **접으면 사라진다**
+         · 그런데 **3분할을 보려면 사이드바를 접어야 한다**(본문 769 vs 917px)
+       즉 **시연 자세에서 면책이 화면에 하나도 없었다.**
+       머리줄은 `position:sticky` 라 **어떤 스크린샷에도 들어간다.** -->
+  <header class="topbar">
+    <div>
+      <div class="tb-l">
+        <h1 id="page-title"></h1>
+        <p id="page-sub"></p>
+      </div>
+      <p class="tb-disc">⚠ <b>연구용 도구</b> · 의학적 조언이 아닙니다 ·
+        문장 일부는 <b>AI 생성</b>
+        <button class="linkish disc-open">전문</button></p>
+    </div>
+  </header>
+
+  <div class="page" id="page-wrap">
+
+    <!-- ═══ 서비스 ① 약으로 시작 ═══════════════════════════ -->
+    <section class="view" id="v-drug" hidden>
+      <div class="hero">
+        <div class="ask">
+          <input type="text" id="live-q" placeholder="약 이름 / 질환 이름"
+                 autocomplete="off" spellcheck="false">
+          <button class="go" id="live-go">검증하기</button>
+        </div>
+        <!-- ⚠ **시간은 실측으로 적되, 숫자를 화면에 박지 않는다** (08-21)
+             앞판은 «보통 30~60초» 였다. 처음 보는 쌍을 태워 보니 **133초**
+             (`sildenafil / Alzheimer` · 새 LLM 3회). `렌즈답변.md §796` 이
+             이미 *«30~60초라 적어 놓고 근거가 없다»* 고 적어 뒀는데 화면은
+             그대로였다 — **대장에 적는 것과 고치는 것은 다르다.**
+
+             ⚠ 그런데 그 133초는 **`gemini-2.5-flash` 로 잰 것**이다.
+               그날 OpenAI 키가 막혀 폴백이 돌았다(승우 확인). 구운 사례는
+               `gpt-5.4-mini` 로 만들어져 있어 **둘은 같은 조건이 아니다.**
+               그래서 화면에는 **범위만** 적는다 — 표본 하나짜리 숫자를
+               «실측 133초» 라고 박으면 «어느 모델로?» 한 마디에 무너진다.
+               키가 돌아오면 같은 쌍을 다시 재고 그때 숫자를 정한다. -->
+        <p class="ask-note">논문을 실제로 읽고 판단합니다 — 처음 보는 쌍은
+          <b>1~3분</b>, 이미 읽은 쌍은 1초 안에 나옵니다. 절반 넘게
+          「보류」가 나오는데, 근거가 갈리면 억지로 결론 내지 않기
+          때문입니다.</p>
+        <div class="ask-opts">
+          <span class="lbl">심사 기준
+            <button class="q" data-help="exit" aria-label="심사 기준이 무엇을 바꾸나">?</button>
+          </span>
+          <div class="seg sm" id="live-exit"></div>
+          <!-- 08-24 · 승우: «이 접힘 구조를 심사 기준 줄 맨 오른쪽으로
+               옮기고, 누르면 앞에 나오게». 결과 오른쪽 칸에 접혀 있던
+               것을 **줄 끝 팝오버**로 올린다 — 줄 높이가 안 변하므로
+               열어도 결과 화면이 안 밀린다.
+               ⚠ 결과가 없으면 **아예 안 보인다**(`hidden`). 빈 것을
+                 열게 두면 «눌렀는데 아무것도 없다» 가 된다. -->
+          <div class="pop-wrap" id="live-accwrap" hidden>
+            <button class="pop-btn" id="live-accbtn" aria-expanded="false"
+                    aria-controls="live-accpop">이 약의 접근성<span class="pop-caret" aria-hidden="true">▾</span></button>
+            <div class="pop" id="live-accpop" role="dialog"
+                 aria-label="이 약의 접근성" hidden>
+              <div class="pop-h">이 약의 접근성 <small>판정 문턱도 같이</small>
+                <button class="pop-x" id="live-accx" aria-label="닫기">×</button>
+              </div>
+              <div class="md" id="live-left"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="starter" id="live-starter">
+        <h3>이런 걸 물어보세요</h3>
+        <div class="cards" id="live-ex"></div>
+      </div>
+
+      <div class="bar idle" id="live-bar"><i></i></div>
+
+      <div class="result" id="live-result" hidden>
+        <div class="result-main">
+          <div class="md" id="live-out"></div>
+          <button class="dl" id="live-dl" hidden>근거 카드 내려받기 (.md)</button>
+        </div>
+        <aside class="result-side">
+          <div id="live-struct"></div>
+          <div class="whybox" id="live-structwhy" hidden></div>
+          <!-- 「이 약의 접근성」은 **심사 기준 줄 오른쪽 팝오버**로 옮겼다
+               (08-24 승우). `#live-left` 는 그대로 살아 있고 위치만 바뀐다. -->
+        </aside>
+      </div>
+    </section>
+
+    <!-- ═══ 서비스 ② 병으로 시작 ═══════════════════════════ -->
+    <section class="view" id="v-disease" hidden>
+      <div class="hero">
+        <div class="ask">
+          <input type="text" id="dz-q" placeholder="질환 이름 (예: Tuberculosis)"
+                 autocomplete="off" spellcheck="false">
+          <button class="go" id="dz-go">후보 찾기</button>
+        </div>
+        <p class="ask-note">후보 약물 열 개를 만들어 하나씩 논문으로
+          검증합니다 — 1~3분 걸립니다.</p>
+        <div class="ask-opts">
+          <span class="lbl">찾는 방법
+            <button class="q" data-help="entry"
+                    aria-label="정방향과 역발상이 무엇이 다른가">?</button>
+          </span>
+          <div class="seg sm" id="dz-entry"></div>
+          <span class="lbl">심사 기준
+            <button class="q" data-help="exit" aria-label="심사 기준이 무엇을 바꾸나">?</button>
+          </span>
+          <div class="seg sm" id="dz-exit"></div>
+          <label class="chk"><input type="checkbox" id="dz-acc"> 접근성 보기</label>
+        </div>
+      </div>
+
+      <div class="bar idle" id="dz-bar"><i></i></div>
+      <div class="md" id="dz-out"></div>
+
+      <div id="dz-pickbox" hidden>
+        <h3 class="sec">후보를 고르면 판단 과정이 열립니다</h3>
+        <div class="seg chips" id="dz-pick"></div>
+      </div>
+      <div class="md" id="dz-detail"></div>
+      <div class="md" id="dz-tail"></div>
+    </section>
+
+    <!-- ═══ 시연 ① 판정 사례 ═══════════════════════════════ -->
+    <section class="view" id="v-cases" hidden>
+      <!-- `cases-intro` 는 **머리줄이 같은 말을 한다** — 안 그린다(08-21) -->
+      <details class="fold"><summary><span class="s-t">사례를 어떻게 골랐나</span></summary>
+        <div class="md" id="cases-more"></div></details>
+      <div class="seg chips" id="cases-pick"></div>
+      <div class="md" id="cases-out"></div>
+    </section>
+
+    <!-- ═══ 시연 ② 어떻게 판단하나 ═════════════════════════ -->
+    <section class="view wide" id="v-dash" hidden>
+      <div class="md lead-md" id="dash-intro"></div>
+      <details class="fold"><summary><span class="s-t">이 화면은 무엇인가</span></summary>
+        <div class="md" id="dash-more"></div></details>
+
+      <!-- ══════════════════════════════════════════════════
+           **읽는 순서를 번호로 준다** (08-20 승우: «어디서부터 읽어야
+           할지 모르겠고, 각 정보마다 구획이 명확하지 않아 헷갈려»)
+
+           3분할은 «동시에 보라» 는 배치인데 **사람은 순서대로 읽는다.**
+           그리고 각 절이 «선 하나» 로만 갈려 있어 어디가 어디까지인지
+           안 보였다.
+
+           둘 다 고친다 —
+             · 번호 붙은 **패널**로 감싼다 (테두리 + 제목 줄)
+             · ① 무엇을 골랐나 → ② 어떤 잣대로 → ③ 어떻게 판단했나
+               → ④ 무엇이 뒷받침하나 → ⑤ 이 시스템을 믿어도 되나
+           ══════════════════════════════════════════════════ -->
+
+      <section class="panel">
+        <h3 class="panel-h"><span class="n">1</span>무엇을 골랐나
+          <span class="panel-m">실행과 심사 기준을 바꾸면 아래가 다 따라옵니다</span>
+        </h3>
+        <div class="panel-b">
+          <div class="ask-opts">
+            <span class="lbl">실행</span><div class="seg sm" id="dash-run"></div>
+            <span class="lbl">심사 기준
+              <button class="q" data-help="exit"
+                      aria-label="심사 기준이 무엇을 바꾸나">?</button>
+            </span>
+            <div class="seg sm" id="dash-exit"></div>
+          </div>
+          <div class="seg chips" id="dash-cand"></div>
+          <div class="md" id="dash-center"></div>
+        </div>
+      </section>
+
+      <div class="split">
+        <section class="panel col">
+          <h3 class="panel-h"><span class="n">2</span>어떤 잣대로</h3>
+          <div class="panel-b"><div class="md" id="dash-left"></div></div>
+        </section>
+
+        <section class="panel col">
+          <h3 class="panel-h"><span class="n">3</span>어떻게 판단했나</h3>
+          <div class="panel-b">
+            <div class="ctabs" id="dash-tabs" role="tablist"></div>
+            <div class="md" id="dash-think"></div>
+            <div class="md" id="dash-card" hidden></div>
+          </div>
+        </section>
+
+        <section class="panel col">
+          <h3 class="panel-h"><span class="n">4</span>무엇이 뒷받침하나</h3>
+          <div class="panel-b">
+            <div id="dash-struct"></div>
+            <div class="md" id="dash-patent"></div>
+          </div>
+        </section>
+      </div>
+
+      <section class="panel">
+        <h3 class="panel-h"><span class="n">5</span>이 시스템을 믿어도 되나
+          <span class="panel-m">일반 언어모델과의 대조 · 신뢰도 보정 · 걸린 시간</span>
+        </h3>
+        <div class="panel-b">
+          <div class="md" id="dash-side"></div>
+          <div class="md" id="dash-cal"></div>
+          <div class="md" id="dash-tl"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ═══ 시연 ③ 반증 기록 ═══════════════════════════════ -->
+    <section class="view" id="v-evidence" hidden>
+      <div class="md" id="ev-body"></div>
+    </section>
+  </div>
+</main>
+
+<dialog id="help-dlg">
+  <h2 id="help-title">심사 기준이 무엇을 바꾸나</h2>
+  <div class="md" id="help-body"></div>
+  <button class="go sm" id="help-close">닫기</button>
+</dialog>
+
+<dialog id="disc-dlg">
+  <h2>면책 · AI 표기</h2>
+  <div class="md" id="disc-full"></div>
+  <button class="go" id="disc-close">닫기</button>
+</dialog>
+
+<script src="static/app.js"></script>
+</body>
+</html>

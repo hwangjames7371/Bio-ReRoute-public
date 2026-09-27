@@ -1,0 +1,603 @@
+{
+ "stratum": "A",
+ "n_tp": 42,
+ "n_tn": 42,
+ "rows": [
+  {
+   "drug": "gabapentin",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "naproxen",
+   "indication": "Headache Disorders",
+   "label": "TP"
+  },
+  {
+   "drug": "ustekinumab",
+   "indication": "Dermatomyositis",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone",
+   "indication": "Dermatitis Herpetiformis",
+   "label": "TP"
+  },
+  {
+   "drug": "fingolimod",
+   "indication": "Multiple Sclerosis, Primary Progressive",
+   "label": "TN"
+  },
+  {
+   "drug": "zinc acetate",
+   "indication": "Zinc deficiency",
+   "label": "TP"
+  },
+  {
+   "drug": "erlotinib",
+   "indication": "Glioblastoma Multiforme",
+   "label": "TN"
+  },
+  {
+   "drug": "podophyllotoxin",
+   "indication": "Condylomata Acuminata",
+   "label": "TP"
+  },
+  {
+   "drug": "cetirizine",
+   "indication": "Migraine Disorders",
+   "label": "TN"
+  },
+  {
+   "drug": "gemigliptin",
+   "indication": "Diabetes Mellitus, Non-Insulin-Dependent",
+   "label": "TP"
+  },
+  {
+   "drug": "hydroxycarbamide",
+   "indication": "Cerebrovascular accident",
+   "label": "TN"
+  },
+  {
+   "drug": "tretinoin",
+   "indication": "Hyperkeratosis",
+   "label": "TP"
+  },
+  {
+   "drug": "pramipexole",
+   "indication": "Amyotrophic Lateral Sclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "belotecan",
+   "indication": "Non-Small Cell Lung Carcinoma",
+   "label": "TP"
+  },
+  {
+   "drug": "methotrexate",
+   "indication": "Leukemia, Myelomonocytic, Chronic",
+   "label": "TN"
+  },
+  {
+   "drug": "silicon dioxide",
+   "indication": "Dyspepsia",
+   "label": "TP"
+  },
+  {
+   "drug": "doxycycline",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "hydrocortisone succinate",
+   "indication": "Asthma",
+   "label": "TP"
+  },
+  {
+   "drug": "teriparatide",
+   "indication": "Myelofibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "betamethasone acetate",
+   "indication": "Inflammatory Bowel Diseases",
+   "label": "TP"
+  },
+  {
+   "drug": "cisplatin",
+   "indication": "Human epidermal growth factor 2 negative carcinoma of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "rupatadine",
+   "indication": "Allergic rhinitis (disorder)",
+   "label": "TP"
+  },
+  {
+   "drug": "thalidomide",
+   "indication": "Rheumatoid Arthritis",
+   "label": "TN"
+  },
+  {
+   "drug": "meloxicam",
+   "indication": "Degenerative polyarthritis",
+   "label": "TP"
+  },
+  {
+   "drug": "rosiglitazone",
+   "indication": "Malaria",
+   "label": "TN"
+  },
+  {
+   "drug": "sulfadiazine",
+   "indication": "Toxoplasmosis associated with acquired immunodeficiency syndrome",
+   "label": "TP"
+  },
+  {
+   "drug": "sunitinib",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "cefamandole",
+   "indication": "Bacterial sepsis",
+   "label": "TP"
+  },
+  {
+   "drug": "erlotinib",
+   "indication": "Neuroblastoma",
+   "label": "TN"
+  },
+  {
+   "drug": "zonisamide",
+   "indication": "Lewy Body Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "pioglitazone",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "benzylpenicillin",
+   "indication": "Gonococcal joint infection",
+   "label": "TP"
+  },
+  {
+   "drug": "alprostadil",
+   "indication": "Pulmonary Hypertension",
+   "label": "TN"
+  },
+  {
+   "drug": "ribavirin",
+   "indication": "Respiratory Syncytial Virus Infections",
+   "label": "TP"
+  },
+  {
+   "drug": "rosuvastatin",
+   "indication": "Acute Lung Injury",
+   "label": "TN"
+  },
+  {
+   "drug": "hydrocortisone",
+   "indication": "Tenosynovitis",
+   "label": "TP"
+  },
+  {
+   "drug": "simvastatin",
+   "indication": "Pneumonia",
+   "label": "TN"
+  },
+  {
+   "drug": "desonide",
+   "indication": "Dermatitis, Atopic",
+   "label": "TP"
+  },
+  {
+   "drug": "eplerenone",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "fluocinolone acetonide",
+   "indication": "Exanthema",
+   "label": "TP"
+  },
+  {
+   "drug": "lisdexamfetamine",
+   "indication": "Major Depressive Disorder",
+   "label": "TN"
+  },
+  {
+   "drug": "dexlansoprazole",
+   "indication": "Peptic Ulcer",
+   "label": "TP"
+  },
+  {
+   "drug": "basiliximab",
+   "indication": "Ulcerative Colitis",
+   "label": "TN"
+  },
+  {
+   "drug": "grepafloxacin",
+   "indication": "Acute bacterial bronchitis",
+   "label": "TP"
+  },
+  {
+   "drug": "interferon beta-1a",
+   "indication": "Crohn Disease",
+   "label": "TN"
+  },
+  {
+   "drug": "dioxybenzone",
+   "indication": "Discoloration of skin",
+   "label": "TP"
+  },
+  {
+   "drug": "dasatinib",
+   "indication": "Polycythemia Vera",
+   "label": "TN"
+  },
+  {
+   "drug": "norfloxacin",
+   "indication": "Chlamydial urethritis",
+   "label": "TP"
+  },
+  {
+   "drug": "perhexiline",
+   "indication": "Hypertrophic Cardiomyopathy",
+   "label": "TN"
+  },
+  {
+   "drug": "erythromycin",
+   "indication": "Ophthalmia Neonatorum",
+   "label": "TP"
+  },
+  {
+   "drug": "azacitidine",
+   "indication": "Multiple Myeloma",
+   "label": "TN"
+  },
+  {
+   "drug": "levocabastine",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "rosuvastatin",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "guaiacol",
+   "indication": "Rhinitis",
+   "label": "TP"
+  },
+  {
+   "drug": "dasatinib",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "acetylcarnitine",
+   "indication": "Senile dementia",
+   "label": "TP"
+  },
+  {
+   "drug": "enocitabine",
+   "indication": "Acute lymphoblastic leukemia - category",
+   "label": "TN"
+  },
+  {
+   "drug": "pyrithione",
+   "indication": "Coughing",
+   "label": "TP"
+  },
+  {
+   "drug": "warfarin",
+   "indication": "Idiopathic Pulmonary Fibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "inositol",
+   "indication": "Hypertriglyceridemia",
+   "label": "TP"
+  },
+  {
+   "drug": "colecalciferol",
+   "indication": "Asthma",
+   "label": "TN"
+  },
+  {
+   "drug": "olanzapine",
+   "indication": "Major Depressive Disorder",
+   "label": "TP"
+  },
+  {
+   "drug": "dexmedetomidine",
+   "indication": "Dementia",
+   "label": "TN"
+  },
+  {
+   "drug": "cyproheptadine",
+   "indication": "Allergic Conjunctivitis",
+   "label": "TP"
+  },
+  {
+   "drug": "sunitinib",
+   "indication": "Glioblastoma Multiforme",
+   "label": "TN"
+  },
+  {
+   "drug": "cefradine",
+   "indication": "Tonsillitis",
+   "label": "TP"
+  },
+  {
+   "drug": "ketamine",
+   "indication": "Status Epilepticus",
+   "label": "TN"
+  },
+  {
+   "drug": "triamcinolone",
+   "indication": "Contact Dermatitis",
+   "label": "TP"
+  },
+  {
+   "drug": "methotrexate",
+   "indication": "Malignant tumor of small intestine",
+   "label": "TN"
+  },
+  {
+   "drug": "gatifloxacin",
+   "indication": "Streptococcal pneumonia",
+   "label": "TP"
+  },
+  {
+   "drug": "etofibrate",
+   "indication": "Cerebrovascular accident",
+   "label": "TN"
+  },
+  {
+   "drug": "norethindrone acetate",
+   "indication": "Secondary physiologic amenorrhea",
+   "label": "TP"
+  },
+  {
+   "drug": "etofibrate",
+   "indication": "Atherosclerosis",
+   "label": "TN"
+  },
+  {
+   "drug": "cefixime",
+   "indication": "Acute otitis media",
+   "label": "TP"
+  },
+  {
+   "drug": "etofibrate",
+   "indication": "Myocardial Infarction",
+   "label": "TN"
+  },
+  {
+   "drug": "cefditoren pivoxil",
+   "indication": "Staphylococcus aureus infection",
+   "label": "TP"
+  },
+  {
+   "drug": "etoposide",
+   "indication": "Multiple Myeloma",
+   "label": "TN"
+  },
+  {
+   "drug": "ceftriaxone",
+   "indication": "Bacterial infection due to Klebsiella pneumoniae",
+   "label": "TP"
+  },
+  {
+   "drug": "rivaroxaban",
+   "indication": "COVID19 (disease)",
+   "label": "TN"
+  },
+  {
+   "drug": "fluticasone furoate",
+   "indication": "Chronic Obstructive Airway Disease",
+   "label": "TP"
+  },
+  {
+   "drug": "bevacizumab",
+   "indication": "Myelofibrosis",
+   "label": "TN"
+  },
+  {
+   "drug": "phenyltoloxamine",
+   "indication": "Allergic rhinitis (disorder)",
+   "label": "TP"
+  },
+  {
+   "drug": "nitroprusside",
+   "indication": "Malignant neoplasm of breast",
+   "label": "TN"
+  },
+  {
+   "drug": "nafcillin",
+   "indication": "Infection of bone",
+   "label": "TP"
+  }
+ ],
+ "results": {
+  "B5": {
+   "scores": [
+    0.55,
+    0.98,
+    0.5,
+    0.5,
+    0.5,
+    0.85,
+    0.75,
+    0.98,
+    0.5,
+    0.5,
+    0.5,
+    0.95,
+    0.59,
+    0.95,
+    0.5,
+    0.5,
+    0.73,
+    0.6,
+    0.5,
+    0.5,
+    0.51,
+    0.98,
+    0.53,
+    0.95,
+    0.5,
+    0.5,
+    0.5,
+    0.81,
+    0.5,
+    0.98,
+    0.53,
+    0.5,
+    0.66,
+    0.39,
+    0.5,
+    0.5,
+    0.5,
+    0.98,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.64,
+    0.98,
+    0.5,
+    0.5,
+    0.48,
+    0.49,
+    0.86,
+    0.49,
+    0.5,
+    0.89,
+    0.5,
+    0.75,
+    0.54,
+    0.67,
+    0.5,
+    0.5,
+    0.61,
+    0.5,
+    0.41,
+    0.97,
+    0.93,
+    0.5,
+    0.64,
+    0.62,
+    0.59,
+    0.77,
+    0.5,
+    0.73,
+    0.5,
+    0.5,
+    0.59,
+    0.98,
+    0.5,
+    0.54,
+    0.66,
+    0.66,
+    0.5,
+    0.98,
+    0.5,
+    0.59,
+    0.5,
+    0.65
+   ],
+   "verdicts": [
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "조건부",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "조건부",
+    "유망",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "보류",
+    "유망",
+    "보류",
+    "보류",
+    "보류",
+    "보류"
+   ]
+  }
+ }
+}

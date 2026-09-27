@@ -1,0 +1,47 @@
+{
+ "문서": "사전명세_생성실험.md",
+ "작성": "2026-08-05T15:46:22",
+ "sha256": "3379fc5ae235eb1415a6d45bb95fdfba1933fd5d15d8a78d400231da81abffb0",
+ "실험_전_증거": {
+  "bioreroute/agents/discover.py": {
+   "sha256": "655dbbdd72a7e5c2710048b4400f8bfe",
+   "최종수정": "2026-08-05 15:37:16"
+  },
+  "bioreroute/bench/discover.py": {
+   "sha256": "c0c2bea34a4ab7cde1e051650d8db7d7",
+   "최종수정": "2026-08-05 15:40:29"
+  },
+  "bioreroute/core/gates.py": {
+   "sha256": "2763aed05f8f5fef782de5300463152e",
+   "최종수정": "2026-08-05 15:38:16"
+  },
+  "RepoDB.csv": {
+   "sha256": "78e93082807a4a13cad7d1c5e4ca53b6",
+   "최종수정": "2026-07-30 17:09:40"
+  },
+  "bench_tn_pool_v2.csv": {
+   "sha256": "9af2b23456bd835b44f07c5f8168d283",
+   "최종수정": "2026-08-04 23:44:18"
+  }
+ },
+ "예측": {
+  "효능실패_loose": "5-15%",
+  "효능실패_strict": "loose보다 낮다",
+  "승인": "15-35%",
+  "미지": "50-75%",
+  "strict_충족률": "30-70%"
+ },
+ "고정": {
+  "질환수": 12,
+  "k": 20,
+  "변형": [
+   "strict",
+   "loose"
+  ],
+  "선택": "pick_diseases(uni,12)"
+ },
+ "결과파일_존재여부": {
+  "gen_run1.csv": false,
+  "gen_run1_runs.json": false
+ }
+}

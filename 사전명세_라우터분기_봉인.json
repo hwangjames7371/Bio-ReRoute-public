@@ -1,0 +1,39 @@
+{
+ "문서": "사전명세_라우터분기.md",
+ "작성": "2026-08-06T11:40:15",
+ "sha256": "dc985cf136ff13758093823d9cd543e6a42c1db4583991c92da9c07c4cdc3164",
+ "실행_전_증거": {
+  "bioreroute/bench/routercheck.py": {
+   "sha256": "51d0cafc9b05c480fe47072d4e5b76be",
+   "최종수정": "2026-08-06 11:39:56"
+  },
+  "bioreroute/io/structure.py": {
+   "sha256": "00485f40ad5e97078af75398b83bdd6d",
+   "최종수정": "2026-08-06 11:34:25"
+  },
+  "bioreroute/core/gates.py": {
+   "sha256": "774c5424eae0ce372f3d98d62fadfa46",
+   "최종수정": "2026-08-06 11:35:42"
+  },
+  "bioreroute/agents/router.py": {
+   "sha256": "e880d940d89901da3270f154d95db7cf",
+   "최종수정": "2026-08-04 22:58:38"
+  }
+ },
+ "주지표": "병원체 8쌍 structure ≥6 · 숙주간접 8쌍 structure ≤1 · Fisher p<0.05 — 셋 다",
+ "고정": {
+  "표본": "16쌍(병원체 8·숙주간접 8) · 명세 §2 와 동일",
+  "온도": 0.0,
+  "structure 판정": "router.docking_advised (route==structure AND confidence!=low)",
+  "LLM 호출": "2회 (chunk 12)"
+ },
+ "미리_적은_한계": [
+  "16쌍은 교과서 기전이고 내가 골랐다 — 성능 수치가 아니다",
+  "LLM이 이 기전들을 외웠을 가능성이 매우 높다. 발견이 아니라 분류다",
+  "정답표를 내가 매겼다. 미달이면 정답표가 틀렸을 가능성을 먼저 본다",
+  "hydroxychloroquine/Malaria 는 기생충 소재로 볼 여지가 있다 — 내 라벨이 약하다"
+ ],
+ "결과파일_존재여부": {
+  "routercheck.json": false
+ }
+}

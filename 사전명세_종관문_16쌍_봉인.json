@@ -1,0 +1,70 @@
+{
+ "문서": "사전명세_종관문_16쌍.md",
+ "작성": "2026-08-13T20:30:09",
+ "sha256": "e5182741c1823cc8736fedf0f5dadf95de5a364535903eaf770bc9f36478145a",
+ "실행_전_증거": {
+  "bioreroute/bench/dockcheck.py": {
+   "sha256": "44de37e4f9d0a2382d1d748db10e67c3",
+   "최종수정": "2026-08-13 20:29:05"
+  },
+  "bioreroute/io/sources.py": {
+   "sha256": "4a651e4d03a1ff5da60397f2fba540f4",
+   "최종수정": "2026-08-12 17:54:48"
+  },
+  "routercheck.json": {
+   "sha256": "a1449802aa280a3d3be435be829f9869",
+   "최종수정": "2026-08-11 09:10:09"
+  }
+ },
+ "주지표": "16쌍 진단 · metformin 공결정 0건 · ibalizumab 판정불가 · 종일치 ≤11건 — 셋 다",
+ "고정": {
+  "표본": "routercheck.json 16쌍 전부",
+  "채택규칙": "안 바꾼다 — 봉인 aff5c888d546 그대로",
+  "max_fetch": 150,
+  "모르면": "거부",
+  "구분": "「종 불일치」와 「구조 없음」을 다른 판정으로 적는다"
+ },
+ "미리_적은_예측": {
+  "종 불일치": [
+   "remdesivir",
+   "sofosbuvir",
+   "acyclovir",
+   "oseltamivir",
+   "nirmatrelvir",
+   "camostat"
+  ],
+  "종 일치": [
+   "raltegravir",
+   "ciprofloxacin",
+   "rifampin",
+   "baricitinib",
+   "maraviroc",
+   "dexamethasone"
+  ],
+  "공결정 0건": [
+   "metformin"
+  ],
+  "판정 불가": [
+   "ibalizumab",
+   "chloroquine",
+   "hydroxychloroquine"
+  ],
+  "진행 예상": [
+   "rifampin"
+  ]
+ },
+ "반증조건": [
+  "metformin 이 종 일치면 대조가 헐겁다",
+  "ibalizumab 에 숫자가 나오면 항체를 저분자로 취급한 것이다",
+  "종 일치가 12건 이상이면 규칙이 사실상 통과기다",
+  "rifampin 이 종 불일치면 채택 0건 → 선택지 ①"
+ ],
+ "미리_적은_한계": [
+  "16쌍은 교과서 기전이라 쉬운 문제다 — 성능 수치가 아니다",
+  "공결정 유무는 연구 관심의 대리물이다 — 아무도 안 풀었을 수 있다",
+  "max_fetch=150 은 자르는 지점이고 놓치는 방향은 「거부」다"
+ ],
+ "결과파일_존재여부": {
+  "dockscan_all.json": false
+ }
+}
