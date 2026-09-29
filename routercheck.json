@@ -1,0 +1,330 @@
+{
+ "명세": "사전명세_라우터분기.md",
+ "문턱": {
+  "주①_병원체_structure_최소": 6,
+  "주②_숙주간접_structure_최대": 1,
+  "주③_Fisher_p_미만": 0.05
+ },
+ "행": [
+  {
+   "drug": "remdesivir",
+   "disease": "COVID-19",
+   "정답표_표적": "SARS-CoV-2 RdRp",
+   "정답표_군": "병원체",
+   "mech": "직접·병원체",
+   "route": "structure",
+   "confidence": "high",
+   "target": "RNA-dependent RNA polymerase",
+   "why": "SARS-CoV-2의 RNA-dependent RNA polymerase를 억제하는 항바이러스제이다.",
+   "error": null,
+   "docking_advised": true,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "nirmatrelvir",
+   "disease": "COVID-19",
+   "정답표_표적": "SARS-CoV-2 3CL protease",
+   "정답표_군": "병원체",
+   "mech": "직접·병원체",
+   "route": "structure",
+   "confidence": "high",
+   "target": "3C-like protease",
+   "why": "SARS-CoV-2의 3CL protease(Mpro)를 직접 억제하는 항바이러스제이다.",
+   "error": null,
+   "docking_advised": true,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "oseltamivir",
+   "disease": "Influenza",
+   "정답표_표적": "influenza neuraminidase",
+   "정답표_군": "병원체",
+   "mech": "직접·병원체",
+   "route": "structure",
+   "confidence": "high",
+   "target": "neuraminidase",
+   "why": "인플루엔자 바이러스 neuraminidase를 억제하여 바이러스 방출을 막는다.",
+   "error": null,
+   "docking_advised": true,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "sofosbuvir",
+   "disease": "Hepatitis C",
+   "정답표_표적": "HCV NS5B",
+   "정답표_군": "병원체",
+   "mech": "직접·병원체",
+   "route": "structure",
+   "confidence": "high",
+   "target": "RNA-dependent RNA polymerase",
+   "why": "HCV의 RNA-dependent RNA polymerase(NS5B)를 억제하는 항바이러스제이다.",
+   "error": null,
+   "docking_advised": true,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "raltegravir",
+   "disease": "HIV Infections",
+   "정답표_표적": "HIV integrase",
+   "정답표_군": "병원체",
+   "mech": "직접·병원체",
+   "route": "structure",
+   "confidence": "high",
+   "target": "integrase",
+   "why": "HIV integrase를 억제하여 바이러스 DNA 삽입을 차단한다.",
+   "error": null,
+   "docking_advised": true,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "acyclovir",
+   "disease": "Herpes Simplex",
+   "정답표_표적": "HSV DNA polymerase",
+   "정답표_군": "병원체",
+   "mech": "직접·병원체",
+   "route": "structure",
+   "confidence": "high",
+   "target": "DNA polymerase",
+   "why": "헤르페스 바이러스의 DNA polymerase를 억제하는 뉴클레오사이드 유사체이다.",
+   "error": null,
+   "docking_advised": true,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "rifampin",
+   "disease": "Tuberculosis",
+   "정답표_표적": "bacterial RNA polymerase",
+   "정답표_군": "병원체",
+   "mech": "직접·병원체",
+   "route": "structure",
+   "confidence": "high",
+   "target": "DNA-dependent RNA polymerase",
+   "why": "결핵균의 DNA-dependent RNA polymerase를 억제하여 전사를 차단한다.",
+   "error": null,
+   "docking_advised": true,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "ciprofloxacin",
+   "disease": "Urinary Tract Infections",
+   "정답표_표적": "bacterial DNA gyrase",
+   "정답표_군": "병원체",
+   "mech": "직접·병원체",
+   "route": "structure",
+   "confidence": "high",
+   "target": "DNA gyrase",
+   "why": "세균 DNA gyrase를 억제하여 DNA 복제를 방해한다.",
+   "error": null,
+   "docking_advised": true,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "baricitinib",
+   "disease": "COVID-19",
+   "정답표_표적": "JAK1/2 (숙주)",
+   "정답표_군": "숙주·간접",
+   "mech": "직접·숙주",
+   "route": "evidence",
+   "confidence": "high",
+   "target": "JAK1",
+   "why": "숙주 세포의 JAK1을 억제하여 염증성 사이토카인 신호를 줄인다.",
+   "error": null,
+   "docking_advised": false,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "camostat",
+   "disease": "COVID-19",
+   "정답표_표적": "TMPRSS2 (숙주)",
+   "정답표_군": "숙주·간접",
+   "mech": "직접·숙주",
+   "route": "evidence",
+   "confidence": "high",
+   "target": "TMPRSS2",
+   "why": "숙주 세포 표면의 TMPRSS2를 억제하여 바이러스 스파이크 단백질 활성화를 방해한다.",
+   "error": null,
+   "docking_advised": false,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "dexamethasone",
+   "disease": "COVID-19",
+   "정답표_표적": "글루코코르티코이드 수용체 (숙주)",
+   "정답표_군": "숙주·간접",
+   "mech": "직접·숙주",
+   "route": "evidence",
+   "confidence": "high",
+   "target": "glucocorticoid receptor",
+   "why": "숙주 글루코코르티코이드 수용체에 결합해 항염증 효과를 낸다.",
+   "error": null,
+   "docking_advised": false,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "chloroquine",
+   "disease": "COVID-19",
+   "정답표_표적": "엔도솜 pH (간접)",
+   "정답표_군": "숙주·간접",
+   "mech": "간접",
+   "route": "evidence",
+   "confidence": "medium",
+   "target": "",
+   "why": "약알칼리성으로 엔도좀/리소좀 pH를 변화시켜 바이러스 유입 및 탈외피 과정을 방해한다.",
+   "error": null,
+   "docking_advised": false,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "0a9650b36ba0",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "maraviroc",
+   "disease": "HIV Infections",
+   "정답표_표적": "CCR5 (숙주)",
+   "정답표_군": "숙주·간접",
+   "mech": "직접·숙주",
+   "route": "evidence",
+   "confidence": "high",
+   "target": "CCR5",
+   "why": "HIV가 숙주 세포에 진입할 때 사용하는 숙주 단백질 CCR5에 결합해 바이러스의 세포 प्रवेश을 차단한다.",
+   "error": null,
+   "docking_advised": false,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "74266d0b46ff",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "ibalizumab",
+   "disease": "HIV Infections",
+   "정답표_표적": "CD4 (숙주)",
+   "정답표_군": "숙주·간접",
+   "mech": "직접·숙주",
+   "route": "evidence",
+   "confidence": "high",
+   "target": "CD4",
+   "why": "숙주 T세포의 CD4에 결합하여 HIV gp120과의 상호작용 및 바이러스 진입을 방해한다.",
+   "error": null,
+   "docking_advised": false,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "74266d0b46ff",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "hydroxychloroquine",
+   "disease": "Malaria",
+   "정답표_표적": "헴 해독 (간접)",
+   "정답표_군": "숙주·간접",
+   "mech": "간접",
+   "route": "evidence",
+   "confidence": "high",
+   "target": "",
+   "why": "말라리아에서 약한 염기성 물질로서 기생충의 식포 내 pH와 헤모글로빈 분해/헤모조인 형성을 교란하는 간접 기전이다.",
+   "error": null,
+   "docking_advised": false,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "74266d0b46ff",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  },
+  {
+   "drug": "metformin",
+   "disease": "Diabetes Mellitus",
+   "정답표_표적": "Complex I → AMPK (간접)",
+   "정답표_군": "숙주·간접",
+   "mech": "직접·숙주",
+   "route": "evidence",
+   "confidence": "medium",
+   "target": "AMPK",
+   "why": "숙주 세포의 에너지 감지 경로인 AMPK 활성화를 통해 간 포도당 생성 감소와 인슐린 감수성 개선을 유도한다.",
+   "error": null,
+   "docking_advised": false,
+   "provenance": {
+    "model": "gpt-5.4-mini",
+    "temperature": 0.0,
+    "prompt_sha": "74266d0b46ff",
+    "served_by": "gpt-5.4-mini",
+    "temperature_used": 0.0
+   }
+  }
+ ]
+}

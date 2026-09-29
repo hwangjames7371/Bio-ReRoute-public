@@ -63,7 +63,9 @@
       <span class="mark" aria-hidden="true">BR</span>
       <span class="mark-ic" aria-hidden="true"></span>
     </button>
-    <a class="brand" href="#/verify/drug">
+    <!-- 09-29 · 로고는 **첫 화면**(판정 사례)으로 — `route()` 의 기본과 같다. 앞판은 「약으로 시작」 으로 보내
+         정적 배포본에서 누르면 «라이브 검증이 안 됩니다» 화면이 떴다 -->
+    <a class="brand" href="#/judge/cases">
       <span class="brand-txt"><b>Bio-ReRoute</b><i>반증 우선 약물 재창출</i></span>
     </a>
   </div>
@@ -127,10 +129,11 @@
                그래서 화면에는 **범위만** 적는다 — 표본 하나짜리 숫자를
                «실측 133초» 라고 박으면 «어느 모델로?» 한 마디에 무너진다.
                키가 돌아오면 같은 쌍을 다시 재고 그때 숫자를 정한다. -->
+        <!-- 09-29 · 보류의 까닭은 대부분 «근거가 모자라서» 다(봉인 예측 보류 44건 중 36건 · 시험 [211]⑦) -->
         <p class="ask-note">논문을 실제로 읽고 판단합니다 — 처음 보는 쌍은
           <b>1~3분</b>, 이미 읽은 쌍은 1초 안에 나옵니다. 절반 넘게
-          「보류」가 나오는데, 근거가 갈리면 억지로 결론 내지 않기
-          때문입니다.</p>
+          「보류」가 나오는데, 대부분 판단할 근거가 모자라서입니다 — 근거가
+          모자라거나 갈리면 억지로 결론 내지 않습니다.</p>
         <div class="ask-opts">
           <span class="lbl">심사 기준
             <button class="q" data-help="exit" aria-label="심사 기준이 무엇을 바꾸나">?</button>
@@ -185,8 +188,9 @@
                  autocomplete="off" spellcheck="false">
           <button class="go" id="dz-go">후보 찾기</button>
         </div>
+        <!-- 09-29 · 라이브 점검 실측(COVID-19 · 제출 모델) — 처음 196초 · 다시 46초. «1~3분» 은 처음 실행을 짧게 적었다 -->
         <p class="ask-note">후보 약물 열 개를 만들어 하나씩 논문으로
-          검증합니다 — 1~3분 걸립니다.</p>
+          검증합니다 — 처음 도는 병명은 3분 남짓, 한 번 돌린 병명은 1분 안쪽입니다.</p>
         <div class="ask-opts">
           <span class="lbl">찾는 방법
             <button class="q" data-help="entry"
@@ -223,9 +227,9 @@
 
     <!-- ═══ 시연 ② 어떻게 판단하나 ═════════════════════════ -->
     <section class="view wide" id="v-dash" hidden>
-      <div class="md lead-md" id="dash-intro"></div>
-      <details class="fold"><summary><span class="s-t">이 화면은 무엇인가</span></summary>
-        <div class="md" id="dash-more"></div></details>
+      <!-- 머리 안내 한 줄과 «이 화면은 무엇인가» 접기는 **두지 않는다** (09-29).
+           ① 칸이 실행마다 무대 · 구운 시각 · ⚠ 의 뜻 · 빠진 것을 이미 말한다. 위에 따로 적은 글은
+           그 말을 되풀이했고, 실행 2 에는 맞지 않았다(바이러스 무대가 아니다). 까닭은 `app.py`. -->
 
       <!-- ══════════════════════════════════════════════════
            **읽는 순서를 번호로 준다** (08-20 승우: «어디서부터 읽어야

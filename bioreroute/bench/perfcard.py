@@ -32,6 +32,8 @@ import random
 import sys
 
 SUBMIT = ("terra", "홀드아웃_본선모델.json")
+# 같은 실행의 **상태 파일** — 기각 한 건마다 사유(F0 · 거부권 · 반박 우세)가 있다. 결과 파일에는 판정만 있다
+SUBMIT_STATE = "상태_홀드본선_B5.json"
 BOOT_N = 2000
 BOOT_SEED = 20260925
 
@@ -147,6 +149,37 @@ def unknown_idx(b0):
     return [i for i, v in enumerate(b0["verdicts"]) if v == "모름"]
 
 
+def reject_split(root, d):
+    """기각을 **두 갈래**로 — F0(약 이름이 문헌에서 한 건도 안 잡혀 끊음) · 근거 기반(거부권 + 반박 우세).
+
+    ## 왜 (09-29 · 결함 379)
+
+    외부 감사가 잡았다 — 헤드라인 «기각 99/105» 와 «모름 445쌍의 38/41» 에 **근거를 읽지 않고 끊은
+    기각**이 섞여 있다(F0 · 대부분 개발 코드 · 용량이 붙은 개입 이름). 정의는 `rejectsplit` 한 곳을 쓴다.
+    상태 파일이 없거나 결과 파일과 **행 · 라벨 · 판정이 하나라도 안 맞으면 None** — 섞어 세지 않는다.
+    반환: {"전체"|"모름": {"F0": [TN, TP], "근거": [TN, TP]}}
+    """
+    p = os.path.join(root, SUBMIT_STATE)
+    if not os.path.exists(p):
+        return None
+    from . import rejectsplit as _RS
+    with open(p, encoding="utf-8") as f:
+        cands = (json.load(f) or {}).get("candidates") or []
+    rows, v5 = d["rows"], d["results"]["B5"]["verdicts"]
+    if len(cands) != len(rows) or any(c.get("label") != r["label"] or c.get("verdict") != v
+                                      for c, r, v in zip(cands, rows, v5)):
+        return None
+
+    def tally(idx):
+        t = {"F0": [0, 0], "근거": [0, 0]}
+        for i in idx:
+            k = _RS.kind(cands[i])
+            if k:
+                t["F0" if k == _RS.F0 else "근거"][0 if cands[i]["label"] == "TN" else 1] += 1
+        return t
+    return {"전체": tally(range(len(cands))), "모름": tally(unknown_idx(d["results"]["B0"]))}
+
+
 def card(root="."):
     name, path = SUBMIT
     d, lab, ex = load(root)
@@ -157,7 +190,8 @@ def card(root="."):
            "모름": block(d, unk),
            "누출제외": block(d, ex), "누출": sum(1 for x in leak if x),
            "누출제외_고확신오답": sum(1 for i in ex if d["results"]["B0"]["conf"][i] == "high"
-                                and d["results"]["B0"]["verdicts"][i] != "모름")}
+                                and d["results"]["B0"]["verdicts"][i] != "모름"),
+           "기각갈래": reject_split(root, d)}
     lo, hi, k = _dauc_boot(d["results"]["B5"]["scores"], d["results"]["B0"]["scores"], lab, ex)
     a = out["누출제외"]["AUROC"]
     out["누출제외"]["ΔAUROC"] = [a["B5"][0] - a["B0"][0], lo, hi, k]
@@ -241,6 +275,18 @@ def _n(w):
     return ("%d/%d" % (w[0], w[1])) if w[1] else "—"
 
 
+def _split_rows(c):
+    """§4.1 표의 기각 정밀도 아래 두 줄 — F0 갈래 · 근거 기반. 상태 파일이 없으면 줄이 없다."""
+    sp = c.get("기각갈래")
+    if not sp:
+        return []
+
+    def _p2(t):
+        return _cell(_w(t[0], t[0] + t[1]))
+    return ["| └ 근거로 한 기각만 (거부권 + 반박 우세) | %s | — | %s |" % (_p2(sp["전체"]["근거"]), _p2(sp["모름"]["근거"])),
+            "| └ F0 기각 — 약 이름이 문헌에서 한 건도 안 잡힘 | %s | — | %s |" % (_p2(sp["전체"]["F0"]), _p2(sp["모름"]["F0"]))]
+
+
 def to_md(c, root="."):
     """보고서 §4.1 — 수는 전부 `card()` 에서. 표적 재시험 · 추출 복제는 결과 파일이 있을 때만.
 
@@ -259,7 +305,9 @@ def to_md(c, root="."):
          "",
          "> 수는 `py -m bioreroute.bench.perfcard` 가 결과 파일(`%s`)에서 낸다 — 손으로 옮기지 않았다. "
          "발표의 성능 장도 같은 함수를 부른다. 모델 `gpt-5.6-terra` · seed 42 · 결과를 보기 전에 봉인한 "
-         "명세대로 **한 번** 돌렸다 — 같은 홀드아웃의 **두 번째 개봉**이다(첫 개봉은 개발 단계 모델)." % c["파일"],
+         "명세대로 돌린 **첫 실행**이 이 표다 — 같은 홀드아웃의 **두 번째 개봉**이다(첫 개봉은 개발 단계 모델). "
+         "그 뒤 같은 홀드아웃에서 seed 복제 · 시점 차단 · 다른 모델 둘(sol · luna)을 더 돌렸고(§4.4 · §4.7), "
+         "뒤의 실행은 이 표의 수를 고르는 데 쓰지 않았다." % c["파일"],
          "",
          "**평가 기준 — 이 순서로 본다** (제안서 §4)",
          "",
@@ -275,6 +323,7 @@ def to_md(c, root="."):
          "|---|---|---|---|",
          "| 기각 정밀도 (B0 는 «실패») | %s | %s | %s |"
          % (_cell(b["기각정밀도"]), _cell(b["B0실패정밀도"]), _cell(u["기각정밀도"])),
+         ] + _split_rows(c) + [
          "| 기각 재현율 (TN 중) | %s | %s | %s |"
          % (_cell(b["기각재현율"]), _cell(b["B0실패재현율"]), _cell(u["기각재현율"])),
          "| 성공한 약을 버림 (TP 중) | %s | %s | %s |"
@@ -291,6 +340,17 @@ def to_md(c, root="."):
             u["Brier"]["B5"], u["Brier"]["널"]),
          ""]
     tp = b["TN기각짝"]
+    sp = c.get("기각갈래")
+    if sp:
+        f0t, evt = sp["전체"]["F0"], sp["전체"]["근거"]
+        f0u, evu = sp["모름"]["F0"], sp["모름"]["근거"]
+        L.append("**기각의 3분의 1은 근거를 읽지 않고 끊은 것이다.** 기각 %d건 중 %d건은 약 이름이 문헌에서 한 건도 "
+                 "안 잡혀 F0 에서 끊었다(%d건이 실패한 약) — 대부분 임상 등록부의 개입명이 개발 코드나 용량이 붙은 "
+                 "문자열이라서다. **근거로 기각한 %d건만 보면 %d건이 실패한 약이다**(%s). 헤드라인 정밀도는 F0 갈래가 "
+                 "만든 수가 아니다. 다만 F0 갈래는 자료원 차이(실패한 쪽에 개발 코드가 많다)를 그대로 싣는다."
+                 % (f0t[0] + f0t[1] + evt[0] + evt[1], f0t[0] + f0t[1], f0t[0], evt[0] + evt[1], evt[0],
+                    _cell(_w(evt[0], evt[0] + evt[1]))))
+        L.append("")
     L.append("**전체 표본에서는 모델 기억이 더 잘 거른다.** 모델 단독은 %d건을 «실패» 로 버렸고 파이프라인은 "
              "%d건을 기각했다. TN 에서 짝지어 보면 모델 단독만 버린 쌍 %d · 파이프라인만 버린 쌍 %d "
              "(McNemar p = %.2g · **사후**). AUROC 와 Brier 도 구별되지 않는다 — **이 표본에서 모델 단독에 대한 "
@@ -303,9 +363,13 @@ def to_md(c, root="."):
     L.append("**파이프라인의 몫은 모델이 모르는 곳이다.** 모델 단독이 «모름» 이라 답한 %d쌍에서 모델 단독은 "
              "정의상 아무것도 거르지 않는다(%s). 여기서 파이프라인은 %d건을 기각했고 %d건이 맞았다 — 이 부분집합의 "
              "실패 비율은 %d/%d = %.1f%% 라, 무작위로 기각하면 정밀도가 그 근처다. 이 부분집합은 결과를 본 뒤 "
-             "정했다(**사후**) — 다만 라벨이 아니라 **모델의 출력만으로** 고른다."
+             "정했다(**사후**) — 다만 라벨이 아니라 **모델의 출력만으로** 고른다.%s"
              % (u["n"], _n(u["B0실패재현율"]), u["기각정밀도"][1], u["기각정밀도"][0],
-                tn_u, u["n"], (100.0 * tn_u / u["n"]) if u["n"] else 0.0))
+                tn_u, u["n"], (100.0 * tn_u / u["n"]) if u["n"] else 0.0,
+                (" **그 기각 %d건 중 %d건은 F0(약 이름 미검출)이고, 근거로 기각한 것은 %d건(%d건 맞음)이다** — "
+                 "표본이 작아 방향으로만 읽는다. 문헌량 균형은 이 부분집합에서 재지 않았다(§4.9 의 교란과 같은 모양일 수 있다)."
+                 % (sum(sp["모름"]["F0"]) + sum(sp["모름"]["근거"]), sum(sp["모름"]["F0"]),
+                    sum(sp["모름"]["근거"]), sp["모름"]["근거"][0])) if sp else ""))
     L.append("")
     mods = [m for m in c["모델들"] if m["모름B5"][0] is not None]
     L.append("**모델 %d개** — «모름» 문항의 파이프라인 AUROC: %s · 95%% CI 가 모두 겹친다(공통 %s · 사후). "
@@ -316,9 +380,14 @@ def to_md(c, root="."):
     res = RM.load(os.path.join(root, RM.TARGETED_JSON))
     if res and not res.get("유효성"):
         m = res["주검정"]
-        L.append("**기각 문턱은 모델에 달렸다** — 표적 재시험(사전 지정 · 새 seed 셋): sol 만 기각 %d · "
-                 "luna 만 기각 %d · McNemar p = %.2g. 두 모델이 처음 갈렸던 27쌍에 한정한 결과다."
-                 % (m["A만"], m["B만"], m["p"]))
+        # 09-29 · 결함 379 — «기각 문턱은 모델에 달렸다» 는 sol 한 모델의 관찰을 일반화했고, p 는 같은 27쌍을
+        #   seed 셋으로 합친 값이다(독립 과대평가). seed 별 p 와 확인 검정(terra–luna · 못 갈랐다)을 같이 적는다
+        per = [x.get("p") for x in (res.get("seed별") or []) if isinstance(x, dict) and x.get("p") is not None]
+        L.append("**기각을 많이 하는 정도는 sol 에서 되풀이해 달랐다** — 표적 재시험(사전 지정 · 새 seed 셋): sol 만 기각 %d · "
+                 "luna 만 기각 %d · 합산 McNemar p = %.2g — 같은 27쌍을 seed 셋으로 합친 값이라 독립을 과대평가한다%s. "
+                 "두 모델이 처음 갈렸던 27쌍에 한정한 결과이고, terra 와 luna 의 확인 검정은 갈리지 않았다."
+                 % (m["A만"], m["B만"], m["p"],
+                    (" (seed 별 p = %s)" % " · ".join("%.2g" % v for v in per)) if per else ""))
         L.append("")
     o = RM.load(os.path.join(root, RM.REPLICATE_JSON))
     sl = RM.slide_lines(None, o) if o else {}

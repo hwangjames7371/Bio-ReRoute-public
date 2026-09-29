@@ -1,0 +1,128 @@
+{
+ "병명": "Idiopathic Pulmonary Fibrosis",
+ "k": 10,
+ "variant": "loose",
+ "n": 8,
+ "실행": [
+  {
+   "ok": true,
+   "asked": 10,
+   "got": 2,
+   "error": "",
+   "모델": "gpt-5.4-mini",
+   "온도": 0.0,
+   "종료사유": "stop",
+   "약": [
+    "Nintedanib",
+    "Pirfenidone"
+   ]
+  },
+  {
+   "ok": true,
+   "asked": 10,
+   "got": 10,
+   "error": "",
+   "모델": "gpt-5.4-mini",
+   "온도": 0.0,
+   "종료사유": "stop",
+   "약": [
+    "Nintedanib",
+    "Pirfenidone",
+    "Sirolimus",
+    "Everolimus",
+    "Imatinib",
+    "Bosutinib",
+    "Losartan",
+    "Metformin",
+    "Simvastatin",
+    "Colchicine"
+   ]
+  },
+  {
+   "ok": true,
+   "asked": 10,
+   "got": 2,
+   "error": "",
+   "모델": "gpt-5.4-mini",
+   "온도": 0.0,
+   "종료사유": "stop",
+   "약": [
+    "Nintedanib",
+    "Pirfenidone"
+   ]
+  },
+  {
+   "ok": true,
+   "asked": 10,
+   "got": 2,
+   "error": "",
+   "모델": "gpt-5.4-mini",
+   "온도": 0.0,
+   "종료사유": "stop",
+   "약": [
+    "Nintedanib",
+    "Pirfenidone"
+   ]
+  },
+  {
+   "ok": true,
+   "asked": 10,
+   "got": 2,
+   "error": "",
+   "모델": "gpt-5.4-mini",
+   "온도": 0.0,
+   "종료사유": "stop",
+   "약": [
+    "Nintedanib",
+    "Pirfenidone"
+   ]
+  },
+  {
+   "ok": true,
+   "asked": 10,
+   "got": 2,
+   "error": "",
+   "모델": "gpt-5.4-mini",
+   "온도": 0.0,
+   "종료사유": "stop",
+   "약": [
+    "Nintedanib",
+    "Pirfenidone"
+   ]
+  },
+  {
+   "ok": true,
+   "asked": 10,
+   "got": 2,
+   "error": "",
+   "모델": "gpt-5.4-mini",
+   "온도": 0.0,
+   "종료사유": "stop",
+   "약": [
+    "Nintedanib",
+    "Pirfenidone"
+   ]
+  },
+  {
+   "ok": true,
+   "asked": 10,
+   "got": 10,
+   "error": "",
+   "모델": "gpt-5.4-mini",
+   "온도": 0.0,
+   "종료사유": "stop",
+   "약": [
+    "Nintedanib",
+    "Pirfenidone",
+    "Sirolimus",
+    "Everolimus",
+    "Metformin",
+    "Losartan",
+    "Simvastatin",
+    "Doxycycline",
+    "Colchicine",
+    "Azithromycin"
+   ]
+  }
+ ]
+}

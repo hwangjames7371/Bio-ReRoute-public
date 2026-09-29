@@ -198,6 +198,7 @@ def check(root=ROOT, stage=None, pm=None, get=None, run_git=None, want=None):
         return 2, lines
     if st == 404 or info.get("private"):
         lines.append("  🔴 익명으로 **안 보인다**(404) — 아직 안 만들었거나 비공개다. 심사위원에게는 이 주소가 404 다")
+        pushed = False
         if head:
             rc_u, up = run_git(stage, "rev-parse", "origin/main")
             pushed = rc_u == 0 and up == head
@@ -205,6 +206,10 @@ def check(root=ROOT, stage=None, pm=None, get=None, run_git=None, want=None):
                          "마지막 push 와 같다(로컬 기록)" if pushed else "아직 push 안 됐다"))
         if late:
             lines.append("→ 🔴 심사위원에게 404 다 — Settings → Change visibility → Public (마감 뒤라 **내용은 바꾸지 않는다**)")
+        elif pushed and local_ok:
+            # 09-28 · 비공개로 만들어 올린 뒤의 정상 상태 — «처음이면 github.com/new …» 를 또 찍으면 다시 만들라는 말로 읽힌다
+            lines.append("→ 🟡 이 판이 올라가 있다(비공개) — 남은 것은 **공개로 바꾸기**뿐: 제출 양식에 링크를 넣기 직전 "
+                         "Settings → General → Danger Zone → Change visibility → Public → 이 확인이 0")
         else:
             lines.append("→ 🔴 제출 양식에 링크를 넣기 **전에** — (처음이면) github.com/new 에서 **빈** 저장소 %s → "
                          "`.\\공개저장소.ps1 -Push` → 비공개로 만들었으면 Settings → Change visibility → Public → "

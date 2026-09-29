@@ -302,8 +302,9 @@ def _boot():
             "disclaimer": md(_DISCLAIMER_ONE),
             "disclaimer_full": md(demo.AI_NOTICE + "\n\n" + demo.DISCLAIMER),
         },
-        "dash": {"intro": md(_DASH_INTRO), "more": md(_DASH_MORE),
-                 "runs": runs, "exits": list(profiles.EXITS.keys())},
+        # 「어떻게 판단하나」 는 안내문 없이 간다 — 중앙 칸이 실행마다 무대 · 구운 시각 ·
+        # ⚠ 의 뜻을 말한다(09-29 · `app.py` 의 같은 자리에 까닭)
+        "dash": {"runs": runs, "exits": list(profiles.EXITS.keys())},
         "cases": {"intro": md(_CASES_INTRO), "more": md(_CASES_MORE),
                   "labels": labels,
                   "first": md(webui.show_case(labels[0])) if labels else ""},
@@ -329,7 +330,7 @@ def _load_texts():
     import ast
     src = io.open(os.path.join(ROOT, "app.py"), encoding="utf-8").read()
     tree = ast.parse(src)
-    want = {"DISCLAIMER_ONE", "DASH_INTRO", "DASH_MORE", "CASES_INTRO",
+    want = {"DISCLAIMER_ONE", "CASES_INTRO",
             "CASES_MORE", "LIVE_INTRO", "LIVE_MORE", "LIVE_IDLE",
             "DISEASE_INTRO", "DISEASE_IDLE"}
     got = {}
@@ -352,8 +353,6 @@ def _load_texts():
 
 _T = _load_texts()
 _DISCLAIMER_ONE = _T["DISCLAIMER_ONE"]
-_DASH_INTRO = _T["DASH_INTRO"]
-_DASH_MORE = _T["DASH_MORE"]
 _CASES_INTRO = _T["CASES_INTRO"]
 _CASES_MORE = _T["CASES_MORE"]
 _LIVE_INTRO = _T["LIVE_INTRO"]

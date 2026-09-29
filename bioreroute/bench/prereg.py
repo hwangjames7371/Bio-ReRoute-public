@@ -79,6 +79,8 @@ NARRATIVE_DOCS = ("Bio-ReRoute_1페이지.md", "README.md", "연구기술보고�
                   #   09-25 에 한 번 고쳤다가 되돌렸다. 본선 Q&A 는 새로 만든다.
                   "발표대본_본선10분.md", "slides/build_deck.py",
                   "slides/make_10min_본선.py",
+                  # 09-29 · 결함 378 — 데모 「반증 기록」 탭이 옛 서사(«넷 중 셋 미달»)를 들고 있었다. 화면 글도 본다
+                  "bioreroute/webui.py",
                   # **구운 파일도 본다** — 소스만 고치고 안 구우면 제출물이 낡는다(결함 60)
                   "slides/Bio-ReRoute_발표.pptx", "slides/Bio-ReRoute_본선_10분.pptx")
 

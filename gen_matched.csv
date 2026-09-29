@@ -1,0 +1,29 @@
+﻿label,stratum,drug,indication,kind,phase,pubmed,nct,ctgov_year,why,detail,matched_to
+TN,A,Copanlisib,"Lymphoma, Non-Hodgkin",효능,PHASE3,66,NCT02626455,2023,did not meet,Company decided to terminate this study due to study did not meet the primary endpoint.,
+TP,A,Ibalizumab,HIV Infections,승인,NA,80,,,,,"Copanlisib|Lymphoma, Non-Hodgkin"
+TN,A,losartan,Covid19,효능,PHASE3,94,NCT04606563,2022,futilit,DSMC recommendation due to futility,
+TP,A,Meloxicam,Rheumatoid Arthritis,승인,NA,127,,,,,losartan|Covid19
+TN,A,metformin,Melanoma,효능,PHASE2,168,NCT02190838,2018,inefficac,Preliminary terminated due to inefficacy,
+TP,A,filgotinib,Ulcerative Colitis,승인,NA,168,,,,,metformin|Melanoma
+TN,A,Pioglitazone,Alzheimer's Disease,효능,PHASE3,172,NCT01931566,2018,Lack of efficacy,Lack of efficacy of the drug; no safety concern,
+TP,A,pacritinib,Myelofibrosis,승인,NA,169,,,,,Pioglitazone|Alzheimer's Disease
+TN,A,pioglitazone,Alzheimer Disease,효능,PHASE3,172,NCT01931566,2018,Lack of efficacy,Lack of efficacy of the drug; no safety concern,
+TP,A,Ozanimod,Multiple Sclerosis,승인,NA,179,,,,,pioglitazone|Alzheimer Disease
+TN,A,camostat,Covid19,효능,PHASE2,205,NCT04625114,2022,did not show,"Interim analyses did not show evidence that camostat mesylate under the present conditions (300 mg three times daily for five or 10 consecutive days, fasted state) was effective as an antiviral drug against early phase SARS-CoV-2 disease.",
+TP,A,Deflazacort,Duchenne Muscular Dystrophy,승인,NA,209,,,,,camostat|Covid19
+TN,A,Chloroquine,HIV Infections,효능,"PHASE2,PHASE3",237,NCT00308620,2009,lack of efficacy,Insufficient financial support; lack of efficacy for primary endpoint,
+TP,A,Filgotinib,Rheumatoid Arthritis,승인,NA,240,,,,,Chloroquine|HIV Infections
+TN,A,minocycline,Stroke,효능,PHASE4,281,NCT00930020,2012,futilit,interim analysis shows futility,
+TP,A,lomitapide,Hypercholesterolemia,승인,NA,281,,,,,minocycline|Stroke
+TN,A,azithromycin,Asthma,효능,PHASE3,351,NCT04669288,2025,futilit,"The AZ-SWED trial was stopped by the National Heart, Lung, and Blood Institute (NHLBI) due to futility",
+TP,A,edaravone,Amyotrophic Lateral Sclerosis,승인,NA,347,,,,,azithromycin|Asthma
+TN,A,metformin,Breast Neoplasms,효능,PHASE2,879,NCT02472353,2018,did not meet,did not meet target accrual,
+TP,A,Cladribine,Multiple Sclerosis,승인,NA,862,,,,,metformin|Breast Neoplasms
+TN,A,ibrutinib,"Lymphoma, Non-Hodgkin",효능,PHASE3,1022,NCT02703272,2021,futilit,"IDMC recommended that enrolment be stoped, as the EFS hazard ratio and associated p-value crossed the futility boundary specified in protocol (July 2020).",
+TP,A,Hydralazine,Heart Failure,승인,NA,1001,,,,,"ibrutinib|Lymphoma, Non-Hodgkin"
+TN,A,baclofen,Pain,효능,PHASE4,1152,NCT03720717,2022,Futilit,Futility analysis at midpoint analysis,
+TP,A,tacrolimus,Atopic Dermatitis,승인,NA,1131,,,,,baclofen|Pain
+TN,A,metformin,Breast Cancer,효능,PHASE2,1231,NCT02472353,2018,did not meet,did not meet target accrual,
+TP,A,belimumab,Systemic Lupus Erythematosus,승인,NA,1233,,,,,metformin|Breast Cancer
+TN,A,apixaban,Stroke,효능,PHASE3,2830,NCT03192215,2023,futilit,The DSMB halted the trial prematurely due to futility without any safety concerns.,
+TP,A,hydroxychloroquine,Systemic Lupus Erythematosus,승인,NA,2797,,,,,apixaban|Stroke

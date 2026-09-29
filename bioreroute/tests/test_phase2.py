@@ -4300,8 +4300,11 @@ def test_dashboard():
     check("[55] 구조를 안 그렸으면 **그렇다고 적는다** (빈 상자 금지)",
           "구조를 그리지 않았습니다" in st, st[:120])
     st2 = dash.right_structure(None, "baricitinib / COVID-19")
+    # 09-29 · 결함 378 — 앞판 «직접 붙는 방식이 아닙니다» 는 **baricitinib 에 틀렸다**(JAK1/2 에 직접 붙는다 —
+    #   숙주 표적일 뿐이다). 기록의 경로(`evidence`)가 뜻하는 것은 «병원체 단백질을 직접 치지 않는다» 다
     check("[55] 질의를 주면 **기록대로 이유**를 적는다",
-          "직접 붙는 방식이 아닙니다" in st2, st2[-140:])
+          "병원체 단백질에 직접 붙는 약에만" in st2 and "숙주" in st2
+          and "직접 붙는 방식이 아닙니다" not in st2, st2[-140:])
 
     # ③ **배선** — 가짜 gradio 로 app.py 를 실제로 태운다 ──────
     import types
@@ -4404,8 +4407,10 @@ def test_dashboard():
         # 이름만 바꿔도 시험이 깨지고, 깨진 시험은 손으로 고치게 된다.
         _asrc = open(os.path.join(EV.ROOT, "app.py"), encoding="utf-8").read()
         _first = _asrc.split("gr.Tab(")[1].split("gr.Tab(")[0]
+        # 09-29 · `DASH_INTRO` 를 뺐다(결함 377 · 머리말이 중앙 칸의 되풀이였고 실행 2 에 틀렸다).
+        #   **배선으로 본다** — 그 탭을 그리는 함수(`_dash_run`)가 첫 탭 안에 있는가.
         check("[55] 3분할이 **첫 탭**이다 — 라이브가 첫인상이면 보류 55%다",
-              "DASH_INTRO" in _first and "_dash_run" in _first,
+              "_dash_run" in _first,
               _first.split(chr(10))[0][:40])
         check("[55] 라이브(직접 검증)는 **첫 탭이 아니다**",
               "run_live" not in _first)
@@ -4428,8 +4433,12 @@ def test_dashboard():
             #   결함 259 에서 **그 이유가 거짓**임이 드러났다(script 0개).
             #   시험이 초록이라고 옳은 게 아니다 — 무엇을 주장하는지 봐야 한다
             #   (결함 125·130 이 쓴 문장 그대로다).
-            check("[137] 3D 가 **어디 있는지** 화면이 가리킨다",
-                  "이 결과 맨 아래" in _md, _md[_md.find("#### 구조"):][:200])
+            # 09-29 · 결함 378 — `webui` 주석이 08-20 에 «새 화면에서 3D 는 결과 **오른쪽** — 자리를 안
+            #   가리킨다» 고 정해 놓고 문장은 «이 결과 맨 아래» 를 가리켰다. 이 검사가 그 **틀린 자리**를 붙들고
+            #   있었다(위 08-18 주석이 경고한 그대로). 이제 자리를 안 가리키고 **색의 뜻**을 적는지 본다
+            _s137 = _md[_md.find("#### 구조"):]
+            check("[137] 3D 자리를 **가리키지 않는다** — 배치가 바뀌면 거짓말이 된다 · 색의 뜻은 적는다",
+                  "맨 아래" not in _md and "pLDDT" in _s137 and "결합력이 아니다" in _s137, _s137[:200])
             check("[137] **틀린 한계를 안 적는다** — «markdown 이라 script 가 "
                   "안 돈다» 는 거짓이었다",
                   "markdown 이라 3Dmol 스크립트가 안 돈다" not in _md)
@@ -9721,7 +9730,7 @@ def test_exit_axis_actually_moves_the_verdict():
     def _EV140b():
         return _EV140b_mod
     L = _DH140.left("정방향", "신종감염병긴급", "metformin")
-    C = _DH140.center("Run 1 · 정방향", "신종감염병긴급")
+    C = _DH140.center(list(_DH140.RUNS)[0], "신종감염병긴급")
     # 08-18 — 좁은 칸에서 5열 표가 글자 하나씩 쪼개져 **2열 세로**로 바꿨다.
     #   시험이 옛 서식을 붙들면 서식을 못 고친다(결함 265).
     # 08-21 — **그 주석을 적어 놓고도 서식을 못 박았다.** `| 기각 문턱 |
@@ -9749,23 +9758,25 @@ def test_exit_axis_actually_moves_the_verdict():
         _keep140 = _EV140b_mod.CASES
         _EV140b_mod.CASES = _fx
         try:
-            C26 = _DH140.center("Run 1 · 정방향", "신종감염병긴급")
+            C26 = _DH140.center(list(_DH140.RUNS)[0], "신종감염병긴급")
         finally:
             _EV140b_mod.CASES = _keep140
     except Exception as _e140:
         C26 = "예외: %s" % _e140
-    mrow = [l for l in C26.splitlines() if "metformin" in l]
+    # 09-29 · **표의 행만 본다** — 실행 1 의 무대 글이 무대 밖 쌍을 약 이름으로 대면서(결함 377) «metformin» 이
+    #   든 첫 줄이 무대 글이 됐다. 이 검사가 보려는 것은 판정 표의 그 쌍 행이다
+    mrow = [l for l in C26.splitlines() if "metformin" in l and l.lstrip().startswith("|")]
     check("[140] ⓐ **26% 기각 옆에 «긴급에선 보류» 가 붙는다** — 결함 256 본체 (고정 자료)",
           mrow and "신종감염병긴급에선 보류" in mrow[0],
           (mrow or [""])[0][-60:])
     _cs140 = {x.get("질의"): x for x in ((_EV140b_mod.cases() or {}).get("사례") or [])}
     _bad140 = []
-    for _q in _DH140.RUNS["Run 1 · 정방향"]["후보"]:
+    for _q in _DH140.RUNS[list(_DH140.RUNS)[0]]["후보"]:
         _x = _cs140.get(_q)
         if not _x:
             continue
         _want = bool(_DH140._by_profile(_x.get("판정"), _x.get("신뢰도"), "신종감염병긴급"))
-        _row = [l for l in C.splitlines() if _q.split(" /")[0] in l]
+        _row = [l for l in C.splitlines() if _q.split(" /")[0] in l and l.lstrip().startswith("|")]
         _has = bool(_row) and "신종감염병긴급에선" in _row[0]
         if _want != _has:
             _bad140.append((_q, _x.get("판정"), _x.get("신뢰도"), _want, _has))
@@ -9773,7 +9784,7 @@ def test_exit_axis_actually_moves_the_verdict():
           not _bad140, _bad140)
     check("[140] 그 표가 **표준으로 봉인된 값임을 적는다**",
           "«표준» 으로 계산해 봉인한 값" in C)
-    erow = [l for l in C.splitlines() if "edaravone" in l]
+    erow = [l for l in C.splitlines() if "edaravone" in l and l.lstrip().startswith("|")]
     if erow:
         check("[140] **`조건부` 에는 «→» 를 안 붙인다** — 문턱과 무관한 판정",
               "에선" not in erow[0], erow[0][-60:])
@@ -9858,7 +9869,7 @@ def test_exit_axis_actually_moves_the_verdict():
     check("[140] 병명 탭에 **축2 라디오가 있고 콜백 inputs 에 들어간다**",
           "dz_exit = gr.Radio" in _src and "dz_exit, dz_entry]" in _src)
 
-    C0 = _DH140.center("Run 1 · 정방향", "표준")
+    C0 = _DH140.center(list(_DH140.RUNS)[0], "표준")
     check("[140] 표준에서는 주석이 **안 붙는다** — 없는 말을 만들지 않는다",
           "에선" not in C0 and "봉인한 값" not in C0)
 
@@ -10461,7 +10472,8 @@ def test_no_dev_log_leaks_onto_the_demo_screen():
     r["상태"] = "정상"
 
     surfaces = {
-        "탭 안내(대시보드)": getattr(app, "DASH_MORE", ""),
+        # 09-29 · 대시보드 안내문은 없어졌다(결함 377). 그 자리에 **실제로 그려지는** 사례 탭 설명을 본다
+        "탭 안내(사례)": getattr(app, "CASES_MORE", ""),
         "탭 안내(라이브)": getattr(app, "LIVE_MORE", ""),
         "탭 안내(병명)": getattr(app, "DISEASE_INTRO", ""),
         "좌측 2축": _D141.left("정방향", "신종감염병긴급", "metformin"),
@@ -10603,6 +10615,44 @@ def test_release_zip_can_actually_run_the_reproduction_steps():
         gone159 = [e for e in ev159 if e not in names]
         check("[159] ⑤ 사전 기준 대장의 근거 파일 %d개가 **전부 묶음에 있다** — 없으면 공개 사본에서 `prereg` 가 멈춘다"
               % len(ev159), bool(ev159) and not gone159, gone159)
+
+    # ⑥ 09-29 · 봉인 json 이 가리키는 **문서가 전부 묶음에 있다** — 봉인 파일만 있고 문서가 없으면 받는 쪽의
+    #   `evidence.seals()` 가 «무결 None(확인 불가)» 을 낸다. «사전명세*.md» 꼴이 아닌 대상 둘을 손목록이 놓쳤다
+    import json as _j159
+    tg159 = set()
+    for sj in _g159.glob(_o159.path.join(root, "*_봉인.json")):
+        try:
+            with open(sj, encoding="utf-8") as fsj:
+                dsj = _j159.load(fsj)
+        except Exception:
+            continue
+        t159 = (dsj.get("문서") or dsj.get("예측파일") or "").replace("\\", "/")
+        if t159:
+            tg159.add(t159)
+    gone_s159 = sorted(t for t in tg159 if t not in names)
+    check("[159] ⑥ 봉인 json 이 가리키는 문서 %d개가 **전부 묶음에 있다** — 없으면 받는 쪽에서 «확인 불가»"
+          % len(tg159), bool(tg159) and not gone_s159, gone_s159)
+
+    # ⑦ 09-29 · **동결한 홀드아웃을 받는 쪽이 대조할 수 있다** — freeze json 이 해시를 적은 파일이 묶음에 있고 해시가 같다
+    import hashlib as _hh159            # ⚠ `_h159` 는 아래에서 import 된다 — 여기서 쓰면 지역 이름이라 UnboundLocalError
+    fz159 = _o159.path.join(root, "bench_holdout_freeze.json")
+    if _o159.path.exists(fz159):
+        with open(fz159, encoding="utf-8") as ffz:
+            dfz = _j159.load(ffz)
+        want159 = {(dfz.get("source") or {}).get("file"): (dfz.get("source") or {}).get("sha256")}
+        want159.update({k: (v or {}).get("sha256") for k, v in (dfz.get("files") or {}).items()})
+        bad159 = [k for k, h in want159.items()
+                  if not k or k not in names or _hh159.sha256(_z159.ZipFile(zp).read(k)).hexdigest() != h]
+        check("[159] ⑦ 동결 json 이 해시를 적은 파일 %d개가 **묶음에 있고 해시가 같다** — «결과 전에 동결» 을 받는 쪽이 대조한다"
+              % len(want159), not bad159, bad159)
+    # ⑧ 봉인의 실행 전 증거 — 제3자 자료만 빼고 묶음에 있다(`배포zip만들기.SEAL_EVIDENCE_SKIP`)
+    import importlib.util as _iu159
+    _sp159 = _iu159.spec_from_file_location("zipmk159", _o159.path.join(root, "배포zip만들기.py"))
+    if _sp159 and _o159.path.exists(_o159.path.join(root, "배포zip만들기.py")):
+        _zm159 = _iu159.module_from_spec(_sp159)
+        _sp159.loader.exec_module(_zm159)
+        _ev159 = [e for e in _zm159._seal_evidence(root) if e not in names]
+        check("[159] ⑧ 봉인의 실행 전 증거(제3자 자료 · 1 MB 넘는 것 빼고)가 **전부 묶음에 있다**", not _ev159, _ev159[:4])
 
     # ④ 만드는 도구가 있고 «손으로 하지 마라» 를 적는다
     tool = _o159.path.join(root, "배포zip만들기.py")
@@ -11039,11 +11089,24 @@ def test_screen_says_which_gates_it_turned_off_and_why():
           "끈 게이트" in th, th[-400:])
     check("[162] ② 그리고 **«없는 것이 아니라 끈 것»** 이라고 못 박는다",
           "없는 것이 아니라" in th)
+    # 09-29 · 결함 378 — 표의 사유는 **개발 메모**다(««자율» 주장이 흐려진다» · «발표장에서 시연이 멈춘다»).
+    #   화면 말은 `demo.GATE_OFF_SAY` 가 준다. ②의 «그대로» 는 이제 **그 화면 말 그대로**다
+    #   (09-19 에 색인을 벗긴 것에 이어 두 번째로 «누구에게 주는 글인가» 를 가른 것).
+    from ..demo import GATE_OFF_SAY as _SAY162
     for g, why in off:
+        _want162 = _SAY162.get(g, why)
         check("[162] ② 사유가 **그대로** 나온다 — `%s`" % g,
-              why in th, why[:40])
+              _want162 in th, _want162[:40])
         check("[162] ② 한글 이름도 나온다 — `%s`" % g,
               _KO162.get(g, g) in th, _KO162.get(g, g))
+    # ── ⑧ 09-29 · 끈 게이트마다 **화면 말이 먼저 있다** — 개발 메모가 화면으로 떨어지지 않게 ──
+    check("[162] ⑧ 시연이 끈 게이트마다 `GATE_OFF_SAY` 에 화면 말이 있다",
+          all(g in _SAY162 for g, _w in off), [g for g, _w in off if g not in _SAY162])
+    check("[162] ⑧ 화면에 **개발 메모 문구**가 없다 — «주장이 흐려진다» · «발표장»",
+          not any(x in th for x in ("주장이 흐려진다", "발표장", "시연이 멈춘다")),
+          [x for x in ("주장이 흐려진다", "발표장", "시연이 멈춘다") if x in th])
+    check("[162] ⑧ B8 을 «제거 실험이 돈다» 로 적지 않는다 — B8 은 벤치마크에 안 쓴다(시험 [48])",
+          "그 구성까지 돈다" not in th and "제거 실험에서 돕니다" not in th, th[-300:])
 
     # ── ⑦ ⛔ 09-19 · **내부 색인이 화면으로 새면 안 된다** (결함 261) ────
     #
@@ -11101,7 +11164,7 @@ def test_screen_says_which_gates_it_turned_off_and_why():
     check("[162] ⑥ ⭐ 꺼졌다는 게이트가 **돌아간 채로 구워졌으면 그렇게 적는다**",
           "돌아간 채로 구운 값" in th3, th3[-500:])
     check("[162] ⑥ 그리고 **사유는 여전히 같이 적는다** — 지우지 않는다",
-          "CT.gov 가 느리면" in th3)
+          _SAY162.get("registry", "CT.gov 가 느리면") in th3)
     check("[162] ⑥ `SKIP` 으로 구워진 것은 **경고를 안 붙인다** (오탐 방지)",
           "돌아간 채로 구운 값" not in _D162.thinking(q162))
 
@@ -15578,8 +15641,10 @@ def test_video_script_comes_from_the_same_sources_as_the_screen():
     gp = _o192.path.join(root, "slides", "make_video_본선.py")
     src = open(gp, encoding="utf-8").read()
     code = "\n".join(l for l in src.splitlines() if not l.lstrip().startswith("#"))
-    check("[192] ① 수를 **자료에서** 받는다 — 발표 노트 · 구운 사례 · 성능 카드 · 긴급 문턱 계산 · 대장",
-          all(k in code for k in ("notes_for(", "_cases()", "perfcard.card(", "_by_profile(",
+    # 09-28 밤 · 옛 나-5(심사 기준 긴급 · `_by_profile`)를 «병으로 시작» 컷으로 바꿨다(결함 373 · 376) — 그 컷의 수는
+    #   라이브 점검 기록의 병명 칸(`_disease_record`)에서 온다
+    check("[192] ① 수를 **자료에서** 받는다 — 발표 노트 · 구운 사례 · 성능 카드 · 라이브 점검 기록(병명) · 대장",
+          all(k in code for k in ("notes_for(", "_cases()", "perfcard.card(", "_disease_record(",
                                   "defect_count(", "_spec_count(")), "")
     check("[192] ② 옛 대본의 **손 숫자**가 생성기에 없다 (기각 26% · 유망 84% · PubMed 4087 · pLDDT 91.1)",
           not _re192.search(r"26%|84%|4087|91\.1|98퍼센트|53퍼센트", code), "")
@@ -15602,30 +15667,24 @@ def test_video_script_comes_from_the_same_sources_as_the_screen():
     check("[192] ④ 라이브 컷은 **두 갈래**를 다 싣고 «결과를 보고 쌍을 안 바꾼다» 를 적는다",
           "〔ⓐ" in txt and "〔ⓑ" in txt and "쌍을 바꾸지 않는다" in txt, "")
     # 09-27 · 녹화본은 ✂ 를 **적용한 채로** 뽑는다 — 앞판은 ✂ 를 뺀 값으로 판정만 하고 대본은 11분대였다
-    check("[192] ⑤ 10분 내외 — **✂ 를 적용한 녹화본**이 9~11분 안이다 (분당 320자 기준)",
+    check("[192] ⑤ 10분 내외 — **✂ 를 적용한 녹화본**이 %s~%s 안이다 (분당 %d자 기준)"
+          % (mv._mmss(mv.TARGET[0]), mv._mmss(mv.TARGET[1]), mv.CHARS_PER_MIN),
           ok and "합계" in txt and "✂ **적용함**" in txt and cut_s > 0,
           "%.0f초 (✂ 로 %.0f초 뺐다)" % (run, cut_s))
     # ⑤-b ✂ 는 **문장을 빼기만** 한다 — 합성 입력으로 모양을 고정하고, 못 찾으면 **멈추는지**도 본다
-    t2 = "신약 86퍼센트 실패입니다. 가 문장입니다. 나 문장입니다. 그래서 Bio-ReRoute 는 그 일을 합니다."
-    t23 = "리소스입니다. 가 문장입니다. 본선 모델 셋으로 98쌍을 다시 돌렸습니다."
-    t20 = "문제 정의도 2022년 논문에 있고, 사례 약물도 하이드록시클로로퀸입니다. 그래서 좁힙니다."
-    t8 = "관문을 겁니다. 다만 문헌이 아예 없거나 음성이 두 건이면 끊습니다. 0퍼센트는 그 두 경우에만 나옵니다."
-    t21 = "자율성입니다. 보류합니다. 0건으로 세면 네트워크 장애가 발견이 되기 때문입니다. 다만 새로 짜지는 않습니다."
+    #   09-29 · 영상을 «쓰는 법» 중심으로 다시 짰다(규칙 2번 원문에 «발표 포함» 이 없다 · 승우). 영상이 쓰는 발표
+    #   노트는 8장(구조) 하나이고, 표지 · 성능 · 정리의 말은 영상 자신의 말이다(`slide_say`)
+    t8 = ("만든 것입니다. 약 이름이 진짜인지 봅니다. 기전 라우터는 경로를 고릅니다. "
+          "숙주에 작용하는 약에는 묻지 않습니다. 보류로 기권합니다.")
     fired = 0
-    for f192, bad in ((mv._trim_2, "한 문장뿐입니다."), (mv._trim_23, "리소스입니다."),
-                      (mv._trim_20, "다른 말입니다."), (mv._trim_8, "관문을 겁니다."),
-                      (mv._trim_21, "자율성입니다.")):
-        try:
-            f192(bad)
-        except ValueError:
-            fired += 1
-    check("[192] ⑤-b 영상 ✂ 는 **문장을 빼기만** 한다 · 뺄 문장이 없으면 **멈춘다**",
-          mv._trim_2(t2) == "신약 86퍼센트 실패입니다. 그래서 Bio-ReRoute 는 그 일을 합니다."
-          and mv._trim_23(t23) == "리소스입니다. 가 문장입니다."
-          and mv._trim_20(t20) == "문제 정의도 2022년 논문에 있습니다. 그래서 좁힙니다."
-          and mv._trim_8(t8) == "관문을 겁니다."
-          and mv._trim_21(t21) == "자율성입니다. 보류합니다. 다만 새로 짜지는 않습니다."
-          and fired == 5 and set(mv.VIDEO_TRIM) == {2, 8, 20, 21, 23}
+    try:
+        mv._trim_8("관문을 겁니다.")
+    except ValueError:
+        fired = 1
+    check("[192] ⑤-b 영상 ✂ 는 **문장을 빼기만** 한다 · 뺄 문장이 없으면 **멈춘다** · 영상이 쓰는 발표 노트는 8장 하나 · "
+          "슬라이드는 앞뒤 두 장씩",
+          mv._trim_8(t8) == "만든 것입니다. 보류로 기권합니다." and fired == 1 and set(mv.VIDEO_TRIM) == {8}
+          and mv.PART_A == [1, 8] and mv.PART_C == ["성능", 25] and txt.count("### 발표 ") == 4
           and "사례 약물도 하이드록시클로로퀸" not in txt and "재창출은 안전성을" not in txt, fired)
 
     chain = open(_o192.path.join(root, "사슬.ps1"), encoding="utf-8-sig").read()
@@ -15668,14 +15727,31 @@ def test_abstain_reason_describes_the_evidence_it_had():
               (v, p, why[:60]))
     check("[193] ⭐ «확증 임상 실패 포함» 이 **반박이 없는 보류**에 안 붙는다 — rifampin 의 자리",
           all("확증 임상 실패" not in why for _n, _v, _p, why in rows), [r[3][:40] for r in rows])
+    # 09-29 · 결함 378 — «지지 근거가 약합니다» 가 **세상에 대한 말**로 읽혔다(결핵 표준약 리팜핀).
+    #   화면 말이 «이 실행이 읽은 문헌» 으로 범위를 좁혔다. 셋으로 갈리는 것은 그대로 고정한다
+    _p193 = [_D193.why_plain(r[3]) for r in rows]
     check("[193] 화면 말도 셋으로 갈린다 — «갈립니다» 는 양쪽이 다 있을 때만",
-          _D193.why_plain(rows[0][3]).startswith("지지 근거가 약합니다")
-          and _D193.why_plain(rows[1][3]).startswith("반대 근거가 약합니다")
-          and _D193.why_plain(rows[2][3]).startswith("근거가 갈립니다"),
-          [_D193.why_plain(r[3])[:14] for r in rows])
+          "지지 근거를 충분히 모으지 못했습니다" in _p193[0]
+          and "반대 근거가 기각할 만큼 쌓이지 않았습니다" in _p193[1]
+          and _p193[2].startswith("근거가 갈립니다")
+          and not any("갈립니다" in x for x in _p193[:2]),
+          [x[:24] for x in _p193])
+    check("[193] 한쪽만 약한 보류는 **«이 실행이 읽은 문헌»** 으로 범위를 밝힌다 — 문헌 전체 판단이 아니다",
+          all(x.startswith("이 실행이 읽은 문헌에서") for x in _p193[:2]), [x[:24] for x in _p193[:2]])
 
 
 def test_hf_deploy_is_checked_by_content_not_by_saying_so():
+    """[194] **«올렸다» 를 내용으로 잰다** — 본문은 `_hf194_body`.
+
+    09-29 · `hfcheck.check()` 가 마감(10/2 16:00) 뒤에는 올리기를 권하지 않게 됐다. 이 시험의 앞 검사들은 **마감 전
+    안내**를 보므로 시계에 매이지 않게 마감 전으로 고정해 돌린다(마감 뒤 갈래는 본문 ⑯ 이 `late=True` 로 따로 본다).
+    """
+    from ..bench import hfcheck as _H194w
+    with patched(_H194w, after_deadline=lambda root=None: False):
+        _hf194_body()
+
+
+def _hf194_body():
     """[194] **«올렸다» 를 내용으로 잰다** — 09-25 신설.
 
     09-25 16:00 «올렸어» 뒤에 배포 주소가 내준 것은 **08-25 판**이었다 — Space 커밋이
@@ -15851,6 +15927,15 @@ def test_hf_deploy_is_checked_by_content_not_by_saying_so():
           and ("%s/static/data 에" % base) in txt and "`snapshot.json`" in txt
           and "`README.md` · `index.html`" in txt and "배포올리기.ps1" in txt, ls[-4:])
 
+    # ⑯ 09-29 · **마감 뒤에는 올리기를 권하지 않는다** — 데모 주소는 제출물이다(`ghcheck` 가 공개 사본에서 하는 것과 같다)
+    rc, ls = _H194.check(st, SP, get=fake(tree(old, ["style.css"])), late=True)
+    txt = "\n".join(ls)
+    check("[194] ⑯ 마감 뒤 🔴 는 «제출한 판 그대로» 를 말하고 **올리기 주소 · 배포올리기를 찍지 않는다**",
+          rc == 0 and "마감 뒤다" in txt and "/upload/main" not in txt and "배포올리기.ps1" not in txt, ls[-2:])
+    check("[194] ⑯ 마감 시각은 **공개 사본 도구의 상수 하나**에서 읽는다 — 두 곳에 적지 않는다",
+          "DEADLINE" not in open(_o194.path.join(_EV194.ROOT, "bioreroute", "bench", "hfcheck.py"),
+                                  encoding="utf-8").read().replace("`공개저장소만들기.DEADLINE`", ""), "")
+
 
 def test_step_descriptions_do_not_show_raw_markdown():
     """[195] **사고 과정 단계 설명에 마크다운 기호가 날것으로 안 뜬다** — 09-25 신설. 결함 341.
@@ -15892,6 +15977,7 @@ def test_video_script_names_screens_from_the_ui_code():
     import tempfile as _t196
     from .. import evidence as _EV196
     from .. import demo as _DM196
+    from ..dash import RUNS as _DH196_RUNS
 
     root = _EV196.ROOT
     gp = _o196.path.join(root, "slides", "make_video_본선.py")
@@ -15913,22 +15999,26 @@ def test_video_script_names_screens_from_the_ui_code():
     out = _o196.path.join(_t196.mkdtemp(prefix="vid196_"), "v.md")
     mv.build(out)
     txt = open(out, encoding="utf-8").read()
-    hands = {m.group(1): m.group(2) for m in _re196.finditer(r"### (나-\d)[^\n]*\n\n> ▶ ([^\n]+)", txt)}
-    h2, h4 = hands.get("나-2", ""), hands.get("나-4", "")
-    check("[196] ③ 나-2 는 «%s» 화면으로 간다 — `Run 1`·③ 칸 `사고 과정` 이 있는 화면" % navs.get("v-dash"),
-          ("「심사·시연 → %s」" % navs.get("v-dash")) in h2 and "Run 1 · 정방향" in h2 and "사고 과정" in h2
+    # 09-29 · 영상을 «쓰는 법» 중심으로 다시 짜며 컷 순서가 바뀌었다 — 번호가 아니라 **제목으로** 찾는다
+    hands = {m.group(1): m.group(2) for m in _re196.finditer(r"### 나-\d+ · ([^\n]*)\n\n> ▶ ([^\n]+)", txt)}
+    h2 = next((v for k, v in hands.items() if "사고 과정 (HCQ)" in k), "")
+    h4 = next((v for k, v in hands.items() if "숙주 약과 구조 경로" in k), "")
+    check("[196] ③ HCQ 사고 과정 컷은 «%s» 화면으로 간다 — `Run 1`·③ 칸 `사고 과정` 이 있는 화면" % navs.get("v-dash"),
+          ("「심사·시연 → %s」" % navs.get("v-dash")) in h2 and list(_DH196_RUNS)[0] in h2 and "사고 과정" in h2
           and ("→ %s」" % navs.get("v-cases")) not in h2, h2[:90])
-    check("[196] ④ 나-4 는 **칩**을 누르고 ③ 칸을 `사고 과정` 으로 되돌려 말하는 두 줄을 보인다 · «같은 표에서» 가 없다",
+    check("[196] ④ 검증 경로 컷은 **칩**을 누르고 ③ 칸을 `사고 과정` 으로 되돌려 말하는 두 줄을 보인다 · «같은 표에서» 가 없다",
           "칩" in h4 and "사고 과정" in h4 and _DM196.GATE_KO["router"] in h4 and _DM196.GATE_KO["s1"] in h4
           and "같은 표에서" not in txt, h4[:120])
     ui = "".join(open(_o196.path.join(root, *p.split("/")), encoding="utf-8").read()
                  for p in ("bioreroute/dash.py", "web/static/app.js", "web/static/index.html",
                            "web/static/data/snapshot.json"))
-    ctl = ["Run 1 · 정방향", "Run 2 · 역발상", "사고 과정", "근거 카드", "신종감염병긴급",
-           "같은 질의를 일반 언어모델에 넣으면", _DM196.GATE_KO["router"], _DM196.GATE_KO["s1"]]
+    # 09-28 밤 · 옛 나-5(«Run 2 · 역발상» · «신종감염병긴급» 칩)를 «병으로 시작» 컷으로 바꿨다(결함 373 · 376) —
+    #   그 컷이 누르는 것(«찾는 방법» · «심사 기준» · «후보 찾기» 버튼)도 화면 코드에 실제로 있어야 한다
+    ctl = [list(_DH196_RUNS)[0], "사고 과정", "근거 카드", "같은 질의를 일반 언어모델에 넣으면",
+           "찾는 방법", "심사 기준", "후보 찾기", _DM196.GATE_KO["router"], _DM196.GATE_KO["s1"]]
     missing = [c for c in ctl if c in txt and c not in ui]
     check("[196] ⑤ 대본이 가리키는 칩·탭·표 이름이 **화면 코드·스냅숏에 실제로 있다**",
-          not missing and all(c in txt for c in ctl[:6]), missing)
+          not missing and all(c in txt for c in ctl[:7]), missing)
 
 
 def test_hf_deploy_commits_only_changed_files_with_the_owner_token():
@@ -16018,14 +16108,24 @@ def test_hf_deploy_commits_only_changed_files_with_the_owner_token():
           and 0 <= a < src.find('"--apply"') and "hf_" not in src and "Set-Content" not in src
           and "Out-File" not in src and "bioreroute.bench.hfdeploy" in src, a)
 
+    # ⑦ 09-29 · **마감 뒤에는 올리지 않는다** — 데모 주소는 제출물이다(공개 사본 `push()` 와 같은 규칙)
+    import contextlib as _cl197
+    import io as _io197
+    _buf197 = _io197.StringIO()
+    with patched(_HD197.H, after_deadline=lambda root=None: True), _cl197.redirect_stdout(_buf197):
+        _rc197 = _HD197.main(["--apply", "--stage", st, "--space", SP])
+    check("[197] ⑦ 마감 뒤 `--apply` 는 **네트워크를 타기 전에 멈춘다** — `--after-deadline` 일 때만 연다",
+          _rc197 == 2 and "마감 뒤다" in _buf197.getvalue(), (_rc197, _buf197.getvalue()[:120]))
+
 
 def test_deck_text_does_not_overflow_onto_neighbours():
     """[198] **글이 줄바꿈으로 넘쳐 옆 글자를 덮지 않는다** — 09-26 신설. 결함 343.
 
     [151] 은 **글상자끼리** 겹치는지만 잰다. 상자는 안 겹쳐도 글이 상자보다 길면 줄이 바뀌어
     흘러내린다 — 결함 막대 장의 설명 두 줄이 그랬고(10pt 한 줄 상자에 두 줄), 제출용 10분판을
-    렌더해 넘겨 보고서야 봤다. `deckfit` 이 서체 없이 모형 폭(한글 1.0em · ASCII 0.6em ·
-    공백 0.3em · ×0.9 — Noto 실측과 맞춤 · 맑은 고딕은 더 좁다)으로 잰다.
+    렌더해 넘겨 보고서야 봤다. `deckfit` 이 서체 없이 모형 폭으로 잰다 — 09-28 에 제출 PDF(PowerPoint ·
+    맑은 고딕) 실측으로 다시 맞췄다(한글 1.0em · 공백 0.36em · 좁은 기호는 실측 · 배율 없음). 첫 판(×0.9 · Noto 기준)은
+    한 글자 넘침을 못 봤다(결함 372 · ①-b).
     """
     import os as _o198
     from .. import evidence as _EV198
@@ -16052,6 +16152,28 @@ def test_deck_text_does_not_overflow_onto_neighbours():
     long_hits, short_hits = one("가" * 60), one("가" * 10)
     check("[198] ① 가드가 울 수 있다 — 한 줄 상자에 세 줄짜리 글이면 아래 글상자를 덮는다고 잡고, 짧으면 안 운다",
           len(long_hits) == 1 and not short_hits, (long_hits, short_hits))
+
+    def row(text):
+        # 제출 PDF 26쪽의 그 상자 그대로 — 654pt · 좌우 여백 0 · 10pt · 바로 아래에 다음 유형 이름
+        prs = _Pr198()
+        s = prs.slides.add_slide(prs.slide_layouts[6])
+        a = s.shapes.add_textbox(_Pt198(255.6), _Pt198(144.7), _Pt198(654.0), _Pt198(16.6))
+        tf = a.text_frame
+        tf.word_wrap = True
+        tf.margin_left = tf.margin_right = 0
+        ra = tf.paragraphs[0].add_run()
+        ra.text, ra.font.size = text, _Pt198(10)
+        b = s.shapes.add_textbox(_Pt198(255.6), _Pt198(161.7), _Pt198(400.0), _Pt198(16.0))
+        rb = b.text_frame.paragraphs[0].add_run()
+        rb.text, rb.font.size = "캐시는 최적화가 아니라 자료원", _Pt198(12)
+        return _DF198.overflows(prs)
+
+    from ..bench import defecttypes as _DT198
+    old_row = ("모의로만 줄곧 → 첫 실호출이 0건 · 안 써 본 의존성이 다섯 달 전에 죽어 있었다 · "
+               "모의가 실제 출력 형식보다 좁아 시험이 초록인 채 실패를 감췄다")
+    now_row = _DT198.rows(_EV198.ROOT)[0][2].replace("**", "")
+    check("[198] ①-b 09-28 제출 PDF 26쪽에서 **실제로 한 글자 넘친 줄**을 넘친다고 잡고, 고친 줄은 안 넘친다고 한다 — 결함 372",
+          len(row(old_row)) == 1 and not row(now_row), (old_row[-6:], now_row[-6:]))
     for rel in _DF198.DECKS:
         p = _o198.path.join(_EV198.ROOT, rel)
         if not _o198.path.exists(p):
@@ -16460,9 +16582,20 @@ def test_commit_script_refuses_what_it_must():
     src = raw.decode("utf-8-sig")
     check("[206] ① BOM · CRLF · 줄 이어쓰기 없음 (결함 231)",
           raw[:3] == b"\xef\xbb\xbf" and b"\n" not in raw.replace(b"\r\n", b"") and b"`\r\n" not in raw, len(raw))
-    check("[206] ② 락이 있으면 멈춘다 · 푸시는 origin main 뿐이다(공개 사본 주소로 안 올린다)",
-          'Test-Path -LiteralPath ".git\\index.lock"' in src and "git push origin main" in src
-          and "Bio-ReRoute-public" not in src, "")
+    # ② 09-28 · 결함 371 — 도는 git 이 없고 10분 넘은 락만 지운다(그 밖에는 멈춘다). 사슬도 **처음에** 같은 규칙
+    #   09-28 13:29 · 첫 판은 «도는 git 이 하나라도 있으면 멈춘다» 여서 편집기 따위의 git 2개에 걸렸다 — 락을 쥘 수 있는 것은
+    #   **락보다 먼저 시작한** git 뿐이다(락은 없을 때만 만들어진다)
+    lock_rule = ("Get-Process -Name git" in src and "$lockAge -lt 10" in src and "$holders.Count -gt 0" in src
+                 and "-le $lockTime" in src and 'Remove-Item -LiteralPath ".git\\index.lock"' in src)
+    check("[206] ② 오래된 락(락보다 먼저 시작한 git 없음 · 10분 넘음)만 지우고 아니면 멈춘다 · 푸시는 origin main 뿐이다(공개 사본 주소로 안 올린다)",
+          'Test-Path -LiteralPath ".git\\index.lock"' in src and lock_rule and "git push origin main" in src
+          and "Bio-ReRoute-public" not in src, lock_rule)
+    chain = open(_o206.path.join(root, "사슬.ps1"), encoding="utf-8-sig").read()
+    at = chain.find('Join-Path $PSScriptRoot ".git\\index.lock"')
+    check("[206] ②-b `사슬.ps1` 도 **시작할 때** 같은 규칙으로 락을 본다 — ⑨ 에서(11분 뒤) 멈추지 않게",
+          0 <= at < chain.find('Head "①"') and "Get-Process -Name git" in chain and "$lockAge -lt 10" in chain
+          and "-le $lockTime" in chain and "$holders.Count -gt 0" in chain,
+          at)
     m = _re206.search(r'-match "([^"]+)"', src)
     rx = _re206.compile(m.group(1), _re206.I) if m else None
     cases = {"https://github.com/hwangjames7371/Bio-ReRoute.git": True,
@@ -16546,6 +16679,13 @@ def test_live_check_is_fixed_recorded_and_read_by_the_script():
     spec.loader.exec_module(mv)
     check("[207] ① 쌍과 정답을 **대본 생성기의 상수에서** 읽는다",
           _LC207.fixed_pair(root) == (mv.LIVE_PAIR, mv.LIVE_TRUTH), _LC207.fixed_pair(root))
+    # 09-28 밤 · 영상 나-5 «병으로 시작(가설 생성)» — 병명도 같은 규칙. 사전명세(`사전명세_병명입구.md`)가 봉인 전에
+    #   적은 **주 사례** 그대로여야 한다(결과를 보고 고른 병명이 아니다)
+    _sp207 = _o207.path.join(root, "사전명세_병명입구.md")
+    _spec207 = open(_sp207, encoding="utf-8").read() if _o207.path.exists(_sp207) else ""
+    check("[207] ①-b 병명 · 입구도 **대본 생성기의 상수에서** 읽는다 · 병명은 사전명세의 주 사례(COVID-19)다",
+          _LC207.fixed_disease(root) == (mv.LIVE_DISEASE, mv.LIVE_ENTRY) and mv.LIVE_ENTRY == "정방향"
+          and ("| **주** | **%s** |" % mv.LIVE_DISEASE) in _spec207, _LC207.fixed_disease(root))
     import contextlib as _cl207
     import io as _io207
     try:
@@ -16574,6 +16714,31 @@ def test_live_check_is_fixed_recorded_and_read_by_the_script():
           len(r1["실행"]) == 2 and r1["같은가"] and r1["데워짐"] and r1["갈래"] == "ⓐ"
           and r2["갈래"] is None and r3["상태"] == "모델불일치" and "실행" not in r3,
           (r1.get("갈래"), r2.get("갈래"), r3.get("상태")))
+    # ④-b 병명 — 두 번 돌려 분포 · 같은가 · 데워짐을 적는다. 첫 실행이 시간 상한에 걸려 못 태운 후보가 있으면
+    #   둘째가 그것을 처음 돌리므로 «같지 않다» 가 나와야 한다(그때는 한 번 더 돌린다 — 종료 코드 4)
+    def dz_fake(plan):
+        calls = iter(plan)
+
+        def runner(q, progress=None):
+            if progress:
+                progress("발굴", "가짜")
+            vs = next(calls)
+            return {"상태": "정상", "생성": 3, "F0통과": 3, "태움": len(vs), "못태움": 3 - len(vs), "비용": 0,
+                    "후보": [{"이름": "d%d / %s" % (i, q), "판정": v, "신뢰도": 50} for i, v in enumerate(vs)]}
+        return runner
+    tk = iter([0.0, 120.0, 120.0, 125.0])
+    d1 = _LC207.check_disease(root, runner=dz_fake([["기각", "유망", "기각"]] * 2), model=ok,
+                              clock=lambda: next(tk), say=lambda *a: None)
+    tk2 = iter([0.0, 150.0, 150.0, 210.0])            # 둘째가 60초 — 못 태운 후보를 처음 돌렸다(데워지지 않음)
+    d2 = _LC207.check_disease(root, runner=dz_fake([["기각", "유망"], ["기각", "유망", "보류"]]), model=ok,
+                              clock=lambda: next(tk2), say=lambda *a: None)
+    d3 = _LC207.check_disease(root, runner=dz_fake([["기각"]] * 2), model={"맞다": False, "모델": "x", "본선": "m"},
+                              say=lambda *a: None)
+    check("[207] ④-b 병명도 두 번 — 분포 · 같은가 · 데워짐을 적는다 · 못 태운 후보가 있던 첫 실행과는 «같지 않다» · "
+          "제출 모델이 아니면 **안 돌린다**",
+          d1["병명"] == mv.LIVE_DISEASE and d1["분포"] == {"기각": 2, "유망": 1} and d1["같은가"] and d1["데워짐"]
+          and len(d1["실행"]) == 2 and not d2["같은가"] and not d2["데워짐"] and d2["못태움"] == 0
+          and d3["상태"] == "모델불일치" and "실행" not in d3, (d1.get("분포"), d2.get("같은가"), d3.get("상태")))
     d = _t207.mkdtemp(prefix="live207_")
     try:
         a = _LC207.save(dict(r1, 판정="보류"), root=d, stamp="20260927_2300")
@@ -16598,11 +16763,30 @@ def test_live_check_is_fixed_recorded_and_read_by_the_script():
     check("[207] ⑥ 영상 대본이 기록을 읽어 **읽을 갈래를 표시**한다 · 캐시를 데운 뒤 찍는다는 **편집 자막**을 지시한다",
           "〔ⓐ 판정이 %s가 아니면  ← ✅ 이 갈래를 읽는다〕" % mv.LIVE_TRUTH in txt
           and "(이번에는 안 읽는다)" in txt and "편집 자막" in txt and "라이브점검.ps1" in txt, "")
+    # ⑥-b 병명 칸이 있으면 나-5 가 **그 수를** 말하고(생성 · F0 통과 · 분포 · 못 태움 · 기각 후보 칩), 없으면 «뒤 수가
+    #   채워진다» 표시만 한다(수를 지어내지 않는다)
+    fake2 = dict(fake_rec, 병명={"병명": mv.LIVE_DISEASE, "입구": mv.LIVE_ENTRY, "상태": "정상", "생성": 10,
+                               "F0통과": 9, "태움": 8, "못태움": 1,
+                               "분포": {"유망": 2, "조건부": 3, "보류": 2, "기각": 1},
+                               "후보": [["aspirin / COVID-19", "유망", 88], ["ivermectin / COVID-19", "기각", 4]]})
+    mv._live_record = lambda: fake2
+    try:
+        out2 = _o207.path.join(_t207.mkdtemp(prefix="vid207b_"), "v.md")
+        mv.build(out2)
+        txt2 = open(out2, encoding="utf-8").read()
+    finally:
+        mv._live_record = orig
+    check("[207] ⑥-b 영상 나-5 가 기록의 **병명 수**를 말한다(생성 · F0 통과 · 분포 · 못 태움 · 기각 후보 칩) · "
+          "기록이 없으면 수 없이 «뒤 수가 채워진다» 만",
+          "후보 10개를 만들고, 문헌이 실재하는 9개" in txt2 and "판정이 갈렸습니다 — 유망 2, 조건부 3, 보류 2, 기각 1" in txt2
+          and "1개는 기각이 아니라 못 태웠다고" in txt2 and "`ivermectin / COVID-19`" in txt2
+          and "뒤 수가 채워진다" not in txt2 and "뒤 수가 채워진다" in txt and "판정이 갈렸습니다" not in txt, "")
     raw = open(_o207.path.join(root, "라이브점검.ps1"), "rb").read()
     src = raw.decode("utf-8-sig")
     check("[207] ⑦ `라이브점검.ps1` — BOM · CRLF · 줄 이어쓰기 없음 · 쌍 인자 없음 · 이 도구를 부른다",
           raw[:3] == b"\xef\xbb\xbf" and b"\n" not in raw.replace(b"\r\n", b"") and b"`\r\n" not in raw
-          and "bioreroute.bench.livecheck" in src and "--pair" not in src and "param([switch]$Show)" in src, "")
+          and "bioreroute.bench.livecheck" in src and "--pair" not in src and "param([switch]$Show)" in src
+          and "-eq 5" in src, "")
 
 
 def test_github_public_copy_check_sees_what_judges_see():
@@ -16656,12 +16840,12 @@ def test_github_public_copy_check_sees_what_judges_see():
         open(_o208.path.join(stage, ".mark"), "w").close()
         HEAD = "a" * 40
 
-        def g(head=HEAD, dirty=""):
+        def g(head=HEAD, dirty="", up=None):
             def run(stage_, *args):
                 if args == ("rev-parse", "HEAD"):
                     return (0, head) if head else (128, "")
                 if args == ("rev-parse", "origin/main"):
-                    return 0, head or ""
+                    return 0, (head if up is None else up) or ""
                 if args[:1] == ("status",):
                     return 0, dirty
                 return 1, ""
@@ -16679,9 +16863,14 @@ def test_github_public_copy_check_sees_what_judges_see():
                                   run_git=kw.pop("run_git", g()), want=kw.pop("want", want))
             return rc, "\n".join(ls)
 
-        rc, t = run(get=net(repo=(404, {"message": "Not Found"})))
-        check("[208] ② 익명 404 → 3 · «안 보인다» · 만들기 → -Push → Public 순서를 찍는다",
+        rc, t = run(get=net(repo=(404, {"message": "Not Found"})), run_git=g(up="c" * 40))
+        check("[208] ② 익명 404 · 아직 안 올렸다 → 3 · «안 보인다» · 만들기 → -Push → Public 순서를 찍는다",
               rc == 3 and "안 보인다" in t and "github.com/new" in t and "Public" in t and "-Push" in t, (rc, t[-160:]))
+        rc, t = run(get=net(repo=(404, {"message": "Not Found"})))
+        arrow = [ln for ln in t.splitlines() if ln.startswith("→")]
+        check("[208] ②-b 익명 404 · 이 판이 올라가 있다(비공개) → 3 · «공개로 바꾸기뿐» — 다시 만들라거나 -Push 하라고 안 한다",
+              rc == 3 and "공개로 바꾸기" in t and "Public" in t and not any("-Push" in ln or "github.com/new" in ln for ln in arrow),
+              (rc, arrow))
         rc, t = run()
         check("[208] ③ 공개 · main == 사본 HEAD · 사본이 지금 판(커밋 요약은 CRLF 로 써도 같다) → 0",
               rc == 0 and "로그인 없이" in t, (rc, t[-200:]))
@@ -16856,7 +17045,465 @@ def test_public_copy_keeps_bytes_through_git():
         _sh209.rmtree(d, ignore_errors=True)
 
 
+def test_talk_says_what_we_built_and_that_we_did_not_tune():
+    """[210] **발표 · 영상의 말이 «무엇을 만들었나» 와 «맞추지 않았다» 를 한다** — 09-28 밤 · 결함 373~376.
+
+    승우: «무엇을 만들었고 뭘 말하고 싶은지가 명확하지 않다 · 이 대회는 무엇을 만들었는지가 중요하다 · 말하고 싶은
+    건 일부러 성능을 올린 게 아니라 객관적인 지표로 했다는 것». 전수검사에서 말이 가설 생성 · 전문 읽기 · 보정 ·
+    안전 게이트를 빠뜨렸고(373), 8장 관문이 평가 구성도 시연 구성도 아니었고(374), 손 숫자 둘이 낡았고(375),
+    영상 말 둘이 화면 · 판정 규칙보다 앞서 나갔다(376). 문구 몇 개를 박는 **좁은** 시험이다 — 넓은 것은 사람이
+    본다(전수검사). ⓘ 결과 파일 · 덱이 없는 곳(공개 사본 등)에서는 그 칸을 건너뛴다.
+    """
+    import importlib.util as _iu210
+    import os as _o210
+    import re as _re210
+    import tempfile as _t210
+    from .. import evidence as _EV210
+    from ..bench import discover as _DS210, perfcard as _PC210, prereg as _PR210
+
+    root = _EV210.ROOT
+    tp = _o210.path.join(root, "slides", "make_10min_본선.py")
+    if not _o210.path.exists(tp) or not _o210.path.exists(_o210.path.join(root, _PC210.SUBMIT[1])):
+        check("[210] 발표 생성기 · 본선 결과 파일이 없다 — 건너뛴다", True, "")
+        return
+    spec = _iu210.spec_from_file_location("make10_210", tp)
+    mod = _iu210.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    card = _PC210.card(root)
+    sent = _PR210.sentence(_PR210.tally(_PR210.load(root)))
+    n = mod.notes_for(card, sent)
+    check("[210] ① 첫 장과 끝 장이 **같은 두 문장**을 한다 — 무엇을 만들었나(가설을 만들고 · 반박부터) · "
+          "성능을 좋게 보이도록 맞추지 않았다",
+          all(k in n[1] for k in ("가설을 만들고", "반박", "맞추지 않았"))
+          and all(k in n[25] for k in ("가설을 만들고", "반박부터", "맞추지 않았"))
+          and "믿지 않는 방법" not in n[25], (n[1][:40], n[25][:40]))
+    g = _DS210.slide_facts(root)
+    rep = open(_o210.path.join(root, "연구기술보고서.md"), encoding="utf-8").read() \
+        if _o210.path.exists(_o210.path.join(root, "연구기술보고서.md")) else ""
+    if g:
+        check("[210] ② 생성 실험의 수를 `gen_run1.csv` 에서 센다 — 보고서 §4.5 와 같은 수(부정 표현 %d/%d · "
+              "효능 실패 %d건 중 실패 언급 %d) · 2장 노트가 그 수를 말한다" % (g["부정표현"], g["n"], g["효능실패"], g["실패언급"]),
+              ("%d/%d" % (g["부정표현"], g["n"])) in rep and g["효능실패"] == 9 and g["실패언급"] == 0
+              and ("후보 %d개" % g["n"]) in n[2] and ("%.1f퍼센트" % (100.0 * g["승인"] / g["n"])) in n[2]
+              and ("후보 %d건" % g["효능실패"]) in n[2] and "한 번도 말하지 않았습니다" in n[2], g)
+    br = card["전체"]["Brier"]
+    check("[210] ③ 말이 제품을 빠뜨리지 않는다 — 입구 둘 · 전문 읽기(양쪽을 같은 규칙으로) · 보정(Brier · 카드의 수) · "
+          "맞추지 않았다의 근거 넷과 모델 선택 규칙 · 끝까지 사람 손 없이",
+          all(k in n[8] for k in ("병명을 넣으면", "약과 병을 넣으면", "논문 전문", "지지와 반박 양쪽을 같은 규칙으로"))
+          and ("Brier 도 %.3f 대 %.3f" % (br["B5"], br["B0"])) in n[mod.PERF]
+          and ("%.3f 보다는 낫습니다" % br["널"]) in n[mod.PERF]
+          and all(k in n[15] for k in ("근거는 넷", "미리 적은 규칙", sent))
+          and "사람 손 없이" in n[21], "")
+    neg = sum(n[k].count(w) for k in mod.MAIN for w in ("주장하지 않", "낫다고는 말하지", "두지 않는다"))
+    check("[210] ④ 부정문은 **한 번** — «우위를 주장하지 않는다» 는 성능 장에만(앞판 다섯 번)",
+          neg == 1 and "우위를 주장하지 않" in n[mod.PERF], neg)
+    deck = _o210.path.join(root, "slides", "Bio-ReRoute_발표.pptx")
+    if _o210.path.exists(deck):
+        from pptx import Presentation as _P210
+        sl = list(_P210(deck).slides)
+
+        def words(i):
+            return " ".join(x.text_frame.text for x in sl[i - 1].shapes if x.has_text_frame)
+        s1, s8, s23 = words(1), words(8), words(23)
+        from ..core import gates as _GT210
+        check("[210] ⑤ 구운 덱 — 표지가 제품 · 메시지로 연다 · 8장 관문이 시연 구성(B5SF)의 일곱이고 등록부가 원으로 "
+              "없다 · 손 숫자(«CLI 진입점 30개» · «후보당 LLM 호출 약 3회»)가 없다",
+              "Bio-ReRoute" in s1 and "맞추지 않았다" in s1 and "후보 생성" in s1
+              and all(_re210.search(r"(^|\s)%s(\s|$)" % t, s8) for t in ("F0", "L2", "R", "S1", "S2", "SK", "F"))
+              and not _re210.search(r"(^|\s)REG(\s|$)", s8) and len(_GT210.CONFIGS["B5SF"]) == 7
+              and "CLI 진입점" not in s8 and "약 3회" not in s23 and "만" in s23, (s8[:60], s23[:40]))
+    vp = _o210.path.join(root, "slides", "make_video_본선.py")
+    spec2 = _iu210.spec_from_file_location("make_video_t210", vp)
+    mv = _iu210.module_from_spec(spec2)
+    spec2.loader.exec_module(mv)
+    out = _o210.path.join(_t210.mkdtemp(prefix="vid210_"), "v.md")
+    mv.build(out)
+    txt = open(out, encoding="utf-8").read()
+    check("[210] ⑥ 영상 — «병으로 시작(가설 생성)» 컷이 있고 · 사고 과정 컷이 전문 읽기를 말하고 · 과장 두 문구"
+          "(«역발상 실행의» · «이 경우에만 나옵니다») · 옛 끝 문장이 없다",
+          "병으로 시작 — 가설 생성" in txt and "첫 번째 쓰는 법, 병명으로 시작입니다" in txt and "저자가 적은 한계" in txt
+          and "역발상 실행의" not in txt and "이 경우에만 나옵니다" not in txt and "믿지 않는 방법" not in txt
+          and "약 이름이 문헌에서 아예 안 잡힐 때만" in txt and "PMID 가 0건" not in txt, "")
+    # ⑦ 09-29 · 영상은 **쓰는 법**이 중심이다(규칙 2번 원문 · 게시판 공지에 «발표 포함» 이 없다 — 승우). 슬라이드는
+    #   앞뒤 두 장씩이고, 가운데에 쓰는 법 둘(병명 · 가설 하나) · 원문 확인(PubMed) · 적용(심사 기준) · 안전(통제 물질
+    #   차단)이 있다. 안전 컷의 질의는 **실제로 막히는** 이름이어야 한다(대본을 뽑을 때 본다)
+    from ..core import safety as _SF210
+    _sd, _sq = [x.strip() for x in mv.SAFETY_QUERY.split(" / ", 1)]
+    n_scr = len(_re210.findall(r"^### 나-\d+ ", txt, _re210.M))
+    check("[210] ⑦ 영상은 **쓰는 법 시연**이다 — 슬라이드 넉 장 · 화면 컷 %d · 쓰는 법 둘 · PubMed 원문 확인 · 심사 기준 · "
+          "안전 차단(질의가 실제로 막힌다 · 탄저 치료제는 안 막힌다)" % n_scr,
+          txt.count("### 발표 ") == 4 and n_scr >= 8 and "두 번째 쓰는 법" in txt
+          and "pubmed.ncbi.nlm.nih.gov/" in txt and "심사 기준을 바꾼다" in txt
+          and "통제 물질은 맨 앞에서 멈춘다" in txt and _SF210.screen(_sd, _sq, mv.SAFETY_QUERY)[0]
+          and not _SF210.screen("ciprofloxacin", "Anthrax", "ciprofloxacin / Anthrax")[0], n_scr)
+
+
+def test_demo_copy_matches_the_data():
+    """[211] **데모 안내문이 자료와 맞는다** — 09-29 · 결함 377.
+
+    승우: «「어떻게 판단하나」 의 "신종 바이러스가 퍼진 상황을 가정한 실행 2건입니다. 미리 돌려 둔 결과라 바로
+    열립니다." 이걸 왜 넣은지 이해가 안 가 · 굳이 안 넣어도». 따라가 보니 그 머리말은 **중앙 칸의 되풀이**였고
+    실행 2 에는 **틀렸다**(바이러스 무대가 아니다). 옆의 접힌 설명과 「지난 판정」 의 설명은 **«유망 97%»** 를 손으로
+    들고 있었는데 사례를 다시 구우니 «조건부» 였고, «마지막 사례» 는 다섯째였다. 보고서도 같은 수를 들고 있었다.
+
+    ① 안내문에 판정 확률을 손으로 적지 않는다  ② `app.js` 가 채우는 칸이 `index.html` 에 다 있다(없으면 첫 화면이
+    통째로 죽는다)  ③ 머리말이 하던 말(무대 · 구운 시각)은 중앙 칸이 자료에서 한다  ④ 「지난 판정」 설명의 말이
+    구운 사례와 맞다  ⑤ 보고서의 플루복사민 수가 구운 사례에서 다시 나온다  ⑥ 병명 탭 안내의 «열 개» · «150초» 가
+    코드 상수와 같다  ⑦ 예비본 라이브 안내의 수가 봉인 예측 파일에서 다시 나온다. ⓘ 자료가 없는 곳에서는 그 칸을 건너뛴다.
+    """
+    import ast as _ast211
+    import csv as _csv211
+    import io as _io211
+    import os as _o211
+    import re as _re211
+    from .. import dash as _D211, demo as _DM211, evidence as _E211
+
+    root = _E211.ROOT
+    src = _io211.open(_o211.path.join(root, "app.py"), encoding="utf-8").read()
+    ui = {}
+    for node in _ast211.parse(src).body:
+        if isinstance(node, _ast211.Assign):
+            for t in node.targets:
+                if isinstance(t, _ast211.Name) and t.id.isupper() and t.id.split("_")[0] in (
+                        "CASES", "LIVE", "DISEASE", "DISCLAIMER", "DASH"):
+                    try:
+                        v = _ast211.literal_eval(node.value)
+                    except Exception:                     # noqa: BLE001
+                        continue
+                    if isinstance(v, str):
+                        ui[t.id] = v
+    check("[211] 안내문 상수를 읽었다 — 사례 · 라이브 · 병명", {"CASES_MORE", "LIVE_MORE", "DISEASE_IDLE"} <= set(ui),
+          sorted(ui))
+
+    # ① 판정 확률은 사례 카드가 말한다 — 안내문이 손으로 들면 다시 구울 때 거짓이 된다
+    hand = [(k, m.group(0)) for k, v in ui.items()
+            for m in _re211.finditer(r"(유망|조건부|보류|기각)\W{0,3}\d{1,3}\s*%", v)]
+    check("[211] ① 안내문에 **판정 확률을 손으로 적지 않는다** (결함 377 · «유망 97%» 가 «조건부» 가 됐다)",
+          not hand, hand[:4])
+
+    # ② 채우는 칸이 없으면 `setMd` 가 null 에 쓰다 죽고, 그 뒤 탭 전부가 안 그려진다
+    js = _io211.open(_o211.path.join(root, "web", "static", "app.js"), encoding="utf-8").read()
+    html = _io211.open(_o211.path.join(root, "web", "static", "index.html"), encoding="utf-8").read()
+    ids = sorted(set(_re211.findall(r'setMd\("([\w-]+)"', js)))
+    miss = [i for i in ids if 'id="%s"' % i not in html]
+    check("[211] ② `app.js` 가 채우는 칸 %d개가 **`index.html` 에 다 있다**" % len(ids), ids and not miss, miss)
+    check("[211] ② 「어떻게 판단하나」 에 **머리말 · «이 화면은 무엇인가» 가 돌아오지 않는다** — 중앙 칸의 되풀이였다",
+          'id="dash-intro"' not in html and 'id="dash-more"' not in html
+          and "dash.intro" not in js and "DASH_INTRO" not in ui, "")
+
+    # ③ 뺀 머리말이 하던 말은 **중앙 칸이 자료에서** 한다 — 실행마다 무대, 그리고 구운 시각
+    raw = _E211.cases() or {}
+    cases = raw.get("사례") or []
+    if not cases:
+        check("[211] 구운 사례(`demo_cases.json`)가 없다 — ③~⑤ 건너뛴다", True, "")
+    else:
+        for run, r in _D211.RUNS.items():
+            cen = _D211.center(run)
+            check("[211] ③ «%s» 중앙 칸이 **무대**와 **구운 시각**을 말한다" % run,
+                  r["무대"] in cen and ((raw.get("구운 시각") or "")[:10] + " 에 구운 값이다") in cen, cen[:120])
+            # 무대가 한 질환이면(후보 둘 이상이 같은 병) 그 병이 아닌 쌍은 **무대 글이 이름을 댄다** —
+            #   «대조군 1건» 이라 적고 무대 밖 쌍이 둘이었다(유방암 · 결핵)
+            dz = [q.split(" / ", 1)[1] for q in r["후보"]]
+            top = max(set(dz), key=dz.count)
+            if dz.count(top) >= 2:
+                off = [q.split(" / ", 1)[0] for q in r["후보"] if q.split(" / ", 1)[1] != top]
+                check("[211] ③ «%s» 무대(%s) 밖의 쌍 %d개를 **무대 글이 이름으로 댄다**" % (run, top, len(off)),
+                      all(d in r["무대"] for d in off), (off, r["무대"]))
+
+        # ④ 「지난 판정」 설명 — 순서를 말하지 않고, 말한 것은 자료와 맞는다
+        cm = ui.get("CASES_MORE", "")
+        verdicts = {c.get("판정") for c in cases}
+        check("[211] ④ «네 가지 판정이 다 나오게» — 구운 사례에 **유망 · 조건부 · 보류 · 기각이 다 있다**",
+              "네 가지 판정" not in cm or {"유망", "조건부", "보류", "기각"} <= verdicts, sorted(verdicts))
+        check("[211] ④ 사례의 **자리(«마지막 사례» · «첫 사례»)를 말하지 않는다** — 다시 구우면 순서가 바뀐다",
+              "마지막 사례" not in cm and "첫 사례" not in cm, "")
+        exp = {}
+        for r in _D211.RUNS.values():
+            exp.update(r.get("제안서가_예상한_것") or {})
+        fv = [c for c in cases if c.get("질의") == "fluvoxamine / COVID-19"]
+        if "플루복사민" in cm:
+            check("[211] ④ «플루복사민은 「보류」 로 지목했는데 실제 판정은 달랐다» 가 **자료에서도 참이다**",
+                  fv and exp.get("fluvoxamine / COVID-19", "").startswith("보류")
+                  and fv[0].get("판정") != "보류", fv[0].get("판정") if fv else None)
+
+        # ⑤ 보고서의 플루복사민 수 — 사례의 근거 목록에서 다시 계산한다(분류는 판정 사유의 수와 맞아야 한다)
+        rp = _o211.path.join(root, "연구기술보고서.md")
+        rep = _io211.open(rp, encoding="utf-8").read() if _o211.path.exists(rp) else ""
+        m1 = _re211.search(r"확증 근거 무게의 (\d+)%\(([\d.]+)/([\d.]+)\)", rep)
+        m2 = _re211.search(r"무게비 ([\d.]+) → ([\d.]+)", rep)
+        if fv and (m1 or m2):
+            ev = fv[0].get("근거") or []
+
+            def _k(e):
+                s = e.get("설명") or ""
+                return "meta" if "메타분석" in s else ("rct" if "RCT" in s else "")
+            sup = [float(e["가중치"]) for e in ev if e.get("방향") == "지지" and _k(e)]
+            ref = [float(e["가중치"]) for e in ev if e.get("방향") == "반박" and _k(e)]
+            met = sorted((float(e["가중치"]) for e in ev if e.get("방향") == "지지" and _k(e) == "meta"), reverse=True)
+            ws, wr = sum(sup), sum(ref)
+            ratio = min(ws, wr) / max(ws, wr)
+            why = _re211.search(r"지지 (\d+)·반박 (\d+), 무게비 ([\d.]+)", fv[0].get("사유") or "")
+            check("[211] ⑤ 설명의 «메타분석 · RCT» 분류가 **판정 사유의 수와 같다** — 다시 센 것이 규칙이 센 것이다",
+                  why and (int(why.group(1)), int(why.group(2))) == (len(sup), len(ref))
+                  and abs(float(why.group(3)) - ratio) < 0.006, (fv[0].get("사유"), len(sup), len(ref), round(ratio, 3)))
+            if m1:
+                check("[211] ⑤ 보고서 «지지 쪽 확증 근거 무게의 %s%%(%s/%s)» 가 구운 사례에서 다시 나온다"
+                      % m1.groups(),
+                      int(m1.group(1)) == int(round(100 * sum(met) / ws))
+                      and abs(float(m1.group(2)) - sum(met)) < 0.006 and abs(float(m1.group(3)) - ws) < 0.006,
+                      (round(sum(met), 2), round(ws, 2)))
+            if m2 and met:
+                from ..core import profiles as _PF211
+                bal = _PF211.exit_profile("표준")["balance"]
+                ws1 = met[0] + (ws - sum(met))           # 메타분석 셋을 가장 무거운 하나로 묶는다
+                r1 = min(ws1, wr) / max(ws1, wr)
+                m3 = _re211.search(r"무게비 [\d.]+ → [\d.]+ · 문턱 ([\d.]+)", rep)
+                check("[211] ⑤ 보고서 «무게비 %s → %s» 가 구운 사례에서 다시 나온다 · 묶어도 **표준 문턱 %.2f 위**"
+                      "(조건부 그대로)" % (m2.group(1), m2.group(2), bal),
+                      abs(float(m2.group(1)) - ratio) < 0.006 and abs(float(m2.group(2)) - r1) < 0.006
+                      and r1 >= bal and ratio >= bal and fv[0].get("판정") == "조건부"
+                      and (not m3 or abs(float(m3.group(1)) - bal) < 1e-9),
+                      (round(ratio, 3), round(r1, 3), bal))
+
+    # ⑥ 병명 탭 안내의 수는 코드 상수다
+    di = ui.get("DISEASE_IDLE", "")
+    sec = _re211.search(r"(\d+)초를 넘기면", di)
+    check("[211] ⑥ 병명 탭 안내 «후보 열 개» · «%s초» 가 **코드 상수와 같다**" % (sec.group(1) if sec else "?"),
+          ("열 개" not in di or _DM211.DISEASE_K == 10)
+          and (not sec or float(sec.group(1)) == float(_DM211.TIME_BUDGET)),
+          (_DM211.DISEASE_K, _DM211.TIME_BUDGET))
+
+    # ⑦ 예비본 라이브 안내의 수 — 봉인 예측 파일에서 다시 센다
+    sp = _o211.path.join(root, "봉인예측_20260805.csv")
+    lm = ui.get("LIVE_MORE", "")
+    a = _re211.search(r"(\d+)%가 `보류`", lm)
+    b = _re211.search(r"음성 대조만 보면 (\d+)%", lm)
+    n = _re211.search(r"봉인 예측 (\d+)건", lm)
+    if _o211.path.exists(sp) and (a or b or n):
+        rows = list(_csv211.DictReader(_io211.open(sp, encoding="utf-8-sig")))
+        neg = [r for r in rows if r.get("kind") == "음성대조"]
+        hold = sum(1 for r in rows if r.get("verdict") == "보류")
+        check("[211] ⑦ 라이브 안내 «%s건 중 %s%% 보류 · 음성 대조 %s%%» 가 **봉인 예측 파일에서 다시 나온다**"
+              % (n.group(1) if n else "?", a.group(1) if a else "?", b.group(1) if b else "?"),
+              (not n or int(n.group(1)) == len(rows))
+              and (not a or int(a.group(1)) == int(round(100 * hold / len(rows))))
+              and (not b or (neg and int(b.group(1)) == int(round(
+                  100 * sum(1 for r in neg if r.get("verdict") == "보류") / len(neg))))),
+              (len(rows), hold, len(neg)))
+        if "절반 넘게" in ui.get("LIVE_INTRO", ""):
+            check("[211] ⑦ «절반 넘게 보류» 가 그 파일에서 참이다", hold * 2 > len(rows), (hold, len(rows)))
+        # 09-29 · 결함 380 — 보류의 **까닭**도 그 파일에서 센다. 앞판은 «근거가 갈리면» 을 까닭으로 적었는데
+        #   보류 44건 중 36건이 «질환 연결 문헌 0건 · 증거 없음» 이었다. 화면 두 곳(`LIVE_INTRO` · `index.html`)을 같이 본다
+        _short = ("약물은 실재하나 질환 연결 문헌 0건", "증거 없음", "근거가 약함", "반박이 약함", "F0")
+        _hr = [r for r in rows if r.get("verdict") == "보류"]
+        _n_short = sum(1 for r in _hr if str(r.get("reason") or "").startswith(_short))
+        _notes = [ui.get("LIVE_INTRO", ""), _re211.sub(r"\s+", " ", _re211.sub(r"<[^>]+>", "", html))]
+        check("[211] ⑦ 보류의 까닭을 **자료가 말하는 쪽**으로 적는다 — 보류 %d건 중 %d건이 근거 부족 · 화면 두 곳"
+              % (len(_hr), _n_short),
+              _n_short * 2 > len(_hr) and all("근거가 모자라서" in t for t in _notes)
+              and not any("근거가 갈리면 억지로 결론 내지 않기 때문" in t for t in _notes),
+              (_n_short, len(_hr)))
+    else:
+        check("[211] 봉인 예측 파일이 없다 — ⑦ 건너뛴다", True, "")
+
+    # ⑧ 09-29 · **라이선스를 두 곳에서 다르게 말하지 않는다** — HF Space 머리가 `apache-2.0` 인데 공개 저장소에는
+    #   LICENSE 가 없었다. 승우 결정: 표기를 빼고 권리를 유지한다(요강 — 저작권은 제출자). LICENSE 를 묶음에 넣는 날에만
+    #   머리에 `license:` 를 적는다
+    #   ⚠ `web/build_static.py` 를 임포트하지 않는다 — 임포트하면 `sys.path` 에 `web/` 를 꽂고 `server` 를 불러
+    #     뒤 시험의 임포트를 흔든다. 소스에서 상수만 읽는다(위 `app.py` 와 같은 방법)
+    _hf211 = ""
+    _bsp = _o211.path.join(root, "web", "build_static.py")
+    if _o211.path.exists(_bsp):
+        for _nd in _ast211.parse(_io211.open(_bsp, encoding="utf-8").read()).body:
+            if isinstance(_nd, _ast211.Assign) and any(isinstance(t, _ast211.Name) and t.id == "_HF_README"
+                                                       for t in _nd.targets):
+                try:
+                    _hf211 = _ast211.literal_eval(_nd.value)
+                except Exception:                     # noqa: BLE001
+                    _hf211 = ""
+    check("[211] ⑧ Space 머리(`_HF_README`)를 소스에서 읽었다", bool(_hf211) or not _o211.path.exists(_bsp), _bsp)
+    _lic_file = any(_o211.path.exists(_o211.path.join(root, n)) for n in ("LICENSE", "LICENSE.md", "LICENSE.txt"))
+    _fm = []
+    for _src211 in (_hf211, _io211.open(_o211.path.join(root, "README_HF.md"), encoding="utf-8").read()
+                    if _o211.path.exists(_o211.path.join(root, "README_HF.md")) else ""):
+        _head = _src211.split("---", 2)[1] if _src211.startswith("---") else ""
+        _fm += [l.strip() for l in _head.splitlines() if l.strip().startswith("license:")]
+    check("[211] ⑧ Space 머리의 라이선스 표기가 **공개 저장소와 같은 말**을 한다 — LICENSE 가 없으면 `license:` 도 없다",
+          _lic_file or not _fm, _fm)
+
+    # ⑨ 09-29 · **화면 이름은 사이드바 이름만** 쓴다 — 시간 칸 · Space README 가 «「지난 판정」» 을 가리켰는데 사이드바는
+    #   «판정 사례» 였다. 그리고 로고가 첫 화면이 아니라 「약으로 시작」 으로 갔다(정적판에서 누르면 «안 됩니다» 화면)
+    #   ⛔ 09-29 15:16 · 첫 판은 **생성물**(`web/static/data/snapshot.json` · `배포정적/README.md`)을 읽었다. 그 둘은 사슬 ⑩
+    #     (`build_static`)에서 다시 구워지므로 ⑨ preflight 시점에는 **한 판 낡았고**, 낡은 이름으로 ⑨ 가 멈추면 ⑩ 이 영영
+    #     안 돈다 — 승우 사슬이 거기서 섰다. 이름이 **나오는 자리(소스)** 를 본다: 파이썬 문자열 상수(독스트링 · 주석 제외 ·
+    #     `.replace(옛 이름, …)` 의 첫 인자 제외 — 판정 경로 코드의 옛 글자를 화면에서 바꾸는 자리다) · `app.js` · `index.html`
+    #     (주석 제외) · README 틀. README 는 이름을 `app.js` 에서 채우므로 틀에는 자리표시만 있다
+    _navs = set(_re211.findall(r'nav:\s*"([^"]+)"', js))
+    _navs |= set(_re211.findall(r'\["(?:verify|judge)",\s*"([^"]+)"\]', js))   # 모드 이름(서비스 · 심사·시연)도 사이드바에 있다
+
+    def _py_screen_strings(rel):
+        p = _o211.path.join(root, *rel.split("/"))
+        if not _o211.path.exists(p):
+            return []
+        tree = _ast211.parse(_io211.open(p, encoding="utf-8").read())
+        skip = {id(n.value) for n in _ast211.walk(tree)
+                if isinstance(n, _ast211.Expr) and isinstance(getattr(n, "value", None), _ast211.Constant)}
+        for n in _ast211.walk(tree):
+            if (isinstance(n, _ast211.Call) and isinstance(n.func, _ast211.Attribute) and n.func.attr == "replace"
+                    and n.args and isinstance(n.args[0], _ast211.Constant)):
+                skip.add(id(n.args[0]))
+        return [n.value for n in _ast211.walk(tree)
+                if isinstance(n, _ast211.Constant) and isinstance(n.value, str) and id(n) not in skip]
+
+    #   ⚠ 09-29 16:0x · `app.py` 에는 **옛 Gradio 화면**이 같이 산다 — 그 화면의 탭은 «직접 검증 · 내 가설 넣기» · «병명으로
+    #     시작» 이고(봉인 문서가 인용해 이름을 안 갈았다 · 시험 [143]), Gradio 에만 쓰이는 문자열(`NO_CASES` · 약 탭 안내)은
+    #     **그 탭 이름이 맞다.** 첫 판 ⑨ 는 웹 사이드바 이름만 받아 그 둘을 «틀렸다» 고 했고, 나는 그 말대로 고쳤다가
+    #     되돌렸다(결함 382). 그래서 `app.py` 의 문자열은 웹 이름 **또는 Gradio 탭 이름**에 대조한다
+    _gtabs = {t.split(" · ")[0] for t in _re211.findall(r'gr\.Tab\("([^"]+)"', src)}
+    _txts = [(_hf211, _navs)]
+    for _rel in ("app.py", "bioreroute/dash.py", "bioreroute/webui.py", "bioreroute/demo.py", "web/server.py",
+                 "web/build_static.py", "slides/make_video_본선.py"):
+        _ok = (_navs | _gtabs) if _rel == "app.py" else _navs
+        _txts += [(t, _ok) for t in _py_screen_strings(_rel)]
+    _txts.append((_re211.sub(r"(?m)^\s*//.*$", " ", _re211.sub(r"/\*.*?\*/", " ", js, flags=_re211.S)), _navs))
+    _txts.append((_re211.sub(r"<!--.*?-->", " ", html, flags=_re211.S), _navs))
+    _names, _bad = set(), set()
+    for _t, _ok in _txts:
+        _got = {x.split("→")[-1].strip() for x in _re211.findall(r"「([^」{%]{1,24})」\s*(?:에서|으로|로|탭|화면)", _t)}
+        _got |= set(_re211.findall(r"「심사·시연 → ([^」{%]{1,20})」", _t))
+        _got -= {"후보 찾기", "검증하기"}                    # 버튼 이름 — 화면이 아니다
+        _names |= _got
+        _bad |= _got - _ok
+    check("[211] ⑨ 화면이 가리키는 화면 이름 %d개가 **전부 그 화면의 이름**이다(웹 사이드바 · `app.py` 는 Gradio 탭도) — 소스에서 센다"
+          % len(_names), _navs and _gtabs and not _bad, sorted(_bad))
+    _bm = _re211.search(r'class="brand" href="#/(\w+)/(\w+)"', html)
+    _dm = _re211.search(r'VIEWS\[m\[2\]\]\)\s*\?\s*m\[2\]\s*:\s*"(\w+)"', js)
+    check("[211] ⑨ 로고가 **첫 화면**(경로의 기본값)으로 간다",
+          bool(_bm and _dm and _bm.group(2) == _dm.group(1)), (_bm.groups() if _bm else None, _dm.group(1) if _dm else None))
+
+
+def test_offline_script_sections_come_from_the_deck_and_cards():
+    """[212] **대본 끝 «5분 경로» · «부록 쪽 번호» 가 순서표 · 덱 · 질의 카드에서 나온다** — 09-29.
+
+    승우: «10/29 오프라인 발표평가 — 전체적으로 다시 판단해서 대본 생각해 줘». 형식(시간 · 질의 비중)이 아직
+    공지되지 않아 대본 끝에 두 절을 **생성**하게 했다 — 5분이 주어졌을 때 같은 덱으로 가는 길, 질의응답에서 부록을
+    쪽 번호로 바로 여는 표. 둘 다 손으로 적으면 덱 순서나 카드 번호가 바뀔 때 조용히 틀린다(결함 377 과 같은 모양).
+    ① 표가 가리키는 카드 번호가 `본선_QA카드.md` 에 실재한다  ② 부록 장마다 칸이 있다  ③ 대본의 5분 경로 쪽 번호가
+    순서표에서 나온다 · 말이 `SHORT_LIMIT`(290초 — 쪽 건너뛰기 몫을 남긴다)를 넘지 않는다  ④ 부록 표의 첫 쪽이
+    «본편 + 구분 한 장» 다음이다.
+    ⓘ 카드 · 대본이 없는 곳(공개 사본)에서는 건너뛴다.
+    """
+    import importlib.util as _iu212
+    import os as _o212
+    import re as _re212
+    from .. import evidence as _E212
+
+    root = _E212.ROOT
+    tp = _o212.path.join(root, "slides", "make_10min_본선.py")
+    sp = _o212.path.join(root, "발표대본_본선10분.md")
+    qp = _o212.path.join(root, "본선_QA카드.md")
+    if not all(_o212.path.exists(p) for p in (tp, sp, qp)):
+        check("[212] 생성기 · 대본 · 질의 카드 중 없는 것이 있다 — 건너뛴다", True, "")
+        return
+    spec = _iu212.spec_from_file_location("make10_212", tp)
+    mod = _iu212.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    cards = set(_re212.findall(r"^\*\*Q(\d+)\.", open(qp, encoding="utf-8").read(), _re212.M))
+    want = sorted({int(q) for v in mod.APPX_Q.values() for q in _re212.findall(r"Q(\d+)", v)})
+    miss = [q for q in want if str(q) not in cards]
+    check("[212] ① 부록 표가 가리키는 질의 카드 %d개가 **`본선_QA카드.md` 에 실재한다**" % len(want),
+          want and not miss, miss)
+    check("[212] ② 부록 장마다 칸이 있다 — 순서표(APPX)와 표의 열쇠가 같다",
+          set(mod.APPX_Q) == set(mod.APPX), sorted(set(mod.APPX) ^ set(mod.APPX_Q)))
+    txt = open(sp, encoding="utf-8").read()
+    if "## 5분이 주어지면" not in txt:
+        check("[212] ③ 대본에 5분 경로 절이 있다 — 없으면 `py slides\\make_10min_본선.py` 를 다시 돌려라", False, "")
+        return
+    pages = " → ".join(str(mod.MAIN.index(k) + 1) for k in mod.SHORT)
+    m = _re212.search(r"\*\*합계 약 (\d+)분 (\d+)초\*\*", txt.split("## 5분이 주어지면", 1)[1])
+    # 09-29 · 한도를 5분 30초 → **말 %d초**(`SHORT_LIMIT`)로 — 5분 26초가 통과하고 있었다. 쪽 건너뛰기 몇 초를 남긴다
+    _lim212 = getattr(mod, "SHORT_LIMIT", 300)
+    check("[212] ③ 5분 경로가 **순서표에서 나온 쪽**(%s)을 적고 · 이음 문장까지 말 %d초를 넘지 않는다" % (pages, _lim212),
+          ("· %s쪽" % pages) in txt and m and int(m.group(1)) * 60 + int(m.group(2)) <= min(_lim212, 300),
+          m.groups() if m else None)
+    body = txt.split("## 5분이 주어지면", 1)[0].replace("\n", " ")   # 대본은 문장마다 줄을 바꾼다
+    _pats212 = [p for v in mod.SHORT_CUT.values() for p in (v if isinstance(v, (list, tuple)) else [v])]
+    gone = [t for t in _pats212 if not _re212.search(t, body)]
+    check("[212] ③ 5분 길에서 더 빼는 문장이 **본편 노트에 실재한다** — 노트를 고치면 여기가 먼저 깨진다",
+          not gone, gone)
+    rows = _re212.findall(r"^\| (\d+) \| [^|]+ \| (Q[\d · Q]+|—) \|$", txt, _re212.M)
+    check("[212] ④ 부록 표가 %d줄이고 첫 쪽이 본편 %d장 + 구분 한 장 다음(%d쪽)이다"
+          % (len(mod.APPX), len(mod.MAIN), len(mod.MAIN) + 2),
+          len(rows) == len(mod.APPX) and rows and int(rows[0][0]) == len(mod.MAIN) + 2,
+          rows[:2])
+
+
+def test_transient_failures_are_counted_recorded_and_shown():
+    """[213] **일시 장애로 못 읽은 초록을 세고, 기록하고, 판정 옆에서 말한다** — 09-29 · 결함 380.
+
+    09-29 라이브 점검에서 같은 병명을 두 번 돌리니 후보 열 개와 순서는 같고 두 후보의 판정이 달랐다
+    (데운 둘째 실행이 새 호출 6번). 캐시는 일시 장애를 저장하지 않으므로 첫 실행에서 못 받은 초록 · 실패한 판정
+    호출을 둘째가 다시 묻는다 — 그런데 **어느 후보가 몇 건을 못 읽었는지** 기록도 화면도 말하지 않아 원인을 못 갈랐다.
+    ① 셈의 규칙 — 일시 장애만 센다(영구 오류 · 캐시에 남는 응답 모양 오류는 다음에도 같다)  ② 병명 · 쌍 화면이
+    판정 옆에서 말한다 · 0 이면 말하지 않는다  ③ 라이브 점검 기록이 그 수를 적고 «갈린 까닭» 을 기록에서 읽는다 ·
+    옛 기록이면 «못 가른다» · 겹치지 않으면 지어내지 않는다.
+    """
+    from .. import dash as _D213, demo as _DM213, webui as _W213
+    from ..bench import livecheck as _LC213
+    from ..core.state import Candidate as _C213
+
+    # ① 셈의 규칙
+    c = _C213(name="x / y", origin="입력", query="q", drug="x", disease="y")
+    c.factcheck = [{"skip": "초록 취득 실패: HTTPError: HTTP Error 429: Too Many Requests"},   # 일시 — 센다
+                   {"skip": "초록 취득 실패: XML 파싱 실패: bad"},                            # 영구 — 캐시에 남는다
+                   {"skip": "LLM 실패: JSON 파싱 실패"},                                     # 저장 안 됨 — 센다
+                   {"skip": "LLM 실패: 배열 형식 아님"},                                      # 응답이 캐시에 남는다
+                   {"skip": "철회 논문 — 근거에서 제외"}, {"skip": None}]
+    check("[213] ① 일시 장애만 센다 — 429 · LLM 호출 실패는 세고, 영구 오류 · «배열 형식 아님» · 철회는 안 센다",
+          _DM213._transient_skips(c) == 2, _DM213._transient_skips(c))
+
+    # ② 화면 — 병명 결과 · 쌍 결과
+    cand = {"이름": "nitazoxanide / COVID-19", "판정": "조건부", "신뢰도": 26, "사유": "근거 엇갈림",
+            "근거수": 3, "근거": [], "일시실패": 2}
+    r0 = {"ok": True, "질환": "COVID-19", "후보": [dict(cand, 일시실패=0)], "일시실패": 0, "요청": 10, "생성": 1,
+          "F0통과": 1, "태움": 1, "초": 1.0}
+    r1 = dict(r0, 후보=[cand], 일시실패=2)
+    t0 = _D213.disease_run(r0)
+    t1 = _D213.disease_run(r1)
+    check("[213] ② 병명 결과가 **일시 장애 수와 후보 이름**을 판정 옆에서 말한다 · 0 이면 말하지 않는다",
+          "일시 장애로 초록 2건을 못 읽었습니다" in t1 and "nitazoxanide" in t1.split("일시 장애로 초록 2건")[1][:60]
+          and "일시 장애" not in t0, t1[:200])
+    pr = {"상태": "정상", "판정": "조건부", "신뢰도": 26, "사유": "근거 엇갈림", "근거": [], "질의": "a / b"}
+    check("[213] ② 쌍 결과도 같은 말을 한다 · 0 이면 말하지 않는다",
+          "일시 장애로 초록 1건을 못 읽었습니다" in _W213._md_result(dict(pr, 일시실패=1), struct_note=False)
+          and "일시 장애" not in _W213._md_result(dict(pr, 일시실패=0), struct_note=False), "")
+
+    # ③ 라이브 점검 기록 — 적는다 · 까닭을 기록에서 읽는다
+    s = _LC213._dz_summary({"상태": "정상", "후보": [cand, dict(cand, 이름="a / COVID-19", 일시실패=0)],
+                            "일시실패": 2}, 1.0)
+    check("[213] ③ 기록이 실행의 일시 장애 수 · 후보별 수 · 근거 수를 적는다 — `후보` 꼴은 그대로",
+          s["일시실패"] == 2 and s["일시실패후보"] == {"nitazoxanide / COVID-19": 2}
+          and s["근거수"]["a / COVID-19"] == 3 and all(len(x) == 3 for x in s["후보"]), s)
+
+    def run(vs, tf=None, tfc=None):
+        return {"후보": [[q, v, 0] for q, v in vs], "일시실패": tf, "일시실패후보": tfc or {}}
+    same = {"실행": [run([("a", "기각")], 0), run([("a", "기각")], 0)]}
+    old = {"실행": [run([("a", "기각")]), run([("a", "보류")])]}
+    hit = {"실행": [run([("a", "조건부"), ("b", "기각")], 2, {"a": 2}), run([("a", "기각"), ("b", "기각")], 0)]}
+    miss = {"실행": [run([("a", "조건부")], 0), run([("a", "기각")], 0)]}
+    check("[213] ③ 갈린 까닭 — 안 갈리면 None · 옛 기록은 «못 가른다» · 겹치면 그 후보 · 안 겹치면 지어내지 않는다",
+          _LC213.diff_cause(same) is None
+          and "못 가른다" in (_LC213.diff_cause(old) or "")
+          and "일시 장애로 초록을 못 읽은 후보다" in (_LC213.diff_cause(hit) or "") and "첫째 a" in _LC213.diff_cause(hit)
+          and "겹치지 않는다" in (_LC213.diff_cause(miss) or ""),
+          [_LC213.diff_cause(x) for x in (same, old, hit, miss)])
+
+
 ORDER = [
+    test_transient_failures_are_counted_recorded_and_shown,
+    test_offline_script_sections_come_from_the_deck_and_cards,
+    test_demo_copy_matches_the_data,
+    test_talk_says_what_we_built_and_that_we_did_not_tune,
     test_public_copy_keeps_bytes_through_git,
     test_github_public_copy_check_sees_what_judges_see,
     test_live_check_is_fixed_recorded_and_read_by_the_script,

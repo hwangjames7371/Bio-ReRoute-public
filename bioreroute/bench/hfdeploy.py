@@ -127,7 +127,14 @@ def main(argv=None):
     ap.add_argument("--stage", default=H.STAGE)
     ap.add_argument("--space", default=H.SPACE)
     ap.add_argument("--apply", action="store_true", help="실제로 올린다 (없으면 미리보기)")
+    ap.add_argument("--after-deadline", action="store_true",
+                    help="마감 뒤에도 올린다 — 주최측이 고치라고 한 경우에만 (공개 사본 도구와 같은 규칙)")
     a = ap.parse_args(argv)
+    # 09-29 · 데모 주소는 **제출물**이다 — 마감(10/2 16:00) 뒤에는 멈춘다. 공개 사본 `push()` 와 같은 규칙이고
+    #   마감 시각은 그 도구의 상수 하나에서 읽는다(`hfcheck.after_deadline`)
+    if a.apply and not a.after_deadline and H.after_deadline():
+        print("⏹ 마감 뒤다 — 데모 주소는 **제출한 판 그대로** 둔다. 주최측이 고치라고 한 경우에만 --after-deadline")
+        return 2
     changed, info, err = plan(a.stage, a.space)
     if err:
         print("⚪ " + err)

@@ -79,6 +79,25 @@ DEMO_HOST = host()                         # 발표·영상 대본이 이것을 
 DEMO_URL = "https://" + DEMO_HOST
 
 
+def after_deadline(root=None) -> bool:
+    """제출 마감이 지났나 — 09-29 · 마감 시각은 `공개저장소만들기.DEADLINE` **하나**에서 읽는다(두 곳에 적으면 갈린다).
+
+    데모 주소도 **제출물**이다. 마감 뒤에 사슬을 돌리면 배포정적이 바뀌어 🔴 가 나는 게 당연하고, 그때 «올려라» 를
+    찍으면 심사 중인 제출물을 바꾸라는 말이 된다 — `ghcheck` 가 공개 사본에서 같은 이유로 그렇게 한다.
+    도구를 못 읽으면 **마감 전으로** 본다(확인만 하는 명령이라 올리기를 막지 못해도 해가 없다 · 안내만 달라진다).
+    """
+    import importlib.util as _iu
+    r = root or os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    p = os.path.join(r, "공개저장소만들기.py")
+    try:
+        spec = _iu.spec_from_file_location("pubcopy_hf", p)
+        m = _iu.module_from_spec(spec)
+        spec.loader.exec_module(m)
+        return bool(m.after_deadline())
+    except Exception:                                    # noqa: BLE001
+        return False
+
+
 def blob_sha1(data: bytes) -> str:
     """git 이 파일 내용에 매기는 이름 — HF tree API 의 `oid` 와 같은 식."""
     return hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest()
@@ -176,9 +195,10 @@ def _pr_lines(rows, hit, owner):
     return out
 
 
-def check(stage=STAGE, space=SPACE, get=None):
-    """(돌려줄 값, 찍을 줄들). 네트워크는 `get(url) -> bytes` 하나로만 탄다."""
+def check(stage=STAGE, space=SPACE, get=None, late=None):
+    """(돌려줄 값, 찍을 줄들). 네트워크는 `get(url) -> bytes` 하나로만 탄다. `late` 는 시험에서만 준다."""
     get = get or _get
+    late = after_deadline() if late is None else bool(late)
     if not os.path.isdir(stage):
         return 2, ["⚪ 확인 불가 — 로컬 `%s` 폴더가 없다. `py -m web.build_static --stage %s` 부터"
                    % (stage, stage)]
@@ -233,6 +253,11 @@ def check(stage=STAGE, space=SPACE, get=None):
                      % ("⚠" if used else "·", p,
                         "**index.html 이 부른다**" if used else "index.html 이 부르지 않는다 (화면과 무관)"))
 
+    if bad and late:
+        # 09-29 · 마감 뒤에는 올리기 · 병합을 권하지 않는다 — 데모 주소는 제출물이다(`after_deadline` 독스트링)
+        lines.append("→ ⏹ 마감 뒤다 — 데모 주소는 **제출한 판 그대로** 둔다(지금 판과 %d개가 달라도 올리지 않는다 · "
+                     "주최측이 고치라고 한 경우에만)" % bad)
+        return 0, lines
     if bad:
         # 20:49 — 주인이 아닌 계정으로 올리면 커밋 대신 PR 이 생긴다. 그때 «다시 올려라» 는 PR 을 하나 더 만든다.
         owner = str(info.get("author") or space.split("/")[0])

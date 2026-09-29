@@ -1,0 +1,8 @@
+{
+ "bench_matched.csv": "c7caf14051b4909fd377b499c919780aa6488ae42bdb934cd285d1d1690aaa4c",
+ "bench_labels.csv": "ec9449c95cdb61f5822b95c7dfafbe3efa57808d6dfc38f146ddfde3c73366b8",
+ "bench_ctgov.csv": null,
+ "bench_counts.json": "0c2bd37a50b7fd844364b2872404398961e2c54cc7786adba2cc6b635180c44a",
+ "bench_tn_candidates.csv": "5a5b50914b2812ba9219389fe18ac7358332cf9a3a02609859e359f88061a0d0",
+ "bench_tn_pool_v2.csv": "9af2b23456bd835b44f07c5f8168d283ad7ca0c06b8c4d6cea37323ca543a2fe"
+}

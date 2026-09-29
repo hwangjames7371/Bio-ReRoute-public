@@ -76,6 +76,37 @@ _SALT = {
 }
 
 
+# ── 09-28 밤 · 발표 본편이 생성 실험의 수를 **말로** 쓰게 됐다 (결함 373) ─────────────
+#   손으로 옮기지 않는다 — `gen_run1.csv`(사전명세 실험 · 질환 12 × 프롬프트 2 · 개발 단계 모델)에서 센다.
+#   «그 실패를 말했나» 는 보고서 §4.5 가 «정규식 + 육안» 으로 센 것을 이 정규식으로 다시 센다 —
+#   효능 실패 9건 중 0건 · 전체 340건 중 부정 표현 23건. **보고서와 같은 수가 나와야 한다**(시험 [210]).
+NEG_WORDS = re.compile(
+    r"실패|무효|중단|효과 ?없|유의하지 않|음성|futil|fail|negative|no (?:significant )?(?:benefit|effect|difference)"
+    r"|did not|not (?:improve|reduce|superior)|terminat|halt|stopp", re.I)
+
+
+def slide_facts(root: str = ".", fn: str = "gen_run1.csv"):
+    """발표용 — 생성 후보 수 · 이미 그 병의 승인약 · 효능 실패로 잡힌 수 · 그중 실패를 말한 수 · 부정 표현.
+
+    파일이 없으면 None — **옛 수로 채우지 않는다**(부르는 쪽이 그 문장을 뺀다).
+    """
+    p = os.path.join(root, fn)
+    if not os.path.exists(p):
+        return None
+    with open(p, encoding="utf-8-sig") as fh:
+        rows = list(csv.DictReader(fh))
+    if not rows:
+        return None
+
+    def said(r):
+        return bool(NEG_WORDS.search("%s %s" % (r.get("mechanism") or "", r.get("rationale") or "")))
+    fail = [r for r in rows if r.get("label") == "효능실패"]
+    return {"n": len(rows), "승인": sum(1 for r in rows if r.get("label") == "승인"),
+            "효능실패": len(fail), "실패언급": sum(1 for r in fail if said(r)),
+            "부정표현": sum(1 for r in rows if said(r)),
+            "질환": len({r.get("disease") for r in rows}), "프롬프트": len({r.get("variant") for r in rows})}
+
+
 def drug_key(s: str) -> str:
     """대조용 약물 키. 염·수화물·용량 표기만 지운다."""
     t = re.sub(r"\([^)]*\)", " ", (s or "").lower())

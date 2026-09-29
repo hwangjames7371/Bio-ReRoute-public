@@ -169,27 +169,71 @@ colorFrom: gray
 colorTo: blue
 sdk: static
 pinned: false
-license: apache-2.0
 short_description: 반증 우선 약물 재창출 에이전트 — 판정이 아니라 감사 추적을 남긴다
 ---
 
 # Bio-ReRoute — 정적 배포본
 
-**서버 없이 도는 판입니다.** 심사·시연 세 화면(판정 사례 · 3분할
-대시보드 · 반증 기록)이 **그대로 동작합니다** — 그 셋은 원래 **LLM 호출
+**서버 없이 도는 판입니다.** 심사·시연 세 화면({nav_cases} · {nav_dash} ·
+{nav_evid})이 **그대로 동작합니다** — 그 셋은 원래 **LLM 호출
 0회**로, 미리 구워 둔 결과를 읽는 화면이기 때문입니다.
 
 **라이브 검증(약으로 시작 · 병으로 시작)은 안 됩니다.** 논문을 실제로
 받아 읽고 모델을 부르는 일이라 서버가 필요합니다. 화면이 그 자리에
 이유와 실행 방법을 적습니다 — **못 하는 것을 못 한다고 적습니다.**
 
-전체(라이브 포함)를 돌리려면 저장소를 받아 `python web/server.py` 로
-띄우고 `.env` 에 키를 넣으십시오. 윈도우는 `.\\웹.ps1` 이 같은 일을
-합니다(한글 인코딩까지 걸어 줍니다).
+## 실행 방법 — 예시 쿼리
+
+{examples}
+2. **판단 과정 보기 (이 주소)** — 「심사·시연 → {nav_dash}」 에서 실행 · 후보 칩 · 심사 기준
+   (`표준` ↔ `신종감염병긴급`)을 바꿔 사고 과정 · 근거 카드 · 모델 단독 대조를 봅니다.
+3. **라이브 (로컬)** — 공개 저장소(https://github.com/hwangjames7371/Bio-ReRoute-public)를 받아
+   `.env` 에 키를 넣고 `python web/server.py` 로 띄웁니다.
+   - 약으로 시작: `minocycline / Schizophrenia`
+   - 병으로 시작: `COVID-19` (찾는 방법 `정방향` · `역발상`)
+   - 안전 차단: `sarin / Alzheimer's disease` → 검색 · LLM 호출 전에 멈춥니다
+4. **명령줄 (로컬)** — `python -m bioreroute.run --pair "metformin / Breast Cancer"`
 
 > ⚠ **연구용 도구입니다. 의학적 조언이 아닙니다.**
 > 이 화면의 문장은 대형언어모델이 생성한 것을 포함합니다.
 """
+
+
+# 09-29 · 결함 378 — 요강의 «demo URL(실행 가능한 예시 쿼리 등 3가지 이상의 실행 방법 기술)» 을 Space README 가 안
+#   채웠다(실행법 하나 · 예시 0). 예시의 판정은 **구운 사례에서 읽는다** — 손으로 적으면 다시 구울 때 낡는다
+_EXAMPLES = ("hydroxychloroquine / COVID-19", "baricitinib / COVID-19", "rifampin / Tuberculosis")
+
+
+def _nav(el):
+    """사이드바 이름 — `app.js` 경로표(`el: "v-…", … nav: "…"`)가 정본이다(영상 생성기 `_nav` 와 같은 규칙).
+
+    09-29 · 이 README 가 «지난 판정» 이라 적었는데 사이드바는 «판정 사례» 였다 — 손으로 적은 화면 이름이 갈렸다.
+    못 찾으면 **멈춘다** — 틀린 이름으로 README 를 굽는 것보다 낫다.
+    """
+    import re as _re
+    src = open(os.path.join(_WEB, "static", "app.js"), encoding="utf-8").read()
+    m = _re.search(r'el:\s*"%s"[^}]*?nav:\s*"([^"]+)"' % _re.escape(el), src)
+    if not m:
+        raise ValueError("app.js 경로표에서 %s 의 사이드바 이름을 못 찾았다 — README 를 안 굽는다" % el)
+    return m.group(1)
+
+
+def hf_readme():
+    """Space README — 예시 쿼리와 화면 이름을 **자료와 화면 코드에서** 채운다."""
+    return (_HF_README.replace("{examples}", _examples())
+            .replace("{nav_cases}", _nav("v-cases")).replace("{nav_dash}", _nav("v-dash"))
+            .replace("{nav_evid}", _nav("v-evidence")))
+
+
+def _examples():
+    from bioreroute import evidence as _E
+    by = {c.get("질의"): c for c in ((_E.cases() or {}).get("사례") or [])}
+    rows = ["1. **설치 없이 (이 주소)** — 「심사·시연 → %s」 에서 칩을 누릅니다." % _nav("v-cases")]
+    for q in _EXAMPLES:
+        c = by.get(q) or {}
+        rows.append("   - `%s` → %s" % (q, ("%s · 근거 %d건" % (c.get("판정"), len(c.get("근거") or [])))
+                                        if c.get("판정") else "구운 사례에 없음"))
+    return "\n".join(rows)
 
 
 def stage(dest):
@@ -229,7 +273,7 @@ def stage(dest):
         f.write(html)
     build(os.path.join(dest, "static", "data", "snapshot.json"), quiet=True)
     with io.open(os.path.join(dest, "README.md"), "w", encoding="utf-8") as f:
-        f.write(_HF_README)
+        f.write(hf_readme())
 
     tot = sum(os.path.getsize(os.path.join(r, f))
               for r, _d, fs in os.walk(dest) for f in fs)

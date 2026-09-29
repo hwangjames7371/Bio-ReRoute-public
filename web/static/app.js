@@ -3,7 +3,7 @@
  * ## 구조
  *
  *   모드 ─┬─ 서비스   약으로 시작 · 병으로 시작
- *         └─ 심사·시연 지난 판정 · 어떻게 판단하나 · 반증 기록
+ *         └─ 심사·시연 판정 사례 · 어떻게 판단하나 · 반증 기록
  *
  * 주소(`#/verify/drug`)에 상태를 담는다 — **새로고침해도 그 자리다.**
  * 리허설에서 «그 탭 다시 열어 주세요» 가 URL 하나가 된다.
@@ -653,8 +653,7 @@ function boot(b) {
       });
   setMd("cases-out", b.cases.first);
 
-  /* 어떻게 판단하나 */
-  setMd("dash-intro", b.dash.intro); setMd("dash-more", b.dash.more);
+  /* 어떻게 판단하나 — 안내문 없이 ① 칸이 스스로 말한다 */
   dashRun = b.dash.runs[0];
   seg($("dash-run"), "dashrun", b.dash.runs, dashRun,
       function (v) { dashRun = v; dashLoad(); });

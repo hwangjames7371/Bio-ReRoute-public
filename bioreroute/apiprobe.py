@@ -43,8 +43,9 @@ import urllib.error
 import urllib.request
 from typing import Any, Dict, List, Optional, Tuple
 
-# 안내문이 준 값. `.env` 로 덮어쓸 수 있게 한다.
-DEFAULT_BASE = "https://dacon-apim-hackathon-0903.azure-api.net/hackathon/openai/v1"
+# 09-29 · 주최측 프록시 주소를 코드에 박지 않는다 — 이 파일은 공개 사본에 들어간다. 파이프라인(`io/llm.py`)과
+#   같이 **환경변수에서만** 읽는다(`BIOREROUTE_API_BASE` · `.env` 에 한 줄). 없으면 멈추고 그렇게 말한다
+DEFAULT_BASE = ""
 MODELS = ["gpt-5.6-sol", "gpt-5.6-terra", "gpt-5.6-luna"]
 
 # 팀 잔량·소비량이 여기로 온다. **크레딧 효율 15점의 원자료**다
@@ -516,6 +517,10 @@ def main(argv=None) -> int:
     key, src = api_key()
     base = (a.base or base_url()).rstrip("/")
     models = a.model or MODELS
+    if not base:
+        print("⛔ 프록시 주소가 없다 — `BIOREROUTE_API_BASE` 를 환경변수나 `.env` 에 한 줄로 넣어라"
+              "(파이프라인 `io/llm.py` 와 같은 자리에서 읽는다)")
+        return 2
 
     print("Base   %s" % base)
     print("키     %s   ← %s" % (masked(key), src or "못 찾음"))

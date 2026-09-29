@@ -15,12 +15,15 @@
 
 ## 어떻게 재나 — 서체 없이
 
-샌드박스에도 승우 컴퓨터에도 **같은 서체가 있다는 보장이 없어서** 글자 폭을 모형으로 잰다 —
-한글·한자·그 밖의 비ASCII 1.0em · ASCII 0.6em · 공백 0.3em, 그리고 **×0.9**.
-이 모형은 Noto Sans CJK KR 실측보다 11~15% 크고(×0.9 로 거의 같아진다), 덱의 서체인
-맑은 고딕은 한글이 Noto 보다 좁다 — 그래서 **넘친다고 하면 실제로 넘칠 쪽**이다.
-09-26 실측: 두 덱 글상자 494·463개 중 넘쳐서 덮는 것 각 **2개** — 렌더에서 눈으로 본 그 둘과
-같았다(오탐 0). 한두 글자짜리(›)는 줄이 안 바뀐다고 본다.
+샌드박스에도 승우 컴퓨터에도 **같은 서체가 있다는 보장이 없어서** 글자 폭을 모형으로 잰다.
+
+**09-28 다시 맞췄다(결함 372)** — 첫 판(한글 1.0em · ASCII 0.6em · 공백 0.3em · **×0.9**)은 Noto 실측에 맞춘 것이었고
+«맑은 고딕은 더 좁다» 고 적었는데, **PowerPoint 가 내보낸 제출 PDF 를 재니 반대였다** — 단어 3,098개의 상자에서
+한글 **1.00em**(중앙값 · 90%도 1.00) · ASCII 0.575em(90% 0.71) · `·` 0.22em · 공백 0.36em. 첫 판은 한글을 10% 작게 봐서
+26쪽 결함 막대 장 첫 줄(«…실패를 감췄다») 의 **마지막 한 글자가 다음 줄로 넘어가 아래 유형 이름을 덮은 것**을 «0개» 라
+했다(모형 597.6pt · 실제 약 660pt · 상자 654pt). 지금 모형 — 한글 · 그 밖의 비ASCII 1.0em · ASCII 0.6em · 공백 0.36em ·
+좁은 기호(`·` `›` `×` `≠` 등)는 실측값 · 배율 없음. 같은 PDF 에서 그 한 줄만 넘친다고 하고 나머지는 맞다고 한다(오탐 0).
+상자의 좌우 안쪽 여백은 **상자에 적힌 값**을 쓴다(없으면 기본 0.1in × 2). 한두 글자짜리(›)는 줄이 안 바뀐다고 본다.
 
 ⚠ **표시가 아니라 추정이다.** PowerPoint 로 내보낸 PDF 를 한 번 넘겨 보는 것은 그대로 한다.
 """
@@ -30,16 +33,30 @@ import os
 import sys
 
 EMU_PT = 12700.0
-INSET_PT = 14.4          # 글상자 좌우 안쪽 여백 기본값 0.1in × 2
-SCALE = 0.9              # 모형 → Noto 실측에 맞춘 배율 (위 docstring)
+INSET_PT = 14.4          # 글상자 좌우 안쪽 여백 기본값 0.1in × 2 (상자에 값이 있으면 그 값 · `insets()`)
+SCALE = 1.0              # 09-28 · 배율 없음 — 제출 PDF(PowerPoint · 맑은 고딕) 실측에 맞췄다(위 docstring)
+# 실측 폭이 1em 보다 한참 좁은 기호 — 제출 PDF 09-28 (그 밖의 비ASCII 는 1.0em 으로 본다 · 넘친다는 쪽으로)
+NARROW = {"·": 0.25, "›": 0.35, "‹": 0.35, "×": 0.72, "≠": 0.72, "−": 0.72}
 DECKS = (os.path.join("slides", "Bio-ReRoute_발표.pptx"),
          os.path.join("제출_본선", "Bio-ReRoute_발표.pptx"))
 
 
 def em(ch):
     if ch == " ":
-        return 0.30
-    return 0.60 if ord(ch) < 128 else 1.00
+        return 0.36
+    if ord(ch) < 128:
+        return 0.60
+    return NARROW.get(ch, 1.00)
+
+
+def insets(sh):
+    """좌우 안쪽 여백(pt) — 상자에 적힌 값(`lIns` · `rIns`), 없으면 기본 0.1in 씩."""
+    try:
+        bp = sh.text_frame._txBody.bodyPr
+        l, r = bp.get("lIns"), bp.get("rIns")
+    except Exception:                          # noqa: BLE001 — 모양이 다르면 기본값
+        return INSET_PT
+    return (int(l) / EMU_PT if l is not None else INSET_PT / 2) + (int(r) / EMU_PT if r is not None else INSET_PT / 2)
 
 
 def _size(p, default=18.0):
@@ -72,7 +89,7 @@ def overflows(prs):
                 continue
             w = (sh.width or 0) / EMU_PT
             h = (sh.height or 0) / EMU_PT
-            n, hn = need(sh.text_frame, w - INSET_PT)
+            n, hn = need(sh.text_frame, w - insets(sh))
             bx.append((sh, (sh.left or 0) / EMU_PT, (sh.top or 0) / EMU_PT, w, h, hn, n))
         for sh, x, y, w, h, hn, n in bx:
             if n <= 1 or hn <= h + 2:

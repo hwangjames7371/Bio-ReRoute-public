@@ -126,6 +126,20 @@ GATE_KO = {"f0": "근거가 실제로 있는가", "rag": "논문 읽고 지지·
            "하드 비토": "결정적 반박"}
 
 
+# ── 09-29 · 시연에서 **끈** 게이트를 화면에 설명하는 말 (결함 378) ─────────────
+#   `gates.DEMO_GATES` 의 사유는 **개발 메모**다 — ««자율» 주장이 흐려진다» · «발표장에서 시연이
+#   멈춘다» · 결함 색인. 그대로 화면에 찍혀 «점수를 위해 껐다» 로 읽혔다. 화면 말은 여기 둔다 —
+#   `GATE_KO` 가 화면 이름을 여기 두는 것과 같은 까닭이다. `core/gates.py` 는 판정 경로
+#   코드(코드 지문)라 글자 때문에 건드리지 않는다.
+#   ⚠ 시연 구성이 새 게이트를 끄면 여기에 화면 말을 **먼저** 적는다 — 시험 [162]⑧ 이 본다.
+GATE_OFF_SAY = {
+    "hitl": "전문가가 이미 거절한 쌍을 다시 묻지 않게 막는 운용 기능입니다 — 거절 목록의 내용에 "
+            "따라 결과가 달라지므로, 자동 판정을 재현하는 구운 사례와 벤치마크에서는 끕니다",
+    "registry": "임상시험 등록부(ClinicalTrials.gov)를 조회합니다 — 응답 시간이 길어 구운 사례에서는 "
+                "끄고, 라이브 실행에서 «신종감염병긴급» 심사 기준을 고르면 의무로 켭니다",
+}
+
+
 def _apply_exit(cfg: Dict[str, bool], exit_: str) -> Dict[str, bool]:
     """출구 축이 **게이트 구성**까지 바꾼다 — `registry_required` (결함 256).
 
@@ -197,6 +211,34 @@ def _ttr(st) -> Optional[Dict[str, Any]]:
 def _trail(c: Candidate) -> List[Dict[str, str]]:
     return [{"게이트": GATE_KO.get(r.gate, r.gate), "결과": r.outcome,
              "설명": r.detail} for r in c.trail]
+
+
+# ── 09-29 · **일시 장애로 판정에 못 들어간 초록** — 다시 돌리면 채워진다 (결함 380) ─────────
+#
+#   09-29 라이브 점검에서 같은 병명(COVID-19)을 두 번 돌렸더니 **후보 열 개와 순서는 같고**(생성은 캐시)
+#   두 후보의 판정이 달랐다(nitazoxanide 조건부 26 → 기각 8 · dornase alfa 보류 70 → 조건부 65). 데운
+#   둘째 실행이 **새 호출 6번**을 했다. 캐시는 일시 장애를 저장하지 않고(`cache.put` · 결함 37) JSON 파싱
+#   실패도 저장하지 않는다(`llm._call`) — 그래서 첫 실행에서 **못 받은 초록 · 실패한 판정 호출**이 둘째에
+#   다시 나가 근거가 채워진다. 판정 경로는 그걸 보수적으로 처리했다(근거에서 뺀다). 문제는 **어느 후보가
+#   몇 건을 못 읽었는지 기록도 화면도 말하지 않은 것** — 그래서 두 실행이 왜 갈렸는지 못 갈랐다.
+#
+#   센다: `factcheck` 기록(1차 · 회의주의자 모두)에서 «초록 취득 실패» 중 **일시 장애인 것**
+#   (`cache.transient` 와 같은 규칙 — 영구 오류는 캐시에 남아 다음에도 같다) + «LLM 실패» 중 오류가 있는 것
+#   («배열 형식 아님» 은 응답이 캐시에 남으므로 다음에도 같다 — 빼고 센다). **판정은 안 바꾼다.**
+_FETCH_FAIL = "초록 취득 실패: "
+_LLM_FAIL = "LLM 실패: "
+
+
+def _transient_skips(c: Candidate) -> int:
+    """이 후보에서 **이번 실행의 일시 장애 때문에** 판정에 못 들어간 초록 수 — 다시 돌리면 달라질 수 있다."""
+    n = 0
+    for r in (getattr(c, "factcheck", None) or []):
+        s = str((r or {}).get("skip") or "")
+        if s.startswith(_FETCH_FAIL):
+            n += 1 if cache.transient({"error": s[len(_FETCH_FAIL):]}) else 0
+        elif s.startswith(_LLM_FAIL) and s != _LLM_FAIL + "배열 형식 아님":
+            n += 1
+    return n
 
 
 def _served_since(call0: int) -> dict:
@@ -377,6 +419,8 @@ def run_pair(text: str, config: str = DEMO_CONFIG,
                 #     매번 다른 답을 낸다 — 08-18 에 생성이 10개와
                 #     2개로 갈렸고 **모델은 하나였다**(결함 236).
                 "모델": _served_since(_call0),
+                # 09-29 · 이번 실행의 일시 장애로 못 읽은 초록 수(결함 380) — 0 이 아니면 다시 돌리면 달라질 수 있다
+                "일시실패": _transient_skips(c),
                 "비용": spent, "예산": budget.status(),
                 "시각": base["시각"], "질의": "%s / %s" % (drug, disease)}
     except safety.Blocked as e:
@@ -736,14 +780,17 @@ def run_disease(disease: str, config: str = DEMO_CONFIG, k: int = DISEASE_K,
         # **온도까지 같이 적는다** — `_served_since` 참조 (결함 236)
         base["모델"] = _served_since(call0)
         base["역할배정"] = llm.roles_in_use()
+        # 09-29 · 후보마다 **일시 장애로 못 읽은 초록 수**(결함 380) — 합도 같이. 0 이 아니면 다시 돌리면 달라질 수 있다
+        _tf = {c.name: _transient_skips(c) for c in done}
         return dict(base, ok=True, 상태="정상", 메시지="",
                     초=round(_t.monotonic() - t0, 1), 비용=spent,
-                    예산=budget.status(),
+                    예산=budget.status(), 일시실패=sum(_tf.values()),
                     후보=[{"이름": c.name, "약물": getattr(c, "drug", ""),
                           "판정": c.verdict, "신뢰도": c.confidence,
                           "사유": c.reason, "근거수": len(_evidence(c)),
                           "근거": _evidence(c), "게이트": _trail(c),
                           "F0근거수": getattr(c, "f0_ev", None),
+                          "일시실패": _tf.get(c.name, 0),
                           "s1": getattr(c, "s1", None)} for c in done])
     except safety.Blocked as e:
         budget.refund()
