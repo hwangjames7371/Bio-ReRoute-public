@@ -16264,6 +16264,63 @@ def test_report_pdf_does_not_print_markdown_markers():
           and "<del>9/7 에 돌린다</del>" in out, out[:160])
     check("[200] ③ 짝이 없는 기호는 **남는다고 센다** — 조용히 지우지 않는다",
           ns["_leftovers"](ns["_polish"]("<p>a ** b</p>")) == 1, "")
+    # ── 10-01 · **괄호 속 말이 주소가 됐다** (결함 384 · 같은 변환기 · 두 번째 모양) ──
+    #
+    #   `+0.0031 [+0.0013, +0.0050](나빠짐)` — 대괄호 바로 뒤의 괄호를 마크다운이 **주소로**
+    #   읽어, 제출 보고서 PDF 에 보정 민감도 두 줄이 **파란 링크**로 찍혔다. 347 을 고칠 때
+    #   *«변환이 고치고 못 고친 것이 남으면 멈춘다»* 를 세웠는데 **주소가 아닌 링크는 안 봤다.**
+    _fb = [n for n in _a200.parse(src).body
+           if isinstance(n, _a200.FunctionDef) and n.name == "_badlinks"]
+    for fn in _fb:
+        exec(compile(_a200.Module(body=[fn], type_ignores=[]), p, "exec"), ns)
+    check("[200] ⑤ 변환기가 **주소가 아닌 링크**를 잡고 멈춘다(rc 5) — 안내문이 아니라 구조",
+          len(_fb) == 1 and "_badlinks(html_body)" in src and "sys.exit(5)" in src, len(_fb))
+    # ── 10-01 · **옛 PDF 가 «만들었다» 로 읽혔다** (결함 387 · 결함 71 이 다른 길에서 재발) ──
+    #
+    #   사슬 ⑥ 이 «✅ 만들었다 — 연구기술보고서.pdf» 를 찍었는데 파일은 09-29 판 그대로였다(Edge 가 못 썼다).
+    #   성공 판정이 «있고 10 KB 넘는다» 뿐이었다. 새 이름으로 굽고 · 이번 실행이 썼는지 보고 · 바꿔 넣는다.
+    _ff = [n for n in _a200.parse(src).body
+           if isinstance(n, _a200.FunctionDef) and n.name == "_fresh"]
+    for fn in _ff:
+        exec(compile(_a200.Module(body=[fn], type_ignores=[]), p, "exec"), ns)
+    check("[200] ⑧ PDF 를 **새 이름으로 굽고 · 이번 실행이 썼는지 보고 · 바꿔 넣는다** — 옛 PDF 를 성공으로 안 세고(rc 6) · "
+          "돌고 있는 브라우저와 프로필을 나누지 않는다",
+          len(_ff) == 1 and "_fresh(_new, _T0)" in src and "_fresh(OUT, _T0)" in src and "os.replace(" in src
+          and "sys.exit(6)" in src and "--user-data-dir=" in src and "os.path.getsize(OUT) > 10000" not in src,
+          len(_ff))
+    if _ff:
+        import shutil as _sh200
+        import tempfile as _tf200
+        import time as _tm200
+        ns["os"] = _o200
+        _d = _tf200.mkdtemp(prefix="pdf200_")
+        try:
+            _old, _new2, _tiny = (_o200.path.join(_d, x) for x in ("old.pdf", "new.pdf", "tiny.pdf"))
+            for _f, _n in ((_old, 20000), (_new2, 20000), (_tiny, 10)):
+                with open(_f, "wb") as _fh:
+                    _fh.write(b"0" * _n)
+            _t0 = _tm200.time()
+            _o200.utime(_old, (_t0 - 86400, _t0 - 86400))
+            check("[200] ⑨ 합성 자료 — 어제 파일 · 10 KB 안 되는 파일 · 없는 파일은 «새 PDF» 가 아니고 방금 쓴 파일만 그렇다",
+                  ns["_fresh"](_new2, _t0 - 1) and not ns["_fresh"](_old, _t0) and not ns["_fresh"](_tiny, _t0 - 1)
+                  and not ns["_fresh"](_o200.path.join(_d, "없다.pdf"), _t0), "")
+        finally:
+            _sh200.rmtree(_d, ignore_errors=True)
+    # ⑩ 제출 보고서 **PDF** 가 지금 대장을 말하는가 — md 만 맞고 PDF 가 옛 판이면 여기서 빨개진다.
+    #   사슬 ③(⑥ 전)에서는 빨개질 수 있다 — ⑨ 에서 초록이어야 한다(결함 수 대조와 같은 자리).
+    _pdfp = _o200.path.join(root, "연구기술보고서.pdf")
+    try:
+        from pypdf import PdfReader as _PR200
+    except ModuleNotFoundError:
+        _PR200 = None
+    if _PR200 is None or not _o200.path.exists(_pdfp):
+        check("[200] ⑩ pypdf 나 보고서 PDF 가 없다 — PDF 내용 대조는 건너뛴다", True, "")
+    else:
+        _pt = "\n".join((_pg.extract_text() or "") for _pg in _PR200(_pdfp).pages)
+        _got = sorted(set(_r200.findall(r"결함\s*(\d{3})\s*건", _pt)))
+        _want = str(_EV200.defect_count())
+        check("[200] ⑩ ⭐ 보고서 **PDF** 가 지금 대장을 말한다(결함 %s건) — 옛 PDF 가 제출되지 않는다" % _want,
+              _got == [_want], _got)
     try:
         import markdown as _md200
     except ModuleNotFoundError:
@@ -16273,6 +16330,12 @@ def test_report_pdf_does_not_print_markdown_markers():
     h = ns["_polish"](_md200.markdown(rep, extensions=["tables", "fenced_code", "toc", "sane_lists"]))
     check("[200] ④ ⭐ 실제 보고서를 같은 설정으로 변환하면 **남는 기호가 0**",
           ns["_leftovers"](h) == 0, ns["_leftovers"](h))
+    if _fb:
+        _syn = _md200.markdown("구간 [+0.0013, +0.0050](나빠짐) · <https://a.b> · [x](#y) · [m](mailto:a@b)")
+        check("[200] ⑥ 합성 자료 — **괄호 말만** 잡고 진짜 주소 · 앵커 · 메일은 그냥 둔다",
+              ns["_badlinks"](_syn) == ["나빠짐"], ns["_badlinks"](_syn))
+        check("[200] ⑦ ⭐ 실제 보고서에 **주소가 아닌 링크가 0** — 있으면 PDF 에 파란 글자로 찍힌다",
+              ns["_badlinks"](h) == [], ns["_badlinks"](h))
 
 
 def test_countsync_does_not_move_numbers_inside_records():
