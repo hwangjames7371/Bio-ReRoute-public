@@ -16186,6 +16186,26 @@ def test_deck_text_does_not_overflow_onto_neighbours():
     a, b = ps1.find('"bioreroute.bench.deckfit"'), ps1.find('Say "③ PDF')
     check("[198] ③ `발표10분.ps1` 이 PDF 를 굽기 **전에** 넘침을 잰다", 0 <= a < b, (a, b))
 
+    # ④ 10-02 · 아래가 비어 **겹치지 않아도** 줄이 갈리는 문단(`wraps()` · 경고만 · 결함 372 둘째) — PowerPoint 는 한글을
+    #   글자 단위로 끊어 «재적용을 빼 / 면» 처럼 낱말 가운데가 갈린 줄이 제출 PDF 에 열한 곳 있었는데 «0개» 였다
+    def lone(text, w_pt, size):
+        prs = _Pr198()
+        s = prs.slides.add_slide(prs.slide_layouts[6])
+        a = s.shapes.add_textbox(_Pt198(100), _Pt198(100), _Pt198(w_pt), _Pt198(40))
+        tf = a.text_frame
+        tf.word_wrap = True
+        tf.margin_left = tf.margin_right = 0
+        r = tf.paragraphs[0].add_run()
+        r.text, r.font.size = text, _Pt198(size)
+        return _DF198.wraps(prs), _DF198.overflows(prs)
+    (w_old, o_old), (w_new, _o) = (lone("시험이 이미 중단된 후보에서 실패 · 중단을 말한 수", 273.6, 12),
+                                   lone("시험이 중단된 후보에서 실패 · 중단을 말한 수", 273.6, 12))
+    check("[198] ④ 제출 PDF 2쪽의 옛 줄(«…말한 / 수»)을 **겹침이 없어도** 갈린다고 잡고(덮는 것은 0) · 고친 줄은 안 잡는다",
+          len(w_old) == 1 and not o_old and not w_new, (w_old, o_old, w_new))
+    dsrc = open(_o198.path.join(_EV198.ROOT, "bioreroute", "bench", "deckfit.py"), encoding="utf-8").read()
+    check("[198] ④-b `deckfit` 이 줄이 갈리는 문단을 **찍는다** — 경고만 하고 실패 코드는 겹침만 센다",
+          "wraps(Presentation(p))" in dsrc and "return 0 if not bad else 3" in dsrc, "")
+
 
 def test_submission_surfaces_do_not_claim_untested_or_deny_measured():
     """[199] **제출 표면이 안 해 본 것을 «가능» 이라, 잰 것을 «수치 없음» 이라 말하지 않는다** — 09-26. 결함 344·345.

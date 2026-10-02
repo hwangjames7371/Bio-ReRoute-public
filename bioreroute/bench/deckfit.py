@@ -106,6 +106,32 @@ def overflows(prs):
     return hits
 
 
+def wraps(prs):
+    """[(쪽, 넘친 글자 수, 글)] — 한 문단이 상자 폭을 넘어 **줄이 갈리는** 것(모형). 겹치지 않아도 찍는다.
+
+    10-02 · `overflows()` 는 넘친 줄이 **다른 글상자를 덮을 때만** 잡는다. 아래가 비어 있으면 «0개» 인데
+    PowerPoint 는 한글을 **글자 단위로** 끊어서 «재적용을 빼 / 면» · «결 / 함» 처럼 낱말 가운데가 갈린 줄이
+    제출 PDF 에 열한 곳 있었다(2 · 3 · 5 · 7 · 8 · 9 · 10 · 13 · 19쪽). 줄을 나눌 자리는 생성기가 `\\n` 으로 정하고,
+    한 문단은 한 줄에 들어가게 쓴다 — 이 목록이 그 규칙을 어긴 문단이다. **경고만 한다**(실패로 세지 않는다 —
+    숫자가 많은 줄은 모형이 조금 넓게 본다).
+    """
+    hits = []
+    for i, s in enumerate(prs.slides, 1):
+        for sh in s.shapes:
+            if not sh.has_text_frame or not sh.text_frame.text.strip():
+                continue
+            width = (sh.width or 0) / EMU_PT - insets(sh)
+            for p in sh.text_frame.paragraphs:
+                txt = "".join(r.text for r in p.runs)
+                if len(txt.strip()) <= 2:
+                    continue
+                size = _size(p)
+                need = sum(em(c) for c in txt) * size * SCALE
+                if need > max(1.0, width):
+                    hits.append((i, round((need - width) / size, 1), txt[:40]))
+    return hits
+
+
 def scan(path):
     """(글상자 수, 넘침 목록)."""
     from pptx import Presentation
@@ -129,6 +155,13 @@ def main(argv=None):
         for i, a, b in hits:
             print("   · %d쪽  «%s…»  →  «%s…» 를 덮는다" % (i, a, b))
         bad += len(hits)
+        # 10-02 · 겹치지 않아도 줄이 갈리는 문단 — 경고만(위 `wraps()`)
+        from pptx import Presentation
+        ws = wraps(Presentation(p))
+        if ws:
+            print("   ⚠ 줄이 갈리는 문단 %d개(모형 · 경고만) — 한 줄로 줄이거나 나눌 자리를 `\\n` 으로 정하라" % len(ws))
+            for i, over, t in ws:
+                print("     · %d쪽  %+.1f글자  «%s…»" % (i, over, t))
     return 0 if not bad else 3
 
 
